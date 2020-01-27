@@ -4,6 +4,7 @@
 
 [node name="NewGameButton" instance=ExtResource( 1 )]
 rect_min_size = Vector2( 360, 60 )
+scene_to_load = "res://Game/NewGame.tscn"
 
 [node name="Label" parent="." index="0"]
 text = "New Game"
