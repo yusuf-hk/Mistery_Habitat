@@ -1,12 +1,17 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://title_screen/TitleScreen.gd" type="Script" id=1]
+[ext_resource path="res://src/menu system/title_screen/TitleScreen.gd" type="Script" id=1]
 [ext_resource path="res://Logo.png" type="Texture" id=2]
-[ext_resource path="res://title_screen/buttons/NewGameButton.tscn" type="PackedScene" id=3]
-[ext_resource path="res://title_screen/buttons/ContinueButton.tscn" type="PackedScene" id=4]
-[ext_resource path="res://title_screen/buttons/OptionsButton.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Globe.png" type="Texture" id=6]
+[ext_resource path="res://src/menu system/buttons/NewGameButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/menu system/buttons/ContinueButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/menu system/buttons/OptionsButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/main menu/Globe.png" type="Texture" id=6]
 [ext_resource path="res://fonts/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=7]
+
+
+
+
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 24

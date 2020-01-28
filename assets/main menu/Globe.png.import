@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Globe.png-76d485376ddc558c2e924f1e64f1e8ce.stex"
+path="res://.import/Globe.png-4ca9aaddcb6dd0a9c61fbcc0567984b0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Globe.png"
-dest_files=[ "res://.import/Globe.png-76d485376ddc558c2e924f1e64f1e8ce.stex" ]
+source_file="res://assets/main menu/Globe.png"
+dest_files=[ "res://.import/Globe.png-4ca9aaddcb6dd0a9c61fbcc0567984b0.stex" ]
 
 [params]
 
