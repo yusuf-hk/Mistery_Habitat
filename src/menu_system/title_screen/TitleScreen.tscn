@@ -1,17 +1,13 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://src/menu system/title_screen/TitleScreen.gd" type="Script" id=1]
-[ext_resource path="res://Logo.png" type="Texture" id=2]
-[ext_resource path="res://src/menu system/buttons/NewGameButton.tscn" type="PackedScene" id=3]
-[ext_resource path="res://src/menu system/buttons/ContinueButton.tscn" type="PackedScene" id=4]
-[ext_resource path="res://src/menu system/buttons/OptionsButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/menu_system/title_screen/TitleScreen.gd" type="Script" id=1]
+[ext_resource path="res://assets/main menu/Logo.png" type="Texture" id=2]
+[ext_resource path="res://src/menu_system/buttons/NewGameButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/menu_system/buttons/ContinueButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/menu_system/buttons/OptionsButton.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/main menu/Globe.png" type="Texture" id=6]
-[ext_resource path="res://fonts/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=7]
-
-
-
-
-
+[ext_resource path="res://assets/fonts/Montserrat_24.tres" type="DynamicFontData" id=7]
+[ext_resource path="res://src/menu_system/fade_in/FadeIn.tscn" type="PackedScene" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -49,23 +45,25 @@ custom_constants/separation = 20
 alignment = 1
 
 [node name="NewGameButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
-margin_top = 50.0
+margin_top = 41.0
 margin_right = 518.0
-margin_bottom = 110.0
+margin_bottom = 107.0
+rect_min_size = Vector2( 360, 60 )
 
 [node name="ContinueButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
-margin_top = 130.0
+margin_top = 127.0
 margin_right = 518.0
-margin_bottom = 190.0
+margin_bottom = 193.0
 rect_min_size = Vector2( 360, 60 )
 
 [node name="OptionsButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 5 )]
-margin_top = 210.0
+margin_top = 213.0
 margin_right = 518.0
-margin_bottom = 270.0
+margin_bottom = 279.0
 rect_min_size = Vector2( 360, 60 )
 
 [node name="CenterContainer" type="CenterContainer" parent="Menu/CenterRow"]
+editor/display_folded = true
 margin_left = 522.0
 margin_right = 1040.0
 margin_bottom = 320.0
@@ -79,10 +77,14 @@ margin_bottom = 320.0
 texture = ExtResource( 6 )
 
 [node name="VersionLabel" type="Label" parent="Menu"]
-margin_top = 460.0
+margin_top = 425.0
 margin_right = 1040.0
-margin_bottom = 525.0
-size_flags_vertical = 6
+margin_bottom = 560.0
+size_flags_vertical = 3
 custom_fonts/font = SubResource( 1 )
 text = "Version 1.0.0
 Sysdev Group 9"
+
+[node name="FadeIn" parent="." instance=ExtResource( 8 )]
+visible = false
+[connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
