@@ -1,5 +1,7 @@
 extends Node
-
+onready var bow = false
+onready var character = "Templerun_girl"
+onready var character_flip = false
 
 signal updated
 signal died
@@ -24,7 +26,21 @@ func set_deaths(new_value: int) -> void:
 	deaths = new_value
 	emit_signal("died")
 	
+func set_character(player: String) ->void:
+	character = player
 	
-	
-	
+func get_character()->String:
+	return character
 
+func set_weapon(value:bool)->void:
+	bow = value
+
+func get_weapon()->bool:
+	return bow
+
+func set_character_flip(flip:bool)->void:
+	character_flip = flip
+	
+	
+func get_character_flip()->bool:
+	return character_flip
