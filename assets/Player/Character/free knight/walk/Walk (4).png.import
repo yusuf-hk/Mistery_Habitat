@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Walk (4).png-a5d429a4fc9bbd0d6473f1466cae4833.stex"
+path="res://.import/Walk (4).png-32c1b9c6c5606b3a13ce7443330b5537.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/free knight/walk/Walk (4).png"
-dest_files=[ "res://.import/Walk (4).png-a5d429a4fc9bbd0d6473f1466cae4833.stex" ]
+source_file="res://Assets/Player/Character/free knight/walk/Walk (4).png"
+dest_files=[ "res://.import/Walk (4).png-32c1b9c6c5606b3a13ce7443330b5537.stex" ]
 
 [params]
 

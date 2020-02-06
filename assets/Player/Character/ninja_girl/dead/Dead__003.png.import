@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dead__003.png-424e88f818dfd280e8d4e8223995ac3f.stex"
+path="res://.import/Dead__003.png-a99c3a12aa99fbb93bced4ce7a2d1316.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/ninja_girl/dead/Dead__003.png"
-dest_files=[ "res://.import/Dead__003.png-424e88f818dfd280e8d4e8223995ac3f.stex" ]
+source_file="res://Assets/Player/Character/ninja_girl/dead/Dead__003.png"
+dest_files=[ "res://.import/Dead__003.png-a99c3a12aa99fbb93bced4ce7a2d1316.stex" ]
 
 [params]
 

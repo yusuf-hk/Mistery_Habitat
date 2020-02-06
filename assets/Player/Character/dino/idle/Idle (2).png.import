@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle (2).png-8c809a9748b668988b5ad37cd6acb112.stex"
+path="res://.import/Idle (2).png-bd0b823c8d43eaaf15d1f8d51fb6cfef.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/dino/idle/Idle (2).png"
-dest_files=[ "res://.import/Idle (2).png-8c809a9748b668988b5ad37cd6acb112.stex" ]
+source_file="res://Assets/Player/Character/dino/idle/Idle (2).png"
+dest_files=[ "res://.import/Idle (2).png-bd0b823c8d43eaaf15d1f8d51fb6cfef.stex" ]
 
 [params]
 

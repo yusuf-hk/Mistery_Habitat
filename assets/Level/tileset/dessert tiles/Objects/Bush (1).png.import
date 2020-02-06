@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bush (1).png-5c21246289e2b4518c5d0d3c2ef2f359.stex"
+path="res://.import/Bush (1).png-76b4f8b48e94930dc0e1336a59d8c3cb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Level/tileset/dessert tiles/Objects/Bush (1).png"
-dest_files=[ "res://.import/Bush (1).png-5c21246289e2b4518c5d0d3c2ef2f359.stex" ]
+source_file="res://Assets/Level/tileset/dessert tiles/Objects/Bush (1).png"
+dest_files=[ "res://.import/Bush (1).png-76b4f8b48e94930dc0e1336a59d8c3cb.stex" ]
 
 [params]
 

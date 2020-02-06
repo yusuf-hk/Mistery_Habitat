@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Slide (10).png-a229915a79007f2812a4ecf06858559d.stex"
+path="res://.import/Slide (10).png-7eeb0b49574efae928c1202cb7038a7a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/Robot/slide/Slide (10).png"
-dest_files=[ "res://.import/Slide (10).png-a229915a79007f2812a4ecf06858559d.stex" ]
+source_file="res://Assets/Player/Character/Robot/slide/Slide (10).png"
+dest_files=[ "res://.import/Slide (10).png-7eeb0b49574efae928c1202cb7038a7a.stex" ]
 
 [params]
 

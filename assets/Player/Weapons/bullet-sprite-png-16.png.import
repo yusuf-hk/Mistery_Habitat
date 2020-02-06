@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bullet-sprite-png-16.png-93dd845783192419ef593d44d7a2ee73.stex"
+path="res://.import/bullet-sprite-png-16.png-df0b0e1e0513bf082524571b6b8cbc7a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Weapons/bullet-sprite-png-16.png"
-dest_files=[ "res://.import/bullet-sprite-png-16.png-93dd845783192419ef593d44d7a2ee73.stex" ]
+source_file="res://Assets/Player/Weapons/bullet-sprite-png-16.png"
+dest_files=[ "res://.import/bullet-sprite-png-16.png-df0b0e1e0513bf082524571b6b8cbc7a.stex" ]
 
 [params]
 
