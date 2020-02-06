@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Grass (2).png-a63173cb2a56e24d0456deab5011e88d.stex"
+path="res://.import/Grass (2).png-b453052e1cb70ed2b1d190be18ddb99f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Level/tileset/dessert tiles/Objects/Grass (2).png"
-dest_files=[ "res://.import/Grass (2).png-a63173cb2a56e24d0456deab5011e88d.stex" ]
+source_file="res://assets/Level/tileset/dessert tiles/Objects/Grass (2).png"
+dest_files=[ "res://.import/Grass (2).png-b453052e1cb70ed2b1d190be18ddb99f.stex" ]
 
 [params]
 

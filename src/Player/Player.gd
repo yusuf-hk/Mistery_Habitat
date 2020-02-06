@@ -2,14 +2,13 @@ extends Actor
 
  
 var array = ["Boy","Girl","Robot","Templerun_boy", "Templerun_girl", "Dino", "Knight", "Jack", "Ninja_boy", "Ninja_girl", "Santa", "Zombie_girl", "Zombie_boy"]
+
 onready var what_character = get_node("/root/PlayerData").get_character()
 onready var character = get_node("Sprite/"+what_character)
 onready var character_objects
 onready var character_animation = get_node("AnimationPlayer")
 onready var bow_weapon = get_node("/root/PlayerData")
 onready var character_flip = get_node("/root/PlayerData")
-
-
 
 
 func _on_EnemyDetector_body_entered(body: PhysicsBody2D) -> void:
