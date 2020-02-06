@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Attack__003.png-7079b591547411f3da5feeb88b7b4a80.stex"
+path="res://.import/Attack__003.png-82082da4ddf0f3fad0ffc5dd1e54ad4a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/ninja_girl/Attack/Attack__003.png"
-dest_files=[ "res://.import/Attack__003.png-7079b591547411f3da5feeb88b7b4a80.stex" ]
+source_file="res://Assets/Player/Character/ninja_girl/Attack/Attack__003.png"
+dest_files=[ "res://.import/Attack__003.png-82082da4ddf0f3fad0ffc5dd1e54ad4a.stex" ]
 
 [params]
 

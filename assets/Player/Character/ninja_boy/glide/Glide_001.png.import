@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Glide_001.png-c1bf07e54c9b8f7472657b181839ae64.stex"
+path="res://.import/Glide_001.png-106b8ef1df32ae73b1d87fde36ee7075.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/ninja_boy/glide/Glide_001.png"
-dest_files=[ "res://.import/Glide_001.png-c1bf07e54c9b8f7472657b181839ae64.stex" ]
+source_file="res://Assets/Player/Character/ninja_boy/glide/Glide_001.png"
+dest_files=[ "res://.import/Glide_001.png-106b8ef1df32ae73b1d87fde36ee7075.stex" ]
 
 [params]
 

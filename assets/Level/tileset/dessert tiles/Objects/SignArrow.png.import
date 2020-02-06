@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SignArrow.png-900f57c9ccb1972070f92179a1d4c34d.stex"
+path="res://.import/SignArrow.png-756f6100e38a46d9dea88a2d23fc77e7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Level/tileset/dessert tiles/Objects/SignArrow.png"
-dest_files=[ "res://.import/SignArrow.png-900f57c9ccb1972070f92179a1d4c34d.stex" ]
+source_file="res://Assets/Level/tileset/dessert tiles/Objects/SignArrow.png"
+dest_files=[ "res://.import/SignArrow.png-756f6100e38a46d9dea88a2d23fc77e7.stex" ]
 
 [params]
 

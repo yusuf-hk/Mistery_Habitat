@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Melee (4).png-1347663172e9d53eef640543bf36f6c6.stex"
+path="res://.import/Melee (4).png-f06bed93cd57c60b15721e4d5d9e8f94.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/Robot/melee/Melee (4).png"
-dest_files=[ "res://.import/Melee (4).png-1347663172e9d53eef640543bf36f6c6.stex" ]
+source_file="res://Assets/Player/Character/Robot/melee/Melee (4).png"
+dest_files=[ "res://.import/Melee (4).png-f06bed93cd57c60b15721e4d5d9e8f94.stex" ]
 
 [params]
 

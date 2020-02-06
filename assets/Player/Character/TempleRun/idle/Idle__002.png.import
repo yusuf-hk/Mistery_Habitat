@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle__002.png-9771107a3cad22715ec646fe6415bdb9.stex"
+path="res://.import/Idle__002.png-53c5595a5b77ae6c666ca3ec60154caf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/TempleRun/idle/Idle__002.png"
-dest_files=[ "res://.import/Idle__002.png-9771107a3cad22715ec646fe6415bdb9.stex" ]
+source_file="res://Assets/Player/Character/TempleRun/idle/Idle__002.png"
+dest_files=[ "res://.import/Idle__002.png-53c5595a5b77ae6c666ca3ec60154caf.stex" ]
 
 [params]
 

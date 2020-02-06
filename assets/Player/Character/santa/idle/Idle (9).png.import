@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle (9).png-76eba00b8c7914dcb82105656ce2c544.stex"
+path="res://.import/Idle (9).png-a1ee7ab7cecbfcaf0f2a1566c60e3c06.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/santa/idle/Idle (9).png"
-dest_files=[ "res://.import/Idle (9).png-76eba00b8c7914dcb82105656ce2c544.stex" ]
+source_file="res://Assets/Player/Character/santa/idle/Idle (9).png"
+dest_files=[ "res://.import/Idle (9).png-a1ee7ab7cecbfcaf0f2a1566c60e3c06.stex" ]
 
 [params]
 

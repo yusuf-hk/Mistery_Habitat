@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Crate.png-885e9ec6313603c34e17ce98783c927f.stex"
+path="res://.import/Crate.png-9d17059115bbaa2ad636fbdad18a5d1c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Level/tileset/dessert tiles/Objects/Crate.png"
-dest_files=[ "res://.import/Crate.png-885e9ec6313603c34e17ce98783c927f.stex" ]
+source_file="res://Assets/Level/tileset/dessert tiles/Objects/Crate.png"
+dest_files=[ "res://.import/Crate.png-9d17059115bbaa2ad636fbdad18a5d1c.stex" ]
 
 [params]
 

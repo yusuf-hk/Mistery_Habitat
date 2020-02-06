@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Muzzle_001.png-40bf4e6cdb81b58364166f62af899e8b.stex"
+path="res://.import/Muzzle_001.png-5d2699043cc2f47fa2638b4d82a3ab35.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/Robot/Objects/Muzzle_001.png"
-dest_files=[ "res://.import/Muzzle_001.png-40bf4e6cdb81b58364166f62af899e8b.stex" ]
+source_file="res://Assets/Player/Character/Robot/Objects/Muzzle_001.png"
+dest_files=[ "res://.import/Muzzle_001.png-5d2699043cc2f47fa2638b4d82a3ab35.stex" ]
 
 [params]
 
