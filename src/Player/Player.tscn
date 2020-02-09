@@ -1778,8 +1778,10 @@ z_index = -4
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
+editor/display_folded = true
 
 [node name="Boy" type="AnimatedSprite" parent="Sprite"]
+visible = false
 position = Vector2( 40, 0 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 3 )
@@ -1792,7 +1794,7 @@ visible = false
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 4 )
 animation = "Idle"
-frame = 11
+frame = 3
 playing = true
 
 [node name="Robot" type="AnimatedSprite" parent="Sprite"]
@@ -1810,7 +1812,6 @@ position = Vector2( 7500, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 6 )
 animation = "Shoot"
-frame = 3
 playing = true
 
 [node name="Templerun_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1818,9 +1819,11 @@ visible = false
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 7 )
 animation = "Idle"
+frame = 6
 playing = true
 
 [node name="Templerun_girl" type="AnimatedSprite" parent="Sprite"]
+editor/display_folded = true
 visible = false
 position = Vector2( 5, 0 )
 scale = Vector2( 0.25, 0.25 )
@@ -1840,7 +1843,7 @@ position = Vector2( 30, 0 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 9 )
 animation = "Idle"
-frame = 5
+frame = 1
 playing = true
 
 [node name="Knight" type="AnimatedSprite" parent="Sprite"]
@@ -1849,6 +1852,7 @@ position = Vector2( 10, -5 )
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 10 )
 animation = "Idle"
+frame = 6
 playing = true
 
 [node name="Jack" type="AnimatedSprite" parent="Sprite"]
@@ -1857,7 +1861,7 @@ position = Vector2( 6, -4 )
 scale = Vector2( 0.17, 0.17 )
 frames = SubResource( 11 )
 animation = "Idle"
-frame = 6
+frame = 2
 playing = true
 
 [node name="Ninja_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1866,7 +1870,7 @@ position = Vector2( 0, 5 )
 scale = Vector2( 0.27, 0.27 )
 frames = SubResource( 12 )
 animation = "Idle"
-frame = 2
+frame = 8
 playing = true
 
 [node name="Ninja_girl" type="AnimatedSprite" parent="Sprite"]
@@ -1874,7 +1878,6 @@ visible = false
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 13 )
 animation = "Idle"
-frame = 4
 playing = true
 
 [node name="Santa" type="AnimatedSprite" parent="Sprite"]
@@ -1883,7 +1886,7 @@ position = Vector2( 15, -7.5 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 14 )
 animation = "Idle"
-frame = 7
+frame = 15
 playing = true
 
 [node name="Zombie_boy" type="AnimatedSprite" parent="Sprite"]
