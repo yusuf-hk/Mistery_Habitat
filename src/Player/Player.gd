@@ -91,9 +91,9 @@ func flip_character(right:bool)->void:
 func get_sprite_position(direction: String)->void:
 	
 	if what_character == "Boy" && direction == "move_right":
-			character.position.x = -40
+			character.position.x = -50
 	elif what_character == "Boy" && direction == "move_left":
-			character.position.x = 40
+			character.position.x = 50
 	elif what_character == "Girl" && direction == "move_right":
 			character.position.x = -10
 	elif what_character == "Girl" && direction == "move_left":

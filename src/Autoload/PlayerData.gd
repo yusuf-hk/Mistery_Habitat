@@ -1,6 +1,6 @@
 extends Node
 onready var bow = false
-onready var character = "Templerun_girl"
+onready var character = "Boy"
 onready var character_flip = false
 
 signal updated

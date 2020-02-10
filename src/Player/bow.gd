@@ -15,20 +15,20 @@ func _process(delta) -> void:
 		if Input.is_action_pressed("mouse_left"):
 			if get_flip() == true:
 				bow_animation.play("Shoot_left")
-				bow.position.x = -5
+				bow.position.x = -7.5
 				
 			elif get_flip() == false:
 				bow_animation.play("Shoot")	
-				bow.position.x = 5
+				bow.position.x = 7.5
 				
 		else:
 			if get_flip() == true:
 				bow_animation.play("Idle_left")
-				bow.position.x = -5
+				bow.position.x = -10
 				
 			elif get_flip() == false:
 				bow_animation.play("Idle")	
-				bow.position.x = 5
+				bow.position.x = 10
 				
 				
 func get_flip()->bool:
