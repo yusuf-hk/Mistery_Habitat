@@ -1,13 +1,10 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Coins.gd" type="Script" id=1]
-[ext_resource path="res://assets/Coins/MonedaD.png" type="Texture" id=2]
+[ext_resource path="res://src/Objects/Common objects/Diamonds.gd" type="Script" id=1]
+[ext_resource path="res://assets/Coins/spr_coin_gri.png" type="Texture" id=2]
 
 [sub_resource type="OccluderPolygon2D" id=1]
-polygon = PoolVector2Array( -7.74569, -0.986542, -7.13396, -3.22952, -6.01247, -4.96273, -3.87144, -6.89986, -1.01674, -8.02135, 2.14383, -7.61353, 5.20244, -5.67641, 7.13956, -3.02562, 7.64933, 0.0329971, 7.34346, 2.27598, 6.32393, 4.92677, 3.97899, 6.76194, 0.716475, 7.67953, -3.56558, 6.8639, -6.21638, 4.41701, -7.54178, 1.3584 )
-
-[sub_resource type="CircleShape2D" id=2]
-radius = 15.6173
+polygon = PoolVector2Array( -5.19414, 0.790907, -5.28155, -1.48181, -4.32001, -4.01678, -2.74659, -5.76502, -1.08576, -6.81397, -0.473869, -6.90138, 0.662491, -5.85243, 2.93521, -4.10419, 3.98416, -2.0937, 3.80934, 0.528669, 3.45969, 3.23845, 1.97368, 4.9867, -0.736107, 7.25942, -2.1347, 6.12306, -3.00883, 5.42376, -4.75708, 3.06363 )
 
 [sub_resource type="Animation" id=3]
 resource_name = "Picked"
@@ -34,10 +31,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 0, 1, 2, 3, 4 ]
+"values": [ 0, 1, 2, 3 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Normal_coin:modulate")
@@ -59,42 +56,34 @@ tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
-"transitions": PoolRealArray( 2.37841, 0.277392, 1 ),
+"transitions": PoolRealArray( 3.86375, 0.164938, 1 ),
 "update": 0,
-"values": [ Vector2( 30.1666, 20.6973 ), Vector2( 30.167, 30 ), Vector2( 30.1666, 20.6973 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("CollisionShape2D:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0, 0.5, 1 ),
-"transitions": PoolRealArray( 3.03143, 0.353553, 1 ),
-"update": 0,
-"values": [ Vector2( 30.3019, 20.4267 ), Vector2( 30.302, 30 ), Vector2( 30.3019, 20.4267 ) ]
+"values": [ Vector2( -1.127, -9.973 ), Vector2( -1.127, 10 ), Vector2( -1.127, -9.973 ) ]
 }
 
-[node name="Coins" type="Area2D"]
+[sub_resource type="CapsuleShape2D" id=5]
+height = 10.016
+
+[node name="Diamonds" type="Area2D"]
 collision_layer = 8
 script = ExtResource( 1 )
 
 [node name="Normal_coin" type="Sprite" parent="."]
-position = Vector2( 30.1666, 20.6973 )
+position = Vector2( -1.127, -9.18391 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 2 )
-hframes = 5
+hframes = 4
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Normal_coin"]
+position = Vector2( 0.58633, 0.367323 )
 occluder = SubResource( 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 30.3019, 20.4267 )
-shape = SubResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Play_coin"
 anims/Picked = SubResource( 3 )
 anims/Play_coin = SubResource( 4 )
-[connection signal="body_entered" from="." to="." method="_on_Coins_body_entered"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.50208, -8.83129 )
+shape = SubResource( 5 )
+[connection signal="body_entered" from="." to="." method="_on_Diamond_body_entered"]
