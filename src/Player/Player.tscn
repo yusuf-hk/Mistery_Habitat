@@ -1786,7 +1786,7 @@ position = Vector2( 40, 0 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 3 )
 animation = "Idle"
-frame = 9
+frame = 5
 playing = true
 
 [node name="Girl" type="AnimatedSprite" parent="Sprite"]
@@ -1794,7 +1794,7 @@ visible = false
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 4 )
 animation = "Idle"
-frame = 3
+frame = 5
 playing = true
 
 [node name="Robot" type="AnimatedSprite" parent="Sprite"]
@@ -1803,7 +1803,7 @@ visible = false
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 5 )
 animation = "Shoot"
-frame = 3
+frame = 1
 playing = true
 
 [node name="Shoot" type="AnimatedSprite" parent="Sprite/Robot"]
@@ -1819,7 +1819,7 @@ visible = false
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 7 )
 animation = "Idle"
-frame = 6
+frame = 1
 playing = true
 
 [node name="Templerun_girl" type="AnimatedSprite" parent="Sprite"]
@@ -1829,7 +1829,7 @@ position = Vector2( 5, 0 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 8 )
 animation = "Shoot"
-frame = 1
+frame = 2
 playing = true
 
 [node name="Shoot" type="Sprite" parent="Sprite/Templerun_girl"]
@@ -1843,7 +1843,7 @@ position = Vector2( 30, 0 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 9 )
 animation = "Idle"
-frame = 1
+frame = 6
 playing = true
 
 [node name="Knight" type="AnimatedSprite" parent="Sprite"]
@@ -1852,7 +1852,7 @@ position = Vector2( 10, -5 )
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 10 )
 animation = "Idle"
-frame = 6
+frame = 1
 playing = true
 
 [node name="Jack" type="AnimatedSprite" parent="Sprite"]
@@ -1861,7 +1861,7 @@ position = Vector2( 6, -4 )
 scale = Vector2( 0.17, 0.17 )
 frames = SubResource( 11 )
 animation = "Idle"
-frame = 2
+frame = 7
 playing = true
 
 [node name="Ninja_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1870,7 +1870,7 @@ position = Vector2( 0, 5 )
 scale = Vector2( 0.27, 0.27 )
 frames = SubResource( 12 )
 animation = "Idle"
-frame = 8
+frame = 3
 playing = true
 
 [node name="Ninja_girl" type="AnimatedSprite" parent="Sprite"]
@@ -1878,6 +1878,7 @@ visible = false
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 13 )
 animation = "Idle"
+frame = 5
 playing = true
 
 [node name="Santa" type="AnimatedSprite" parent="Sprite"]
@@ -1886,7 +1887,7 @@ position = Vector2( 15, -7.5 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 14 )
 animation = "Idle"
-frame = 15
+frame = 6
 playing = true
 
 [node name="Zombie_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1895,7 +1896,7 @@ position = Vector2( 0, -5 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 15 )
 animation = "Jump"
-frame = 1
+frame = 3
 playing = true
 
 [node name="Zombie_girl" type="AnimatedSprite" parent="Sprite"]
@@ -1904,11 +1905,8 @@ position = Vector2( -10, -12 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 16 )
 animation = "Jump"
-frame = 5
+frame = 7
 playing = true
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( -2.39053, 1.65305 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Robot = SubResource( 17 )
@@ -1939,3 +1937,6 @@ texture = ExtResource( 873 )
 flip_h = true
 vframes = 10
 hframes = 4
+
+[node name="Camera2D2" type="Camera2D" parent="."]
+current = true
