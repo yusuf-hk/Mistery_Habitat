@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dead (3).png-9368a9c76f6aace3b7cbcf3d51b06857.stex"
+path="res://.import/Dead (3).png-ff94a9a049eebc330a3646386aae29c7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/dino/dead/Dead (3).png"
-dest_files=[ "res://.import/Dead (3).png-9368a9c76f6aace3b7cbcf3d51b06857.stex" ]
+source_file="res://assets/Player/Character/dino/dead/Dead (3).png"
+dest_files=[ "res://.import/Dead (3).png-ff94a9a049eebc330a3646386aae29c7.stex" ]
 
 [params]
 
