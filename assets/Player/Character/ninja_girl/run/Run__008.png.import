@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Run__008.png-602a573be790d283e87750d2dfe32453.stex"
+path="res://.import/Run__008.png-e17f91159470ec0576cd9c9dd98003f8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/ninja_girl/run/Run__008.png"
-dest_files=[ "res://.import/Run__008.png-602a573be790d283e87750d2dfe32453.stex" ]
+source_file="res://assets/Player/Character/ninja_girl/run/Run__008.png"
+dest_files=[ "res://.import/Run__008.png-e17f91159470ec0576cd9c9dd98003f8.stex" ]
 
 [params]
 

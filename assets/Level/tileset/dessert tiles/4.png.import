@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/4.png-7b0d1029899507d5f1840c04aa31ff5a.stex"
+path="res://.import/4.png-ec39c3a33a001eb43c304d1aa6da588e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Level/tileset/dessert tiles/4.png"
-dest_files=[ "res://.import/4.png-7b0d1029899507d5f1840c04aa31ff5a.stex" ]
+source_file="res://assets/Level/tileset/dessert tiles/4.png"
+dest_files=[ "res://.import/4.png-ec39c3a33a001eb43c304d1aa6da588e.stex" ]
 
 [params]
 

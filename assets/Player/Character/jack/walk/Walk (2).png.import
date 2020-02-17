@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Walk (2).png-e85087f3c7908000ac068a5b775815bb.stex"
+path="res://.import/Walk (2).png-481edb694e94ab171bccde2980d533af.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/jack/walk/Walk (2).png"
-dest_files=[ "res://.import/Walk (2).png-e85087f3c7908000ac068a5b775815bb.stex" ]
+source_file="res://assets/Player/Character/jack/walk/Walk (2).png"
+dest_files=[ "res://.import/Walk (2).png-481edb694e94ab171bccde2980d533af.stex" ]
 
 [params]
 

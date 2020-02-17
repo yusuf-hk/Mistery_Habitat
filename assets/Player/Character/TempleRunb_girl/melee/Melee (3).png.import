@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Melee (3).png-b6e0d04de3d3954cbd2ed2594a6c6fe6.stex"
+path="res://.import/Melee (3).png-8a451601ca797096684d33999598462a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/TempleRunb_girl/melee/Melee (3).png"
-dest_files=[ "res://.import/Melee (3).png-b6e0d04de3d3954cbd2ed2594a6c6fe6.stex" ]
+source_file="res://assets/Player/Character/TempleRunb_girl/melee/Melee (3).png"
+dest_files=[ "res://.import/Melee (3).png-8a451601ca797096684d33999598462a.stex" ]
 
 [params]
 

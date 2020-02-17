@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sign.png-c3add24587b2acb42c5ec723231cedf9.stex"
+path="res://.import/Sign.png-10f321fefd97da42a8edc888b94d52bb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Level/tileset/dessert tiles/Objects/Sign.png"
-dest_files=[ "res://.import/Sign.png-c3add24587b2acb42c5ec723231cedf9.stex" ]
+source_file="res://assets/Level/tileset/dessert tiles/Objects/Sign.png"
+dest_files=[ "res://.import/Sign.png-10f321fefd97da42a8edc888b94d52bb.stex" ]
 
 [params]
 

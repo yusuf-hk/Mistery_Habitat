@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Shoot (2).png-3c624a26520f2a80b56eccb135c21e77.stex"
+path="res://.import/Shoot (2).png-6be2601d270988a64775c64bb5df4e0e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/Robot/shoot/Shoot (2).png"
-dest_files=[ "res://.import/Shoot (2).png-3c624a26520f2a80b56eccb135c21e77.stex" ]
+source_file="res://assets/Player/Character/Robot/shoot/Shoot (2).png"
+dest_files=[ "res://.import/Shoot (2).png-6be2601d270988a64775c64bb5df4e0e.stex" ]
 
 [params]
 
