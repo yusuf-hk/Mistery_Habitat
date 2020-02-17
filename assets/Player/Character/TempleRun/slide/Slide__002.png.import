@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Slide__002.png-35b8bd387bd16f603e31c4fd211cf3f5.stex"
+path="res://.import/Slide__002.png-78de7fee9f513c64d0309e0e491534e1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/TempleRun/slide/Slide__002.png"
-dest_files=[ "res://.import/Slide__002.png-35b8bd387bd16f603e31c4fd211cf3f5.stex" ]
+source_file="res://Assets/Player/Character/TempleRun/slide/Slide__002.png"
+dest_files=[ "res://.import/Slide__002.png-78de7fee9f513c64d0309e0e491534e1.stex" ]
 
 [params]
 

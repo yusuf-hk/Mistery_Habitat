@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/JumpMelee (7).png-f6cc516475b15c4e8fa918d50a921d25.stex"
+path="res://.import/JumpMelee (7).png-228ed235bdf73f63eec9c0cdeb4c740c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/Robot/jumpmelee/JumpMelee (7).png"
-dest_files=[ "res://.import/JumpMelee (7).png-f6cc516475b15c4e8fa918d50a921d25.stex" ]
+source_file="res://Assets/Player/Character/Robot/jumpmelee/JumpMelee (7).png"
+dest_files=[ "res://.import/JumpMelee (7).png-228ed235bdf73f63eec9c0cdeb4c740c.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bow_0.png-b7264b30e9b6f1088162c3586767039f.stex"
+path="res://.import/bow_0.png-4d6b7694283278aec1c913ebf9f3c996.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Weapons/bow_0.png"
-dest_files=[ "res://.import/bow_0.png-b7264b30e9b6f1088162c3586767039f.stex" ]
+source_file="res://Assets/Player/Weapons/bow_0.png"
+dest_files=[ "res://.import/bow_0.png-4d6b7694283278aec1c913ebf9f3c996.stex" ]
 
 [params]
 

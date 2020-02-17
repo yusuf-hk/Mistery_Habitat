@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle__003.png-91463100e6efe942522197d911588ba5.stex"
+path="res://.import/Idle__003.png-8903c9eb80a4ac3a78b8173ad8c0061f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/ninja_boy/idle/Idle__003.png"
-dest_files=[ "res://.import/Idle__003.png-91463100e6efe942522197d911588ba5.stex" ]
+source_file="res://Assets/Player/Character/ninja_boy/idle/Idle__003.png"
+dest_files=[ "res://.import/Idle__003.png-8903c9eb80a4ac3a78b8173ad8c0061f.stex" ]
 
 [params]
 

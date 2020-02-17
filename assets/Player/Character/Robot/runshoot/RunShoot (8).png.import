@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RunShoot (8).png-bde78725f96fc3df3e499b28fc6c3e1e.stex"
+path="res://.import/RunShoot (8).png-a620bc214610f454ef59ca0368747885.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/Robot/runshoot/RunShoot (8).png"
-dest_files=[ "res://.import/RunShoot (8).png-bde78725f96fc3df3e499b28fc6c3e1e.stex" ]
+source_file="res://Assets/Player/Character/Robot/runshoot/RunShoot (8).png"
+dest_files=[ "res://.import/RunShoot (8).png-a620bc214610f454ef59ca0368747885.stex" ]
 
 [params]
 
