@@ -884,19 +884,24 @@ animations = [ {
 "name": "Jump",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 25.0
-}, {
 "frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ) ],
 "loop": true,
 "name": "Run",
 "speed": 30.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 25.0
 } ]
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
+"frames": [ ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 112 ) ],
+"loop": true,
+"name": "Run",
+"speed": 50.0
+}, {
 "frames": [ ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ) ],
 "loop": true,
 "name": "jump",
@@ -906,11 +911,6 @@ animations = [ {
 "loop": true,
 "name": "Idle",
 "speed": 25.0
-}, {
-"frames": [ ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 112 ) ],
-"loop": true,
-"name": "Run",
-"speed": 50.0
 } ]
 
 [sub_resource type="SpriteFrames" id=4]
@@ -920,19 +920,24 @@ animations = [ {
 "name": "Jump",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 123 ), ExtResource( 124 ), ExtResource( 125 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 129 ), ExtResource( 130 ), ExtResource( 131 ), ExtResource( 132 ) ],
+"frames": [ ExtResource( 141 ), ExtResource( 142 ), ExtResource( 143 ), ExtResource( 144 ), ExtResource( 145 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 148 ) ],
 "loop": true,
-"name": "Idle",
-"speed": 20.0
+"name": "Melee",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 133 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 136 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 139 ), ExtResource( 140 ) ],
 "loop": true,
 "name": "Run",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 141 ), ExtResource( 142 ), ExtResource( 143 ), ExtResource( 144 ), ExtResource( 145 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 148 ) ],
+"frames": [ ExtResource( 123 ), ExtResource( 124 ), ExtResource( 125 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 129 ), ExtResource( 130 ), ExtResource( 131 ), ExtResource( 132 ) ],
 "loop": true,
-"name": "Melee",
+"name": "Idle",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 158 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 161 ) ],
+"loop": true,
+"name": "Shoot",
 "speed": 10.0
 }, {
 "frames": [ ExtResource( 149 ), ExtResource( 150 ), ExtResource( 151 ), ExtResource( 152 ), ExtResource( 153 ), ExtResource( 154 ), ExtResource( 155 ), ExtResource( 156 ), ExtResource( 157 ) ],
@@ -940,15 +945,10 @@ animations = [ {
 "name": "Run_shoot",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 158 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 161 ) ],
+"frames": [ ExtResource( 185 ), ExtResource( 186 ), ExtResource( 187 ), ExtResource( 188 ), ExtResource( 189 ), ExtResource( 190 ), ExtResource( 191 ), ExtResource( 192 ), ExtResource( 193 ), ExtResource( 194 ) ],
 "loop": true,
-"name": "Shoot",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 162 ), ExtResource( 163 ), ExtResource( 164 ), ExtResource( 165 ), ExtResource( 166 ), ExtResource( 167 ), ExtResource( 168 ), ExtResource( 169 ), ExtResource( 170 ), ExtResource( 171 ) ],
-"loop": true,
-"name": "Slide",
-"speed": 10.0
+"name": "Dead",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 172 ), ExtResource( 173 ), ExtResource( 174 ), ExtResource( 175 ), ExtResource( 176 ), ExtResource( 177 ), ExtResource( 178 ), ExtResource( 179 ) ],
 "loop": true,
@@ -960,10 +960,10 @@ animations = [ {
 "name": "Jump_shoot",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 185 ), ExtResource( 186 ), ExtResource( 187 ), ExtResource( 188 ), ExtResource( 189 ), ExtResource( 190 ), ExtResource( 191 ), ExtResource( 192 ), ExtResource( 193 ), ExtResource( 194 ) ],
+"frames": [ ExtResource( 162 ), ExtResource( 163 ), ExtResource( 164 ), ExtResource( 165 ), ExtResource( 166 ), ExtResource( 167 ), ExtResource( 168 ), ExtResource( 169 ), ExtResource( 170 ), ExtResource( 171 ) ],
 "loop": true,
-"name": "Dead",
-"speed": 5.0
+"name": "Slide",
+"speed": 10.0
 } ]
 
 [sub_resource type="SpriteFrames" id=5]
@@ -981,25 +981,25 @@ animations = [ {
 "name": "Jump",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 209 ), ExtResource( 210 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 213 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 216 ), ExtResource( 217 ), ExtResource( 218 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 15.0
-}, {
 "frames": [ ExtResource( 219 ), ExtResource( 220 ), ExtResource( 221 ), ExtResource( 222 ), ExtResource( 223 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 227 ), ExtResource( 228 ) ],
 "loop": true,
 "name": "Run",
 "speed": 20.0
 }, {
-"frames": [ ExtResource( 229 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 232 ), ExtResource( 233 ), ExtResource( 234 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 237 ), ExtResource( 238 ) ],
+"frames": [ ExtResource( 209 ), ExtResource( 210 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 213 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 216 ), ExtResource( 217 ), ExtResource( 218 ) ],
 "loop": true,
-"name": "Slide",
+"name": "Idle",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 239 ), ExtResource( 240 ), ExtResource( 241 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 244 ), ExtResource( 245 ), ExtResource( 246 ), ExtResource( 247 ), ExtResource( 248 ) ],
 "loop": true,
 "name": "Dead",
 "speed": 10.0
+}, {
+"frames": [ ExtResource( 229 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 232 ), ExtResource( 233 ), ExtResource( 234 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 237 ), ExtResource( 238 ) ],
+"loop": true,
+"name": "Slide",
+"speed": 15.0
 } ]
 
 [sub_resource type="SpriteFrames" id=7]
@@ -1009,9 +1009,9 @@ animations = [ {
 "name": "Jump",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 259 ), ExtResource( 260 ), ExtResource( 261 ), ExtResource( 262 ), ExtResource( 263 ), ExtResource( 264 ), ExtResource( 265 ), ExtResource( 266 ), ExtResource( 267 ), ExtResource( 268 ) ],
+"frames": [ ExtResource( 277 ), ExtResource( 278 ), ExtResource( 279 ), ExtResource( 280 ), ExtResource( 281 ), ExtResource( 282 ), ExtResource( 283 ) ],
 "loop": true,
-"name": "Idle",
+"name": "Melee",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 269 ), ExtResource( 270 ), ExtResource( 271 ), ExtResource( 272 ), ExtResource( 273 ), ExtResource( 274 ), ExtResource( 275 ), ExtResource( 276 ) ],
@@ -1019,9 +1019,9 @@ animations = [ {
 "name": "Run",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 277 ), ExtResource( 278 ), ExtResource( 279 ), ExtResource( 280 ), ExtResource( 281 ), ExtResource( 282 ), ExtResource( 283 ) ],
+"frames": [ ExtResource( 259 ), ExtResource( 260 ), ExtResource( 261 ), ExtResource( 262 ), ExtResource( 263 ), ExtResource( 264 ), ExtResource( 265 ), ExtResource( 266 ), ExtResource( 267 ), ExtResource( 268 ) ],
 "loop": true,
-"name": "Melee",
+"name": "Idle",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 284 ), ExtResource( 285 ), ExtResource( 286 ) ],
@@ -1029,15 +1029,15 @@ animations = [ {
 "name": "Shoot",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 287 ), ExtResource( 288 ), ExtResource( 289 ), ExtResource( 290 ), ExtResource( 291 ) ],
-"loop": true,
-"name": "Slide",
-"speed": 10.0
-}, {
 "frames": [ ExtResource( 292 ), ExtResource( 293 ), ExtResource( 294 ), ExtResource( 295 ), ExtResource( 296 ), ExtResource( 297 ), ExtResource( 298 ), ExtResource( 299 ), ExtResource( 300 ), ExtResource( 301 ) ],
 "loop": true,
 "name": "Dead",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 287 ), ExtResource( 288 ), ExtResource( 289 ), ExtResource( 290 ), ExtResource( 291 ) ],
+"loop": true,
+"name": "Slide",
+"speed": 10.0
 } ]
 
 [sub_resource type="SpriteFrames" id=8]
@@ -1047,25 +1047,25 @@ animations = [ {
 "name": "Jump",
 "speed": 10.0
 }, {
+"frames": [ ExtResource( 325 ), ExtResource( 326 ), ExtResource( 327 ), ExtResource( 328 ), ExtResource( 329 ), ExtResource( 330 ), ExtResource( 331 ), ExtResource( 332 ) ],
+"loop": true,
+"name": "Run",
+"speed": 15.0
+}, {
 "frames": [ ExtResource( 315 ), ExtResource( 316 ), ExtResource( 317 ), ExtResource( 318 ), ExtResource( 319 ), ExtResource( 320 ), ExtResource( 321 ), ExtResource( 322 ), ExtResource( 323 ), ExtResource( 324 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 325 ), ExtResource( 326 ), ExtResource( 327 ), ExtResource( 328 ), ExtResource( 329 ), ExtResource( 330 ), ExtResource( 331 ), ExtResource( 332 ) ],
+"frames": [ ExtResource( 343 ), ExtResource( 344 ), ExtResource( 345 ), ExtResource( 346 ), ExtResource( 347 ), ExtResource( 348 ), ExtResource( 349 ), ExtResource( 350 ) ],
 "loop": true,
-"name": "Run",
+"name": "Dead",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 333 ), ExtResource( 334 ), ExtResource( 335 ), ExtResource( 336 ), ExtResource( 337 ), ExtResource( 338 ), ExtResource( 339 ), ExtResource( 340 ), ExtResource( 341 ), ExtResource( 342 ) ],
 "loop": true,
 "name": "Walk",
 "speed": 10.0
-}, {
-"frames": [ ExtResource( 343 ), ExtResource( 344 ), ExtResource( 345 ), ExtResource( 346 ), ExtResource( 347 ), ExtResource( 348 ), ExtResource( 349 ), ExtResource( 350 ) ],
-"loop": true,
-"name": "Dead",
-"speed": 15.0
 } ]
 
 [sub_resource type="SpriteFrames" id=9]
@@ -1075,15 +1075,20 @@ animations = [ {
 "name": "Jump",
 "speed": 10.0
 }, {
+"frames": [ ExtResource( 371 ), ExtResource( 372 ), ExtResource( 373 ), ExtResource( 374 ), ExtResource( 375 ), ExtResource( 376 ), ExtResource( 377 ), ExtResource( 378 ), ExtResource( 379 ), ExtResource( 380 ) ],
+"loop": true,
+"name": "Run",
+"speed": 15.0
+}, {
 "frames": [ ExtResource( 361 ), ExtResource( 362 ), ExtResource( 363 ), ExtResource( 364 ), ExtResource( 365 ), ExtResource( 366 ), ExtResource( 367 ), ExtResource( 368 ), ExtResource( 369 ), ExtResource( 370 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 371 ), ExtResource( 372 ), ExtResource( 373 ), ExtResource( 374 ), ExtResource( 375 ), ExtResource( 376 ), ExtResource( 377 ), ExtResource( 378 ), ExtResource( 379 ), ExtResource( 380 ) ],
+"frames": [ ExtResource( 401 ), ExtResource( 402 ), ExtResource( 403 ), ExtResource( 404 ), ExtResource( 405 ), ExtResource( 406 ), ExtResource( 407 ), ExtResource( 408 ), ExtResource( 409 ), ExtResource( 410 ) ],
 "loop": true,
-"name": "Run",
-"speed": 15.0
+"name": "Dead",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 381 ), ExtResource( 382 ), ExtResource( 383 ), ExtResource( 384 ), ExtResource( 385 ), ExtResource( 386 ), ExtResource( 387 ), ExtResource( 388 ), ExtResource( 389 ), ExtResource( 390 ) ],
 "loop": true,
@@ -1094,11 +1099,6 @@ animations = [ {
 "loop": true,
 "name": "Attack",
 "speed": 15.0
-}, {
-"frames": [ ExtResource( 401 ), ExtResource( 402 ), ExtResource( 403 ), ExtResource( 404 ), ExtResource( 405 ), ExtResource( 406 ), ExtResource( 407 ), ExtResource( 408 ), ExtResource( 409 ), ExtResource( 410 ) ],
-"loop": true,
-"name": "Dead",
-"speed": 10.0
 }, {
 "frames": [ ExtResource( 411 ), ExtResource( 412 ), ExtResource( 413 ), ExtResource( 414 ), ExtResource( 415 ), ExtResource( 416 ), ExtResource( 417 ), ExtResource( 418 ), ExtResource( 419 ), ExtResource( 420 ) ],
 "loop": true,
@@ -1113,15 +1113,20 @@ animations = [ {
 "name": "Jump",
 "speed": 10.0
 }, {
+"frames": [ ExtResource( 441 ), ExtResource( 442 ), ExtResource( 443 ), ExtResource( 444 ), ExtResource( 445 ), ExtResource( 446 ), ExtResource( 447 ), ExtResource( 448 ) ],
+"loop": true,
+"name": "Run",
+"speed": 13.0
+}, {
 "frames": [ ExtResource( 431 ), ExtResource( 432 ), ExtResource( 433 ), ExtResource( 434 ), ExtResource( 435 ), ExtResource( 436 ), ExtResource( 437 ), ExtResource( 438 ), ExtResource( 439 ), ExtResource( 440 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 441 ), ExtResource( 442 ), ExtResource( 443 ), ExtResource( 444 ), ExtResource( 445 ), ExtResource( 446 ), ExtResource( 447 ), ExtResource( 448 ) ],
+"frames": [ ExtResource( 469 ), ExtResource( 470 ), ExtResource( 471 ), ExtResource( 472 ), ExtResource( 473 ), ExtResource( 474 ), ExtResource( 475 ), ExtResource( 476 ), ExtResource( 477 ), ExtResource( 478 ) ],
 "loop": true,
-"name": "Run",
-"speed": 13.0
+"name": "Dead",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 449 ), ExtResource( 450 ), ExtResource( 451 ), ExtResource( 452 ), ExtResource( 453 ), ExtResource( 454 ), ExtResource( 455 ), ExtResource( 456 ), ExtResource( 457 ), ExtResource( 458 ) ],
 "loop": true,
@@ -1132,43 +1137,38 @@ animations = [ {
 "loop": true,
 "name": "Slide",
 "speed": 10.0
-}, {
-"frames": [ ExtResource( 469 ), ExtResource( 470 ), ExtResource( 471 ), ExtResource( 472 ), ExtResource( 473 ), ExtResource( 474 ), ExtResource( 475 ), ExtResource( 476 ), ExtResource( 477 ), ExtResource( 478 ) ],
-"loop": true,
-"name": "Dead",
-"speed": 10.0
 } ]
 
 [sub_resource type="SpriteFrames" id=11]
 animations = [ {
+"frames": [ ExtResource( 579 ), ExtResource( 580 ), ExtResource( 581 ), ExtResource( 582 ), ExtResource( 583 ), ExtResource( 584 ), ExtResource( 585 ), ExtResource( 586 ), ExtResource( 587 ), ExtResource( 588 ) ],
+"loop": true,
+"name": "Glide",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 569 ), ExtResource( 570 ), ExtResource( 571 ), ExtResource( 572 ), ExtResource( 573 ), ExtResource( 574 ), ExtResource( 575 ), ExtResource( 576 ), ExtResource( 577 ), ExtResource( 578 ) ],
+"loop": true,
+"name": "Climb",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 549 ), ExtResource( 550 ), ExtResource( 551 ), ExtResource( 552 ), ExtResource( 553 ), ExtResource( 554 ), ExtResource( 555 ), ExtResource( 556 ), ExtResource( 557 ), ExtResource( 558 ) ],
+"loop": true,
+"name": "Throw",
+"speed": 15.0
+}, {
 "frames": [ ExtResource( 479 ), ExtResource( 480 ), ExtResource( 481 ), ExtResource( 482 ), ExtResource( 483 ), ExtResource( 484 ), ExtResource( 485 ), ExtResource( 486 ), ExtResource( 487 ), ExtResource( 488 ) ],
 "loop": true,
 "name": "Jump",
 "speed": 10.0
-}, {
-"frames": [ ExtResource( 489 ), ExtResource( 490 ), ExtResource( 491 ), ExtResource( 492 ), ExtResource( 493 ), ExtResource( 494 ), ExtResource( 495 ), ExtResource( 496 ), ExtResource( 497 ), ExtResource( 498 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 15.0
 }, {
 "frames": [ ExtResource( 499 ), ExtResource( 500 ), ExtResource( 501 ), ExtResource( 502 ), ExtResource( 503 ), ExtResource( 504 ), ExtResource( 505 ), ExtResource( 506 ), ExtResource( 507 ), ExtResource( 508 ) ],
 "loop": true,
 "name": "Run",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 509 ), ExtResource( 510 ), ExtResource( 511 ), ExtResource( 512 ), ExtResource( 513 ), ExtResource( 514 ), ExtResource( 515 ), ExtResource( 516 ), ExtResource( 517 ), ExtResource( 518 ) ],
+"frames": [ ExtResource( 489 ), ExtResource( 490 ), ExtResource( 491 ), ExtResource( 492 ), ExtResource( 493 ), ExtResource( 494 ), ExtResource( 495 ), ExtResource( 496 ), ExtResource( 497 ), ExtResource( 498 ) ],
 "loop": true,
-"name": "Jump_throw",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 519 ), ExtResource( 520 ), ExtResource( 521 ), ExtResource( 522 ), ExtResource( 523 ), ExtResource( 524 ), ExtResource( 525 ), ExtResource( 526 ), ExtResource( 527 ), ExtResource( 528 ) ],
-"loop": true,
-"name": "Attack",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 529 ), ExtResource( 530 ), ExtResource( 531 ), ExtResource( 532 ), ExtResource( 533 ), ExtResource( 534 ), ExtResource( 535 ), ExtResource( 536 ), ExtResource( 537 ), ExtResource( 538 ) ],
-"loop": true,
-"name": "Slide",
+"name": "Idle",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 539 ), ExtResource( 540 ), ExtResource( 541 ), ExtResource( 542 ), ExtResource( 543 ), ExtResource( 544 ), ExtResource( 545 ), ExtResource( 546 ), ExtResource( 547 ), ExtResource( 548 ) ],
@@ -1176,72 +1176,32 @@ animations = [ {
 "name": "Dead",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 549 ), ExtResource( 550 ), ExtResource( 551 ), ExtResource( 552 ), ExtResource( 553 ), ExtResource( 554 ), ExtResource( 555 ), ExtResource( 556 ), ExtResource( 557 ), ExtResource( 558 ) ],
+"frames": [ ExtResource( 509 ), ExtResource( 510 ), ExtResource( 511 ), ExtResource( 512 ), ExtResource( 513 ), ExtResource( 514 ), ExtResource( 515 ), ExtResource( 516 ), ExtResource( 517 ), ExtResource( 518 ) ],
 "loop": true,
-"name": "Throw",
+"name": "Jump_throw",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 529 ), ExtResource( 530 ), ExtResource( 531 ), ExtResource( 532 ), ExtResource( 533 ), ExtResource( 534 ), ExtResource( 535 ), ExtResource( 536 ), ExtResource( 537 ), ExtResource( 538 ) ],
+"loop": true,
+"name": "Slide",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 519 ), ExtResource( 520 ), ExtResource( 521 ), ExtResource( 522 ), ExtResource( 523 ), ExtResource( 524 ), ExtResource( 525 ), ExtResource( 526 ), ExtResource( 527 ), ExtResource( 528 ) ],
+"loop": true,
+"name": "Attack",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 559 ), ExtResource( 560 ), ExtResource( 561 ), ExtResource( 562 ), ExtResource( 563 ), ExtResource( 564 ), ExtResource( 565 ), ExtResource( 566 ), ExtResource( 567 ), ExtResource( 568 ) ],
 "loop": true,
 "name": "Jump_attack",
 "speed": 15.0
-}, {
-"frames": [ ExtResource( 569 ), ExtResource( 570 ), ExtResource( 571 ), ExtResource( 572 ), ExtResource( 573 ), ExtResource( 574 ), ExtResource( 575 ), ExtResource( 576 ), ExtResource( 577 ), ExtResource( 578 ) ],
-"loop": true,
-"name": "Climb",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 579 ), ExtResource( 580 ), ExtResource( 581 ), ExtResource( 582 ), ExtResource( 583 ), ExtResource( 584 ), ExtResource( 585 ), ExtResource( 586 ), ExtResource( 587 ), ExtResource( 588 ) ],
-"loop": true,
-"name": "Glide",
-"speed": 10.0
 } ]
 
 [sub_resource type="SpriteFrames" id=12]
 animations = [ {
-"frames": [ ExtResource( 589 ), ExtResource( 590 ), ExtResource( 591 ), ExtResource( 592 ), ExtResource( 593 ), ExtResource( 594 ), ExtResource( 595 ), ExtResource( 596 ), ExtResource( 597 ), ExtResource( 598 ) ],
+"frames": [ ExtResource( 689 ), ExtResource( 690 ), ExtResource( 691 ), ExtResource( 692 ), ExtResource( 693 ), ExtResource( 694 ), ExtResource( 695 ), ExtResource( 696 ), ExtResource( 697 ) ],
 "loop": true,
-"name": "Jump",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 599 ), ExtResource( 600 ), ExtResource( 601 ), ExtResource( 602 ), ExtResource( 603 ), ExtResource( 604 ), ExtResource( 605 ), ExtResource( 606 ), ExtResource( 607 ), ExtResource( 608 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 609 ), ExtResource( 610 ), ExtResource( 611 ), ExtResource( 612 ), ExtResource( 613 ), ExtResource( 614 ), ExtResource( 615 ), ExtResource( 616 ), ExtResource( 617 ), ExtResource( 618 ) ],
-"loop": true,
-"name": "Run",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 619 ), ExtResource( 620 ), ExtResource( 621 ), ExtResource( 622 ), ExtResource( 623 ), ExtResource( 624 ), ExtResource( 625 ), ExtResource( 626 ), ExtResource( 627 ), ExtResource( 628 ) ],
-"loop": true,
-"name": "Jump_throw",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 629 ), ExtResource( 630 ), ExtResource( 631 ), ExtResource( 632 ), ExtResource( 633 ), ExtResource( 634 ), ExtResource( 635 ), ExtResource( 636 ), ExtResource( 637 ), ExtResource( 638 ) ],
-"loop": true,
-"name": "Attack",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 639 ), ExtResource( 640 ), ExtResource( 641 ), ExtResource( 642 ), ExtResource( 643 ), ExtResource( 644 ), ExtResource( 645 ), ExtResource( 646 ), ExtResource( 647 ), ExtResource( 648 ) ],
-"loop": true,
-"name": "Slide",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 649 ), ExtResource( 650 ), ExtResource( 651 ), ExtResource( 652 ), ExtResource( 653 ), ExtResource( 654 ), ExtResource( 655 ), ExtResource( 656 ), ExtResource( 657 ), ExtResource( 658 ) ],
-"loop": true,
-"name": "Dead",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 659 ), ExtResource( 660 ), ExtResource( 661 ), ExtResource( 662 ), ExtResource( 663 ), ExtResource( 664 ), ExtResource( 665 ), ExtResource( 666 ), ExtResource( 667 ), ExtResource( 668 ) ],
-"loop": true,
-"name": "Throw",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 669 ), ExtResource( 670 ), ExtResource( 671 ), ExtResource( 672 ), ExtResource( 673 ), ExtResource( 674 ), ExtResource( 675 ), ExtResource( 676 ), ExtResource( 677 ), ExtResource( 678 ) ],
-"loop": true,
-"name": "Jump_attack",
+"name": "Glide",
 "speed": 10.0
 }, {
 "frames": [ ExtResource( 679 ), ExtResource( 680 ), ExtResource( 681 ), ExtResource( 682 ), ExtResource( 683 ), ExtResource( 684 ), ExtResource( 685 ), ExtResource( 686 ), ExtResource( 687 ), ExtResource( 688 ) ],
@@ -1249,9 +1209,49 @@ animations = [ {
 "name": "Climb",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 689 ), ExtResource( 690 ), ExtResource( 691 ), ExtResource( 692 ), ExtResource( 693 ), ExtResource( 694 ), ExtResource( 695 ), ExtResource( 696 ), ExtResource( 697 ) ],
+"frames": [ ExtResource( 659 ), ExtResource( 660 ), ExtResource( 661 ), ExtResource( 662 ), ExtResource( 663 ), ExtResource( 664 ), ExtResource( 665 ), ExtResource( 666 ), ExtResource( 667 ), ExtResource( 668 ) ],
 "loop": true,
-"name": "Glide",
+"name": "Throw",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 589 ), ExtResource( 590 ), ExtResource( 591 ), ExtResource( 592 ), ExtResource( 593 ), ExtResource( 594 ), ExtResource( 595 ), ExtResource( 596 ), ExtResource( 597 ), ExtResource( 598 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 609 ), ExtResource( 610 ), ExtResource( 611 ), ExtResource( 612 ), ExtResource( 613 ), ExtResource( 614 ), ExtResource( 615 ), ExtResource( 616 ), ExtResource( 617 ), ExtResource( 618 ) ],
+"loop": true,
+"name": "Run",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 599 ), ExtResource( 600 ), ExtResource( 601 ), ExtResource( 602 ), ExtResource( 603 ), ExtResource( 604 ), ExtResource( 605 ), ExtResource( 606 ), ExtResource( 607 ), ExtResource( 608 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 649 ), ExtResource( 650 ), ExtResource( 651 ), ExtResource( 652 ), ExtResource( 653 ), ExtResource( 654 ), ExtResource( 655 ), ExtResource( 656 ), ExtResource( 657 ), ExtResource( 658 ) ],
+"loop": true,
+"name": "Dead",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 619 ), ExtResource( 620 ), ExtResource( 621 ), ExtResource( 622 ), ExtResource( 623 ), ExtResource( 624 ), ExtResource( 625 ), ExtResource( 626 ), ExtResource( 627 ), ExtResource( 628 ) ],
+"loop": true,
+"name": "Jump_throw",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 639 ), ExtResource( 640 ), ExtResource( 641 ), ExtResource( 642 ), ExtResource( 643 ), ExtResource( 644 ), ExtResource( 645 ), ExtResource( 646 ), ExtResource( 647 ), ExtResource( 648 ) ],
+"loop": true,
+"name": "Slide",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 629 ), ExtResource( 630 ), ExtResource( 631 ), ExtResource( 632 ), ExtResource( 633 ), ExtResource( 634 ), ExtResource( 635 ), ExtResource( 636 ), ExtResource( 637 ), ExtResource( 638 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 669 ), ExtResource( 670 ), ExtResource( 671 ), ExtResource( 672 ), ExtResource( 673 ), ExtResource( 674 ), ExtResource( 675 ), ExtResource( 676 ), ExtResource( 677 ), ExtResource( 678 ) ],
+"loop": true,
+"name": "Jump_attack",
 "speed": 10.0
 } ]
 
@@ -1262,15 +1262,20 @@ animations = [ {
 "name": "Jump",
 "speed": 10.0
 }, {
+"frames": [ ExtResource( 730 ), ExtResource( 731 ), ExtResource( 732 ), ExtResource( 733 ), ExtResource( 734 ), ExtResource( 735 ), ExtResource( 736 ), ExtResource( 737 ), ExtResource( 738 ), ExtResource( 739 ) ],
+"loop": true,
+"name": "Run",
+"speed": 15.0
+}, {
 "frames": [ ExtResource( 714 ), ExtResource( 715 ), ExtResource( 716 ), ExtResource( 717 ), ExtResource( 718 ), ExtResource( 719 ), ExtResource( 720 ), ExtResource( 721 ), ExtResource( 722 ), ExtResource( 723 ), ExtResource( 724 ), ExtResource( 725 ), ExtResource( 726 ), ExtResource( 727 ), ExtResource( 728 ), ExtResource( 729 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 730 ), ExtResource( 731 ), ExtResource( 732 ), ExtResource( 733 ), ExtResource( 734 ), ExtResource( 735 ), ExtResource( 736 ), ExtResource( 737 ), ExtResource( 738 ), ExtResource( 739 ) ],
+"frames": [ ExtResource( 764 ), ExtResource( 765 ), ExtResource( 766 ), ExtResource( 767 ), ExtResource( 768 ), ExtResource( 769 ), ExtResource( 770 ), ExtResource( 771 ), ExtResource( 772 ), ExtResource( 773 ), ExtResource( 774 ), ExtResource( 775 ), ExtResource( 776 ), ExtResource( 777 ), ExtResource( 778 ), ExtResource( 779 ), ExtResource( 780 ) ],
 "loop": true,
-"name": "Run",
-"speed": 15.0
+"name": "Dead",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 740 ), ExtResource( 741 ), ExtResource( 742 ), ExtResource( 743 ), ExtResource( 744 ), ExtResource( 745 ), ExtResource( 746 ), ExtResource( 747 ), ExtResource( 748 ), ExtResource( 749 ), ExtResource( 750 ), ExtResource( 751 ), ExtResource( 752 ) ],
 "loop": true,
@@ -1281,11 +1286,6 @@ animations = [ {
 "loop": true,
 "name": "Slide",
 "speed": 10.0
-}, {
-"frames": [ ExtResource( 764 ), ExtResource( 765 ), ExtResource( 766 ), ExtResource( 767 ), ExtResource( 768 ), ExtResource( 769 ), ExtResource( 770 ), ExtResource( 771 ), ExtResource( 772 ), ExtResource( 773 ), ExtResource( 774 ), ExtResource( 775 ), ExtResource( 776 ), ExtResource( 777 ), ExtResource( 778 ), ExtResource( 779 ), ExtResource( 780 ) ],
-"loop": true,
-"name": "Dead",
-"speed": 10.0
 } ]
 
 [sub_resource type="SpriteFrames" id=14]
@@ -1295,15 +1295,15 @@ animations = [ {
 "name": "Jump",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 789 ), ExtResource( 790 ), ExtResource( 791 ), ExtResource( 792 ), ExtResource( 793 ), ExtResource( 794 ), ExtResource( 795 ), ExtResource( 796 ), ExtResource( 797 ), ExtResource( 798 ), ExtResource( 799 ), ExtResource( 800 ), ExtResource( 801 ), ExtResource( 802 ), ExtResource( 803 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 15.0
-}, {
 "frames": [ ExtResource( 804 ), ExtResource( 805 ), ExtResource( 806 ), ExtResource( 807 ), ExtResource( 808 ), ExtResource( 809 ), ExtResource( 810 ), ExtResource( 811 ), ExtResource( 812 ), ExtResource( 813 ) ],
 "loop": true,
 "name": "Run",
 "speed": 10.0
+}, {
+"frames": [ ExtResource( 789 ), ExtResource( 790 ), ExtResource( 791 ), ExtResource( 792 ), ExtResource( 793 ), ExtResource( 794 ), ExtResource( 795 ), ExtResource( 796 ), ExtResource( 797 ), ExtResource( 798 ), ExtResource( 799 ), ExtResource( 800 ), ExtResource( 801 ), ExtResource( 802 ), ExtResource( 803 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 15.0
 }, {
 "frames": [ ExtResource( 814 ), ExtResource( 815 ), ExtResource( 816 ), ExtResource( 817 ), ExtResource( 818 ), ExtResource( 819 ), ExtResource( 820 ), ExtResource( 821 ), ExtResource( 822 ), ExtResource( 823 ), ExtResource( 824 ), ExtResource( 825 ) ],
 "loop": true,
@@ -1318,15 +1318,15 @@ animations = [ {
 "name": "Jump",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 834 ), ExtResource( 835 ), ExtResource( 836 ), ExtResource( 837 ), ExtResource( 838 ), ExtResource( 839 ), ExtResource( 840 ), ExtResource( 841 ), ExtResource( 842 ), ExtResource( 843 ), ExtResource( 844 ), ExtResource( 845 ), ExtResource( 846 ), ExtResource( 847 ), ExtResource( 848 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 15.0
-}, {
 "frames": [ ExtResource( 849 ), ExtResource( 850 ), ExtResource( 851 ), ExtResource( 852 ), ExtResource( 853 ), ExtResource( 854 ), ExtResource( 855 ), ExtResource( 856 ), ExtResource( 857 ), ExtResource( 858 ) ],
 "loop": true,
 "name": "Run",
 "speed": 10.0
+}, {
+"frames": [ ExtResource( 834 ), ExtResource( 835 ), ExtResource( 836 ), ExtResource( 837 ), ExtResource( 838 ), ExtResource( 839 ), ExtResource( 840 ), ExtResource( 841 ), ExtResource( 842 ), ExtResource( 843 ), ExtResource( 844 ), ExtResource( 845 ), ExtResource( 846 ), ExtResource( 847 ), ExtResource( 848 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 15.0
 }, {
 "frames": [ ExtResource( 859 ), ExtResource( 860 ), ExtResource( 861 ), ExtResource( 862 ), ExtResource( 863 ), ExtResource( 864 ), ExtResource( 865 ), ExtResource( 866 ), ExtResource( 867 ), ExtResource( 868 ), ExtResource( 869 ), ExtResource( 870 ) ],
 "loop": true,
@@ -1446,14 +1446,14 @@ tracks/1/keys = {
 
 [sub_resource type="SpriteFrames" id=20]
 animations = [ {
-"frames": [ ExtResource( 871 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 5.0
-}, {
 "frames": [  ],
 "loop": true,
 "name": "Run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 871 ) ],
+"loop": true,
+"name": "Idle",
 "speed": 5.0
 }, {
 "frames": [  ],
@@ -1764,7 +1764,6 @@ z_index = -3
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-editor/display_folded = true
 scale = Vector2( 0.75, 0.75 )
 
 [node name="Boy" type="AnimatedSprite" parent="Sprite"]
@@ -1772,7 +1771,7 @@ position = Vector2( 50, 0 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 9
+frame = 2
 playing = true
 
 [node name="Girl" type="AnimatedSprite" parent="Sprite"]
@@ -1780,17 +1779,16 @@ visible = false
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 3 )
 animation = "Idle"
-frame = 2
+frame = 5
 playing = true
 
 [node name="Robot" type="AnimatedSprite" parent="Sprite"]
-editor/display_folded = true
 visible = false
 position = Vector2( 7.39707, -3.11456 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 4 )
 animation = "Idle"
-frame = 6
+frame = 4
 playing = true
 
 [node name="Shoot" type="AnimatedSprite" parent="Sprite/Robot"]
@@ -1798,7 +1796,7 @@ position = Vector2( 200, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 5 )
 animation = "Shoot"
-frame = 4
+frame = 3
 playing = true
 
 [node name="Templerun_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1807,17 +1805,15 @@ position = Vector2( 0, -4.28251 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 6 )
 animation = "Idle"
-frame = 6
 playing = true
 
 [node name="Templerun_girl" type="AnimatedSprite" parent="Sprite"]
-editor/display_folded = true
 visible = false
 position = Vector2( 12.7864, -4.28251 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 7 )
 animation = "Idle"
-frame = 3
+frame = 7
 playing = true
 
 [node name="Shoot" type="Sprite" parent="Sprite/Templerun_girl"]
@@ -1831,7 +1827,7 @@ position = Vector2( 38.565, -1.16796 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 8 )
 animation = "Idle"
-frame = 1
+frame = 5
 playing = true
 
 [node name="Knight" type="AnimatedSprite" parent="Sprite"]
@@ -1840,7 +1836,6 @@ position = Vector2( 14.6718, -5 )
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 9 )
 animation = "Idle"
-frame = 6
 playing = true
 
 [node name="Jack" type="AnimatedSprite" parent="Sprite"]
@@ -1849,7 +1844,7 @@ position = Vector2( 18.4582, -4 )
 scale = Vector2( 0.17, 0.17 )
 frames = SubResource( 10 )
 animation = "Idle"
-frame = 2
+frame = 6
 playing = true
 
 [node name="Ninja_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1858,7 +1853,7 @@ position = Vector2( 4.28251, -4.34367 )
 scale = Vector2( 0.27, 0.27 )
 frames = SubResource( 11 )
 animation = "Idle"
-frame = 8
+frame = 2
 playing = true
 
 [node name="Ninja_girl" type="AnimatedSprite" parent="Sprite"]
@@ -1867,6 +1862,7 @@ position = Vector2( 1.94659, -6.22912 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 12 )
 animation = "Idle"
+frame = 4
 playing = true
 
 [node name="Santa" type="AnimatedSprite" parent="Sprite"]
@@ -1875,7 +1871,7 @@ position = Vector2( 21.6184, -8.27864 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 13 )
 animation = "Idle"
-frame = 7
+frame = 9
 playing = true
 
 [node name="Zombie_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1884,7 +1880,7 @@ position = Vector2( 11.6796, -6.16796 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 14 )
 animation = "Idle"
-frame = 12
+frame = 11
 playing = true
 
 [node name="Zombie_girl" type="AnimatedSprite" parent="Sprite"]
@@ -1893,7 +1889,7 @@ position = Vector2( -1.43498, -14.3359 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 15 )
 animation = "Idle"
-frame = 2
+frame = 1
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -1910,7 +1906,6 @@ anims/Templerun_girl = SubResource( 18 )
 anims/Templerun_girl_left = SubResource( 19 )
 
 [node name="bow" type="AnimatedSprite" parent="."]
-editor/display_folded = true
 position = Vector2( 14.8875, 18.9917 )
 scale = Vector2( 0.5, 0.5 )
 z_index = 1

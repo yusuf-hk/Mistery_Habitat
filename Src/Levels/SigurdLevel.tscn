@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=2]
+[gd_scene load_steps=64 format=2]
 
 [ext_resource path="res://Assets/Forest/png/Tiles/5.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Forest/png/Tiles/18.png" type="Texture" id=2]
@@ -35,6 +35,9 @@
 [ext_resource path="res://src/Objects/Forrest Objects/Mushroom.tscn" type="PackedScene" id=33]
 [ext_resource path="res://src/Objects/Forrest Objects/Bush_lightGreen.tscn" type="PackedScene" id=34]
 [ext_resource path="res://src/Objects/Forrest Objects/Bushy_light.tscn" type="PackedScene" id=35]
+[ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=36]
+[ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=37]
+[ext_resource path="res://src/Tutorial/Tutorial.tscn" type="PackedScene" id=38]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -440,7 +443,11 @@ extents = Vector2( 40.4438, 26.3458 )
 4/z_index = 0
 
 [node name="Starting zone" type="Node2D"]
-position = Vector2( -3.59792, -438.376 )
+position = Vector2( -1084.49, -333.689 )
+
+[node name="Player" parent="." instance=ExtResource( 37 )]
+position = Vector2( 1340.04, 1829.32 )
+scale = Vector2( 0.6, 0.6 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
@@ -451,6 +458,7 @@ scale = Vector2( 1.02654, 0.798879 )
 texture = ExtResource( 23 )
 
 [node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 973.731, 1076.23 )
 scale = Vector2( 0.5, 0.5 )
 tile_set = SubResource( 21 )
 cell_size = Vector2( 128, 128 )
@@ -947,6 +955,7 @@ position = Vector2( 0, 0.596634 )
 shape = SubResource( 24 )
 
 [node name="walkthrough" type="TileMap" parent="."]
+position = Vector2( 973.777, 1076.22 )
 scale = Vector2( 0.5, 0.5 )
 z_index = -1
 tile_set = SubResource( 25 )
@@ -1023,46 +1032,55 @@ position = Vector2( 824.931, 1910.07 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 10 )
 
-[node name="Stone2" parent="." instance=ExtResource( 29 )]
+[node name="Objects" type="TileMap" parent="."]
+position = Vector2( 974.09, 1076.37 )
+format = 1
+
+[node name="Stone2" parent="Objects" instance=ExtResource( 29 )]
 position = Vector2( 2406.45, -68.7827 )
 scale = Vector2( 0.2, 0.2 )
 z_index = -2
 
-[node name="Stone" parent="." instance=ExtResource( 29 )]
+[node name="Stone" parent="Objects" instance=ExtResource( 29 )]
 position = Vector2( 2427.47, -73.7605 )
 scale = Vector2( 0.4, 0.4 )
 z_index = -1
 
-[node name="Mushroom" parent="." instance=ExtResource( 33 )]
+[node name="Mushroom" parent="Objects" instance=ExtResource( 33 )]
 position = Vector2( 1233.08, 955.14 )
 scale = Vector2( 0.25, 0.25 )
 
-[node name="Mushroom2" parent="." instance=ExtResource( 33 )]
+[node name="Mushroom2" parent="Objects" instance=ExtResource( 33 )]
 position = Vector2( 1225.14, 956.536 )
 scale = Vector2( 0.12, 0.17 )
 
-[node name="Mushroom3" parent="." instance=ExtResource( 33 )]
+[node name="Mushroom3" parent="Objects" instance=ExtResource( 33 )]
 position = Vector2( 1220.6, 957.64 )
 scale = Vector2( 0.12, 0.12 )
 z_index = -1
 
-[node name="Bush" parent="." instance=ExtResource( 28 )]
+[node name="Bush" parent="Objects" instance=ExtResource( 28 )]
 position = Vector2( 2083.09, -80.131 )
 scale = Vector2( 0.5, 0.5 )
 z_index = -1
 
-[node name="Diamonds" parent="." instance=ExtResource( 30 )]
+[node name="Diamonds" parent="Objects" instance=ExtResource( 30 )]
 position = Vector2( 2179.34, -81.402 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Coins3" parent="." instance=ExtResource( 31 )]
+[node name="Coins3" parent="Objects" instance=ExtResource( 31 )]
 position = Vector2( 2110.42, -95.2503 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Coins2" parent="." instance=ExtResource( 31 )]
+[node name="Coins2" parent="Objects" instance=ExtResource( 31 )]
 position = Vector2( 2128.39, -95.4922 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Coins" parent="." instance=ExtResource( 31 )]
+[node name="Coins" parent="Objects" instance=ExtResource( 31 )]
 position = Vector2( 2145.76, -95.7229 )
 scale = Vector2( 0.5, 0.5 )
+
+[node name="Portal2D" parent="." instance=ExtResource( 36 )]
+position = Vector2( 3185.99, 1579.07 )
+scale = Vector2( 0.25, 0.25 )
+next_scene = ExtResource( 38 )
