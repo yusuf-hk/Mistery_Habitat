@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dead (23).png-a67c8997a3f7259cbdc3449fc55b04e7.stex"
+path="res://.import/Dead (23).png-2a8c0711d9a1879d80abb449861b78e4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/Girl/Dead (23).png"
-dest_files=[ "res://.import/Dead (23).png-a67c8997a3f7259cbdc3449fc55b04e7.stex" ]
+source_file="res://assets/Player/Character/Girl/Dead (23).png"
+dest_files=[ "res://.import/Dead (23).png-2a8c0711d9a1879d80abb449861b78e4.stex" ]
 
 [params]
 

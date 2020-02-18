@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Jump (3).png-3ede74018d8c2576c1876e5175b12edc.stex"
+path="res://.import/Jump (3).png-b3360098270241205fdfc236f4c3366a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/Boy/Jump (3).png"
-dest_files=[ "res://.import/Jump (3).png-3ede74018d8c2576c1876e5175b12edc.stex" ]
+source_file="res://assets/Player/Character/Boy/Jump (3).png"
+dest_files=[ "res://.import/Jump (3).png-b3360098270241205fdfc236f4c3366a.stex" ]
 
 [params]
 
