@@ -1,0 +1,59 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://src/Actors/Brown bear.gd" type="Script" id=1]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_000.png" type="Texture" id=2]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_001.png" type="Texture" id=3]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_002.png" type="Texture" id=4]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_003.png" type="Texture" id=5]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_004.png" type="Texture" id=6]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_005.png" type="Texture" id=7]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_006.png" type="Texture" id=8]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_007.png" type="Texture" id=9]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_008.png" type="Texture" id=10]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_009.png" type="Texture" id=11]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_010.png" type="Texture" id=12]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_011.png" type="Texture" id=13]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_012.png" type="Texture" id=14]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_013.png" type="Texture" id=15]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_014.png" type="Texture" id=16]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_015.png" type="Texture" id=17]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_016.png" type="Texture" id=18]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_017.png" type="Texture" id=19]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_018.png" type="Texture" id=20]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_019.png" type="Texture" id=21]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_020.png" type="Texture" id=22]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_021.png" type="Texture" id=23]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_022.png" type="Texture" id=24]
+[ext_resource path="res://assets/Animals/Brown Bear/Walk on 4 paws/1_023.png" type="Texture" id=25]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 12.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 325.909, 230.048 )
+
+[node name="Brown bear" type="KinematicBody2D"]
+scale = Vector2( 0.25, 0.25 )
+collision_layer = 2
+collision_mask = 4
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.510254, 5.50784 )
+z_index = -4
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 324.682, -4.44601 )
+enabled = true
+cast_to = Vector2( 0, 260 )
+collision_mask = 0

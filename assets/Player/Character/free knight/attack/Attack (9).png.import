@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Attack (9).png-c1c3cc03937dddb88fa5330ac3cef606.stex"
+path="res://.import/Attack (9).png-e3b0e23b324b7237594dac00901104ad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/free knight/attack/Attack (9).png"
-dest_files=[ "res://.import/Attack (9).png-c1c3cc03937dddb88fa5330ac3cef606.stex" ]
+source_file="res://assets/Player/Character/free knight/attack/Attack (9).png"
+dest_files=[ "res://.import/Attack (9).png-e3b0e23b324b7237594dac00901104ad.stex" ]
 
 [params]
 

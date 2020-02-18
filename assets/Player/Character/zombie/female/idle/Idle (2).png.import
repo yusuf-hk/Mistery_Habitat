@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle (2).png-97b6a68ea245f81cf764332c76f335a2.stex"
+path="res://.import/Idle (2).png-df33ede2fa4484c7369fe26c960461c5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/zombie/female/idle/Idle (2).png"
-dest_files=[ "res://.import/Idle (2).png-97b6a68ea245f81cf764332c76f335a2.stex" ]
+source_file="res://assets/Player/Character/zombie/female/idle/Idle (2).png"
+dest_files=[ "res://.import/Idle (2).png-df33ede2fa4484c7369fe26c960461c5.stex" ]
 
 [params]
 

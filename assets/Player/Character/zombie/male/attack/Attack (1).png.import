@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Attack (1).png-6729ac8d9e56a668d7490c96f8cc3b10.stex"
+path="res://.import/Attack (1).png-612e48ab98dd09e9645555a424e2711e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/zombie/male/attack/Attack (1).png"
-dest_files=[ "res://.import/Attack (1).png-6729ac8d9e56a668d7490c96f8cc3b10.stex" ]
+source_file="res://assets/Player/Character/zombie/male/attack/Attack (1).png"
+dest_files=[ "res://.import/Attack (1).png-612e48ab98dd09e9645555a424e2711e.stex" ]
 
 [params]
 

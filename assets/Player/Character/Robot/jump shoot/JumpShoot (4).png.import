@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/JumpShoot (4).png-a29d26bcdb7afeee63d042fb90a2a2ae.stex"
+path="res://.import/JumpShoot (4).png-aab89c08c6d8c00c68ccfb4b0d70668b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/Robot/jump shoot/JumpShoot (4).png"
-dest_files=[ "res://.import/JumpShoot (4).png-a29d26bcdb7afeee63d042fb90a2a2ae.stex" ]
+source_file="res://assets/Player/Character/Robot/jump shoot/JumpShoot (4).png"
+dest_files=[ "res://.import/JumpShoot (4).png-aab89c08c6d8c00c68ccfb4b0d70668b.stex" ]
 
 [params]
 

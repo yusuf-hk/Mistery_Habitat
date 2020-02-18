@@ -1,4 +1,4 @@
-extends "res://src/Player/Actor.gd"
+extends Actor
 
 
 func _ready() -> void: 
