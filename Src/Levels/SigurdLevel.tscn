@@ -459,7 +459,6 @@ scale = Vector2( 1.02654, 0.798879 )
 texture = ExtResource( 2 )
 
 [node name="TileMap" type="TileMap" parent="."]
-editor/display_folded = true
 position = Vector2( 973.731, 1076.23 )
 scale = Vector2( 0.5, 0.5 )
 tile_set = SubResource( 21 )
@@ -957,7 +956,6 @@ position = Vector2( 0, 0.596634 )
 shape = SubResource( 24 )
 
 [node name="walkthrough" type="TileMap" parent="."]
-editor/display_folded = true
 position = Vector2( 973.777, 1076.22 )
 scale = Vector2( 0.5, 0.5 )
 z_index = -1
@@ -1090,6 +1088,10 @@ next_scene = ExtResource( 38 )
 
 [node name="inPortal2D" parent="." instance=ExtResource( 39 )]
 position = Vector2( 909.182, 1832.61 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="inPortal2D2" parent="." instance=ExtResource( 39 )]
+position = Vector2( 3293.38, 999.7 )
 scale = Vector2( 0.25, 0.25 )
 
 [node name="Position2D" type="Position2D" parent="."]
