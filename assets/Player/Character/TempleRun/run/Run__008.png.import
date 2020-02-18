@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Run__008.png-c03e080e386f41c8912655d5601a78e3.stex"
+path="res://.import/Run__008.png-180a90f7366bed1fe4ab6d0df5cdc9fb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/TempleRun/run/Run__008.png"
-dest_files=[ "res://.import/Run__008.png-c03e080e386f41c8912655d5601a78e3.stex" ]
+source_file="res://Assets/Player/Character/TempleRun/run/Run__008.png"
+dest_files=[ "res://.import/Run__008.png-180a90f7366bed1fe4ab6d0df5cdc9fb.stex" ]
 
 [params]
 

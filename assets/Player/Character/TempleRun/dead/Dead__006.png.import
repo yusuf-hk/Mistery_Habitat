@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dead__006.png-00832871e0a0256cdd04297fff627987.stex"
+path="res://.import/Dead__006.png-cd46d1090c7e1af650c786737c6eb139.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/TempleRun/dead/Dead__006.png"
-dest_files=[ "res://.import/Dead__006.png-00832871e0a0256cdd04297fff627987.stex" ]
+source_file="res://Assets/Player/Character/TempleRun/dead/Dead__006.png"
+dest_files=[ "res://.import/Dead__006.png-cd46d1090c7e1af650c786737c6eb139.stex" ]
 
 [params]
 

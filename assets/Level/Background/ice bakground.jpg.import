@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ice bakground.jpg-ad1843bed65273b392355c85b98e8da0.stex"
+path="res://.import/ice bakground.jpg-6a90c7bbc8368a5990bcb54f2c9e9b39.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Level/Background/ice bakground.jpg"
-dest_files=[ "res://.import/ice bakground.jpg-ad1843bed65273b392355c85b98e8da0.stex" ]
+source_file="res://Assets/Level/Background/ice bakground.jpg"
+dest_files=[ "res://.import/ice bakground.jpg-6a90c7bbc8368a5990bcb54f2c9e9b39.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Slide (2).png-e4de68f7c3e006070c0cfe9a1298b5ff.stex"
+path="res://.import/Slide (2).png-49a0b94845befb177e2fa705c6a0ad4a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/santa/slide/Slide (2).png"
-dest_files=[ "res://.import/Slide (2).png-e4de68f7c3e006070c0cfe9a1298b5ff.stex" ]
+source_file="res://Assets/Player/Character/santa/slide/Slide (2).png"
+dest_files=[ "res://.import/Slide (2).png-49a0b94845befb177e2fa705c6a0ad4a.stex" ]
 
 [params]
 

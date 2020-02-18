@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Walk (10).png-ab1942ccfc6e6c3603f2c8afdf0ec0c9.stex"
+path="res://.import/Walk (10).png-13b22eb854db1f8f7e1a4a77157702e7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/zombie/female/walk/Walk (10).png"
-dest_files=[ "res://.import/Walk (10).png-ab1942ccfc6e6c3603f2c8afdf0ec0c9.stex" ]
+source_file="res://Assets/Player/Character/zombie/female/walk/Walk (10).png"
+dest_files=[ "res://.import/Walk (10).png-13b22eb854db1f8f7e1a4a77157702e7.stex" ]
 
 [params]
 

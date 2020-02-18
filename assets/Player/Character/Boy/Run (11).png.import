@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Run (11).png-148ebc237d51cdd8a54bc25f71127cd1.stex"
+path="res://.import/Run (11).png-8e886a0922c658ee3479c7a067c481a6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/Boy/Run (11).png"
-dest_files=[ "res://.import/Run (11).png-148ebc237d51cdd8a54bc25f71127cd1.stex" ]
+source_file="res://Assets/Player/Character/Boy/Run (11).png"
+dest_files=[ "res://.import/Run (11).png-8e886a0922c658ee3479c7a067c481a6.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/62-623763_sharp-arrows-bow-and-arrow-sprites.png-ffd9e91e5b15715e4eab055ba7809ccc.stex"
+path="res://.import/62-623763_sharp-arrows-bow-and-arrow-sprites.png-0e54399be5f98303e3615b01bb23efa0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Weapons/62-623763_sharp-arrows-bow-and-arrow-sprites.png"
-dest_files=[ "res://.import/62-623763_sharp-arrows-bow-and-arrow-sprites.png-ffd9e91e5b15715e4eab055ba7809ccc.stex" ]
+source_file="res://Assets/Player/Weapons/62-623763_sharp-arrows-bow-and-arrow-sprites.png"
+dest_files=[ "res://.import/62-623763_sharp-arrows-bow-and-arrow-sprites.png-0e54399be5f98303e3615b01bb23efa0.stex" ]
 
 [params]
 

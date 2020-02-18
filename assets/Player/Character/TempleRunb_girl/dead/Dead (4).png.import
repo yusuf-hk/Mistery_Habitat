@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dead (4).png-2b4225059ca4f2b37bd3b13121e4b624.stex"
+path="res://.import/Dead (4).png-a11fe955edf6df96e8201716933b6590.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/TempleRunb_girl/dead/Dead (4).png"
-dest_files=[ "res://.import/Dead (4).png-2b4225059ca4f2b37bd3b13121e4b624.stex" ]
+source_file="res://Assets/Player/Character/TempleRunb_girl/dead/Dead (4).png"
+dest_files=[ "res://.import/Dead (4).png-a11fe955edf6df96e8201716933b6590.stex" ]
 
 [params]
 

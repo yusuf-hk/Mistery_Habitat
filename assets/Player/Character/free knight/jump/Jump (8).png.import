@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Jump (8).png-68f80318140ade70853e364a7f86eeea.stex"
+path="res://.import/Jump (8).png-13a84a61277e4d94b11d7f35a4e317f0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/free knight/jump/Jump (8).png"
-dest_files=[ "res://.import/Jump (8).png-68f80318140ade70853e364a7f86eeea.stex" ]
+source_file="res://Assets/Player/Character/free knight/jump/Jump (8).png"
+dest_files=[ "res://.import/Jump (8).png-13a84a61277e4d94b11d7f35a4e317f0.stex" ]
 
 [params]
 
