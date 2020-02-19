@@ -7,12 +7,14 @@ onready var shoot = false
 signal updated
 signal diamonds
 signal died
+signal position
 signal animal
 
 
 var score: = 0 setget set_score
 var diamonds: = 0 setget set_diamonds
 var deaths: = 0 setget set_deaths
+var position setget set_position
 var animals: = 0 setget set_animals
 var catched_animals:= [] 
 
@@ -27,6 +29,10 @@ func reset():
 func set_score(new_score: int) -> void:
 	score = new_score
 	emit_signal("updated")
+	
+func set_position(new_pos:Vector2)->void:
+	position = new_pos
+	emit_signal("position")
 
 func set_diamonds(new_diamonds:int)->void:
 	diamonds = new_diamonds

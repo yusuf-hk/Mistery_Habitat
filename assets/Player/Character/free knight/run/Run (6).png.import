@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Run (6).png-1725249401725c05bb0b12f0d8731786.stex"
+path="res://.import/Run (6).png-6585503046d73063bd4b78baee4071b4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/free knight/run/Run (6).png"
-dest_files=[ "res://.import/Run (6).png-1725249401725c05bb0b12f0d8731786.stex" ]
+source_file="res://assets/Player/Character/free knight/run/Run (6).png"
+dest_files=[ "res://.import/Run (6).png-6585503046d73063bd4b78baee4071b4.stex" ]
 
 [params]
 

@@ -13,9 +13,21 @@ _global_script_classes=[ {
 "class": "Actor",
 "language": "GDScript",
 "path": "res://src/Actors/Actor.gd"
+}, {
+"base": "Area2D",
+"class": "inPortal2D",
+"language": "GDScript",
+"path": "res://src/Objects/Common objects/inPortal2D.gd"
+}, {
+"base": "Node2D",
+"class": "outPortal2D",
+"language": "GDScript",
+"path": "res://src/Objects/Common objects/outPortal2D.gd"
 } ]
 _global_script_class_icons={
-"Actor": ""
+"Actor": "",
+"inPortal2D": "",
+"outPortal2D": ""
 }
 
 [application]
@@ -26,6 +38,11 @@ config/icon="res://icon.png"
 [autoload]
 
 PlayerData="*res://src/Autoload/PlayerData.gd"
+
+[display]
+
+window/stretch/mode="2d"
+window/stretch/aspect="expand"
 
 [input]
 

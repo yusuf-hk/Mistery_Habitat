@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Jump (5).png-454708da2cd20e995f12f743ac992742.stex"
+path="res://.import/Jump (5).png-0809e0b4cecfd523dcbf684e1d4b8d44.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/dino/jump/Jump (5).png"
-dest_files=[ "res://.import/Jump (5).png-454708da2cd20e995f12f743ac992742.stex" ]
+source_file="res://assets/Player/Character/dino/jump/Jump (5).png"
+dest_files=[ "res://.import/Jump (5).png-0809e0b4cecfd523dcbf684e1d4b8d44.stex" ]
 
 [params]
 

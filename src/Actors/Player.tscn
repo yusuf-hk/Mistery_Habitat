@@ -1,21 +1,21 @@
 [gd_scene load_steps=900 format=2]
 
 [ext_resource path="res://src/Actors/Player.gd" type="Script" id=1]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (1).png" type="Texture" id=2]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (2).png" type="Texture" id=3]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (3).png" type="Texture" id=4]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (4).png" type="Texture" id=5]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (5).png" type="Texture" id=6]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (6).png" type="Texture" id=7]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (7).png" type="Texture" id=8]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (8).png" type="Texture" id=9]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (9).png" type="Texture" id=10]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (10).png" type="Texture" id=11]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (12).png" type="Texture" id=12]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (11).png" type="Texture" id=13]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (13).png" type="Texture" id=14]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (14).png" type="Texture" id=15]
-[ext_resource path="res://assets/Player/Character/Boy/Jump (15).png" type="Texture" id=16]
+[ext_resource path="res://assets/Player/Character/Boy/Run (1).png" type="Texture" id=2]
+[ext_resource path="res://assets/Player/Character/Boy/Run (2).png" type="Texture" id=3]
+[ext_resource path="res://assets/Player/Character/Boy/Run (3).png" type="Texture" id=4]
+[ext_resource path="res://assets/Player/Character/Boy/Run (4).png" type="Texture" id=5]
+[ext_resource path="res://assets/Player/Character/Boy/Run (5).png" type="Texture" id=6]
+[ext_resource path="res://assets/Player/Character/Boy/Run (6).png" type="Texture" id=7]
+[ext_resource path="res://assets/Player/Character/Boy/Run (7).png" type="Texture" id=8]
+[ext_resource path="res://assets/Player/Character/Boy/Run (8).png" type="Texture" id=9]
+[ext_resource path="res://assets/Player/Character/Boy/Run (9).png" type="Texture" id=10]
+[ext_resource path="res://assets/Player/Character/Boy/Run (10).png" type="Texture" id=11]
+[ext_resource path="res://assets/Player/Character/Boy/Run (11).png" type="Texture" id=12]
+[ext_resource path="res://assets/Player/Character/Boy/Run (12).png" type="Texture" id=13]
+[ext_resource path="res://assets/Player/Character/Boy/Run (13).png" type="Texture" id=14]
+[ext_resource path="res://assets/Player/Character/Boy/Run (14).png" type="Texture" id=15]
+[ext_resource path="res://assets/Player/Character/Boy/Run (15).png" type="Texture" id=16]
 [ext_resource path="res://assets/Player/Character/Boy/Idle (1).png" type="Texture" id=17]
 [ext_resource path="res://assets/Player/Character/Boy/Idle (2).png" type="Texture" id=18]
 [ext_resource path="res://assets/Player/Character/Boy/Idle (3).png" type="Texture" id=19]
@@ -31,21 +31,21 @@
 [ext_resource path="res://assets/Player/Character/Boy/Idle (13).png" type="Texture" id=29]
 [ext_resource path="res://assets/Player/Character/Boy/Idle (14).png" type="Texture" id=30]
 [ext_resource path="res://assets/Player/Character/Boy/Idle (15).png" type="Texture" id=31]
-[ext_resource path="res://assets/Player/Character/Boy/Run (1).png" type="Texture" id=32]
-[ext_resource path="res://assets/Player/Character/Boy/Run (2).png" type="Texture" id=33]
-[ext_resource path="res://assets/Player/Character/Boy/Run (3).png" type="Texture" id=34]
-[ext_resource path="res://assets/Player/Character/Boy/Run (4).png" type="Texture" id=35]
-[ext_resource path="res://assets/Player/Character/Boy/Run (5).png" type="Texture" id=36]
-[ext_resource path="res://assets/Player/Character/Boy/Run (6).png" type="Texture" id=37]
-[ext_resource path="res://assets/Player/Character/Boy/Run (7).png" type="Texture" id=38]
-[ext_resource path="res://assets/Player/Character/Boy/Run (8).png" type="Texture" id=39]
-[ext_resource path="res://assets/Player/Character/Boy/Run (9).png" type="Texture" id=40]
-[ext_resource path="res://assets/Player/Character/Boy/Run (10).png" type="Texture" id=41]
-[ext_resource path="res://assets/Player/Character/Boy/Run (11).png" type="Texture" id=42]
-[ext_resource path="res://assets/Player/Character/Boy/Run (12).png" type="Texture" id=43]
-[ext_resource path="res://assets/Player/Character/Boy/Run (13).png" type="Texture" id=44]
-[ext_resource path="res://assets/Player/Character/Boy/Run (14).png" type="Texture" id=45]
-[ext_resource path="res://assets/Player/Character/Boy/Run (15).png" type="Texture" id=46]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (1).png" type="Texture" id=32]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (2).png" type="Texture" id=33]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (3).png" type="Texture" id=34]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (4).png" type="Texture" id=35]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (5).png" type="Texture" id=36]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (6).png" type="Texture" id=37]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (7).png" type="Texture" id=38]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (8).png" type="Texture" id=39]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (9).png" type="Texture" id=40]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (10).png" type="Texture" id=41]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (12).png" type="Texture" id=42]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (11).png" type="Texture" id=43]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (13).png" type="Texture" id=44]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (14).png" type="Texture" id=45]
+[ext_resource path="res://assets/Player/Character/Boy/Jump (15).png" type="Texture" id=46]
 [ext_resource path="res://assets/Player/Character/Girl/Jump (1).png" type="Texture" id=47]
 [ext_resource path="res://assets/Player/Character/Girl/Jump (2).png" type="Texture" id=48]
 [ext_resource path="res://assets/Player/Character/Girl/Jump (3).png" type="Texture" id=49]
@@ -825,39 +825,39 @@
 [ext_resource path="res://assets/Player/Character/zombie/male/dead/Dead (10).png" type="Texture" id=823]
 [ext_resource path="res://assets/Player/Character/zombie/male/dead/Dead (11).png" type="Texture" id=824]
 [ext_resource path="res://assets/Player/Character/zombie/male/dead/Dead (12).png" type="Texture" id=825]
-[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (1).png" type="Texture" id=826]
-[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (2).png" type="Texture" id=827]
-[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (3).png" type="Texture" id=828]
-[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (4).png" type="Texture" id=829]
-[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (5).png" type="Texture" id=830]
-[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (6).png" type="Texture" id=831]
-[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (7).png" type="Texture" id=832]
-[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (8).png" type="Texture" id=833]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (1).png" type="Texture" id=834]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (2).png" type="Texture" id=835]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (3).png" type="Texture" id=836]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (4).png" type="Texture" id=837]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (5).png" type="Texture" id=838]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (6).png" type="Texture" id=839]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (7).png" type="Texture" id=840]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (8).png" type="Texture" id=841]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (9).png" type="Texture" id=842]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (10).png" type="Texture" id=843]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (11).png" type="Texture" id=844]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (12).png" type="Texture" id=845]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (13).png" type="Texture" id=846]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (14).png" type="Texture" id=847]
-[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (15).png" type="Texture" id=848]
-[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (1).png" type="Texture" id=849]
-[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (2).png" type="Texture" id=850]
-[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (3).png" type="Texture" id=851]
-[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (4).png" type="Texture" id=852]
-[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (5).png" type="Texture" id=853]
-[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (6).png" type="Texture" id=854]
-[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (7).png" type="Texture" id=855]
-[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (8).png" type="Texture" id=856]
-[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (9).png" type="Texture" id=857]
-[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (10).png" type="Texture" id=858]
+[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (1).png" type="Texture" id=826]
+[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (2).png" type="Texture" id=827]
+[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (3).png" type="Texture" id=828]
+[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (4).png" type="Texture" id=829]
+[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (5).png" type="Texture" id=830]
+[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (6).png" type="Texture" id=831]
+[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (7).png" type="Texture" id=832]
+[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (8).png" type="Texture" id=833]
+[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (9).png" type="Texture" id=834]
+[ext_resource path="res://assets/Player/Character/zombie/female/walk/Walk (10).png" type="Texture" id=835]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (1).png" type="Texture" id=836]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (2).png" type="Texture" id=837]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (3).png" type="Texture" id=838]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (4).png" type="Texture" id=839]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (5).png" type="Texture" id=840]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (6).png" type="Texture" id=841]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (7).png" type="Texture" id=842]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (8).png" type="Texture" id=843]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (9).png" type="Texture" id=844]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (10).png" type="Texture" id=845]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (11).png" type="Texture" id=846]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (12).png" type="Texture" id=847]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (13).png" type="Texture" id=848]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (14).png" type="Texture" id=849]
+[ext_resource path="res://assets/Player/Character/zombie/female/idle/Idle (15).png" type="Texture" id=850]
+[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (1).png" type="Texture" id=851]
+[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (2).png" type="Texture" id=852]
+[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (3).png" type="Texture" id=853]
+[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (4).png" type="Texture" id=854]
+[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (5).png" type="Texture" id=855]
+[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (6).png" type="Texture" id=856]
+[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (7).png" type="Texture" id=857]
+[ext_resource path="res://assets/Player/Character/zombie/female/attack/Attack (8).png" type="Texture" id=858]
 [ext_resource path="res://assets/Player/Character/zombie/female/dead/Dead (1).png" type="Texture" id=859]
 [ext_resource path="res://assets/Player/Character/zombie/female/dead/Dead (2).png" type="Texture" id=860]
 [ext_resource path="res://assets/Player/Character/zombie/female/dead/Dead (3).png" type="Texture" id=861]
@@ -881,8 +881,8 @@ extents = Vector2( 18.4944, 41.0233 )
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
 "loop": true,
-"name": "Jump",
-"speed": 15.0
+"name": "Run",
+"speed": 30.0
 }, {
 "frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
 "loop": true,
@@ -891,8 +891,8 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ) ],
 "loop": true,
-"name": "Run",
-"speed": 30.0
+"name": "Jump",
+"speed": 15.0
 } ]
 
 [sub_resource type="SpriteFrames" id=3]
@@ -902,15 +902,15 @@ animations = [ {
 "name": "jump",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 25.0
-}, {
-"frames": [ ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 112 ) ],
+"frames": [ ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ) ],
 "loop": true,
 "name": "Run",
 "speed": 50.0
+}, {
+"frames": [ ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 112 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 25.0
 } ]
 
 [sub_resource type="SpriteFrames" id=4]
@@ -932,7 +932,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 141 ), ExtResource( 142 ), ExtResource( 143 ), ExtResource( 144 ), ExtResource( 145 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 148 ) ],
 "loop": true,
-"name": "Run",
+"name": "Jump",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 149 ), ExtResource( 150 ), ExtResource( 151 ), ExtResource( 152 ), ExtResource( 153 ), ExtResource( 154 ), ExtResource( 155 ), ExtResource( 156 ), ExtResource( 157 ) ],
@@ -960,7 +960,7 @@ animations = [ {
 "name": "Melee",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 185 ), ExtResource( 186 ), ExtResource( 187 ), ExtResource( 188 ), ExtResource( 189 ), ExtResource( 190 ), ExtResource( 191 ), ExtResource( 192 ), ExtResource( 193 ), ExtResource( 194 ) ],
+"frames": [ ExtResource( 175 ), ExtResource( 176 ), ExtResource( 177 ), ExtResource( 178 ), ExtResource( 179 ), ExtResource( 180 ), ExtResource( 181 ), ExtResource( 182 ), ExtResource( 183 ), ExtResource( 184 ) ],
 "loop": true,
 "name": "Slide",
 "speed": 10.0
@@ -976,20 +976,20 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
-"frames": [ ExtResource( 200 ), ExtResource( 201 ), ExtResource( 202 ), ExtResource( 203 ), ExtResource( 204 ), ExtResource( 205 ), ExtResource( 206 ), ExtResource( 207 ), ExtResource( 208 ), ExtResource( 208 ) ],
+"frames": [ ExtResource( 200 ), ExtResource( 201 ), ExtResource( 202 ), ExtResource( 203 ), ExtResource( 204 ), ExtResource( 205 ), ExtResource( 206 ), ExtResource( 207 ), ExtResource( 208 ), ExtResource( 209 ) ],
 "loop": true,
-"name": "Jump",
-"speed": 10.0
+"name": "Run",
+"speed": 20.0
 }, {
-"frames": [ ExtResource( 209 ), ExtResource( 210 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 213 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 216 ), ExtResource( 217 ), ExtResource( 218 ) ],
+"frames": [ ExtResource( 210 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 213 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 216 ), ExtResource( 217 ), ExtResource( 218 ), ExtResource( 219 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 219 ), ExtResource( 220 ), ExtResource( 221 ), ExtResource( 222 ), ExtResource( 223 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 227 ), ExtResource( 228 ) ],
+"frames": [ ExtResource( 220 ), ExtResource( 221 ), ExtResource( 222 ), ExtResource( 223 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 227 ), ExtResource( 228 ), ExtResource( 228 ) ],
 "loop": true,
-"name": "Run",
-"speed": 20.0
+"name": "Jump",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 229 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 232 ), ExtResource( 233 ), ExtResource( 234 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 237 ), ExtResource( 238 ) ],
 "loop": true,
@@ -1004,17 +1004,12 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=7]
 animations = [ {
-"frames": [ ExtResource( 249 ), ExtResource( 250 ), ExtResource( 251 ), ExtResource( 252 ), ExtResource( 253 ), ExtResource( 254 ), ExtResource( 255 ), ExtResource( 256 ), ExtResource( 257 ), ExtResource( 258 ) ],
+"frames": [ ExtResource( 249 ), ExtResource( 250 ), ExtResource( 251 ), ExtResource( 252 ), ExtResource( 253 ), ExtResource( 254 ), ExtResource( 255 ) ],
 "loop": true,
-"name": "Jump",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 259 ), ExtResource( 260 ), ExtResource( 261 ), ExtResource( 262 ), ExtResource( 263 ), ExtResource( 264 ), ExtResource( 265 ), ExtResource( 266 ), ExtResource( 267 ), ExtResource( 268 ) ],
-"loop": true,
-"name": "Idle",
+"name": "Melee",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 269 ), ExtResource( 270 ), ExtResource( 271 ), ExtResource( 272 ), ExtResource( 273 ), ExtResource( 274 ), ExtResource( 275 ), ExtResource( 276 ) ],
+"frames": [ ExtResource( 256 ), ExtResource( 257 ), ExtResource( 258 ), ExtResource( 259 ), ExtResource( 260 ), ExtResource( 261 ), ExtResource( 262 ), ExtResource( 263 ) ],
 "loop": true,
 "name": "Run",
 "speed": 15.0
@@ -1026,7 +1021,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 287 ), ExtResource( 288 ), ExtResource( 289 ) ],
 "loop": true,
-"name": "Shoot",
+"name": "Jump",
 "speed": 10.0
 }, {
 "frames": [ ExtResource( 290 ), ExtResource( 291 ), ExtResource( 292 ), ExtResource( 293 ), ExtResource( 294 ), ExtResource( 295 ), ExtResource( 296 ) ],
@@ -1059,8 +1054,8 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 335 ), ExtResource( 336 ), ExtResource( 337 ), ExtResource( 338 ), ExtResource( 339 ), ExtResource( 340 ), ExtResource( 341 ), ExtResource( 342 ) ],
 "loop": true,
-"name": "Run",
-"speed": 15.0
+"name": "Jump",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 343 ), ExtResource( 344 ), ExtResource( 345 ), ExtResource( 346 ), ExtResource( 347 ), ExtResource( 348 ), ExtResource( 349 ), ExtResource( 350 ) ],
 "loop": true,
@@ -1108,12 +1103,12 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=10]
 animations = [ {
-"frames": [ ExtResource( 421 ), ExtResource( 422 ), ExtResource( 423 ), ExtResource( 424 ), ExtResource( 425 ), ExtResource( 426 ), ExtResource( 427 ), ExtResource( 428 ), ExtResource( 429 ), ExtResource( 430 ) ],
+"frames": [ ExtResource( 421 ), ExtResource( 422 ), ExtResource( 423 ), ExtResource( 424 ), ExtResource( 425 ), ExtResource( 426 ), ExtResource( 427 ), ExtResource( 428 ) ],
 "loop": true,
 "name": "Walk",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 431 ), ExtResource( 432 ), ExtResource( 433 ), ExtResource( 434 ), ExtResource( 435 ), ExtResource( 436 ), ExtResource( 437 ), ExtResource( 438 ), ExtResource( 439 ), ExtResource( 440 ) ],
+"frames": [ ExtResource( 429 ), ExtResource( 430 ), ExtResource( 431 ), ExtResource( 432 ), ExtResource( 433 ), ExtResource( 434 ), ExtResource( 435 ), ExtResource( 436 ), ExtResource( 437 ), ExtResource( 438 ) ],
 "loop": true,
 "name": "Jump",
 "speed": 10.0
@@ -1125,8 +1120,8 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 451 ), ExtResource( 452 ), ExtResource( 453 ), ExtResource( 454 ), ExtResource( 455 ), ExtResource( 456 ), ExtResource( 457 ), ExtResource( 458 ) ],
 "loop": true,
-"name": "Run",
-"speed": 13.0
+"name": "Jump",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 459 ), ExtResource( 460 ), ExtResource( 461 ), ExtResource( 462 ), ExtResource( 463 ), ExtResource( 464 ), ExtResource( 465 ), ExtResource( 466 ), ExtResource( 467 ), ExtResource( 468 ) ],
 "loop": true,
@@ -1158,7 +1153,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 509 ), ExtResource( 510 ), ExtResource( 511 ), ExtResource( 512 ), ExtResource( 513 ), ExtResource( 514 ), ExtResource( 515 ), ExtResource( 516 ), ExtResource( 517 ), ExtResource( 518 ) ],
 "loop": true,
-"name": "Jump_throw",
+"name": "Attack",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 519 ), ExtResource( 520 ), ExtResource( 521 ), ExtResource( 522 ), ExtResource( 523 ), ExtResource( 524 ), ExtResource( 525 ), ExtResource( 526 ), ExtResource( 527 ), ExtResource( 528 ) ],
@@ -1216,7 +1211,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 619 ), ExtResource( 620 ), ExtResource( 621 ), ExtResource( 622 ), ExtResource( 623 ), ExtResource( 624 ), ExtResource( 625 ), ExtResource( 626 ), ExtResource( 627 ), ExtResource( 628 ) ],
 "loop": true,
-"name": "Jump_throw",
+"name": "Attack",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 629 ), ExtResource( 630 ), ExtResource( 631 ), ExtResource( 632 ), ExtResource( 633 ), ExtResource( 634 ), ExtResource( 635 ), ExtResource( 636 ), ExtResource( 637 ), ExtResource( 638 ) ],
@@ -1274,8 +1269,8 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 743 ), ExtResource( 744 ), ExtResource( 745 ), ExtResource( 746 ), ExtResource( 747 ), ExtResource( 748 ), ExtResource( 749 ), ExtResource( 750 ), ExtResource( 751 ), ExtResource( 752 ) ],
 "loop": true,
-"name": "Run",
-"speed": 15.0
+"name": "Jump",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 753 ), ExtResource( 754 ), ExtResource( 755 ), ExtResource( 756 ), ExtResource( 757 ), ExtResource( 758 ), ExtResource( 759 ), ExtResource( 760 ), ExtResource( 761 ), ExtResource( 762 ), ExtResource( 763 ), ExtResource( 764 ), ExtResource( 765 ), ExtResource( 766 ), ExtResource( 767 ), ExtResource( 768 ), ExtResource( 769 ) ],
 "loop": true,
@@ -1284,25 +1279,25 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 770 ), ExtResource( 771 ), ExtResource( 772 ), ExtResource( 773 ), ExtResource( 774 ), ExtResource( 775 ), ExtResource( 776 ), ExtResource( 777 ), ExtResource( 778 ), ExtResource( 779 ), ExtResource( 780 ) ],
 "loop": true,
-"name": "Slide",
+"name": "Dead",
 "speed": 10.0
 } ]
 
 [sub_resource type="SpriteFrames" id=14]
 animations = [ {
-"frames": [ ExtResource( 781 ), ExtResource( 782 ), ExtResource( 783 ), ExtResource( 784 ), ExtResource( 785 ), ExtResource( 786 ), ExtResource( 787 ), ExtResource( 788 ) ],
+"frames": [ ExtResource( 781 ), ExtResource( 782 ), ExtResource( 783 ), ExtResource( 784 ), ExtResource( 785 ), ExtResource( 786 ), ExtResource( 787 ), ExtResource( 788 ), ExtResource( 789 ), ExtResource( 790 ) ],
 "loop": true,
-"name": "Jump",
+"name": "Run",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 789 ), ExtResource( 790 ), ExtResource( 791 ), ExtResource( 792 ), ExtResource( 793 ), ExtResource( 794 ), ExtResource( 795 ), ExtResource( 796 ), ExtResource( 797 ), ExtResource( 798 ), ExtResource( 799 ), ExtResource( 800 ), ExtResource( 801 ), ExtResource( 802 ), ExtResource( 803 ) ],
+"frames": [ ExtResource( 791 ), ExtResource( 792 ), ExtResource( 793 ), ExtResource( 794 ), ExtResource( 795 ), ExtResource( 796 ), ExtResource( 797 ), ExtResource( 798 ), ExtResource( 799 ), ExtResource( 800 ), ExtResource( 801 ), ExtResource( 802 ), ExtResource( 803 ), ExtResource( 804 ), ExtResource( 805 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 804 ), ExtResource( 805 ), ExtResource( 806 ), ExtResource( 807 ), ExtResource( 808 ), ExtResource( 809 ), ExtResource( 810 ), ExtResource( 811 ), ExtResource( 812 ), ExtResource( 813 ) ],
+"frames": [ ExtResource( 806 ), ExtResource( 807 ), ExtResource( 808 ), ExtResource( 809 ), ExtResource( 810 ), ExtResource( 811 ), ExtResource( 812 ), ExtResource( 813 ) ],
 "loop": true,
-"name": "Run",
+"name": "Jump",
 "speed": 10.0
 }, {
 "frames": [ ExtResource( 814 ), ExtResource( 815 ), ExtResource( 816 ), ExtResource( 817 ), ExtResource( 818 ), ExtResource( 819 ), ExtResource( 820 ), ExtResource( 821 ), ExtResource( 822 ), ExtResource( 823 ), ExtResource( 824 ), ExtResource( 825 ) ],
@@ -1313,19 +1308,19 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=15]
 animations = [ {
-"frames": [ ExtResource( 826 ), ExtResource( 827 ), ExtResource( 828 ), ExtResource( 829 ), ExtResource( 830 ), ExtResource( 831 ), ExtResource( 832 ), ExtResource( 833 ) ],
+"frames": [ ExtResource( 826 ), ExtResource( 827 ), ExtResource( 828 ), ExtResource( 829 ), ExtResource( 830 ), ExtResource( 831 ), ExtResource( 832 ), ExtResource( 833 ), ExtResource( 834 ), ExtResource( 835 ) ],
 "loop": true,
-"name": "Jump",
+"name": "Run",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 834 ), ExtResource( 835 ), ExtResource( 836 ), ExtResource( 837 ), ExtResource( 838 ), ExtResource( 839 ), ExtResource( 840 ), ExtResource( 841 ), ExtResource( 842 ), ExtResource( 843 ), ExtResource( 844 ), ExtResource( 845 ), ExtResource( 846 ), ExtResource( 847 ), ExtResource( 848 ) ],
+"frames": [ ExtResource( 836 ), ExtResource( 837 ), ExtResource( 838 ), ExtResource( 839 ), ExtResource( 840 ), ExtResource( 841 ), ExtResource( 842 ), ExtResource( 843 ), ExtResource( 844 ), ExtResource( 845 ), ExtResource( 846 ), ExtResource( 847 ), ExtResource( 848 ), ExtResource( 849 ), ExtResource( 850 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 849 ), ExtResource( 850 ), ExtResource( 851 ), ExtResource( 852 ), ExtResource( 853 ), ExtResource( 854 ), ExtResource( 855 ), ExtResource( 856 ), ExtResource( 857 ), ExtResource( 858 ) ],
+"frames": [ ExtResource( 851 ), ExtResource( 852 ), ExtResource( 853 ), ExtResource( 854 ), ExtResource( 855 ), ExtResource( 856 ), ExtResource( 857 ), ExtResource( 858 ) ],
 "loop": true,
-"name": "Run",
+"name": "Jump",
 "speed": 10.0
 }, {
 "frames": [ ExtResource( 859 ), ExtResource( 860 ), ExtResource( 861 ), ExtResource( 862 ), ExtResource( 863 ), ExtResource( 864 ), ExtResource( 865 ), ExtResource( 866 ), ExtResource( 867 ), ExtResource( 868 ), ExtResource( 869 ), ExtResource( 870 ) ],
@@ -1446,14 +1441,14 @@ tracks/1/keys = {
 
 [sub_resource type="SpriteFrames" id=20]
 animations = [ {
-"frames": [ ExtResource( 871 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 5.0
-}, {
 "frames": [  ],
 "loop": true,
 "name": "Run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 871 ) ],
+"loop": true,
+"name": "Idle",
 "speed": 5.0
 }, {
 "frames": [  ],
@@ -1767,7 +1762,6 @@ z_index = -3
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-editor/display_folded = true
 scale = Vector2( 0.75, 0.75 )
 
 [node name="Boy" type="AnimatedSprite" parent="Sprite"]
@@ -1775,7 +1769,7 @@ position = Vector2( 50, 0 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 9
+frame = 5
 playing = true
 
 [node name="Girl" type="AnimatedSprite" parent="Sprite"]
@@ -1787,13 +1781,12 @@ frame = 3
 playing = true
 
 [node name="Robot" type="AnimatedSprite" parent="Sprite"]
-editor/display_folded = true
 visible = false
 position = Vector2( 7.39707, -3.11456 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 4 )
 animation = "Idle"
-frame = 6
+frame = 3
 playing = true
 
 [node name="Shoot" type="AnimatedSprite" parent="Sprite/Robot"]
@@ -1814,7 +1807,6 @@ frame = 1
 playing = true
 
 [node name="Templerun_girl" type="AnimatedSprite" parent="Sprite"]
-editor/display_folded = true
 visible = false
 position = Vector2( 12.7864, -4.28251 )
 scale = Vector2( 0.25, 0.25 )
@@ -1888,7 +1880,7 @@ position = Vector2( 11.6796, -6.16796 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 14 )
 animation = "Idle"
-frame = 12
+frame = 10
 playing = true
 
 [node name="Zombie_girl" type="AnimatedSprite" parent="Sprite"]
@@ -1897,14 +1889,11 @@ position = Vector2( -1.43498, -14.3359 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 15 )
 animation = "Idle"
-frame = 2
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( -2.39053, 1.65305 )
 current = true
-limit_left = 0
-limit_top = 0
 limit_smoothed = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
