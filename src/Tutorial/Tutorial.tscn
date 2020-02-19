@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://Assets/Forest/png/BG/BG.png" type="Texture" id=1]
 [ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=2]
@@ -23,6 +23,8 @@
 [ext_resource path="res://src/Objects/Forrest Objects/Tree_3.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/Objects/Forrest Objects/Crate.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/Actors/Animal.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/Levels/SigurdLevel.tscn" type="PackedScene" id=25]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -432,3 +434,7 @@ valign = 1
 
 [node name="Animal" parent="." instance=ExtResource( 23 )]
 position = Vector2( 4334.48, 199.35 )
+
+[node name="Portal2D" parent="." instance=ExtResource( 24 )]
+position = Vector2( 6891.72, 902.669 )
+next_scene = ExtResource( 25 )

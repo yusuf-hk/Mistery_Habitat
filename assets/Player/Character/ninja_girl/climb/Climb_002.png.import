@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Climb_002.png-dbcf7e2f24a26ba27387ba769e37c25c.stex"
+path="res://.import/Climb_002.png-2807c3725bb1f2e95b52b5aaa9efe0f6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/ninja_girl/climb/Climb_002.png"
-dest_files=[ "res://.import/Climb_002.png-dbcf7e2f24a26ba27387ba769e37c25c.stex" ]
+source_file="res://Assets/Player/Character/ninja_girl/climb/Climb_002.png"
+dest_files=[ "res://.import/Climb_002.png-2807c3725bb1f2e95b52b5aaa9efe0f6.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Shoot (2).png-5fe9905167a3c1fa39ddcea76be1e56e.stex"
+path="res://.import/Shoot (2).png-43d7f6618221d0c0644c2aeb889b7642.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/TempleRunb_girl/shoot/Shoot (2).png"
-dest_files=[ "res://.import/Shoot (2).png-5fe9905167a3c1fa39ddcea76be1e56e.stex" ]
+source_file="res://Assets/Player/Character/TempleRunb_girl/shoot/Shoot (2).png"
+dest_files=[ "res://.import/Shoot (2).png-43d7f6618221d0c0644c2aeb889b7642.stex" ]
 
 [params]
 

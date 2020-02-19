@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Jump (9).png-a94c843ff7d30ac7281274156f583b78.stex"
+path="res://.import/Jump (9).png-0f8a1b2dab65f1c397165541c80d4bed.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/TempleRunb_girl/jump/Jump (9).png"
-dest_files=[ "res://.import/Jump (9).png-a94c843ff7d30ac7281274156f583b78.stex" ]
+source_file="res://Assets/Player/Character/TempleRunb_girl/jump/Jump (9).png"
+dest_files=[ "res://.import/Jump (9).png-0f8a1b2dab65f1c397165541c80d4bed.stex" ]
 
 [params]
 

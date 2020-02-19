@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Walk (10).png-56d9be651307493360df42abc9fef01c.stex"
+path="res://.import/Walk (10).png-c392cb9fefd28ff634fc7ba9d59ea2fd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/dino/walk/Walk (10).png"
-dest_files=[ "res://.import/Walk (10).png-56d9be651307493360df42abc9fef01c.stex" ]
+source_file="res://Assets/Player/Character/dino/walk/Walk (10).png"
+dest_files=[ "res://.import/Walk (10).png-c392cb9fefd28ff634fc7ba9d59ea2fd.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Run (1).png-8f0633264c3f676722ee11da7209a926.stex"
+path="res://.import/Run (1).png-0caa6f99697726160d0a8634a6e9d838.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/Robot/run/Run (1).png"
-dest_files=[ "res://.import/Run (1).png-8f0633264c3f676722ee11da7209a926.stex" ]
+source_file="res://Assets/Player/Character/Robot/run/Run (1).png"
+dest_files=[ "res://.import/Run (1).png-0caa6f99697726160d0a8634a6e9d838.stex" ]
 
 [params]
 

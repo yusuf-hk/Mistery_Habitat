@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/JumpAttack (8).png-57e776d8eebbc0ee4a0d6d26de8c51ea.stex"
+path="res://.import/JumpAttack (8).png-1329a61b8b65321424fa8c43f35d71de.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Character/free knight/jump attack/JumpAttack (8).png"
-dest_files=[ "res://.import/JumpAttack (8).png-57e776d8eebbc0ee4a0d6d26de8c51ea.stex" ]
+source_file="res://Assets/Player/Character/free knight/jump attack/JumpAttack (8).png"
+dest_files=[ "res://.import/JumpAttack (8).png-1329a61b8b65321424fa8c43f35d71de.stex" ]
 
 [params]
 

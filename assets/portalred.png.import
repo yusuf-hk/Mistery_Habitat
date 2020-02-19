@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/portalred.png-80f02afffa4aace318f755613239352f.stex"
+path="res://.import/portalred.png-cf2933349b68b390be52758f14f503b7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portalred.png"
-dest_files=[ "res://.import/portalred.png-80f02afffa4aace318f755613239352f.stex" ]
+source_file="res://Assets/portalred.png"
+dest_files=[ "res://.import/portalred.png-cf2933349b68b390be52758f14f503b7.stex" ]
 
 [params]
 
