@@ -5,10 +5,12 @@ onready var character_flip = false
 
 signal updated
 signal died
+signal position
 
 
 var score: = 0 setget set_score
 var deaths: = 0 setget set_deaths
+var position setget set_position
 
 
 
@@ -20,6 +22,10 @@ func reset():
 func set_score(new_score: int) -> void:
 	score = new_score
 	emit_signal("updated")
+	
+func set_position(new_pos:Vector2)->void:
+	position = new_pos
+	emit_signal("position")
 
 
 func set_deaths(new_value: int) -> void:
