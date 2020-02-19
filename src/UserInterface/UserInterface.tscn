@@ -11,18 +11,12 @@
 pause_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -2.20532
+margin_top = 2.94037
+margin_right = -2.20532
+margin_bottom = 2.94037
 theme = ExtResource( 1 )
 script = ExtResource( 2 )
-
-[node name="Score" type="Label" parent="."]
-anchor_left = 1.0
-anchor_right = 1.0
-margin_left = -265.115
-margin_top = 3.45758
-margin_right = 64.8846
-margin_bottom = 103.458
-text = "Coins: %s"
-valign = 1
 
 [node name="PauseOverlay" type="ColorRect" parent="."]
 visible = false
@@ -65,3 +59,48 @@ next_scene_path = "res://src/menu_system/title_screen/TitleScreen.tscn"
 margin_top = 153.0
 margin_right = 274.0
 margin_bottom = 196.0
+
+[node name="ItemList" type="ItemList" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 736.094
+margin_right = 1024.09
+margin_bottom = 343.0
+
+[node name="Coins" type="Label" parent="ItemList"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -277.143
+margin_top = -1.27771
+margin_right = -128.143
+margin_bottom = 29.7223
+text = "Coins: "
+valign = 1
+
+[node name="Diamonds" type="Label" parent="ItemList"]
+margin_left = 8.08606
+margin_top = 24.9932
+margin_right = 146.086
+margin_bottom = 55.9932
+text = "Diamonds:"
+
+[node name="Animals" type="Label" parent="ItemList"]
+margin_left = 11.0241
+margin_top = 55.1319
+margin_right = 123.024
+margin_bottom = 86.1322
+text = "Animals:"
+
+[node name="TextureButton" type="TextureButton" parent="ItemList/Animals"]
+margin_left = 1.47015
+margin_top = -1.47021
+margin_right = 120.47
+margin_bottom = 38.5298
+
+[node name="Animal_List" type="ItemList" parent="ItemList/Animals"]
+visible = false
+margin_left = 136.205
+margin_top = 1.11926
+margin_right = 268.205
+margin_bottom = 283.119
+max_columns = 16
+[connection signal="button_up" from="ItemList/Animals/TextureButton" to="." method="_on_TextureButton_button_up"]

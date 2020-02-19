@@ -1,7 +1,8 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Coins.gd" type="Script" id=1]
+[ext_resource path="res://src/Objects/Common objects/Coins.gd" type="Script" id=1]
 [ext_resource path="res://assets/Coins/MonedaD.png" type="Texture" id=2]
+
 
 [sub_resource type="OccluderPolygon2D" id=1]
 polygon = PoolVector2Array( -7.74569, -0.986542, -7.13396, -3.22952, -6.01247, -4.96273, -3.87144, -6.89986, -1.01674, -8.02135, 2.14383, -7.61353, 5.20244, -5.67641, 7.13956, -3.02562, 7.64933, 0.0329971, 7.34346, 2.27598, 6.32393, 4.92677, 3.97899, 6.76194, 0.716475, 7.67953, -3.56558, 6.8639, -6.21638, 4.41701, -7.54178, 1.3584 )

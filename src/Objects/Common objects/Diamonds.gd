@@ -2,13 +2,13 @@ extends Area2D
 
 onready var anim_player: AnimationPlayer = $AnimationPlayer
 
-export var score: = 100
+export var diamonds: = 1
 
 
 
 
 func picked() -> void:
-	PlayerData.score += score
+	PlayerData.diamonds += diamonds
 	anim_player.play("Picked")
 	self.queue_free()
 	

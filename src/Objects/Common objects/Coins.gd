@@ -2,7 +2,7 @@ extends Area2D
 
 onready var anim_player: AnimationPlayer = $AnimationPlayer
 
-export var score: = 10
+export var score: = 1
 
 
 
