@@ -11,9 +11,6 @@ onready var bow_weapon = get_node("/root/PlayerData")
 onready var character_flip = get_node("/root/PlayerData")
 
 
-func _on_EnemyDetector_body_entered(body: PhysicsBody2D) -> void:
-	die()
-
 
 func _physics_process(delta: float) -> void:
 	var is_jump_interrupted: = Input.is_action_just_released("jump") and _velocity.y < 0.0
@@ -25,7 +22,7 @@ func _physics_process(delta: float) -> void:
 	move_sprite()
 	turn_of_sprite()
 	set_weapon()
-	
+
 	
 func set_weapon()->void:
 	if choosen_weapon() == false:
@@ -56,19 +53,30 @@ func get_direction() -> Vector2:
 func move_sprite()-> void:
 	if Input.is_action_pressed("jump"):
 		character.play("Jump")
+		if Input.is_action_pressed("mouse_left"):
+			PlayerData.set_arrow_state(true)
+
 	elif Input.is_action_pressed("move_left"):
 		flip_character(true)
 		character.play("Run")
 		get_sprite_position("move_right")
+		if Input.is_action_pressed("mouse_left"):
+			PlayerData.set_arrow_state(true)
+
 	elif Input.is_action_pressed("move_right"):
 		flip_character(false)
 		character.play("Run")
 		get_sprite_position("move_left")
-	elif Input.is_action_pressed("mouse_left"):
+		if Input.is_action_pressed("mouse_left"):
+			PlayerData.set_arrow_state(true)
 
+	elif Input.is_action_pressed("mouse_left"):
+		PlayerData.set_arrow_state(true)
+		
 		if choosen_weapon() == false:
 			character.play("Shoot")
 			character_objects.visible = true
+			
 			if character.flip_h == true:
 				character_objects.flip_h = true
 				character_animation.play(what_character + "_left")
@@ -77,6 +85,9 @@ func move_sprite()-> void:
 				character_objects.flip_h = false
 	else:
 		character.play("Idle")
+		PlayerData.set_arrow_state(false)
+		if Input.is_action_pressed("mouse_left"):
+			PlayerData.set_arrow_state(true)
 		
 		
 		
