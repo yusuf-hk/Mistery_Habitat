@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Attack__000.png-bbbbcd45fb5bc96f7567dae635cfbac8.stex"
+path="res://.import/Attack__000.png-aed608466d77da22a3ebb8d8891f77d7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/ninja_boy/attack/Attack__000.png"
-dest_files=[ "res://.import/Attack__000.png-bbbbcd45fb5bc96f7567dae635cfbac8.stex" ]
+source_file="res://assets/Player/Character/ninja_boy/attack/Attack__000.png"
+dest_files=[ "res://.import/Attack__000.png-aed608466d77da22a3ebb8d8891f77d7.stex" ]
 
 [params]
 

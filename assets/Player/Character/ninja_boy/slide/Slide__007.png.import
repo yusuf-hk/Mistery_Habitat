@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Slide__007.png-dd4fe1d0d84b8041aac4e8a6c2e84f62.stex"
+path="res://.import/Slide__007.png-1ea1fdc17ada57e748c83c549edb32cc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/ninja_boy/slide/Slide__007.png"
-dest_files=[ "res://.import/Slide__007.png-dd4fe1d0d84b8041aac4e8a6c2e84f62.stex" ]
+source_file="res://assets/Player/Character/ninja_boy/slide/Slide__007.png"
+dest_files=[ "res://.import/Slide__007.png-1ea1fdc17ada57e748c83c549edb32cc.stex" ]
 
 [params]
 

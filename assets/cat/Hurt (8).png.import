@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hurt (8).png-1c4d6777d2d743e1c113b9e8b265ef5b.stex"
+path="res://.import/Hurt (8).png-b00c2cd946661cd1db37da0c5fbfedb9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/cat/Hurt (8).png"
-dest_files=[ "res://.import/Hurt (8).png-1c4d6777d2d743e1c113b9e8b265ef5b.stex" ]
+source_file="res://assets/cat/Hurt (8).png"
+dest_files=[ "res://.import/Hurt (8).png-b00c2cd946661cd1db37da0c5fbfedb9.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Run (7).png-cb804baa1df9f1d3f47eac52eac432dc.stex"
+path="res://.import/Run (7).png-5f168bb0408348ca35b535aa9330f8fb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/dino/run/Run (7).png"
-dest_files=[ "res://.import/Run (7).png-cb804baa1df9f1d3f47eac52eac432dc.stex" ]
+source_file="res://assets/Player/Character/dino/run/Run (7).png"
+dest_files=[ "res://.import/Run (7).png-5f168bb0408348ca35b535aa9330f8fb.stex" ]
 
 [params]
 
