@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/fonts/Montserratt_48.tres" type="DynamicFont" id=1]
+[ext_resource path="res://src/menu_system/main_menu/StartGame/Characters.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/menu_system/main_menu/StartGame/StartGameButton.gd" type="Script" id=3]
+
+[node name="ItemList" type="ItemList"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="."]
+margin_right = 1024.0
+margin_bottom = 60.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color_shadow = Color( 1, 0.592157, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_as_outline = 0
+text = "Choose a character"
+align = 1
+
+[node name="Characters" parent="." instance=ExtResource( 2 )]
+
+[node name="Character Model" type="CenterContainer" parent="."]
+modulate = Color( 1, 0.0862745, 0.0862745, 1 )
+margin_left = 750.0
+margin_top = 60.0
+margin_right = 1024.0
+margin_bottom = 561.0
+
+[node name="BackButton" type="Button" parent="."]
+margin_left = 150.0
+margin_top = 570.0
+margin_right = 162.0
+margin_bottom = 590.0
+text = "back"
+script = ExtResource( 3 )
+
+[node name="StartButton" type="Button" parent="."]
+margin_left = 860.0
+margin_top = 570.0
+margin_right = 872.0
+margin_bottom = 590.0
+text = "Start"
+script = ExtResource( 3 )
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_BackButton_pressed"]
+[connection signal="pressed" from="StartButton" to="StartButton" method="_on_StartButton_pressed"]

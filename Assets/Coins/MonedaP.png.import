@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/MonedaP.png-45907c2531001e2ff25aa23e044b45de.stex"
+path="res://.import/MonedaP.png-7e39ea5a8b463a2ca929b97b81bb1a98.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Coins/MonedaP.png"
-dest_files=[ "res://.import/MonedaP.png-45907c2531001e2ff25aa23e044b45de.stex" ]
+source_file="res://assets/Coins/MonedaP.png"
+dest_files=[ "res://.import/MonedaP.png-7e39ea5a8b463a2ca929b97b81bb1a98.stex" ]
 
 [params]
 

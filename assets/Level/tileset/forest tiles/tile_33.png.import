@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tile_33.png-44d494a019768bb064b9014295575f7c.stex"
+path="res://.import/tile_33.png-aea2924d226fdc2242223eb091b03675.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Level/tileset/forest tiles/tile_33.png"
-dest_files=[ "res://.import/tile_33.png-44d494a019768bb064b9014295575f7c.stex" ]
+source_file="res://assets/Level/tileset/forest tiles/tile_33.png"
+dest_files=[ "res://.import/tile_33.png-aea2924d226fdc2242223eb091b03675.stex" ]
 
 [params]
 

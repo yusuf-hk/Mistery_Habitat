@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/menu_system/main_menu/StartGame/Character_Model.gd" type="Script" id=1]
+
+[node name="Character Model" type="CenterContainer"]
+modulate = Color( 1, 0.0862745, 0.0862745, 1 )
+margin_left = 750.0
+margin_top = 60.0
+margin_right = 1024.0
+margin_bottom = 561.0
+script = ExtResource( 1 )

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle (2).png-bae7ed17927815bd2f76c84f688fb2fe.stex"
+path="res://.import/Idle (2).png-289f650216159cd503379e5496b945cd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Character/Boy/Idle (2).png"
-dest_files=[ "res://.import/Idle (2).png-bae7ed17927815bd2f76c84f688fb2fe.stex" ]
+source_file="res://assets/Player/Character/Boy/Idle (2).png"
+dest_files=[ "res://.import/Idle (2).png-289f650216159cd503379e5496b945cd.stex" ]
 
 [params]
 

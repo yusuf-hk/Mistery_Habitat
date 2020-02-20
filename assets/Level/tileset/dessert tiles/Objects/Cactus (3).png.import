@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Cactus (3).png-8a9b946972ee53291a25c10855ce1f54.stex"
+path="res://.import/Cactus (3).png-3ab21acdaaf17950621eac0beacdecec.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Level/tileset/dessert tiles/Objects/Cactus (3).png"
-dest_files=[ "res://.import/Cactus (3).png-8a9b946972ee53291a25c10855ce1f54.stex" ]
+source_file="res://assets/Level/tileset/dessert tiles/Objects/Cactus (3).png"
+dest_files=[ "res://.import/Cactus (3).png-3ab21acdaaf17950621eac0beacdecec.stex" ]
 
 [params]
 
