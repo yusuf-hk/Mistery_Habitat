@@ -464,7 +464,6 @@ scale = Vector2( 1.10002, 0.848643 )
 texture = ExtResource( 3 )
 
 [node name="TileMap" type="TileMap" parent="."]
-editor/display_folded = true
 position = Vector2( 973.731, 1076.23 )
 scale = Vector2( 0.5, 0.5 )
 tile_set = SubResource( 21 )
@@ -618,36 +617,8 @@ __meta__ = {
 position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
-[node name="Crate16" type="Sprite" parent="TileMap"]
-position = Vector2( -1013.32, 2391.08 )
-z_index = -1
-texture = ExtResource( 21 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="TileMap/Crate16"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Crate16/StaticBody2D"]
-position = Vector2( -0.150101, -0.150024 )
-shape = SubResource( 23 )
-
-[node name="Crate17" type="Sprite" parent="TileMap"]
-position = Vector2( -939.301, 2391.08 )
-z_index = -1
-texture = ExtResource( 21 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="TileMap/Crate17"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Crate17/StaticBody2D"]
-position = Vector2( -0.150101, -0.150024 )
-shape = SubResource( 23 )
-
 [node name="Crate19" type="Sprite" parent="TileMap"]
-position = Vector2( -517.505, 2216.5 )
+position = Vector2( -923.935, 2318.46 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -661,7 +632,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate20" type="Sprite" parent="TileMap"]
-position = Vector2( -591.324, 2217.15 )
+position = Vector2( -997.754, 2319.11 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -675,7 +646,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate21" type="Sprite" parent="TileMap"]
-position = Vector2( -667.801, 2217.9 )
+position = Vector2( -1000.41, 2245.29 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -689,7 +660,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate22" type="Sprite" parent="TileMap"]
-position = Vector2( -534.274, 2144.31 )
+position = Vector2( -524.497, 2598.23 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -703,7 +674,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate23" type="Sprite" parent="TileMap"]
-position = Vector2( -611.117, 2143.37 )
+position = Vector2( -924.05, 2244.44 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -717,7 +688,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate24" type="Sprite" parent="TileMap"]
-position = Vector2( -1002.53, 1939.15 )
+position = Vector2( -1002.53, 1641.15 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -731,7 +702,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate25" type="Sprite" parent="TileMap"]
-position = Vector2( -932.514, 1939.46 )
+position = Vector2( -541.448, 2019.07 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -745,7 +716,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate26" type="Sprite" parent="TileMap"]
-position = Vector2( -858.046, 1939.65 )
+position = Vector2( -603.853, 1945.24 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -759,7 +730,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate27" type="Sprite" parent="TileMap"]
-position = Vector2( -782.441, 1938.97 )
+position = Vector2( -528.248, 1945.95 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -773,7 +744,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate28" type="Sprite" parent="TileMap"]
-position = Vector2( -847.829, 1864.73 )
+position = Vector2( -674.642, 1945.74 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -787,7 +758,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate31" type="Sprite" parent="TileMap"]
-position = Vector2( -922.752, 1787.76 )
+position = Vector2( -530.289, 1872.96 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -801,7 +772,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate32" type="Sprite" parent="TileMap"]
-position = Vector2( -999.038, 1787.76 )
+position = Vector2( -507.041, 1795.76 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -815,7 +786,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate33" type="Sprite" parent="TileMap"]
-position = Vector2( -534.953, 1642.89 )
+position = Vector2( -1018.95, 1568.89 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -829,7 +800,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate29" type="Sprite" parent="TileMap"]
-position = Vector2( -924.115, 1864.04 )
+position = Vector2( -598.692, 1872.42 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
@@ -843,7 +814,7 @@ position = Vector2( -0.150101, -0.150024 )
 shape = SubResource( 23 )
 
 [node name="Crate30" type="Sprite" parent="TileMap"]
-position = Vector2( -996.995, 1863.36 )
+position = Vector2( -940.995, 1567.36 )
 z_index = -1
 texture = ExtResource( 21 )
 __meta__ = {
