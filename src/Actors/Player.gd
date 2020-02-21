@@ -77,10 +77,6 @@ func move_sprite()-> void:
 				character_objects.flip_h = false
 	else:
 		character.play("Idle")
-		
-		
-		
-
 	
 func flip_character(right:bool)->void:
 	character.flip_h = right

@@ -1,0 +1,84 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/menu_system/main_menu/StartGame/StartGameMenu.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/Montserratt_48.tres" type="DynamicFont" id=2]
+[ext_resource path="res://src/menu_system/main_menu/StartGame/CharacterSelection.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/menu_system/main_menu/StartGame/CharacterModel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/menu_system/main_menu/StartGame/buttons/BackButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/menu_system/main_menu/StartGame/buttons/StartButton.tscn" type="PackedScene" id=6]
+
+[node name="StartGameMenu" type="Control"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = -20.0
+margin_bottom = -20.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 1240.0
+margin_bottom = 60.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color_shadow = Color( 1, 0.592157, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_as_outline = 0
+text = "Choose a character"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 64.0
+margin_right = 1240.0
+margin_bottom = 565.0
+
+[node name="CharacterSelection" parent="VBoxContainer/HBoxContainer" instance=ExtResource( 3 )]
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/HBoxContainer"]
+margin_left = 744.0
+margin_right = 1240.0
+margin_bottom = 501.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CharacterModel" parent="VBoxContainer/HBoxContainer/CenterContainer" instance=ExtResource( 4 )]
+position = Vector2( 276, 266 )
+
+[node name="VBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 569.0
+margin_right = 1240.0
+margin_bottom = 680.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/VBoxContainer"]
+margin_right = 618.0
+margin_bottom = 111.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="BackButton" parent="VBoxContainer/VBoxContainer/CenterContainer" instance=ExtResource( 5 )]
+margin_left = 244.0
+margin_top = 25.0
+margin_right = 373.0
+margin_bottom = 85.0
+
+[node name="CenterContainer2" type="CenterContainer" parent="VBoxContainer/VBoxContainer"]
+editor/display_folded = true
+margin_left = 622.0
+margin_right = 1240.0
+margin_bottom = 111.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="StartButton" parent="VBoxContainer/VBoxContainer/CenterContainer2" instance=ExtResource( 6 )]
+margin_left = 247.0
+margin_top = 25.0
+margin_right = 371.0
+margin_bottom = 85.0
