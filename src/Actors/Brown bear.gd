@@ -7,6 +7,9 @@ const FLOOR = Vector2(0, -1)
 var velocity = Vector2()
 
 var direction = 1
+export var score: = 200
+var lives = 5
+var animal = "Bear"
 
 func _ready():
 	pass
@@ -37,3 +40,17 @@ func _physics_process(delta: float) -> void:
 	#	direction = direction * -1
 	#	$RayCast2D.position.y *= -1
 		
+
+func _on_Area2D_area_entered(area: Area2D) -> void:
+	if PlayerData.get_arrow_state() == true:
+		time_to_live()
+		if lives == 0:
+			die()
+	
+func die()->void:
+	PlayerData.score += score
+	PlayerData.set_animal_list(animal)
+	queue_free()
+	
+func time_to_live()->void:
+	lives = lives -1
