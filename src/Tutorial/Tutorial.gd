@@ -22,3 +22,18 @@ func _on_Coin_tutorial_body_entered(body: PhysicsBody2D) -> void:
 func _on_Coin_tutorial2_body_entered(body: PhysicsBody2D) -> void:
 	get_node("Coin_collection").queue_free()
 
+
+
+func _on_Area2D_body_entered(body: PhysicsBody2D) -> void:
+	get_node("Direction_tutorial").popup()
+
+	
+	
+
+
+
+func _on_Button_pressed() -> void:
+	get_node("Direction_tutorial").queue_free()
+	
+
+	
