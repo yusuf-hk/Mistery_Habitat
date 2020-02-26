@@ -1,0 +1,118 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/Player/CharacterAlbum.png" type="Texture" id=1]
+[ext_resource path="res://src/menu_system/main_menu/StartGame/StartGameMenu.gd" type="Script" id=2]
+
+[node name="CharacterSelection" type="TextureRect"]
+margin_right = 740.0
+margin_bottom = 501.0
+texture = ExtResource( 1 )
+stretch_mode = 4
+
+[node name="BoyButton" type="Button" parent="."]
+margin_left = 10.0
+margin_top = 11.0
+margin_right = 190.0
+margin_bottom = 171.0
+flat = true
+script = ExtResource( 2 )
+
+[node name="GirlButton" type="Button" parent="."]
+margin_left = 190.0
+margin_top = 10.0
+margin_right = 370.0
+margin_bottom = 170.0
+flat = true
+script = ExtResource( 2 )
+
+[node name="DinoButton" type="Button" parent="."]
+margin_left = 370.0
+margin_top = 10.0
+margin_right = 550.0
+margin_bottom = 170.0
+flat = true
+script = ExtResource( 2 )
+
+[node name="KnightButton" type="Button" parent="."]
+margin_left = 550.0
+margin_top = 10.0
+margin_right = 720.0
+margin_bottom = 170.0
+flat = true
+script = ExtResource( 2 )
+
+[node name="JackButton" type="Button" parent="."]
+margin_left = 10.0
+margin_top = 170.0
+margin_right = 190.0
+margin_bottom = 330.0
+flat = true
+script = ExtResource( 2 )
+
+[node name="NinjaBoyButton" type="Button" parent="."]
+margin_left = 190.0
+margin_top = 170.0
+margin_right = 370.0
+margin_bottom = 330.0
+flat = true
+script = ExtResource( 2 )
+
+[node name="NinjaGirlButton" type="Button" parent="."]
+margin_left = 370.0
+margin_top = 170.0
+margin_right = 550.0
+margin_bottom = 330.0
+flat = true
+script = ExtResource( 2 )
+
+[node name="RobotButton" type="Button" parent="."]
+margin_left = 550.0
+margin_top = 170.0
+margin_right = 720.0
+margin_bottom = 330.0
+flat = true
+script = ExtResource( 2 )
+
+[node name="SantaButton" type="Button" parent="."]
+margin_left = 10.0
+margin_top = 330.0
+margin_right = 190.0
+margin_bottom = 490.0
+flat = true
+script = ExtResource( 2 )
+
+[node name="TemplerunButton" type="Button" parent="."]
+margin_left = 190.0
+margin_top = 330.0
+margin_right = 370.0
+margin_bottom = 490.0
+flat = true
+script = ExtResource( 2 )
+
+[node name="TemplerunGirlButton" type="Button" parent="."]
+margin_left = 370.0
+margin_top = 330.0
+margin_right = 550.0
+margin_bottom = 490.0
+flat = true
+script = ExtResource( 2 )
+
+[node name="ZombieBoyButton" type="Button" parent="."]
+margin_left = 550.0
+margin_top = 330.0
+margin_right = 720.0
+margin_bottom = 490.0
+flat = true
+script = ExtResource( 2 )
+[connection signal="focus_entered" from="BoyButton" to="BoyButton" method="_on_BoyButton_focus_entered"]
+[connection signal="focus_entered" from="GirlButton" to="GirlButton" method="_on_GirlButton_focus_entered"]
+[connection signal="focus_entered" from="DinoButton" to="DinoButton" method="_on_DinoButton_focus_entered"]
+[connection signal="focus_entered" from="KnightButton" to="KnightButton" method="_on_KnightButton_focus_entered"]
+[connection signal="focus_entered" from="JackButton" to="JackButton" method="_on_JackButton_focus_entered"]
+[connection signal="focus_entered" from="NinjaBoyButton" to="NinjaBoyButton" method="_on_NinjaBoyButton_focus_entered"]
+[connection signal="focus_entered" from="NinjaGirlButton" to="NinjaGirlButton" method="_on_NinjaGirlButton_focus_entered"]
+[connection signal="focus_entered" from="RobotButton" to="RobotButton" method="_on_RobotButton_focus_entered"]
+[connection signal="focus_entered" from="SantaButton" to="SantaButton" method="_on_SantaButton_focus_entered"]
+[connection signal="focus_entered" from="TemplerunButton" to="TemplerunButton" method="_on_TemplerunButton_focus_entered"]
+[connection signal="focus_entered" from="TemplerunGirlButton" to="TemplerunGirlButton" method="_on_TemplerunGirlButton_focus_entered"]
+[connection signal="focus_entered" from="ZombieBoyButton" to="ZombieBoyButton" method="_on_ZombieBoyButton_focus_entered"]
