@@ -3,8 +3,6 @@
 [ext_resource path="res://src/menu_system/main_menu/StartGame/buttons/CharacterSelectionButton.gd" type="Script" id=1]
 [ext_resource path="res://assets/Player/CharacterAlbum.png" type="Texture" id=2]
 
-
-
 [node name="Characters" type="ItemList"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 10.0

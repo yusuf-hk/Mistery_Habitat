@@ -1,11 +1,11 @@
 extends Node
 onready var bow = false
-onready var character = "Boy"
+onready var character = "Robot"
 onready var character_flip = false
 
 signal updated
 signal died
-
+signal character_updated
 
 var score: = 0 setget set_score
 var deaths: = 0 setget set_deaths
@@ -28,9 +28,13 @@ func set_deaths(new_value: int) -> void:
 	
 func set_character(player: String) ->void:
 	character = player
+	emit_signal("character_updated")
+	print("character updated to " + character)
 	
 func get_character()->String:
 	return character
+
+
 
 func set_weapon(value:bool)->void:
 	bow = value
