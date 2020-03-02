@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/portalgreen.png-8e47b0e7c9873f4b3f41c8126030320d.stex"
+path="res://.import/Body.svg-1e0a05f90a15edf2ee61df0de2aea045.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portalgreen.png"
-dest_files=[ "res://.import/portalgreen.png-8e47b0e7c9873f4b3f41c8126030320d.stex" ]
+source_file="res://assets/Animals/Camel-kopi/SVG/Body.svg"
+dest_files=[ "res://.import/Body.svg-1e0a05f90a15edf2ee61df0de2aea045.stex" ]
 
 [params]
 
