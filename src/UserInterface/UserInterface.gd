@@ -38,7 +38,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func update_interface() -> void:
-	score_label.text = "Coins: " + String(PlayerData.score)
+	score_label.text = "Coins: " + String(PlayerData.coin)
 
 func update_diamonds() -> void:
 	diamond_label.text = "Diamonds: " + String(PlayerData.diamonds)
