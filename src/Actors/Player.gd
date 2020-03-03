@@ -1,14 +1,13 @@
 extends Actor
 
  
-var array = ["Boy","Girl","Robot","Templerun_boy", "Templerun_girl", "Dino", "Knight", "Jack", "Ninja_boy", "Ninja_girl", "Santa", "Zombie_girl", "Zombie_boy"]
+var array = ["Boy","Girl","Robot","Templerun_boy", "Templerun_girl", "Dino", "Knight", "Jack", "Ninja_boy", "Ninja_girl", "Santa", "Zombie_boy"]
 
 onready var what_character = get_node("/root/PlayerData").get_character()
 onready var character = get_node("Sprite/"+what_character)
 onready var character_objects
 onready var character_animation = get_node("AnimationPlayer")
-onready var bow_weapon = get_node("/root/PlayerData")
-onready var character_flip = get_node("/root/PlayerData")
+
 
 
 
@@ -29,7 +28,7 @@ func set_weapon()->void:
 		character_objects = get_node("Sprite/"+what_character+"/Shoot")
 		
 func choosen_weapon()->bool:
-	return bow_weapon.get_weapon()
+	return PlayerData.bow
 
 	
 	
@@ -95,20 +94,24 @@ func move_sprite()-> void:
 	
 func flip_character(right:bool)->void:
 	character.flip_h = right
-	character_flip.set_character_flip(right)
+	PlayerData.set_character_flip(right)
 		
 	
 
 func get_sprite_position(direction: String)->void:
 	
 	if what_character == "Boy" && direction == "move_right":
-			character.position.x = -50
+			character.position.x = -40
 	elif what_character == "Boy" && direction == "move_left":
-			character.position.x = 50
+			character.position.x = 40
+	
 	elif what_character == "Girl" && direction == "move_right":
 			character.position.x = -10
 	elif what_character == "Girl" && direction == "move_left":
 			character.position.x = 0
+	
+	
+	
 
 
 func calculate_move_velocity(

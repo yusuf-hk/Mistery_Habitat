@@ -45,11 +45,6 @@ Global="*res://src/Autoload/Global.tscn"
 window/size/width=1280
 window/size/height=720
 window/stretch/mode="2d"
-window/stretch/aspect="keep"
-
-[display]
-
-window/stretch/mode="2d"
 window/stretch/aspect="expand"
 
 [input]

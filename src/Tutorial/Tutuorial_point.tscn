@@ -15,8 +15,8 @@ script = ExtResource( 1 )
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = -4.0
 margin_top = 1.0
-margin_right = 1020.0
-margin_bottom = 597.0
+margin_right = 1274.0
+margin_bottom = 717.0
 color = Color( 1, 1, 1, 0.0823529 )
 
 [node name="ItemList" type="ItemList" parent="ColorRect"]
@@ -34,8 +34,8 @@ margin_right = 410.645
 margin_bottom = 261.588
 
 [node name="keys" type="Sprite" parent="ColorRect/Welcome"]
-position = Vector2( 206.381, 117.944 )
-scale = Vector2( 0.652217, 0.677009 )
+position = Vector2( 204.984, 117.944 )
+scale = Vector2( 0.656658, 0.677009 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="ColorRect/Welcome"]

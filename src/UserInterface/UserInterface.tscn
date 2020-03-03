@@ -62,8 +62,8 @@ margin_bottom = 196.0
 
 [node name="ItemList" type="ItemList" parent="."]
 self_modulate = Color( 1, 1, 1, 0 )
-margin_left = 736.094
-margin_right = 1024.09
+margin_left = 990.362
+margin_right = 1278.36
 margin_bottom = 343.0
 
 [node name="Coins" type="Label" parent="ItemList"]

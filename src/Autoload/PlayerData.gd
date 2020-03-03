@@ -1,6 +1,6 @@
 extends Node
-onready var bow = false
-onready var character = "Robot"
+
+onready var character = "Boy"
 onready var character_flip = false
 onready var shoot = false
 
@@ -10,12 +10,14 @@ signal died
 signal position
 signal animal
 signal character_updated
+signal bow
 
 var score: = 0 setget set_score
 var diamonds: = 0 setget set_diamonds
 var deaths: = 0 setget set_deaths
 var position setget set_position
 var animals: = 0 setget set_animals
+var bow: = false setget set_bow
 var catched_animals:= [] 
 
 func reset():
@@ -23,6 +25,7 @@ func reset():
 	self.diamonds = 0
 	self.deaths = 0
 	self.animals = 0
+	self.bow = false
 	self.catched_animals.clear()
 
 
@@ -62,11 +65,10 @@ func get_character()->String:
 
 
 
-func set_weapon(value:bool)->void:
+func set_bow(value:bool)->void:
 	bow = value
+	emit_signal("bow")
 
-func get_weapon()->bool:
-	return bow
 
 func set_character_flip(flip:bool)->void:
 	character_flip = flip

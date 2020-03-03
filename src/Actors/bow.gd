@@ -4,11 +4,9 @@ onready var what_character = get_node("/root/PlayerData").get_character()
 onready var bow = self
 onready var arrow = get_node("arrow")
 onready var bow_animation = get_node("bow_animation")
-onready var flip = get_node("/root/PlayerData")
-onready var bow_or_shoot = get_node("/root/PlayerData")
 
 # Called when the node enters the scene tree for the first time.
-func _process(delta) -> void:
+func _physics_process(delta: float) -> void:
 	if get_weapon() == true:
 		bow.flip_h = get_flip()
 		arrow.flip_h = get_flip()
@@ -32,15 +30,15 @@ func _process(delta) -> void:
 				
 				
 func get_flip()->bool:
-	return flip.get_character_flip()	
+	return PlayerData.get_character_flip()	
 
 func get_weapon()->bool:
 	var state = false
-	if what_character == "Robot" or what_character == "Ninja_boy" or what_character == "Templerun_girl":
+	if what_character == "Robot" or what_character == "Ninja_boy" or what_character == "Ninja_girl" or what_character == "Templerun_girl":
 		bow.visible = false
-		bow_or_shoot.set_weapon(false)
+		PlayerData.set_bow(false)
 	else:
 		bow.visible = true
-		bow_or_shoot.set_weapon(true)
+		PlayerData.set_bow(true)
 		state = true
 	return state
