@@ -189,12 +189,11 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 [node name="Starting zone" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-editor/display_folded = true
 layer = -1
 
 [node name="BG" type="Sprite" parent="CanvasLayer"]
-position = Vector2( 532.938, 297.18 )
-scale = Vector2( 1.06146, 0.843573 )
+position = Vector2( 641.43, 361.77 )
+scale = Vector2( 1.28019, 0.959818 )
 texture = ExtResource( 1 )
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]

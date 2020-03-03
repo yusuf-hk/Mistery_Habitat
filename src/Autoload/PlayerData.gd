@@ -1,6 +1,6 @@
 extends Node
 onready var bow = false
-onready var character = "Robot"
+onready var character = "Girl"
 onready var character_flip = false
 onready var shoot = false
 
