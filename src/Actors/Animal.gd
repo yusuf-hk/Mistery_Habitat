@@ -1,5 +1,5 @@
 extends Actor
-export var score: = 100
+export var coin: = 100
 var lives = 3
 var animal = "Cat"
 
@@ -22,7 +22,7 @@ func _on_Area2D_area_entered(area: Area2D) -> void:
 			die()
 	
 func die()->void:
-	PlayerData.score += score
+	PlayerData.coin += coin
 	PlayerData.set_animal_list(animal)
 	queue_free()
 	

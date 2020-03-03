@@ -7,7 +7,7 @@ const FLOOR = Vector2(0, -1)
 var velocity = Vector2()
 
 var direction = 1
-export var score: = 200
+export var coin: = 200
 var lives = 5
 var animal = "Bear"
 
@@ -48,7 +48,7 @@ func _on_Area2D_area_entered(area: Area2D) -> void:
 			die()
 	
 func die()->void:
-	PlayerData.score += score
+	PlayerData.coin += coin
 	PlayerData.set_animal_list(animal)
 	queue_free()
 	
