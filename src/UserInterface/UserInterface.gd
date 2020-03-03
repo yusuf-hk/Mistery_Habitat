@@ -23,6 +23,7 @@ func _ready() -> void:
 	PlayerData.connect("animal", self, "update_animals")
 	update_interface()
 	update_animals()
+	update_diamonds()
 	
 
 

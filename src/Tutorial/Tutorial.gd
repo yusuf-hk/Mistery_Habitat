@@ -7,7 +7,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	PlayerData.connect("animal", self, "caught_first_animal")
-
+	PlayerData.connect("animal", self, "is_task_completed")
 
 
 func _on_Welcome_body_entered(body: PhysicsBody2D) -> void:
@@ -66,5 +66,8 @@ func caught_first_animal()->void:
 	
 func remove_area2ds(node: String)->void:
 	var delete_area = "Tutorial_areas/" + node
-	print(delete_area)
 	get_node(delete_area).queue_free()
+
+func is_task_completed()->void:
+	if int(PlayerData.animals) >= 2:
+		PlayerData.set_task_state(true)
