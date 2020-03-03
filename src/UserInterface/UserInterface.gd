@@ -59,14 +59,11 @@ func adding_animal_to_list()->void:
 		get_node("ItemList/Animals/Animal_List").add_item(animal_list[i])
 
 func orgranize()->bool:
-
 	for i in PlayerData.catched_animals.size():
-
 		var name = PlayerData.catched_animals[i]
-
 		var animal_number = number_generator(name)
 		if animal_number != 0:
-			var text = name + " " + String(number_generator(name))
+			var text = name + " " + String(animal_number)
 			if  text != name + " "+ String(PlayerData.catched_animals.count(name)):
 				remove_all_animals_with_this_name(name)
 				var new_animal = name + " " + String(animal_number+1)
@@ -74,16 +71,17 @@ func orgranize()->bool:
 				return true
 		if number_generator(name) == 0:
 			if(name in animal_list) == false:
-				animal_list.append(name)
+				animal_list.append(name+ " "+ String(1))
 				return true
-			if name in animal_list && number_generator(name) == 0:
+			if name in animal_list && number_generator(name) == 1:
 				remove_all_animals_with_this_name(name)
 				animal_list.append(name + " " + String(2))
 				return true
 	return false
 	
 func number_generator(name:String)->int:
-	for i in range(2,10):
+	print(name)
+	for i in range(1,10):
 		if name + " " + String(i) in animal_list:
 			return i
 	return 0

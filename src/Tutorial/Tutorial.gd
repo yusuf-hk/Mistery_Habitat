@@ -14,26 +14,44 @@ func _ready() -> void:
 
 
 
-
-func _on_Coin_tutorial_body_entered(body: PhysicsBody2D) -> void:
-	get_node("Coin_collection/Label").show()
-
-
-func _on_Coin_tutorial2_body_entered(body: PhysicsBody2D) -> void:
-	get_node("Coin_collection").queue_free()
+func _on_Welcome_body_entered(body: PhysicsBody2D) -> void:
+	get_node("InterfaceLayer/Tutuorial_point").visible = true
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect").visible = true
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Welcome").visible = true
+	remove_area2ds("Welcome")
 
 
+func _on_Coin_body_entered(body: PhysicsBody2D) -> void:
+	print(true)
+	get_node("InterfaceLayer/Tutuorial_point").visible = true
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect").visible = true
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Coins and diamonds").visible = true
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Welcome").visible = false
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Hidden_rooms").visible = false
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Portal").visible = false
+	remove_area2ds("Coin")
 
-func _on_Area2D_body_entered(body: PhysicsBody2D) -> void:
-	get_node("Direction_tutorial").popup()
 
+func _on_Water_body_entered(body: PhysicsBody2D) -> void:
+	get_node("InterfaceLayer/Tutuorial_point").visible = true
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect").visible = true
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Coins and diamonds").visible = false
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Welcome").visible = false
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Hidden_rooms").visible = true
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Portal").visible = false
+	remove_area2ds("Water")
+
+
+func _on_Portal_body_entered(body: PhysicsBody2D) -> void:
+	get_node("InterfaceLayer/Tutuorial_point").visible = true
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect").visible = true
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Coins and diamonds").visible = false
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Welcome").visible = false
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Hidden_rooms").visible = false
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Portal").visible = true
+	remove_area2ds("Portal")
 	
-	
-
-
-
-func _on_Button_pressed() -> void:
-	get_node("Direction_tutorial").queue_free()
-	
-
-	
+func remove_area2ds(node: String)->void:
+	var delete_area = "Tutorial_areas/" + node
+	print(delete_area)
+	get_node(delete_area).queue_free()

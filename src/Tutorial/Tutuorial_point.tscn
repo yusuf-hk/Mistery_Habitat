@@ -1,0 +1,110 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/Tutorial/Tutuorial_point.gd" type="Script" id=1]
+[ext_resource path="res://assets/UserInterface/keys.jpeg" type="Texture" id=2]
+
+[node name="Tutuorial_point" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.08112
+margin_top = 1.36035
+margin_right = 4.08105
+margin_bottom = 1.36035
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+margin_left = -4.0
+margin_top = 1.0
+margin_right = 1020.0
+margin_bottom = 597.0
+color = Color( 1, 1, 1, 0.0823529 )
+
+[node name="ItemList" type="ItemList" parent="ColorRect"]
+margin_left = 0.28537
+margin_top = -0.690796
+margin_right = 410.285
+margin_bottom = 248.309
+
+[node name="Welcome" type="TextureRect" parent="ColorRect"]
+editor/display_folded = true
+visible = false
+margin_left = 0.644623
+margin_top = 10.5881
+margin_right = 410.645
+margin_bottom = 261.588
+
+[node name="keys" type="Sprite" parent="ColorRect/Welcome"]
+position = Vector2( 206.381, 117.944 )
+scale = Vector2( 0.652217, 0.677009 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="ColorRect/Welcome"]
+margin_left = 3.8689
+margin_top = -4.64267
+margin_right = 413.869
+margin_bottom = 82.3573
+text = "Welcome to Mistery habitat, this are the main keys for moving
+around in the game."
+
+[node name="Coins and diamonds" type="TextureRect" parent="ColorRect"]
+editor/display_folded = true
+visible = false
+margin_left = 2.64465
+margin_top = 0.831848
+margin_right = 411.645
+margin_bottom = 249.832
+
+[node name="Label" type="Label" parent="ColorRect/Coins and diamonds"]
+margin_left = 1.54755
+margin_top = 3.09512
+margin_right = 416.548
+margin_bottom = 156.095
+text = "You caught a coin! theese you can use to buy different
+characters and arrows in the shop menu. 
+
+Notice that you can keep track in right upper corner.
+
+
+PS: There are also hidden diamonds in the game........"
+
+[node name="Portal" type="TextureRect" parent="ColorRect"]
+editor/display_folded = true
+visible = false
+margin_left = 1.53668
+margin_top = 3.04794
+margin_right = 410.537
+margin_bottom = 252.048
+
+[node name="Label" type="Label" parent="ColorRect/Portal"]
+margin_left = 2.32135
+margin_top = 2.32135
+margin_right = 407.321
+margin_bottom = 155.321
+text = "You cant go inside the portal to the next level.
+you need to catch all the animals before you can leave 
+for next habitat"
+
+[node name="Hidden_rooms" type="TextureRect" parent="ColorRect"]
+editor/display_folded = true
+visible = false
+margin_left = 2.02283
+margin_top = 1.37456
+margin_right = 411.023
+margin_bottom = 250.375
+
+[node name="Label" type="Label" parent="ColorRect/Hidden_rooms"]
+margin_left = 2.32135
+margin_top = 5.41647
+margin_right = 407.321
+margin_bottom = 158.416
+text = "Notice that sometimes the water takes you to hidden rooms in
+the game. "
+
+[node name="Button" type="Button" parent="ColorRect"]
+margin_left = 126.423
+margin_top = 218.809
+margin_right = 258.423
+margin_bottom = 238.809
+text = "OK, Understood"
+[connection signal="pressed" from="ColorRect/Button" to="." method="_on_Button_pressed"]

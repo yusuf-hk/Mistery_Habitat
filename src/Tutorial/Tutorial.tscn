@@ -1,9 +1,9 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://src/Tutorial/Tutorial.gd" type="Script" id=1]
-[ext_resource path="res://assets/UserInterface/keys.jpeg" type="Texture" id=2]
-[ext_resource path="res://Assets/Forest/png/BG/BG.png" type="Texture" id=3]
-[ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Forest/png/BG/BG.png" type="Texture" id=2]
+[ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/Tutorial/Tutuorial_point.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/Forest/png/Tiles/2.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Forest/png/Tiles/17.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Forest/png/Tiles/18.png" type="Texture" id=7]
@@ -28,9 +28,6 @@
 [ext_resource path="res://src/Levels/SigurdLevel.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/Actors/Brown bear.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/Actors/Animal.tscn" type="PackedScene" id=28]
-
-[sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 114.47, 10 )
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 17.2081
@@ -195,47 +192,20 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
 [sub_resource type="StyleBoxTexture" id=10]
 
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 91.857, 10 )
+
+[sub_resource type="CircleShape2D" id=12]
+radius = 19.2327
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 33.438, 90.1332 )
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 225.645, 143.539 )
+
 [node name="Tutorial level" type="Node2D"]
 script = ExtResource( 1 )
-
-[node name="Direction_tutorial" type="Popup" parent="."]
-visible = true
-margin_left = 475.874
-margin_top = 458.851
-margin_right = 475.874
-margin_bottom = 458.851
-
-[node name="Area2D" type="Area2D" parent="Direction_tutorial"]
-modulate = Color( 0.898039, 0.0509804, 0.0509804, 1 )
-self_modulate = Color( 1, 0.0823529, 0.0823529, 1 )
-position = Vector2( -4.30786, 0.861542 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Direction_tutorial/Area2D"]
-modulate = Color( 0.85098, 0.101961, 0.101961, 1 )
-self_modulate = Color( 1, 0.168627, 0.168627, 1 )
-position = Vector2( -159.39, 39.6321 )
-shape = SubResource( 11 )
-
-[node name="Sprite" type="Sprite" parent="Direction_tutorial"]
-position = Vector2( -17.1651, -32.4437 )
-scale = Vector2( 0.430397, 0.424079 )
-texture = ExtResource( 2 )
-
-[node name="Label" type="Label" parent="Direction_tutorial"]
-margin_left = -150.0
-margin_top = -110.0
-margin_right = 107.0
-margin_bottom = -59.0
-text = "Hi! Welcome to the game. 
-theese are the Buttons to use
-for moving in the game"
-
-[node name="Button" type="Button" parent="Direction_tutorial"]
-margin_left = -82.5365
-margin_top = 27.3402
-margin_right = 29.4635
-margin_bottom = 47.3402
-text = "OK! lets Start"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 editor/display_folded = true
@@ -244,17 +214,21 @@ layer = -1
 [node name="BG" type="Sprite" parent="CanvasLayer"]
 position = Vector2( 564.672, 332.88 )
 scale = Vector2( 1.20743, 0.913386 )
-texture = ExtResource( 3 )
+texture = ExtResource( 2 )
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]
 
-[node name="UserInterface" parent="InterfaceLayer" instance=ExtResource( 4 )]
+[node name="UserInterface" parent="InterfaceLayer" instance=ExtResource( 3 )]
 margin_left = -1.04309
 margin_top = -0.559262
 margin_right = -1.04309
 margin_bottom = -0.559265
 
+[node name="Tutuorial_point" parent="InterfaceLayer" instance=ExtResource( 4 )]
+visible = false
+
 [node name="Coin_collection" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( 1496.63, 482.894 )
 
 [node name="Coin_tutorial" type="Area2D" parent="Coin_collection"]
@@ -363,7 +337,7 @@ position = Vector2( 2192, 1234 )
 position = Vector2( 2234, 1233 )
 
 [node name="Diamonds4" parent="Coins and diamonds" instance=ExtResource( 16 )]
-position = Vector2( 3161.2, 239.38 )
+position = Vector2( 3106.24, 233.901 )
 
 [node name="Diamonds5" parent="Coins and diamonds" instance=ExtResource( 16 )]
 position = Vector2( 2769.32, 2224.16 )
@@ -514,17 +488,50 @@ position = Vector2( 6891.72, 902.669 )
 next_scene = ExtResource( 26 )
 
 [node name="Animals" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Brown bear4" parent="Animals" instance=ExtResource( 27 )]
-position = Vector2( 5886.82, 1854.13 )
+position = Vector2( 5855.74, 1837.82 )
 
 [node name="Brown bear3" parent="Animals" instance=ExtResource( 27 )]
 position = Vector2( 165.142, 1406.8 )
 
 [node name="Animal" parent="Animals" instance=ExtResource( 28 )]
 position = Vector2( 4334.48, 199.35 )
-[connection signal="body_entered" from="Direction_tutorial/Area2D" to="." method="_on_Area2D_body_entered"]
-[connection signal="pressed" from="Direction_tutorial/Button" to="." method="_on_Button_pressed"]
+
+[node name="Tutorial_areas" type="Node2D" parent="."]
+editor/display_folded = true
+position = Vector2( 4.08112, 1.36035 )
+
+[node name="Welcome" type="Area2D" parent="Tutorial_areas"]
+editor/display_folded = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial_areas/Welcome"]
+position = Vector2( 221.579, 501.945 )
+shape = SubResource( 11 )
+
+[node name="Coin" type="Area2D" parent="Tutorial_areas"]
+editor/display_folded = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial_areas/Coin"]
+position = Vector2( 1499.21, 486.121 )
+shape = SubResource( 12 )
+
+[node name="Water" type="Area2D" parent="Tutorial_areas"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial_areas/Water"]
+position = Vector2( 5694.55, 803.941 )
+shape = SubResource( 13 )
+
+[node name="Portal" type="Area2D" parent="Tutorial_areas"]
+editor/display_folded = true
+position = Vector2( 7000, 800 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial_areas/Portal"]
+position = Vector2( -254.511, -48.0921 )
+shape = SubResource( 14 )
 [connection signal="body_entered" from="Coin_collection/Coin_tutorial" to="." method="_on_Coin_tutorial_body_entered"]
 [connection signal="body_entered" from="Coin_collection/Coin_tutorial2" to="." method="_on_Coin_tutorial2_body_entered"]
+[connection signal="body_entered" from="Tutorial_areas/Welcome" to="." method="_on_Welcome_body_entered"]
+[connection signal="body_entered" from="Tutorial_areas/Coin" to="." method="_on_Coin_body_entered"]
+[connection signal="body_entered" from="Tutorial_areas/Water" to="." method="_on_Water_body_entered"]
+[connection signal="body_entered" from="Tutorial_areas/Portal" to="." method="_on_Portal_body_entered"]
