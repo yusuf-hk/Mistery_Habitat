@@ -6,11 +6,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-#	pass
+	PlayerData.connect("animal", self, "caught_first_animal")
 
 
 
@@ -18,6 +14,10 @@ func _on_Welcome_body_entered(body: PhysicsBody2D) -> void:
 	get_node("InterfaceLayer/Tutuorial_point").visible = true
 	get_node("InterfaceLayer/Tutuorial_point/ColorRect").visible = true
 	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Welcome").visible = true
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Coins and diamonds").visible = false
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Hidden_rooms").visible = false
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Portal").visible = false
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Catched_animal").visible = false
 	remove_area2ds("Welcome")
 
 
@@ -29,6 +29,7 @@ func _on_Coin_body_entered(body: PhysicsBody2D) -> void:
 	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Welcome").visible = false
 	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Hidden_rooms").visible = false
 	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Portal").visible = false
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Catched_animal").visible = false
 	remove_area2ds("Coin")
 
 
@@ -39,6 +40,7 @@ func _on_Water_body_entered(body: PhysicsBody2D) -> void:
 	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Welcome").visible = false
 	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Hidden_rooms").visible = true
 	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Portal").visible = false
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Catched_animal").visible = false
 	remove_area2ds("Water")
 
 
@@ -49,7 +51,18 @@ func _on_Portal_body_entered(body: PhysicsBody2D) -> void:
 	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Welcome").visible = false
 	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Hidden_rooms").visible = false
 	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Portal").visible = true
+	get_node("InterfaceLayer/Tutuorial_point/ColorRect/Catched_animal").visible = false
 	remove_area2ds("Portal")
+	
+func caught_first_animal()->void:
+	if PlayerData.animals == 1:
+		get_node("InterfaceLayer/Tutuorial_point").visible = true
+		get_node("InterfaceLayer/Tutuorial_point/ColorRect").visible = true
+		get_node("InterfaceLayer/Tutuorial_point/ColorRect/Coins and diamonds").visible = false
+		get_node("InterfaceLayer/Tutuorial_point/ColorRect/Welcome").visible = false
+		get_node("InterfaceLayer/Tutuorial_point/ColorRect/Hidden_rooms").visible = false
+		get_node("InterfaceLayer/Tutuorial_point/ColorRect/Portal").visible = false
+		get_node("InterfaceLayer/Tutuorial_point/ColorRect/Catched_animal").visible = true
 	
 func remove_area2ds(node: String)->void:
 	var delete_area = "Tutorial_areas/" + node

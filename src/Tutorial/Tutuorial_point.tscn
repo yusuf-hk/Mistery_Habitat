@@ -13,7 +13,6 @@ margin_bottom = 1.36035
 script = ExtResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 margin_left = -4.0
 margin_top = 1.0
 margin_right = 1020.0
@@ -60,7 +59,7 @@ margin_left = 1.54755
 margin_top = 3.09512
 margin_right = 416.548
 margin_bottom = 156.095
-text = "You caught a coin! theese you can use to buy different
+text = "You caught a coin! These you can use to buy different
 characters and arrows in the shop menu. 
 
 Notice that you can keep track in right upper corner.
@@ -100,6 +99,21 @@ margin_right = 407.321
 margin_bottom = 158.416
 text = "Notice that sometimes the water takes you to hidden rooms in
 the game. "
+
+[node name="Catched_animal" type="TextureRect" parent="ColorRect"]
+visible = false
+margin_left = 2.02283
+margin_top = 1.37456
+margin_right = 411.023
+margin_bottom = 250.375
+
+[node name="Label" type="Label" parent="ColorRect/Catched_animal"]
+margin_left = 2.32135
+margin_top = 5.41647
+margin_right = 407.321
+margin_bottom = 158.416
+text = "Congratz! You caught your first animal, you need to catch 
+all the animals before yo can leave this habitat"
 
 [node name="Button" type="Button" parent="ColorRect"]
 margin_left = 126.423

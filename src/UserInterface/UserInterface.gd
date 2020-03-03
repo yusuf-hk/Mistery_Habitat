@@ -80,7 +80,6 @@ func orgranize()->bool:
 	return false
 	
 func number_generator(name:String)->int:
-	print(name)
 	for i in range(1,10):
 		if name + " " + String(i) in animal_list:
 			return i
