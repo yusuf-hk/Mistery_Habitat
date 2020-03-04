@@ -229,21 +229,12 @@ margin_bottom = -0.559265
 visible = false
 
 [node name="Coin_collection" type="Node2D" parent="."]
-editor/display_folded = true
 position = Vector2( 1496.63, 482.894 )
 
 [node name="Coin_tutorial" type="Area2D" parent="Coin_collection"]
 editor/display_folded = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Coin_collection/Coin_tutorial"]
-position = Vector2( 8.75012, 5.3931 )
-shape = SubResource( 1 )
-
-[node name="Coin_tutorial2" type="Area2D" parent="Coin_collection"]
-editor/display_folded = true
-position = Vector2( 195.787, -5.38861 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Coin_collection/Coin_tutorial2"]
 position = Vector2( 8.75012, 5.3931 )
 shape = SubResource( 1 )
 
@@ -526,7 +517,6 @@ position = Vector2( 7000, 800 )
 position = Vector2( -254.511, -48.0921 )
 shape = SubResource( 14 )
 [connection signal="body_entered" from="Coin_collection/Coin_tutorial" to="." method="_on_Coin_tutorial_body_entered"]
-[connection signal="body_entered" from="Coin_collection/Coin_tutorial2" to="." method="_on_Coin_tutorial2_body_entered"]
 [connection signal="body_entered" from="Tutorial_areas/Welcome" to="." method="_on_Welcome_body_entered"]
 [connection signal="body_entered" from="Tutorial_areas/Coin" to="." method="_on_Coin_body_entered"]
 [connection signal="body_entered" from="Tutorial_areas/Water" to="." method="_on_Water_body_entered"]

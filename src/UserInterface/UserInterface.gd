@@ -17,11 +17,11 @@ var state = -1
 
 
 func _ready() -> void:
-	PlayerData.connect("updated", self, "update_interface")
+	PlayerData.connect("coin", self, "update_coins")
 	PlayerData.connect("diamonds", self, "update_diamonds")
 	PlayerData.connect("died", self, "_on_Player_died")
 	PlayerData.connect("animal", self, "update_animals")
-	update_interface()
+	update_coins()
 	update_animals()
 	update_diamonds()
 	
@@ -37,7 +37,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		self.paused = not self.paused
 
 
-func update_interface() -> void:
+func update_coins() -> void:
 	score_label.text = "Coins: " + String(PlayerData.coin)
 
 func update_diamonds() -> void:
