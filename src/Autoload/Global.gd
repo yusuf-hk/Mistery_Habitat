@@ -1,4 +1,4 @@
-extends Control
+extends Node
 
 const SIMULATED_DELAY_SEC = 0.1
 

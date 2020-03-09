@@ -2,9 +2,11 @@
 
 [ext_resource path="res://assets/fonts/Montserratt_48.tres" type="DynamicFont" id=1]
 
-[node name="MainMenuButton" type="Button"]
+[node name="BackToMainMenuButton" type="Button"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 custom_fonts/font = ExtResource( 1 )
-text = "Main Menu"
+text = "Back To Main Menu"
 flat = true

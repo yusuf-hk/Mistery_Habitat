@@ -1,6 +1,5 @@
 extends Node
 
-
 onready var scene_tree: SceneTree = get_tree()
 onready var score_label: Label = $ItemList/Coins
 onready var diamond_label: Label =$ItemList/Diamonds
@@ -14,7 +13,6 @@ const MESSAGE_DIED: = "You died"
 var paused: = false setget set_paused
 var state = -1
 
-
 func _ready() -> void:
 	PlayerData.connect("updated", self, "update_interface")
 	PlayerData.connect("diamonds", self, "update_diamonds")
@@ -22,8 +20,6 @@ func _ready() -> void:
 	PlayerData.connect("animal", self, "update_animals")
 	update_interface()
 	update_animals()
-	
-
 
 func _on_Player_died() -> void:
 	self.paused = true
@@ -34,13 +30,11 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("pause") and title_label.text != MESSAGE_DIED:
 		self.paused = not self.paused
 
-
 func update_interface() -> void:
 	score_label.text = "Coins: " + String(PlayerData.score)
 
 func update_diamonds() -> void:
 	diamond_label.text = "Diamonds: " + String(PlayerData.diamonds)
-
 
 func set_paused(value: bool) -> void:
 	paused = value
@@ -53,8 +47,6 @@ func update_animals()->void:
 		var name = String(PlayerData.catched_animals[i])
 		print(name)
 		get_node("ItemList/Animals/Animal_List").add_item(name)
-		
-
 
 func _on_TextureButton_button_up() -> void:
 	state = -state
@@ -62,5 +54,3 @@ func _on_TextureButton_button_up() -> void:
 		get_node("ItemList/Animals/Animal_List").visible = true
 	elif state == -1:
 		get_node("ItemList/Animals/Animal_List").visible = false
-	
-
