@@ -450,10 +450,7 @@ position = Vector2( -837.095, -1460.79 )
 script = ExtResource( 1 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1345.31, 1765.62 )
-scale = Vector2( 0.6, 0.6 )
-speed = Vector2( 450, 1000 )
-gravity = 2000.0
+position = Vector2( 2357.92, 2122.34 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
