@@ -1,11 +1,13 @@
 extends Area2D
 
 
+func _on_Oriblock_body_entered(body):
+	if body.name == "Player":
+		vanish()
 
-func _on_Oriblock_area_entered(area: Area2D) -> void:
-	vanish()
+func vanish() -> void:
+	get_node("vblock").visible = false
 
 
-func vanish() -> bool:
-	get_node("OriBlock").visible = false
+
 
