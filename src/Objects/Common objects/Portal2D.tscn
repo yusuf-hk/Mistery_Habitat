@@ -9,10 +9,15 @@ extends Area2D
 onready var anim_player: AnimationPlayer = $AnimationPlayer
 
 export var next_scene: PackedScene
+func _ready() -> void:
+	get_node(\"ColorRect\").visible = false
 
 func _on_Portal2D_body_entered(body):
 	if PlayerData.task_completed == true:
 		teleport()
+	else:
+		get_node(\"ColorRect\").visible = true
+
 
 
 func teleport() -> void:
@@ -21,6 +26,10 @@ func teleport() -> void:
 	get_tree().change_scene_to(next_scene)
 
 
+
+
+func _on_Portal2D_body_exited(body) -> void:
+	get_node(\"ColorRect\").visible = false
 "
 
 [sub_resource type="CapsuleShape2D" id=2]
@@ -94,6 +103,7 @@ position = Vector2( -0.791306, -122.552 )
 shape = SubResource( 2 )
 
 [node name="TransitionLayer" type="CanvasLayer" parent="."]
+editor/display_folded = true
 layer = 100
 
 [node name="ColorRect" type="ColorRect" parent="TransitionLayer"]
@@ -109,4 +119,30 @@ __meta__ = {
 autoplay = "START"
 anims/START = SubResource( 3 )
 anims/fade_in = SubResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+margin_left = -92.0
+margin_top = -291.0
+margin_right = 93.0
+margin_bottom = -232.0
+
+[node name="ItemList" type="ItemList" parent="ColorRect"]
+margin_right = 187.0
+margin_bottom = 59.0
+
+[node name="Label" type="Label" parent="ColorRect/ItemList"]
+margin_right = 189.0
+margin_bottom = 59.0
+text = "Sry, you can't go through the
+Portal. you need to catch
+more animals..."
+
+[node name="Label2" type="Label" parent="ColorRect/ItemList"]
+margin_left = 166.383
+margin_top = 16.7805
+margin_right = 188.383
+margin_bottom = 34.7805
+text = "0"
 [connection signal="body_entered" from="." to="." method="_on_Portal2D_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_Portal2D_body_exited"]
