@@ -25,7 +25,7 @@
 [ext_resource path="res://src/Objects/Forrest Objects/Tree_3.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/Objects/Forrest Objects/Crate.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=25]
-[ext_resource path="res://src/Levels/SigurdLevel.tscn" type="PackedScene" id=26]
+[ext_resource path="res://src/Levels/Level_1.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/Actors/Brown bear.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/Actors/Animal.tscn" type="PackedScene" id=28]
 
@@ -229,6 +229,7 @@ margin_bottom = -0.559265
 visible = false
 
 [node name="Coin_collection" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( 1496.63, 482.894 )
 
 [node name="Coin_tutorial" type="Area2D" parent="Coin_collection"]
