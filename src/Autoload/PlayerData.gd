@@ -21,6 +21,7 @@ var animals: = 0 setget set_animals
 var bow: = false setget set_bow
 var task_completed: = false setget set_task_state
 var catched_animals:= [] 
+var last_animal
 
 func reset():
 	self.coin = 0
@@ -56,6 +57,8 @@ func set_task_state(task_state:bool)->void:
 	emit_signal("task_completed")
 
 func set_animal_list(new_animal:String)->void:
+	last_animal = new_animal
+	print(last_animal + " in playerdata")
 	catched_animals.append(new_animal)
 	set_animals(int(catched_animals.size()))
 

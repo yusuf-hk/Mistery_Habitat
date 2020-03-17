@@ -14,9 +14,12 @@ const MESSAGE_DIED: = "You died"
 var paused: = false setget set_paused
 var animal_list = []
 var state = -1
-
+var lifes = 10
+var animal
+var answer
 
 func _ready() -> void:
+
 	PlayerData.connect("coin", self, "update_coins")
 	PlayerData.connect("diamonds", self, "update_diamonds")
 	PlayerData.connect("died", self, "_on_Player_died")
@@ -24,6 +27,8 @@ func _ready() -> void:
 	update_coins()
 	update_animals()
 	update_diamonds()
+	restart_animal_task()
+
 	
 
 
@@ -53,11 +58,13 @@ func update_animals()->void:
 	animal_label.text = "Animals: " + String(PlayerData.animals)
 	if (orgranize()):
 		adding_animal_to_list()
+	animal_task()
 
 func adding_animal_to_list()->void:
 	get_node("ItemList/Animals/Animal_List").clear()
 	for i in animal_list.size():
 		get_node("ItemList/Animals/Animal_List").add_item(animal_list[i])
+
 
 func orgranize()->bool:
 	for i in PlayerData.catched_animals.size():
@@ -100,5 +107,109 @@ func _on_TextureButton_button_up() -> void:
 		get_node("ItemList/Animals/Animal_List").visible = true
 	elif state == -1:
 		get_node("ItemList/Animals/Animal_List").visible = false
+		
 	
 
+func animal_task()->void:
+	print("inside animal task")
+	get_node("Animal_tasks").visible = true
+	animal = PlayerData.last_animal
+	print(animal)
+	if animal == "Bear":
+		print("animal is equal to bear")
+		get_node("Animal_tasks/Bear").visible = true
+		check_button()
+	
+func check_button()->void:
+	if answer == false:			
+		print("wrong button pressed")
+		print("answer is: "+ String(answer))
+		print("life left: "+ lifes)
+		lifes = lifes - 1
+		if lifes == 0:
+			die()
+	elif answer == true:
+		print("correct button pressed")
+		print("answer is: "+ String(answer))
+		PlayerData.coin += 100
+
+			
+
+func die() -> void:
+	queue_free()
+
+func restart_animal_task()->void:
+	get_node("Animal_tasks").visible = false
+	get_node("Animal_tasks/Bear").visible = false
+	get_node("Animal_tasks/Camel").visible = false
+	get_node("Animal_tasks/Cat").visible = false
+
+func _on_Savanna_button_up() -> bool:
+	var state
+	print("savanna button")
+	if animal == "Camel":
+		answer = true
+		state =  true
+	elif animal == "Bear":
+		answer = false
+		state =  false
+		lifes = lifes - 1
+	check_button()
+	return state
+	
+
+func _on_Grassland_button_up() -> bool:
+	var state
+	print("grassland button")
+	if animal == "Hjort":
+		answer = true
+		state = true
+	elif animal == "Bear":
+		answer = false
+		state = false
+		lifes = lifes - 1
+	check_button()
+	return state
+
+
+func _on_Polar_button_up() -> bool:
+	var state
+	print("polar button")
+	if animal == "Pinguin":
+		answer = true
+		state = true
+	elif animal == "Bear":
+		answer =  false
+		state = false
+		lifes = lifes - 1
+	check_button()
+	return state
+	
+
+
+func _on_Forest_button_up() -> bool:
+	var state
+	print("forest button")
+	if animal == "Bear":
+		answer = true
+		state = true
+	else: 
+		answer = false
+		state = false
+		lifes = lifes - 1
+	check_button()
+	return state
+
+
+func _on_Water_button_up() -> bool:
+	var state
+	print("water button")
+	if animal == "Fish":
+		answer =  true
+		state = true
+	elif animal == "Bear":
+		answer =  false
+		state = false
+		lifes = lifes - 1
+	check_button()
+	return state

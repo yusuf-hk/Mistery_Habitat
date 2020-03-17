@@ -133,9 +133,5 @@ func calculate_stomp_velocity(linear_velocity: Vector2, stomp_impulse: float) ->
 	var stomp_jump: = -speed.y if Input.is_action_pressed("jump") else -stomp_impulse
 	return Vector2(linear_velocity.x, stomp_jump)
 
-
-func die() -> void:
-	PlayerData.deaths += 1
-	queue_free()
 	
 
