@@ -121,28 +121,31 @@ anims/START = SubResource( 3 )
 anims/fade_in = SubResource( 4 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 margin_left = -92.0
 margin_top = -291.0
 margin_right = 93.0
 margin_bottom = -232.0
 
 [node name="ItemList" type="ItemList" parent="ColorRect"]
+margin_left = -8.0
+margin_top = -6.0
 margin_right = 187.0
 margin_bottom = 59.0
 
 [node name="Label" type="Label" parent="ColorRect/ItemList"]
-margin_right = 189.0
-margin_bottom = 59.0
+margin_left = 4.63291
+margin_top = 4.6329
+margin_right = 193.633
+margin_bottom = 63.6329
 text = "Sry, you can't go through the
 Portal. you need to catch
 more animals..."
 
 [node name="Label2" type="Label" parent="ColorRect/ItemList"]
-margin_left = 166.383
-margin_top = 16.7805
-margin_right = 188.383
-margin_bottom = 34.7805
+margin_left = 169.163
+margin_top = 22.8033
+margin_right = 191.163
+margin_bottom = 40.8033
 text = "0"
 [connection signal="body_entered" from="." to="." method="_on_Portal2D_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_Portal2D_body_exited"]

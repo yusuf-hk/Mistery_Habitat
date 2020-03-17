@@ -8,7 +8,8 @@ onready var character = get_node("Sprite/"+what_character)
 onready var character_objects
 onready var character_animation = get_node("AnimationPlayer")
 
-
+func _ready() -> void:
+	PlayerData.connect("died", self, "die")
 
 
 func _physics_process(delta: float) -> void:
@@ -21,6 +22,7 @@ func _physics_process(delta: float) -> void:
 	move_sprite()
 	turn_of_sprite()
 	set_weapon()
+	
 
 	
 func set_weapon()->void:
@@ -134,4 +136,5 @@ func calculate_stomp_velocity(linear_velocity: Vector2, stomp_impulse: float) ->
 	return Vector2(linear_velocity.x, stomp_jump)
 
 	
-
+func die()->void:
+	queue_free()

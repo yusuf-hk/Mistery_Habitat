@@ -15,7 +15,7 @@ signal task_completed
 
 var coin: = 0 setget set_coin
 var diamonds: = 0 setget set_diamonds
-var deaths: = 0 setget set_deaths
+var deaths: = false setget set_deaths
 var position setget set_position
 var animals: = 0 setget set_animals
 var bow: = false setget set_bow
@@ -48,7 +48,7 @@ func set_animals(new_value:int) -> void:
 	animals = new_value
 	emit_signal("animal")
 
-func set_deaths(new_value: int) -> void:
+func set_deaths(new_value: bool) -> void:
 	deaths = new_value
 	emit_signal("died")
 

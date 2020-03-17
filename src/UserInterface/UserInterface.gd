@@ -8,6 +8,8 @@ onready var animal_label: Label = $ItemList/Animals
 onready var pause_overlay: ColorRect = $PauseOverlay
 onready var title_label: Label = $PauseOverlay/Title
 onready var main_screen_button: Button = $PauseOverlay/PauseMenu/MainScreenButton
+onready var animplayer = get_node("animplayer")
+
 
 const MESSAGE_DIED: = "You died"
 
@@ -23,7 +25,7 @@ func _ready() -> void:
 	PlayerData.connect("coin", self, "update_coins")
 	PlayerData.connect("diamonds", self, "update_diamonds")
 	PlayerData.connect("died", self, "_on_Player_died")
-	PlayerData.connect("animal", self, "update_animals")
+	PlayerData.connect("animal", self, "animal_task")
 	update_coins()
 	update_animals()
 	update_diamonds()
@@ -54,11 +56,12 @@ func set_paused(value: bool) -> void:
 	scene_tree.paused = value
 	pause_overlay.visible = value
 
+
 func update_animals()->void:
 	animal_label.text = "Animals: " + String(PlayerData.animals)
 	if (orgranize()):
 		adding_animal_to_list()
-	animal_task()
+	
 
 func adding_animal_to_list()->void:
 	get_node("ItemList/Animals/Animal_List").clear()
@@ -111,105 +114,133 @@ func _on_TextureButton_button_up() -> void:
 	
 
 func animal_task()->void:
-	print("inside animal task")
 	get_node("Animal_tasks").visible = true
 	animal = PlayerData.last_animal
-	print(animal)
-	if animal == "Bear":
-		print("animal is equal to bear")
-		get_node("Animal_tasks/Bear").visible = true
-		check_button()
+
 	
 func check_button()->void:
 	if answer == false:			
 		print("wrong button pressed")
 		print("answer is: "+ String(answer))
-		print("life left: "+ lifes)
+		print("life left: "+ String(lifes))
 		lifes = lifes - 1
+		get_node("Animal_tasks/Label2").text = "Life: "+ String(lifes)
 		if lifes == 0:
 			die()
 	elif answer == true:
 		print("correct button pressed")
 		print("answer is: "+ String(answer))
 		PlayerData.coin += 100
+		update_animals()
+		animplayer.play("Task_fade")
 
 			
 
 func die() -> void:
-	queue_free()
+	PlayerData.animals = PlayerData.animals - 1
+	restart_animal_task()
+	PlayerData.set_deaths(true)
 
 func restart_animal_task()->void:
 	get_node("Animal_tasks").visible = false
-	get_node("Animal_tasks/Bear").visible = false
-	get_node("Animal_tasks/Camel").visible = false
-	get_node("Animal_tasks/Cat").visible = false
+	answer = false
 
-func _on_Savanna_button_up() -> bool:
-	var state
+func _on_Savanna_button_up() -> void:
 	print("savanna button")
 	if animal == "Camel":
+		animplayer.play("Savanna_True")
 		answer = true
-		state =  true
 	elif animal == "Bear":
 		answer = false
-		state =  false
-		lifes = lifes - 1
+		animplayer.play("Savanna_false")
+	elif animal == "Cat":
+		answer = false
+		animplayer.play("Savanna_false")
 	check_button()
-	return state
 	
 
-func _on_Grassland_button_up() -> bool:
-	var state
+func _on_Grassland_button_up() -> void:
 	print("grassland button")
 	if animal == "Hjort":
-		answer = true
-		state = true
+		answer = false
+		animplayer.play("Grassland_False")
 	elif animal == "Bear":
 		answer = false
-		state = false
-		lifes = lifes - 1
+		animplayer.play("Grassland_False")
+	elif animal == "Cat":
+		answer = false
+		animplayer.play("Grassland_False")
+	elif animal == "Camel":
+		answer = false
+		animplayer.play("Grassland_False")
 	check_button()
-	return state
 
 
-func _on_Polar_button_up() -> bool:
-	var state
+func _on_Polar_button_up() -> void:
 	print("polar button")
 	if animal == "Pinguin":
+		animplayer.play("Polar_True")
 		answer = true
-		state = true
 	elif animal == "Bear":
 		answer =  false
-		state = false
-		lifes = lifes - 1
+		animplayer.play("Polar_false")
+	elif animal == "Cat":
+		answer = false
+		animplayer.play("Polar_false")
+	elif animal == "Camel":
+		answer = false
+		animplayer.play("Polar_false")
 	check_button()
-	return state
+
 	
 
 
-func _on_Forest_button_up() -> bool:
-	var state
+func _on_Forest_button_up() -> void:
 	print("forest button")
 	if animal == "Bear":
+		animplayer.play("Forest_True")
 		answer = true
-		state = true
-	else: 
+	elif animal == "Cat":
+		animplayer.play("Forest_True")
+		answer = true
+	elif animal == "Camel":
 		answer = false
-		state = false
-		lifes = lifes - 1
+		animplayer.play("Forest_False")
+		
 	check_button()
-	return state
 
 
-func _on_Water_button_up() -> bool:
-	var state
+
+func _on_Water_button_up() -> void:
 	print("water button")
 	if animal == "Fish":
+		animplayer.play("Water_True")
 		answer =  true
-		state = true
 	elif animal == "Bear":
 		answer =  false
-		state = false
-		lifes = lifes - 1
+		animplayer.play("Water_False")
+	elif animal == "Cat":
+		answer = false
+		animplayer.play("Water_False")
+	elif animal == "Camel":
+		answer = false
+		animplayer.play("Water_False")
 	check_button()
-	return state
+
+
+
+
+func _on_Dessert_button_up() -> void:
+	if animal == "Fish":
+		answer =  false
+		animplayer.play("dessert_false")
+	elif animal == "Bear":
+		answer =  false
+		animplayer.play("dessert_false")
+	elif animal == "Cat":
+		answer = false
+		animplayer.play("dessert_false")
+	elif animal == "Camel":
+		animplayer.play("dessert_true")
+		answer = true
+	check_button()
