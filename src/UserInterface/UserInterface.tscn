@@ -13,7 +13,7 @@
 [ext_resource path="res://assets/Habitats/forest.jpg" type="Texture" id=11]
 [ext_resource path="res://assets/Habitats/dessert1.jpg" type="Texture" id=12]
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=1]
 resource_name = "Forest_False"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Animal_tasks/task/Forest_rect:color")
@@ -28,7 +28,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=2]
 resource_name = "Forest_True"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Animal_tasks/task/Forest_rect:color")
@@ -43,7 +43,7 @@ tracks/0/keys = {
 "values": [ Color( 0, 1, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=3]
 resource_name = "Grassland_False"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Animal_tasks/task/Grassland_rect:color")
@@ -58,7 +58,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=4]
 resource_name = "Grassland_True"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Animal_tasks/task/Grassland_rect:color")
@@ -73,7 +73,7 @@ tracks/0/keys = {
 "values": [ Color( 0, 1, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=5]
 resource_name = "Polar_True"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Animal_tasks/task/Polar_rect:color")
@@ -88,7 +88,7 @@ tracks/0/keys = {
 "values": [ Color( 0, 1, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=6]
 resource_name = "Polar_false"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Animal_tasks/task/Polar_rect:color")
@@ -103,7 +103,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=7]
 resource_name = "Savanna_True"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Animal_tasks/task/Savanna_rect:color")
@@ -118,7 +118,7 @@ tracks/0/keys = {
 "values": [ Color( 0, 1, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=8]
 resource_name = "Savanna_false"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Animal_tasks/task/Savanna_rect:color")
@@ -133,7 +133,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=9]
 resource_name = "Task_fade"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Animal_tasks:color")
@@ -160,7 +160,7 @@ tracks/1/keys = {
 "values": [ true, false ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=10]
 resource_name = "Water_False"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Animal_tasks/task/Water_rect:color")
@@ -175,7 +175,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=11]
 resource_name = "Water_True"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Animal_tasks/task/Water_rect:color")
@@ -190,8 +190,7 @@ tracks/0/keys = {
 "values": [ Color( 0, 1, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=1]
-resource_name = "dessert_false"
+[sub_resource type="Animation" id=12]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Animal_tasks/task/Dessert_rect:color")
 tracks/0/interp = 1
@@ -205,8 +204,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=2]
-resource_name = "dessert_true"
+[sub_resource type="Animation" id=13]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Animal_tasks/task/Dessert_rect:color")
 tracks/0/interp = 1
@@ -275,6 +273,7 @@ margin_right = 274.0
 margin_bottom = 196.0
 
 [node name="Animal_tasks" type="ColorRect" parent="."]
+editor/display_folded = true
 visible = false
 margin_right = 1281.0
 margin_bottom = 718.0
@@ -457,19 +456,19 @@ margin_bottom = 283.119
 max_columns = 16
 
 [node name="animplayer" type="AnimationPlayer" parent="."]
-anims/Forest_False = SubResource( 3 )
-anims/Forest_True = SubResource( 4 )
-anims/Grassland_False = SubResource( 5 )
-anims/Grassland_True = SubResource( 6 )
-anims/Polar_True = SubResource( 7 )
-anims/Polar_false = SubResource( 8 )
-anims/Savanna_True = SubResource( 9 )
-anims/Savanna_false = SubResource( 10 )
-anims/Task_fade = SubResource( 13 )
-anims/Water_False = SubResource( 11 )
-anims/Water_True = SubResource( 12 )
-anims/dessert_false = SubResource( 1 )
-anims/dessert_true = SubResource( 2 )
+anims/Forest_False = SubResource( 1 )
+anims/Forest_True = SubResource( 2 )
+anims/Grassland_False = SubResource( 3 )
+anims/Grassland_True = SubResource( 4 )
+anims/Polar_True = SubResource( 5 )
+anims/Polar_false = SubResource( 6 )
+anims/Savanna_True = SubResource( 7 )
+anims/Savanna_false = SubResource( 8 )
+anims/Task_fade = SubResource( 9 )
+anims/Water_False = SubResource( 10 )
+anims/Water_True = SubResource( 11 )
+anims/dessert_false = SubResource( 12 )
+anims/dessert_true = SubResource( 13 )
 [connection signal="button_up" from="Animal_tasks/task/Savanna" to="." method="_on_Savanna_button_up"]
 [connection signal="button_up" from="Animal_tasks/task/Grassland" to="." method="_on_Grassland_button_up"]
 [connection signal="button_up" from="Animal_tasks/task/Polar" to="." method="_on_Polar_button_up"]
