@@ -16,6 +16,11 @@ func _ready():
 func _physics_process(delta: float) -> void:
 	velocity.x = SPEED * direction
 	
+	if direction == 1:
+		$AnimationPlayer.play("move_right")
+	else:
+		$AnimationPlayer.play("move_left")
+		
 	
 	
 	velocity.y += GRAVITY

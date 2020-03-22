@@ -23,18 +23,18 @@ z_index = 1
 texture = ExtResource( 2 )
 
 [node name="Right foot" type="Sprite" parent="."]
-position = Vector2( 172.341, 278.512 )
+position = Vector2( 177.36, 278.512 )
 scale = Vector2( 0.1, 0.1 )
 z_index = 1
 texture = ExtResource( 3 )
 
 [node name="Left foot" type="Sprite" parent="."]
-position = Vector2( 186.57, 275.53 )
+position = Vector2( 181.216, 275.53 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 3 )
 
 [node name="Head" type="Sprite" parent="."]
-position = Vector2( 188.898, 192.715 )
+position = Vector2( 188.898, 195.392 )
 scale = Vector2( 0.05, 0.05 )
 z_index = 2
 texture = ExtResource( 4 )
