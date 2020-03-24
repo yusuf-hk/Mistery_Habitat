@@ -7,6 +7,9 @@ const FLOOR = Vector2(0, -1)
 var velocity = Vector2()
 
 var direction = 1
+export var coin: = 200
+var lives = 3
+var animal = "Camel"
 
 func _ready():
 	pass
@@ -36,4 +39,17 @@ func _physics_process(delta: float) -> void:
 	#if $RayCast2D.is_colliding() == false:
 	#	direction = direction * -1
 	#	$RayCast2D.position.y *= -1
-		
+
+func _on_Area2D_area_entered(area: Area2D) -> void:
+	if PlayerData.get_arrow_state() == true:
+		time_to_live()
+		if lives == 0:
+			die()
+	
+func die()->void:
+	PlayerData.coin += coin
+	PlayerData.set_animal_list(animal)
+	queue_free()
+	
+func time_to_live()->void:
+	lives = lives -1

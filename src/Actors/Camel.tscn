@@ -1,17 +1,23 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/Actors/Camel.gd" type="Script" id=1]
-[ext_resource path="res://assets/Animals/Camel-kopi/PNG/Body.png" type="Texture" id=2]
-[ext_resource path="res://assets/Animals/Camel-kopi/PNG/Foot.png" type="Texture" id=3]
-[ext_resource path="res://assets/Animals/Camel-kopi/PNG/Head.png" type="Texture" id=4]
-[ext_resource path="res://assets/Animals/Camel-kopi/PNG/Hand.png" type="Texture" id=5]
+[ext_resource path="res://assets/Animals/Camel/PNG/Body.png" type="Texture" id=2]
+[ext_resource path="res://assets/Animals/Camel/PNG/Foot.png" type="Texture" id=3]
+[ext_resource path="res://assets/Animals/Camel/PNG/Head.png" type="Texture" id=4]
+[ext_resource path="res://assets/Animals/Camel/PNG/Hand.png" type="Texture" id=5]
 [ext_resource path="res://src/Actors/move_left.tres" type="Animation" id=6]
 [ext_resource path="res://src/Actors/move_right.tres" type="Animation" id=7]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 44.2813
+height = 29.3552
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 33.3412
+height = 56.0047
 
 [node name="Camel" type="KinematicBody2D"]
+position = Vector2( -24.6902, -28.5887 )
 collision_layer = 3
 collision_mask = 5
 script = ExtResource( 1 )
@@ -51,5 +57,15 @@ anims/move_left = ExtResource( 6 )
 anims/move_right = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 180.539, 233.472 )
+position = Vector2( 180.214, 231.523 )
 shape = SubResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 24.6902, 29.2384 )
+collision_layer = 2
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 154.639, 200.771 )
+shape = SubResource( 2 )
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]

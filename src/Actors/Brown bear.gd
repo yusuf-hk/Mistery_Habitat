@@ -8,7 +8,7 @@ var velocity = Vector2()
 
 var direction = 1
 export var coin: = 200
-var lives = 5
+var lives = 2
 var animal = "Bear"
 
 func _ready():

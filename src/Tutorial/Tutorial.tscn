@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://src/Tutorial/Tutorial.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Forest/png/BG/BG.png" type="Texture" id=2]
@@ -28,7 +28,6 @@
 [ext_resource path="res://src/Levels/Level_1.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/Actors/Brown bear.tscn" type="PackedScene" id=27]
 [ext_resource path="res://src/Actors/Animal.tscn" type="PackedScene" id=28]
-[ext_resource path="res://src/Actors/Elephant.tscn" type="PackedScene" id=29]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 17.2081
@@ -518,9 +517,6 @@ position = Vector2( 7000, 800 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial_areas/Portal"]
 position = Vector2( -254.511, -48.0921 )
 shape = SubResource( 14 )
-
-[node name="Elephant" parent="." instance=ExtResource( 29 )]
-position = Vector2( 620.6, 386.6 )
 [connection signal="body_entered" from="Coin_collection/Coin_tutorial" to="." method="_on_Coin_tutorial_body_entered"]
 [connection signal="body_entered" from="Tutorial_areas/Welcome" to="." method="_on_Welcome_body_entered"]
 [connection signal="body_entered" from="Tutorial_areas/Coin" to="." method="_on_Coin_body_entered"]
