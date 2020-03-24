@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tail.svg-a20d6d8833e810fa423081893bcff72c.stex"
+path="res://.import/Foot.svg-ed3a3d50741ff7baa4eb8e998ebfe62c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animals/Camel-kopi/SVG/Tail.svg"
-dest_files=[ "res://.import/Tail.svg-a20d6d8833e810fa423081893bcff72c.stex" ]
+source_file="res://assets/Animals/Camel/SVG/Foot.svg"
+dest_files=[ "res://.import/Foot.svg-ed3a3d50741ff7baa4eb8e998ebfe62c.stex" ]
 
 [params]
 

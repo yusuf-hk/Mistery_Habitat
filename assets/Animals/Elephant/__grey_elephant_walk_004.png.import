@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hand.svg-f5bc325fa456938a56c3346129c35f07.stex"
+path="res://.import/__grey_elephant_walk_004.png-47f4648a5a23060f006d3eda2cca74cd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animals/Camel-kopi/SVG/Hand.svg"
-dest_files=[ "res://.import/Hand.svg-f5bc325fa456938a56c3346129c35f07.stex" ]
+source_file="res://assets/Animals/Elephant/__grey_elephant_walk_004.png"
+dest_files=[ "res://.import/__grey_elephant_walk_004.png-47f4648a5a23060f006d3eda2cca74cd.stex" ]
 
 [params]
 
