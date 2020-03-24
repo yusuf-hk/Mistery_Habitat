@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Foot.png-fbbd82a91e0fdab62c3c41fe540a041b.stex"
+path="res://.import/Hand.png-2b8d10bde359aa18cd03ebd78d5d1d40.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animals/Camel-kopi/PNG/Foot.png"
-dest_files=[ "res://.import/Foot.png-fbbd82a91e0fdab62c3c41fe540a041b.stex" ]
+source_file="res://assets/Animals/Camel/PNG/Hand.png"
+dest_files=[ "res://.import/Hand.png-2b8d10bde359aa18cd03ebd78d5d1d40.stex" ]
 
 [params]
 

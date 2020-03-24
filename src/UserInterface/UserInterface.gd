@@ -148,14 +148,17 @@ func restart_animal_task()->void:
 func _on_Savanna_button_up() -> void:
 	print("savanna button")
 	if animal == "Camel":
-		animplayer.play("Savanna_True")
 		answer = true
+		animplayer.play("Savanna_True")
 	elif animal == "Bear":
 		answer = false
 		animplayer.play("Savanna_false")
 	elif animal == "Cat":
 		answer = false
 		animplayer.play("Savanna_false")
+	elif animal == "Elephant":
+		answer = true
+		animplayer.play("Savanna_True")
 	check_button()
 	
 
@@ -171,6 +174,9 @@ func _on_Grassland_button_up() -> void:
 		answer = false
 		animplayer.play("Grassland_False")
 	elif animal == "Camel":
+		answer = false
+		animplayer.play("Grassland_False")
+	elif animal == "Elephant":
 		answer = false
 		animplayer.play("Grassland_False")
 	check_button()
@@ -190,6 +196,9 @@ func _on_Polar_button_up() -> void:
 	elif animal == "Camel":
 		answer = false
 		animplayer.play("Polar_false")
+	elif animal == "Elephant":
+		answer = false
+		animplayer.play("Polar_false")
 	check_button()
 
 	
@@ -204,6 +213,9 @@ func _on_Forest_button_up() -> void:
 		animplayer.play("Forest_True")
 		answer = true
 	elif animal == "Camel":
+		answer = false
+		animplayer.play("Forest_False")
+	elif animal == "Elephant":
 		answer = false
 		animplayer.play("Forest_False")
 		
@@ -225,6 +237,9 @@ func _on_Water_button_up() -> void:
 	elif animal == "Camel":
 		answer = false
 		animplayer.play("Water_False")
+	elif animal == "Elephant":
+		answer = false
+		animplayer.play("Water_False")
 	check_button()
 
 
@@ -243,4 +258,7 @@ func _on_Dessert_button_up() -> void:
 	elif animal == "Camel":
 		animplayer.play("dessert_true")
 		answer = true
+	elif animal == "Elephant":
+		answer = false
+		animplayer.play("dessert_false")
 	check_button()
