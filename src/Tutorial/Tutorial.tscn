@@ -217,7 +217,6 @@ scale = Vector2( 1.42685, 1.04765 )
 texture = ExtResource( 2 )
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]
-editor/display_folded = true
 
 [node name="UserInterface" parent="InterfaceLayer" instance=ExtResource( 3 )]
 margin_left = -1.04309
