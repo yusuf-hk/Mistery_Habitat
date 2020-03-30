@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://src/Levels/Level_1.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Forest/png/BG/BG.png" type="Texture" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://src/Actors/Brown bear.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/Actors/Animal.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/Levels/Arctic_level.tscn" type="PackedScene" id=25]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -384,4 +385,4 @@ position = Vector2( 6018.73, 3008.95 )
 
 [node name="Portal2D" parent="." instance=ExtResource( 24 )]
 position = Vector2( 6564.99, 1282.67 )
-next_scene = null
+next_scene = ExtResource( 25 )
