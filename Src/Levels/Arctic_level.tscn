@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://src/Levels/Arctic_level.gd" type="Script" id=1]
 [ext_resource path="res://assets/Level/Background/ice bakground.jpg" type="Texture" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://src/Actors/Camel.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/Levels/DesertMap.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/Objects/Forrest Objects/Tree_1.tscn" type="PackedScene" id=24]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -495,3 +496,6 @@ position = Vector2( 1631.86, 1151.41 )
 position = Vector2( 5123.39, 516.601 )
 z_index = -2
 next_scene = ExtResource( 23 )
+
+[node name="Tree_1" parent="." instance=ExtResource( 24 )]
+position = Vector2( 2872.05, 692.184 )

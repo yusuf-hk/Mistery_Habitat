@@ -120,16 +120,11 @@ func animal_task()->void:
 	
 func check_button()->void:
 	if answer == false:			
-		print("wrong button pressed")
-		print("answer is: "+ String(answer))
-		print("life left: "+ String(lifes))
 		lifes = lifes - 1
 		get_node("Animal_tasks/Label2").text = "Life: "+ String(lifes)
 		if lifes == 0:
 			die()
 	elif answer == true:
-		print("correct button pressed")
-		print("answer is: "+ String(answer))
 		PlayerData.coin += 100
 		update_animals()
 		animplayer.play("Task_fade")
@@ -146,7 +141,6 @@ func restart_animal_task()->void:
 	answer = false
 
 func _on_Savanna_button_up() -> void:
-	print("savanna button")
 	if animal == "Camel":
 		answer = true
 		animplayer.play("Savanna_True")
@@ -163,7 +157,6 @@ func _on_Savanna_button_up() -> void:
 	
 
 func _on_Grassland_button_up() -> void:
-	print("grassland button")
 	if animal == "Hjort":
 		answer = false
 		animplayer.play("Grassland_False")
@@ -183,7 +176,6 @@ func _on_Grassland_button_up() -> void:
 
 
 func _on_Polar_button_up() -> void:
-	print("polar button")
 	if animal == "Pinguin":
 		animplayer.play("Polar_True")
 		answer = true
@@ -205,7 +197,6 @@ func _on_Polar_button_up() -> void:
 
 
 func _on_Forest_button_up() -> void:
-	print("forest button")
 	if animal == "Bear":
 		animplayer.play("Forest_True")
 		answer = true
@@ -224,7 +215,6 @@ func _on_Forest_button_up() -> void:
 
 
 func _on_Water_button_up() -> void:
-	print("water button")
 	if animal == "Fish":
 		animplayer.play("Water_True")
 		answer =  true
