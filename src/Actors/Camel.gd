@@ -53,4 +53,3 @@ func die()->void:
 	
 func time_to_live()->void:
 	lives = lives -1
-	print(lives)
