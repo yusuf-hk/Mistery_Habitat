@@ -21,7 +21,6 @@ var animal
 var answer
 
 func _ready() -> void:
-
 	PlayerData.connect("coin", self, "update_coins")
 	PlayerData.connect("diamonds", self, "update_diamonds")
 	PlayerData.connect("died", self, "_on_Player_died")
@@ -116,8 +115,10 @@ func _on_TextureButton_button_up() -> void:
 	
 
 func animal_task()->void:
-	get_node("Animal_tasks").visible = true
-	animal = PlayerData.last_animal
+	if PlayerData.retry == false:
+		scene_tree.paused = true
+		get_node("Animal_tasks").visible = true
+		animal = PlayerData.last_animal
 
 
 	
@@ -130,6 +131,7 @@ func check_button()->void:
 	elif answer == true:
 		PlayerData.coin += 100
 		update_animals()
+		scene_tree.paused = false
 		animplayer.play("Task_fade")
 
 			

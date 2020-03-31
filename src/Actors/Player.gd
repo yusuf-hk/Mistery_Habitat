@@ -140,4 +140,6 @@ func calculate_stomp_velocity(linear_velocity: Vector2, stomp_impulse: float) ->
 
 	
 func die()->void:
+	PlayerData.retry()
+	PlayerData.retry = false
 	queue_free()

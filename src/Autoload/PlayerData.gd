@@ -1,8 +1,9 @@
 extends Node
 
-onready var character = "Ninja_boy"
+onready var character = "Boy"
 onready var character_flip = false
 onready var shoot = false
+onready var retry = false
 
 signal coin
 signal diamonds
@@ -32,6 +33,15 @@ func reset():
 	self.animals = 0
 	self.bow = false
 	self.catched_animals.clear()
+	
+func retry():
+	retry = true
+	self.coin = 0
+	self.diamonds = 0
+	self.animals = 0
+	self.bow = false
+	self.catched_animals.clear()
+	
 
 func set_tutorial(val:bool)->void:
 	tutorial = val
