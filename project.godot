@@ -14,7 +14,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/Actors/Actor.gd"
 }, {
-"base": "Area2D",
+"base": "Node2D",
 "class": "inPortal2D",
 "language": "GDScript",
 "path": "res://src/Objects/Common objects/inPortal2D.gd"
