@@ -28,6 +28,8 @@ func _physics_process(delta: float) -> void:
 func set_weapon()->void:
 	if choosen_weapon() == false:
 		character_objects = get_node("Sprite/"+what_character+"/Shoot")
+	else:
+		character_objects = get_node("bow")
 		
 func choosen_weapon()->bool:
 	return PlayerData.bow

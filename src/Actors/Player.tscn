@@ -217,21 +217,21 @@
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/shoot/Shoot (1).png" type="Texture" id=215]
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/shoot/Shoot (2).png" type="Texture" id=216]
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/shoot/Shoot (3).png" type="Texture" id=217]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (1).png" type="Texture" id=218]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (2).png" type="Texture" id=219]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (3).png" type="Texture" id=220]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (4).png" type="Texture" id=221]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (5).png" type="Texture" id=222]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (6).png" type="Texture" id=223]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (7).png" type="Texture" id=224]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (8).png" type="Texture" id=225]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (9).png" type="Texture" id=226]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (10).png" type="Texture" id=227]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (1).png" type="Texture" id=228]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (2).png" type="Texture" id=229]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (3).png" type="Texture" id=230]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (4).png" type="Texture" id=231]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (5).png" type="Texture" id=232]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (1).png" type="Texture" id=218]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (2).png" type="Texture" id=219]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (3).png" type="Texture" id=220]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (4).png" type="Texture" id=221]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (5).png" type="Texture" id=222]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (1).png" type="Texture" id=223]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (2).png" type="Texture" id=224]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (3).png" type="Texture" id=225]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (4).png" type="Texture" id=226]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (5).png" type="Texture" id=227]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (6).png" type="Texture" id=228]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (7).png" type="Texture" id=229]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (8).png" type="Texture" id=230]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (9).png" type="Texture" id=231]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (10).png" type="Texture" id=232]
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/slide/Slide (1).png" type="Texture" id=233]
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/slide/Slide (2).png" type="Texture" id=234]
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/slide/Slide (3).png" type="Texture" id=235]
@@ -465,47 +465,47 @@
 [ext_resource path="res://assets/Player/Character/santa/jump/Jump (14).png" type="Texture" id=463]
 [ext_resource path="res://assets/Player/Character/santa/jump/Jump (15).png" type="Texture" id=464]
 [ext_resource path="res://assets/Player/Character/santa/jump/Jump (16).png" type="Texture" id=465]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (1).png" type="Texture" id=466]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (2).png" type="Texture" id=467]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (3).png" type="Texture" id=468]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (4).png" type="Texture" id=469]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (5).png" type="Texture" id=470]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (6).png" type="Texture" id=471]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (7).png" type="Texture" id=472]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (8).png" type="Texture" id=473]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (9).png" type="Texture" id=474]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (10).png" type="Texture" id=475]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (11).png" type="Texture" id=476]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (12).png" type="Texture" id=477]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (13).png" type="Texture" id=478]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (1).png" type="Texture" id=479]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (2).png" type="Texture" id=480]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (3).png" type="Texture" id=481]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (4).png" type="Texture" id=482]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (5).png" type="Texture" id=483]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (6).png" type="Texture" id=484]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (7).png" type="Texture" id=485]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (8).png" type="Texture" id=486]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (9).png" type="Texture" id=487]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (10).png" type="Texture" id=488]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (11).png" type="Texture" id=489]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (12).png" type="Texture" id=490]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (13).png" type="Texture" id=491]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (14).png" type="Texture" id=492]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (15).png" type="Texture" id=493]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (16).png" type="Texture" id=494]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (17).png" type="Texture" id=495]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (1).png" type="Texture" id=496]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (2).png" type="Texture" id=497]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (3).png" type="Texture" id=498]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (4).png" type="Texture" id=499]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (5).png" type="Texture" id=500]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (6).png" type="Texture" id=501]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (7).png" type="Texture" id=502]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (8).png" type="Texture" id=503]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (9).png" type="Texture" id=504]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (10).png" type="Texture" id=505]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (11).png" type="Texture" id=506]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (1).png" type="Texture" id=466]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (2).png" type="Texture" id=467]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (3).png" type="Texture" id=468]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (4).png" type="Texture" id=469]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (5).png" type="Texture" id=470]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (6).png" type="Texture" id=471]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (7).png" type="Texture" id=472]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (8).png" type="Texture" id=473]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (9).png" type="Texture" id=474]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (10).png" type="Texture" id=475]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (11).png" type="Texture" id=476]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (12).png" type="Texture" id=477]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (13).png" type="Texture" id=478]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (14).png" type="Texture" id=479]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (15).png" type="Texture" id=480]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (16).png" type="Texture" id=481]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (17).png" type="Texture" id=482]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (1).png" type="Texture" id=483]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (2).png" type="Texture" id=484]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (3).png" type="Texture" id=485]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (4).png" type="Texture" id=486]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (5).png" type="Texture" id=487]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (6).png" type="Texture" id=488]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (7).png" type="Texture" id=489]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (8).png" type="Texture" id=490]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (9).png" type="Texture" id=491]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (10).png" type="Texture" id=492]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (11).png" type="Texture" id=493]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (1).png" type="Texture" id=494]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (2).png" type="Texture" id=495]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (3).png" type="Texture" id=496]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (4).png" type="Texture" id=497]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (5).png" type="Texture" id=498]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (6).png" type="Texture" id=499]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (7).png" type="Texture" id=500]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (8).png" type="Texture" id=501]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (9).png" type="Texture" id=502]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (10).png" type="Texture" id=503]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (11).png" type="Texture" id=504]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (12).png" type="Texture" id=505]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (13).png" type="Texture" id=506]
 [ext_resource path="res://assets/Player/Character/zombie/male/idle/Idle (1).png" type="Texture" id=507]
 [ext_resource path="res://assets/Player/Character/zombie/male/idle/Idle (2).png" type="Texture" id=508]
 [ext_resource path="res://assets/Player/Character/zombie/male/idle/Idle (3).png" type="Texture" id=509]
@@ -671,15 +671,15 @@ animations = [ {
 "name": "Shoot",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 218 ), ExtResource( 219 ), ExtResource( 220 ), ExtResource( 221 ), ExtResource( 222 ), ExtResource( 223 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 227 ) ],
-"loop": true,
-"name": "Dead",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 228 ), ExtResource( 229 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 232 ) ],
+"frames": [ ExtResource( 218 ), ExtResource( 219 ), ExtResource( 220 ), ExtResource( 221 ), ExtResource( 222 ) ],
 "loop": true,
 "name": "Melee",
 "speed": 15.0
+}, {
+"frames": [ ExtResource( 223 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 227 ), ExtResource( 228 ), ExtResource( 229 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 232 ) ],
+"loop": true,
+"name": "Dead",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 233 ), ExtResource( 234 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 237 ) ],
 "loop": true,
@@ -814,20 +814,20 @@ animations = [ {
 "name": "Jump",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 466 ), ExtResource( 467 ), ExtResource( 468 ), ExtResource( 469 ), ExtResource( 470 ), ExtResource( 471 ), ExtResource( 472 ), ExtResource( 473 ), ExtResource( 474 ), ExtResource( 475 ), ExtResource( 476 ), ExtResource( 477 ), ExtResource( 478 ) ],
-"loop": true,
-"name": "Walk",
-"speed": 12.0
-}, {
-"frames": [ ExtResource( 479 ), ExtResource( 480 ), ExtResource( 481 ), ExtResource( 482 ), ExtResource( 483 ), ExtResource( 484 ), ExtResource( 485 ), ExtResource( 486 ), ExtResource( 487 ), ExtResource( 488 ), ExtResource( 489 ), ExtResource( 490 ), ExtResource( 491 ), ExtResource( 492 ), ExtResource( 493 ), ExtResource( 494 ), ExtResource( 495 ) ],
+"frames": [ ExtResource( 466 ), ExtResource( 467 ), ExtResource( 468 ), ExtResource( 469 ), ExtResource( 470 ), ExtResource( 471 ), ExtResource( 472 ), ExtResource( 473 ), ExtResource( 474 ), ExtResource( 475 ), ExtResource( 476 ), ExtResource( 477 ), ExtResource( 478 ), ExtResource( 479 ), ExtResource( 480 ), ExtResource( 481 ), ExtResource( 482 ) ],
 "loop": true,
 "name": "Dead",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 496 ), ExtResource( 497 ), ExtResource( 498 ), ExtResource( 499 ), ExtResource( 500 ), ExtResource( 501 ), ExtResource( 502 ), ExtResource( 503 ), ExtResource( 504 ), ExtResource( 505 ), ExtResource( 506 ) ],
+"frames": [ ExtResource( 483 ), ExtResource( 484 ), ExtResource( 485 ), ExtResource( 486 ), ExtResource( 487 ), ExtResource( 488 ), ExtResource( 489 ), ExtResource( 490 ), ExtResource( 491 ), ExtResource( 492 ), ExtResource( 493 ) ],
 "loop": true,
 "name": "Slide",
 "speed": 10.0
+}, {
+"frames": [ ExtResource( 494 ), ExtResource( 495 ), ExtResource( 496 ), ExtResource( 497 ), ExtResource( 498 ), ExtResource( 499 ), ExtResource( 500 ), ExtResource( 501 ), ExtResource( 502 ), ExtResource( 503 ), ExtResource( 504 ), ExtResource( 505 ), ExtResource( 506 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 12.0
 } ]
 
 [sub_resource type="SpriteFrames" id=14]
@@ -1333,7 +1333,7 @@ position = Vector2( 40, 0 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 2
+frame = 1
 playing = true
 
 [node name="Girl" type="AnimatedSprite" parent="Sprite"]
@@ -1342,7 +1342,7 @@ position = Vector2( -15, 0 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 3 )
 animation = "Idle"
-frame = 12
+frame = 1
 playing = true
 
 [node name="Robot" type="AnimatedSprite" parent="Sprite"]
@@ -1351,6 +1351,7 @@ position = Vector2( 7.39707, -3.11456 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 4 )
 animation = "Idle"
+frame = 7
 playing = true
 
 [node name="Shoot" type="AnimatedSprite" parent="Sprite/Robot"]
@@ -1358,7 +1359,6 @@ position = Vector2( 200, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 5 )
 animation = "Shoot"
-frame = 4
 playing = true
 
 [node name="Templerun_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1433,7 +1433,7 @@ position = Vector2( 21.6184, -8.27864 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 13 )
 animation = "Walk"
-frame = 1
+frame = 9
 playing = true
 
 [node name="Zombie_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1442,7 +1442,7 @@ position = Vector2( 11.6796, -6.16796 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 14 )
 animation = "Attack"
-frame = 4
+frame = 5
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -1458,6 +1458,7 @@ anims/Templerun_girl = SubResource( 17 )
 anims/Templerun_girl_left = SubResource( 18 )
 
 [node name="bow" type="AnimatedSprite" parent="."]
+editor/display_folded = true
 visible = false
 position = Vector2( 14.8875, 18.9917 )
 scale = Vector2( 0.5, 0.5 )
@@ -1474,6 +1475,7 @@ anims/Shoot = SubResource( 23 )
 anims/Shoot_left = SubResource( 24 )
 
 [node name="arrow" type="Sprite" parent="bow"]
+editor/display_folded = true
 position = Vector2( 1250, 0.668 )
 scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 554 )
