@@ -25,3 +25,4 @@ points = PoolVector2Array( 24, 8, 48, 0, 96, 8, 152, 32, 152, 48, 0, 48 )
 
 [node name="TileMap" type="TileMap"]
 tile_set = SubResource( 2 )
+format = 1
