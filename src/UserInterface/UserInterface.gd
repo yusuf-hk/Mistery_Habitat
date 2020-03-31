@@ -252,3 +252,8 @@ func _on_Dessert_button_up() -> void:
 		answer = false
 		animplayer.play("dessert_false")
 	check_button()
+
+
+func _on_Button_button_up() -> void:
+	$Shop.visible = true
+	$PauseOverlay.visible = false
