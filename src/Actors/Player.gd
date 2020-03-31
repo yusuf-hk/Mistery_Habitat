@@ -54,42 +54,44 @@ func get_direction() -> Vector2:
 func move_sprite()-> void:
 	if Input.is_action_pressed("jump"):
 		character.play("Jump")
+		character_objects.visible = false
 		if Input.is_action_pressed("mouse_left"):
 			PlayerData.set_arrow_state(true)
+			character.play("Shoot")
+			character_objects.visible = true
 
 	elif Input.is_action_pressed("move_left"):
 		flip_character(true)
 		character.play("Run")
 		get_sprite_position("move_right")
+		character_objects.visible = false
 		if Input.is_action_pressed("mouse_left"):
 			PlayerData.set_arrow_state(true)
+			character.play("Shoot")
+			character_objects.visible = true
 
 	elif Input.is_action_pressed("move_right"):
 		flip_character(false)
 		character.play("Run")
 		get_sprite_position("move_left")
+		character_objects.visible = false
 		if Input.is_action_pressed("mouse_left"):
 			PlayerData.set_arrow_state(true)
+			character.play("Shoot")
+			character_objects.visible = true
 
 	elif Input.is_action_pressed("mouse_left"):
 		PlayerData.set_arrow_state(true)
+		character.play("Shoot")
+		character_objects.visible = true
 		
-		if choosen_weapon() == false:
-			character.play("Shoot")
-			character_objects.visible = true
-			
-			if character.flip_h == true:
-				character_objects.flip_h = true
-				character_animation.play(what_character + "_left")
-			else:
-				character_animation.play(what_character)
-				character_objects.flip_h = false
 	else:
 		character.play("Idle")
 		PlayerData.set_arrow_state(false)
 		if Input.is_action_pressed("mouse_left"):
 			PlayerData.set_arrow_state(true)
-		
+			character.play("Shoot")
+			character_objects.visible = true
 		
 		
 
@@ -101,16 +103,15 @@ func flip_character(right:bool)->void:
 	
 
 func get_sprite_position(direction: String)->void:
-	
 	if what_character == "Boy" && direction == "move_right":
 			character.position.x = -40
 	elif what_character == "Boy" && direction == "move_left":
 			character.position.x = 40
 	
 	elif what_character == "Girl" && direction == "move_right":
-			character.position.x = -10
+			character.position.x = 20
 	elif what_character == "Girl" && direction == "move_left":
-			character.position.x = 0
+			character.position.x = -5
 	
 	
 	

@@ -13,11 +13,11 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_pressed("mouse_left"):
 			if get_flip() == true:
 				bow_animation.play("Shoot_left")
-				bow.position.x = -7.5
+				bow.position.x = -5
 				
 			elif get_flip() == false:
 				bow_animation.play("Shoot")	
-				bow.position.x = 7.5
+				bow.position.x = 5
 				
 		else:
 			if get_flip() == true:
