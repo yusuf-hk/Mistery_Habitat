@@ -12,7 +12,6 @@ func _ready() -> void:
 
 
 func _on_Button_pressed() -> void:
-	print("button pressed")
 	value = false
 	self.visible = value
 	get_node("ColorRect").visible = value

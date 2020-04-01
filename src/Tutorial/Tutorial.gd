@@ -1,6 +1,7 @@
 extends Node2D
 
 onready var scene_tree: SceneTree = get_tree()
+var animals_to_catch = 3
 
 func _ready() -> void:
 	PlayerData.connect("animal", self, "caught_first_animal")
@@ -69,8 +70,11 @@ func remove_area2ds(node: String)->void:
 	get_node(delete_area).queue_free()
 
 func is_task_completed()->void:
-	if int(PlayerData.animals) >= 3:
-		PlayerData.set_task_state(true)
+	if PlayerData.retry == false:
+		animals_to_catch = animals_to_catch - 1
+		get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch)
+		if animals_to_catch == 0:
+			PlayerData.set_task_state(true)
 
 
 

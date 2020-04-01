@@ -20,7 +20,7 @@ var diamonds: = 0 setget set_diamonds
 var deaths: = false setget set_deaths
 var position setget set_position
 var animals: = 0 setget set_animals
-var bow: = false setget set_bow
+var bow: = true setget set_bow
 var task_completed: = false setget set_task_state
 var catched_animals:= [] 
 var last_animal
@@ -73,7 +73,6 @@ func set_task_state(task_state:bool)->void:
 
 func set_animal_list(new_animal:String)->void:
 	last_animal = new_animal
-	print(last_animal + " in playerdata")
 	catched_animals.append(new_animal)
 	set_animals(int(catched_animals.size()))
 
@@ -82,7 +81,6 @@ func set_animal_list(new_animal:String)->void:
 func set_character(player: String) ->void:
 	character = player
 	emit_signal("character_updated")
-	print("character updated to " + character)
 	
 func get_character()->String:
 	return character

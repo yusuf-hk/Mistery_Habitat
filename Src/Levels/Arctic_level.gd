@@ -6,7 +6,6 @@ func _ready() -> void:
 	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch)
 func is_task_completed()->void:
 	if PlayerData.retry == false:
-		print(PlayerData.retry)
 		animals_to_catch = animals_to_catch - 1
 		get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch)
 		if animals_to_catch == 0:

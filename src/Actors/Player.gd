@@ -10,6 +10,7 @@ onready var character_animation = get_node("AnimationPlayer")
 
 func _ready() -> void:
 	PlayerData.connect("died", self, "die")
+	PlayerData.connect("character_updated", self, "set_weapon")
 
 
 func _physics_process(delta: float) -> void:
@@ -27,9 +28,10 @@ func _physics_process(delta: float) -> void:
 	
 func set_weapon()->void:
 	if choosen_weapon() == false:
-		character_objects = get_node("Sprite/"+what_character+"/Shoot")
-	else:
-		character_objects = get_node("bow")
+		var weapon = "Sprite/"+what_character+"/Shoot"
+
+		character_objects = get_node(weapon)
+	
 		
 func choosen_weapon()->bool:
 	return PlayerData.bow
@@ -56,47 +58,51 @@ func get_direction() -> Vector2:
 func move_sprite()-> void:
 	if Input.is_action_pressed("jump"):
 		character.play("Jump")
-		character_objects.visible = false
+		shoot_visibility(false)
 		if Input.is_action_pressed("mouse_left"):
 			PlayerData.set_arrow_state(true)
 			character.play("Shoot")
-			character_objects.visible = true
+			shoot_visibility(true)
 
 	elif Input.is_action_pressed("move_left"):
 		flip_character(true)
 		character.play("Run")
 		get_sprite_position("move_right")
-		character_objects.visible = false
+		shoot_visibility(false)
 		if Input.is_action_pressed("mouse_left"):
 			PlayerData.set_arrow_state(true)
 			character.play("Shoot")
-			character_objects.visible = true
+			shoot_visibility(true)
 
 	elif Input.is_action_pressed("move_right"):
 		flip_character(false)
 		character.play("Run")
 		get_sprite_position("move_left")
-		character_objects.visible = false
+		shoot_visibility(false)
 		if Input.is_action_pressed("mouse_left"):
 			PlayerData.set_arrow_state(true)
 			character.play("Shoot")
-			character_objects.visible = true
+			shoot_visibility(true)
 
 	elif Input.is_action_pressed("mouse_left"):
 		PlayerData.set_arrow_state(true)
 		character.play("Shoot")
-		character_objects.visible = true
+		shoot_visibility(true)
 		
 	else:
+		shoot_visibility(false)
 		character.play("Idle")
 		PlayerData.set_arrow_state(false)
 		if Input.is_action_pressed("mouse_left"):
 			PlayerData.set_arrow_state(true)
 			character.play("Shoot")
-			character_objects.visible = true
+			shoot_visibility(true)
 		
 		
-
+func shoot_visibility(val:bool)->void:
+	if PlayerData.bow == false:
+		var weapon = "Sprite/"+what_character+"/Shoot"
+		get_node(weapon).visible = val
 	
 func flip_character(right:bool)->void:
 	character.flip_h = right
@@ -114,9 +120,36 @@ func get_sprite_position(direction: String)->void:
 			character.position.x = 20
 	elif what_character == "Girl" && direction == "move_left":
 			character.position.x = -5
+			
+	elif what_character == "Dino" && direction == "move_right":
+			character.position.x = -40
+	elif what_character == "Dino" && direction == "move_left":
+			character.position.x = 40
 	
+	elif what_character == "Knight" && direction == "move_right":
+			character.position.x = -15
+	elif what_character == "Knight" && direction == "move_left":
+			character.position.x = 15
 	
+	elif what_character == "Jack" && direction == "move_right":
+			character.position.x = -15
+	elif what_character == "Jack" && direction == "move_left":
+			character.position.x = 15
 	
+	elif what_character == "Templerun_girl" && direction == "move_right":
+			character.position.x = 10
+	elif what_character == "Templerun_girl" && direction == "move_left":
+			character.position.x = -10
+	
+	elif what_character == "Santa" && direction == "move_right":
+			character.position.x = -20
+	elif what_character == "Santa" && direction == "move_left":
+			character.position.x = 20
+			
+	elif what_character == "Zombie_boy" && direction == "move_right":
+			character.position.x = -10
+	elif what_character == "Zombie_boy" && direction == "move_left":
+			character.position.x = 10
 
 
 func calculate_move_velocity(

@@ -27,6 +27,7 @@ margin_right = 1097.81
 margin_bottom = 604.0
 
 [node name="Welcome" type="TextureRect" parent="ColorRect"]
+editor/display_folded = true
 visible = false
 margin_left = 153.135
 margin_top = 221.517
@@ -80,9 +81,10 @@ margin_left = 273.708
 margin_top = 196.354
 margin_right = 968.708
 margin_bottom = 515.354
-text = "You cant go inside the portal to the next level.
-you need to catch all the animals before you can leave 
-for next habitat"
+text = "Notice that you cant go to the next level before
+you have caught all the animals. the portal will
+tell you how many animals you need to catch
+before you can go to the next level"
 
 [node name="Hidden_rooms" type="TextureRect" parent="ColorRect"]
 editor/display_folded = true

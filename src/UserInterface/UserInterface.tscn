@@ -287,15 +287,15 @@ margin_bottom = 196.0
 [node name="Animal_tasks" type="ColorRect" parent="."]
 editor/display_folded = true
 visible = false
-margin_right = 1382.0
-margin_bottom = 792.0
+margin_right = 1417.0
+margin_bottom = 803.0
 color = Color( 0.341176, 0.329412, 0.329412, 0.552941 )
 
 [node name="task" type="ItemList" parent="Animal_tasks"]
-margin_left = 139.656
-margin_top = 152.104
-margin_right = 1177.66
-margin_bottom = 563.104
+margin_left = 160.013
+margin_top = 161.357
+margin_right = 1198.02
+margin_bottom = 572.357
 
 [node name="Savanna" type="Button" parent="Animal_tasks/task"]
 margin_left = 12.9473
