@@ -5,12 +5,10 @@ var array = ["Boy","Girl","Robot","Templerun_boy", "Templerun_girl", "Dino", "Kn
 onready var what_character = PlayerData.get_character()
 
 func _ready() -> void:
-	print("in ready ")
 	PlayerData.connect("character_updated", self, "update")
 	
 	
 func update()->void:
-	print("in update")
 	what_character = PlayerData.character
 	turn_on_sprite()
 	turn_off_sprite()

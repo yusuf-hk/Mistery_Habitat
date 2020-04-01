@@ -8,11 +8,11 @@ onready var bow_animation = get_node("bow_animation")
 # Called when the node enters the scene tree for the first time.
 func _physics_process(delta: float) -> void:
 	if get_weapon() == true:
-		bow.flip_h = get_flip()
-		arrow.flip_h = get_flip()
+		
 		if Input.is_action_pressed("mouse_left"):
+			get_node("arrow").visible = true
 			if get_flip() == true:
-				bow_animation.play("Shoot_left")
+				bow_animation.play("Shoot_Left")
 				bow.position.x = -5
 				
 			elif get_flip() == false:
@@ -20,13 +20,16 @@ func _physics_process(delta: float) -> void:
 				bow.position.x = 5
 				
 		else:
+			get_node("arrow").visible = false
 			if get_flip() == true:
-				bow_animation.play("Idle_left")
+				bow_animation.play("Idle_Left")
 				bow.position.x = -10
+
 				
 			elif get_flip() == false:
 				bow_animation.play("Idle")	
 				bow.position.x = 10
+				
 				
 				
 func get_flip()->bool:

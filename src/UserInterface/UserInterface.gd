@@ -21,19 +21,20 @@ var animal
 var answer
 
 func _ready() -> void:
-
 	PlayerData.connect("coin", self, "update_coins")
 	PlayerData.connect("diamonds", self, "update_diamonds")
 	PlayerData.connect("died", self, "_on_Player_died")
 	PlayerData.connect("animal", self, "animal_task")
+	PlayerData.connect("tutorial", self, "tutorial_state")
 	update_coins()
 	update_animals()
 	update_diamonds()
 	restart_animal_task()
 
 	
-
-
+func tutorial_state():
+	$Tutuorial_point.visible = PlayerData.tutorial
+	scene_tree.paused = PlayerData.tutorial
 func _on_Player_died() -> void:
 	self.paused = true
 	title_label.text = MESSAGE_DIED
@@ -114,8 +115,11 @@ func _on_TextureButton_button_up() -> void:
 	
 
 func animal_task()->void:
-	get_node("Animal_tasks").visible = true
-	animal = PlayerData.last_animal
+	if PlayerData.retry == false:
+		scene_tree.paused = true
+		get_node("Animal_tasks").visible = true
+		animal = PlayerData.last_animal
+
 
 	
 func check_button()->void:
@@ -127,6 +131,7 @@ func check_button()->void:
 	elif answer == true:
 		PlayerData.coin += 100
 		update_animals()
+		scene_tree.paused = false
 		animplayer.play("Task_fade")
 
 			
@@ -257,3 +262,4 @@ func _on_Dessert_button_up() -> void:
 func _on_Button_button_up() -> void:
 	$Shop.visible = true
 	$PauseOverlay.visible = false
+	

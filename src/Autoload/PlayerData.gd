@@ -3,6 +3,7 @@ extends Node
 onready var character = "Boy"
 onready var character_flip = false
 onready var shoot = false
+onready var retry = false
 
 signal coin
 signal diamonds
@@ -12,16 +13,18 @@ signal animal
 signal character_updated
 signal bow
 signal task_completed
+signal tutorial
 
 var coin: = 0 setget set_coin
 var diamonds: = 0 setget set_diamonds
 var deaths: = false setget set_deaths
 var position setget set_position
 var animals: = 0 setget set_animals
-var bow: = false setget set_bow
+var bow: = true setget set_bow
 var task_completed: = false setget set_task_state
 var catched_animals:= [] 
 var last_animal
+var tutorial:= false setget set_tutorial
 
 func reset():
 	self.coin = 0
@@ -30,7 +33,19 @@ func reset():
 	self.animals = 0
 	self.bow = false
 	self.catched_animals.clear()
+	
+func retry():
+	retry = true
+	self.coin = 0
+	self.diamonds = 0
+	self.animals = 0
+	self.bow = false
+	self.catched_animals.clear()
+	
 
+func set_tutorial(val:bool)->void:
+	tutorial = val
+	emit_signal("tutorial")
 
 func set_coin(new_coin: int) -> void:
 	coin = new_coin
@@ -58,7 +73,6 @@ func set_task_state(task_state:bool)->void:
 
 func set_animal_list(new_animal:String)->void:
 	last_animal = new_animal
-	print(last_animal + " in playerdata")
 	catched_animals.append(new_animal)
 	set_animals(int(catched_animals.size()))
 
@@ -67,7 +81,6 @@ func set_animal_list(new_animal:String)->void:
 func set_character(player: String) ->void:
 	character = player
 	emit_signal("character_updated")
-	print("character updated to " + character)
 	
 func get_character()->String:
 	return character
