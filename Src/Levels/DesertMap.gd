@@ -1,14 +1,15 @@
 extends Node2D
 
 #onready var anim_player = get_node("inPortal2D/AnimationPlayer")
-var animals_to_catch = 2
+var animals_to_catch_desert = 2
 func _ready() -> void:
+	PlayerData.set_task_state(false)
 	PlayerData.connect("animal", self, "is_task_completed")
-	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch)
+	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch_desert)
 func is_task_completed()->void:
-	animals_to_catch = animals_to_catch - 1
-	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch)
-	if animals_to_catch == 0:
+	animals_to_catch_desert = animals_to_catch_desert - 1
+	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch_desert)
+	if animals_to_catch_desert == 0:
 		PlayerData.set_task_state(true)
 
 func _on_inPortal2D_body_entered(body: KinematicBody2D) -> void:
@@ -19,3 +20,8 @@ func teleport() -> void:
 	#anim_player.play("fade_in")
 	#yield(anim_player, "animation_finished")
 	get_node("Player").position = PlayerData.position
+
+
+func _on_Area2D_body_entered(body: PhysicsBody2D) -> void:
+	PlayerData.set_task_state(false)
+	get_node("Area2D").queue_free()

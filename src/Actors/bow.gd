@@ -9,7 +9,7 @@ onready var bow_animation = get_node("bow_animation")
 func _physics_process(delta: float) -> void:
 	if get_weapon() == true:
 		
-		if Input.is_action_pressed("mouse_left"):
+		if Input.is_action_pressed("Space"):
 			get_node("arrow").visible = true
 			if get_flip() == true:
 				bow_animation.play("Shoot_Left")

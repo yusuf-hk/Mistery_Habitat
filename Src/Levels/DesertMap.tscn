@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=64 format=2]
 
 [ext_resource path="res://src/Levels/DesertMap.gd" type="Script" id=1]
 [ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=2]
@@ -385,6 +385,9 @@ height = 8.85413
 2/navigation_offset = Vector2( 0, 0 )
 2/shapes = [  ]
 2/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=20]
+extents = Vector2( 188.337, 10 )
 
 [node name="DesertMap" type="Node2D"]
 position = Vector2( 358.87, 1801.7 )
@@ -1160,7 +1163,6 @@ z_index = -1
 position = Vector2( 8879.12, -1078.82 )
 scale = Vector2( 0.437844, 0.431726 )
 z_index = -1
-next_scene = null
 
 [node name="die_shapes" type="Node2D" parent="."]
 editor/display_folded = true
@@ -1173,3 +1175,11 @@ position = Vector2( 2258.27, 989.605 )
 
 [node name="die_shape3" parent="die_shapes" instance=ExtResource( 43 )]
 position = Vector2( 5614.77, 817.003 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 326.041, 343.201 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 1.71478, 84.0227 )
+shape = SubResource( 20 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

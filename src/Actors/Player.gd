@@ -56,10 +56,11 @@ func get_direction() -> Vector2:
 	
 	
 func move_sprite()-> void:
+
 	if Input.is_action_pressed("jump"):
 		character.play("Jump")
 		shoot_visibility(false)
-		if Input.is_action_pressed("mouse_left"):
+		if Input.is_action_pressed("Space"):
 			PlayerData.set_arrow_state(true)
 			character.play("Shoot")
 			shoot_visibility(true)
@@ -69,7 +70,7 @@ func move_sprite()-> void:
 		character.play("Run")
 		get_sprite_position("move_right")
 		shoot_visibility(false)
-		if Input.is_action_pressed("mouse_left"):
+		if Input.is_action_pressed("Space"):
 			PlayerData.set_arrow_state(true)
 			character.play("Shoot")
 			shoot_visibility(true)
@@ -79,12 +80,12 @@ func move_sprite()-> void:
 		character.play("Run")
 		get_sprite_position("move_left")
 		shoot_visibility(false)
-		if Input.is_action_pressed("mouse_left"):
+		if Input.is_action_pressed("Space"):
 			PlayerData.set_arrow_state(true)
 			character.play("Shoot")
 			shoot_visibility(true)
 
-	elif Input.is_action_pressed("mouse_left"):
+	elif Input.is_action_pressed("Space"):
 		PlayerData.set_arrow_state(true)
 		character.play("Shoot")
 		shoot_visibility(true)
@@ -93,14 +94,14 @@ func move_sprite()-> void:
 		shoot_visibility(false)
 		character.play("Idle")
 		PlayerData.set_arrow_state(false)
-		if Input.is_action_pressed("mouse_left"):
+		if Input.is_action_pressed("Space"):
 			PlayerData.set_arrow_state(true)
 			character.play("Shoot")
 			shoot_visibility(true)
 		
 		
 func shoot_visibility(val:bool)->void:
-	if PlayerData.bow == false:
+	if PlayerData.bow == false && (PlayerData.character == "Robot" or PlayerData.character  == "Ninja_boy" or PlayerData.character  == "Ninja_girl" or PlayerData.character  == "Templerun_girl"):
 		var weapon = "Sprite/"+what_character+"/Shoot"
 		get_node(weapon).visible = val
 	

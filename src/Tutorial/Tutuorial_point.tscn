@@ -45,7 +45,7 @@ margin_top = -32.6783
 margin_right = 531.336
 margin_bottom = 54.3217
 text = "Welcome to Mistery habitat, this are the main keys for moving
-around in the game."
+around in the game and press space to shoot"
 
 [node name="Coins and diamonds" type="TextureRect" parent="ColorRect"]
 editor/display_folded = true

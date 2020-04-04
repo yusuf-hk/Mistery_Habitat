@@ -130,28 +130,28 @@
 [ext_resource path="res://assets/Player/Character/Robot/run/Run (6).png" type="Texture" id=128]
 [ext_resource path="res://assets/Player/Character/Robot/run/Run (7).png" type="Texture" id=129]
 [ext_resource path="res://assets/Player/Character/Robot/run/Run (8).png" type="Texture" id=130]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (1).png" type="Texture" id=131]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (2).png" type="Texture" id=132]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (3).png" type="Texture" id=133]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (4).png" type="Texture" id=134]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (5).png" type="Texture" id=135]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (6).png" type="Texture" id=136]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (7).png" type="Texture" id=137]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (8).png" type="Texture" id=138]
-[ext_resource path="res://assets/Player/Character/Robot/shoot/Shoot (1).png" type="Texture" id=139]
-[ext_resource path="res://assets/Player/Character/Robot/shoot/Shoot (2).png" type="Texture" id=140]
-[ext_resource path="res://assets/Player/Character/Robot/shoot/Shoot (3).png" type="Texture" id=141]
-[ext_resource path="res://assets/Player/Character/Robot/shoot/Shoot (4).png" type="Texture" id=142]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (1).png" type="Texture" id=143]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (2).png" type="Texture" id=144]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (3).png" type="Texture" id=145]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (4).png" type="Texture" id=146]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (5).png" type="Texture" id=147]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (6).png" type="Texture" id=148]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (7).png" type="Texture" id=149]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (8).png" type="Texture" id=150]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (9).png" type="Texture" id=151]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (10).png" type="Texture" id=152]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (1).png" type="Texture" id=131]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (2).png" type="Texture" id=132]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (3).png" type="Texture" id=133]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (4).png" type="Texture" id=134]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (5).png" type="Texture" id=135]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (6).png" type="Texture" id=136]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (7).png" type="Texture" id=137]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (8).png" type="Texture" id=138]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (9).png" type="Texture" id=139]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (10).png" type="Texture" id=140]
+[ext_resource path="res://assets/Player/Character/Robot/shoot/Shoot (1).png" type="Texture" id=141]
+[ext_resource path="res://assets/Player/Character/Robot/shoot/Shoot (2).png" type="Texture" id=142]
+[ext_resource path="res://assets/Player/Character/Robot/shoot/Shoot (3).png" type="Texture" id=143]
+[ext_resource path="res://assets/Player/Character/Robot/shoot/Shoot (4).png" type="Texture" id=144]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (1).png" type="Texture" id=145]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (2).png" type="Texture" id=146]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (3).png" type="Texture" id=147]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (4).png" type="Texture" id=148]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (5).png" type="Texture" id=149]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (6).png" type="Texture" id=150]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (7).png" type="Texture" id=151]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (8).png" type="Texture" id=152]
 [ext_resource path="res://assets/Player/Character/Robot/Objects/Bullet_000.png" type="Texture" id=153]
 [ext_resource path="res://assets/Player/Character/Robot/Objects/Bullet_001.png" type="Texture" id=154]
 [ext_resource path="res://assets/Player/Character/Robot/Objects/Bullet_002.png" type="Texture" id=155]
@@ -204,39 +204,39 @@
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/run/Run (6).png" type="Texture" id=202]
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/run/Run (7).png" type="Texture" id=203]
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/run/Run (8).png" type="Texture" id=204]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (1).png" type="Texture" id=205]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (2).png" type="Texture" id=206]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (3).png" type="Texture" id=207]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (4).png" type="Texture" id=208]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (5).png" type="Texture" id=209]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/shoot/Shoot (1).png" type="Texture" id=210]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/shoot/Shoot (2).png" type="Texture" id=211]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/shoot/Shoot (3).png" type="Texture" id=212]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (1).png" type="Texture" id=213]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (2).png" type="Texture" id=214]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (3).png" type="Texture" id=215]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (4).png" type="Texture" id=216]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (5).png" type="Texture" id=217]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (6).png" type="Texture" id=218]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (7).png" type="Texture" id=219]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (9).png" type="Texture" id=220]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (8).png" type="Texture" id=221]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (10).png" type="Texture" id=222]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/slide/Slide (1).png" type="Texture" id=223]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/slide/Slide (2).png" type="Texture" id=224]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/slide/Slide (3).png" type="Texture" id=225]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/slide/Slide (4).png" type="Texture" id=226]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/slide/Slide (5).png" type="Texture" id=227]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (1).png" type="Texture" id=228]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (2).png" type="Texture" id=229]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (3).png" type="Texture" id=230]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (4).png" type="Texture" id=231]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (5).png" type="Texture" id=232]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (6).png" type="Texture" id=233]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (7).png" type="Texture" id=234]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (8).png" type="Texture" id=235]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (9).png" type="Texture" id=236]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (10).png" type="Texture" id=237]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (1).png" type="Texture" id=205]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (2).png" type="Texture" id=206]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (3).png" type="Texture" id=207]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (4).png" type="Texture" id=208]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (5).png" type="Texture" id=209]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (6).png" type="Texture" id=210]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (7).png" type="Texture" id=211]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (9).png" type="Texture" id=212]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (8).png" type="Texture" id=213]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/jump/Jump (10).png" type="Texture" id=214]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/shoot/Shoot (1).png" type="Texture" id=215]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/shoot/Shoot (2).png" type="Texture" id=216]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/shoot/Shoot (3).png" type="Texture" id=217]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (1).png" type="Texture" id=218]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (2).png" type="Texture" id=219]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (3).png" type="Texture" id=220]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (4).png" type="Texture" id=221]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (5).png" type="Texture" id=222]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (6).png" type="Texture" id=223]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (7).png" type="Texture" id=224]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (8).png" type="Texture" id=225]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (9).png" type="Texture" id=226]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (10).png" type="Texture" id=227]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/slide/Slide (1).png" type="Texture" id=228]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/slide/Slide (2).png" type="Texture" id=229]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/slide/Slide (3).png" type="Texture" id=230]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/slide/Slide (4).png" type="Texture" id=231]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/slide/Slide (5).png" type="Texture" id=232]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (1).png" type="Texture" id=233]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (2).png" type="Texture" id=234]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (3).png" type="Texture" id=235]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (4).png" type="Texture" id=236]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (5).png" type="Texture" id=237]
 [ext_resource path="res://assets/Player/Weapons/bullet-sprite-png-16.png" type="Texture" id=238]
 [ext_resource path="res://assets/Player/Character/dino/idle/Idle (1).png" type="Texture" id=239]
 [ext_resource path="res://assets/Player/Character/dino/idle/Idle (2).png" type="Texture" id=240]
@@ -364,26 +364,26 @@
 [ext_resource path="res://assets/Player/Character/ninja_boy/run/Run__007.png" type="Texture" id=362]
 [ext_resource path="res://assets/Player/Character/ninja_boy/run/Run__008.png" type="Texture" id=363]
 [ext_resource path="res://assets/Player/Character/ninja_boy/run/Run__009.png" type="Texture" id=364]
-[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__000.png" type="Texture" id=365]
-[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__001.png" type="Texture" id=366]
-[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__002.png" type="Texture" id=367]
-[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__003.png" type="Texture" id=368]
-[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__004.png" type="Texture" id=369]
-[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__005.png" type="Texture" id=370]
-[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__006.png" type="Texture" id=371]
-[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__007.png" type="Texture" id=372]
-[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__008.png" type="Texture" id=373]
-[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__009.png" type="Texture" id=374]
-[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__000.png" type="Texture" id=375]
-[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__001.png" type="Texture" id=376]
-[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__002.png" type="Texture" id=377]
-[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__003.png" type="Texture" id=378]
-[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__004.png" type="Texture" id=379]
-[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__005.png" type="Texture" id=380]
-[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__006.png" type="Texture" id=381]
-[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__007.png" type="Texture" id=382]
-[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__008.png" type="Texture" id=383]
-[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__009.png" type="Texture" id=384]
+[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__000.png" type="Texture" id=365]
+[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__001.png" type="Texture" id=366]
+[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__002.png" type="Texture" id=367]
+[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__003.png" type="Texture" id=368]
+[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__004.png" type="Texture" id=369]
+[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__005.png" type="Texture" id=370]
+[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__006.png" type="Texture" id=371]
+[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__007.png" type="Texture" id=372]
+[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__008.png" type="Texture" id=373]
+[ext_resource path="res://assets/Player/Character/ninja_boy/jump/Jump__009.png" type="Texture" id=374]
+[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__000.png" type="Texture" id=375]
+[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__001.png" type="Texture" id=376]
+[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__002.png" type="Texture" id=377]
+[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__003.png" type="Texture" id=378]
+[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__004.png" type="Texture" id=379]
+[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__005.png" type="Texture" id=380]
+[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__006.png" type="Texture" id=381]
+[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__007.png" type="Texture" id=382]
+[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__008.png" type="Texture" id=383]
+[ext_resource path="res://assets/Player/Character/ninja_boy/throw/Throw__009.png" type="Texture" id=384]
 [ext_resource path="res://assets/Player/Character/ninja_boy/attack/Attack__000.png" type="Texture" id=385]
 [ext_resource path="res://assets/Player/Character/ninja_boy/attack/Attack__001.png" type="Texture" id=386]
 [ext_resource path="res://assets/Player/Character/ninja_boy/attack/Attack__002.png" type="Texture" id=387]
@@ -415,26 +415,26 @@
 [ext_resource path="res://assets/Player/Character/ninja_girl/run/Run__007.png" type="Texture" id=413]
 [ext_resource path="res://assets/Player/Character/ninja_girl/run/Run__008.png" type="Texture" id=414]
 [ext_resource path="res://assets/Player/Character/ninja_girl/run/Run__009.png" type="Texture" id=415]
-[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__000.png" type="Texture" id=416]
-[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__001.png" type="Texture" id=417]
-[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__002.png" type="Texture" id=418]
-[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__003.png" type="Texture" id=419]
-[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__004.png" type="Texture" id=420]
-[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__005.png" type="Texture" id=421]
-[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__006.png" type="Texture" id=422]
-[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__007.png" type="Texture" id=423]
-[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__008.png" type="Texture" id=424]
-[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__009.png" type="Texture" id=425]
-[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__000.png" type="Texture" id=426]
-[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__001.png" type="Texture" id=427]
-[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__002.png" type="Texture" id=428]
-[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__003.png" type="Texture" id=429]
-[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__004.png" type="Texture" id=430]
-[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__005.png" type="Texture" id=431]
-[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__006.png" type="Texture" id=432]
-[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__007.png" type="Texture" id=433]
-[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__008.png" type="Texture" id=434]
-[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__009.png" type="Texture" id=435]
+[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__000.png" type="Texture" id=416]
+[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__001.png" type="Texture" id=417]
+[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__002.png" type="Texture" id=418]
+[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__003.png" type="Texture" id=419]
+[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__004.png" type="Texture" id=420]
+[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__005.png" type="Texture" id=421]
+[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__006.png" type="Texture" id=422]
+[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__007.png" type="Texture" id=423]
+[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__008.png" type="Texture" id=424]
+[ext_resource path="res://assets/Player/Character/ninja_girl/jump/Jump__009.png" type="Texture" id=425]
+[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__000.png" type="Texture" id=426]
+[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__001.png" type="Texture" id=427]
+[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__002.png" type="Texture" id=428]
+[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__003.png" type="Texture" id=429]
+[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__004.png" type="Texture" id=430]
+[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__005.png" type="Texture" id=431]
+[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__006.png" type="Texture" id=432]
+[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__007.png" type="Texture" id=433]
+[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__008.png" type="Texture" id=434]
+[ext_resource path="res://assets/Player/Character/ninja_girl/throw/Throw__009.png" type="Texture" id=435]
 [ext_resource path="res://assets/Player/Character/ninja_girl/Attack/Attack__000.png" type="Texture" id=436]
 [ext_resource path="res://assets/Player/Character/ninja_girl/Attack/Attack__001.png" type="Texture" id=437]
 [ext_resource path="res://assets/Player/Character/ninja_girl/Attack/Attack__002.png" type="Texture" id=438]
@@ -486,47 +486,47 @@
 [ext_resource path="res://assets/Player/Character/santa/jump/Jump (14).png" type="Texture" id=484]
 [ext_resource path="res://assets/Player/Character/santa/jump/Jump (15).png" type="Texture" id=485]
 [ext_resource path="res://assets/Player/Character/santa/jump/Jump (16).png" type="Texture" id=486]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (1).png" type="Texture" id=487]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (2).png" type="Texture" id=488]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (3).png" type="Texture" id=489]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (4).png" type="Texture" id=490]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (5).png" type="Texture" id=491]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (6).png" type="Texture" id=492]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (7).png" type="Texture" id=493]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (8).png" type="Texture" id=494]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (9).png" type="Texture" id=495]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (10).png" type="Texture" id=496]
-[ext_resource path="res://assets/Player/Character/santa/slide/Slide (11).png" type="Texture" id=497]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (1).png" type="Texture" id=498]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (2).png" type="Texture" id=499]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (3).png" type="Texture" id=500]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (4).png" type="Texture" id=501]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (5).png" type="Texture" id=502]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (6).png" type="Texture" id=503]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (7).png" type="Texture" id=504]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (8).png" type="Texture" id=505]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (9).png" type="Texture" id=506]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (10).png" type="Texture" id=507]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (11).png" type="Texture" id=508]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (12).png" type="Texture" id=509]
-[ext_resource path="res://assets/Player/Character/santa/walk/Walk (13).png" type="Texture" id=510]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (1).png" type="Texture" id=511]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (2).png" type="Texture" id=512]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (3).png" type="Texture" id=513]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (4).png" type="Texture" id=514]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (5).png" type="Texture" id=515]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (6).png" type="Texture" id=516]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (7).png" type="Texture" id=517]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (8).png" type="Texture" id=518]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (9).png" type="Texture" id=519]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (10).png" type="Texture" id=520]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (11).png" type="Texture" id=521]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (12).png" type="Texture" id=522]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (13).png" type="Texture" id=523]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (14).png" type="Texture" id=524]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (15).png" type="Texture" id=525]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (16).png" type="Texture" id=526]
-[ext_resource path="res://assets/Player/Character/santa/dead/Dead (17).png" type="Texture" id=527]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (1).png" type="Texture" id=487]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (2).png" type="Texture" id=488]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (3).png" type="Texture" id=489]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (4).png" type="Texture" id=490]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (5).png" type="Texture" id=491]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (6).png" type="Texture" id=492]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (7).png" type="Texture" id=493]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (8).png" type="Texture" id=494]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (9).png" type="Texture" id=495]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (10).png" type="Texture" id=496]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (11).png" type="Texture" id=497]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (12).png" type="Texture" id=498]
+[ext_resource path="res://assets/Player/Character/santa/walk/Walk (13).png" type="Texture" id=499]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (1).png" type="Texture" id=500]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (2).png" type="Texture" id=501]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (3).png" type="Texture" id=502]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (4).png" type="Texture" id=503]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (5).png" type="Texture" id=504]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (6).png" type="Texture" id=505]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (7).png" type="Texture" id=506]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (8).png" type="Texture" id=507]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (9).png" type="Texture" id=508]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (10).png" type="Texture" id=509]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (11).png" type="Texture" id=510]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (12).png" type="Texture" id=511]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (13).png" type="Texture" id=512]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (14).png" type="Texture" id=513]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (15).png" type="Texture" id=514]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (16).png" type="Texture" id=515]
+[ext_resource path="res://assets/Player/Character/santa/dead/Dead (17).png" type="Texture" id=516]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (1).png" type="Texture" id=517]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (2).png" type="Texture" id=518]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (3).png" type="Texture" id=519]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (4).png" type="Texture" id=520]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (5).png" type="Texture" id=521]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (6).png" type="Texture" id=522]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (7).png" type="Texture" id=523]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (8).png" type="Texture" id=524]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (9).png" type="Texture" id=525]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (10).png" type="Texture" id=526]
+[ext_resource path="res://assets/Player/Character/santa/slide/Slide (11).png" type="Texture" id=527]
 [ext_resource path="res://assets/Player/Character/zombie/male/idle/Idle (1).png" type="Texture" id=528]
 [ext_resource path="res://assets/Player/Character/zombie/male/idle/Idle (2).png" type="Texture" id=529]
 [ext_resource path="res://assets/Player/Character/zombie/male/idle/Idle (3).png" type="Texture" id=530]
@@ -628,20 +628,20 @@ animations = [ {
 "name": "Run",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 131 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 136 ), ExtResource( 137 ), ExtResource( 138 ) ],
+"frames": [ ExtResource( 131 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 136 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 139 ), ExtResource( 140 ) ],
 "loop": true,
-"name": "Melee",
-"speed": 10.0
+"name": "Jump",
+"speed": 15.0
 }, {
-"frames": [ ExtResource( 139 ), ExtResource( 140 ), ExtResource( 141 ), ExtResource( 142 ) ],
+"frames": [ ExtResource( 141 ), ExtResource( 142 ), ExtResource( 143 ), ExtResource( 144 ) ],
 "loop": true,
 "name": "Shoot",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 143 ), ExtResource( 144 ), ExtResource( 145 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 148 ), ExtResource( 149 ), ExtResource( 150 ), ExtResource( 151 ), ExtResource( 152 ) ],
+"frames": [ ExtResource( 145 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 148 ), ExtResource( 149 ), ExtResource( 150 ), ExtResource( 151 ), ExtResource( 152 ) ],
 "loop": true,
-"name": "Jump",
-"speed": 15.0
+"name": "Melee",
+"speed": 10.0
 } ]
 
 [sub_resource type="SpriteFrames" id=5]
@@ -682,30 +682,30 @@ animations = [ {
 "name": "Run",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 205 ), ExtResource( 206 ), ExtResource( 207 ), ExtResource( 208 ), ExtResource( 209 ) ],
-"loop": true,
-"name": "Melee",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 210 ), ExtResource( 211 ), ExtResource( 212 ) ],
-"loop": true,
-"name": "Shoot",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 213 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 216 ), ExtResource( 217 ), ExtResource( 218 ), ExtResource( 219 ), ExtResource( 220 ), ExtResource( 221 ), ExtResource( 222 ) ],
+"frames": [ ExtResource( 205 ), ExtResource( 206 ), ExtResource( 207 ), ExtResource( 208 ), ExtResource( 209 ), ExtResource( 210 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 213 ), ExtResource( 214 ) ],
 "loop": true,
 "name": "Jump",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 223 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 227 ) ],
+"frames": [ ExtResource( 215 ), ExtResource( 216 ), ExtResource( 217 ) ],
+"loop": true,
+"name": "Shoot",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 218 ), ExtResource( 219 ), ExtResource( 220 ), ExtResource( 221 ), ExtResource( 222 ), ExtResource( 223 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 227 ) ],
+"loop": true,
+"name": "Dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 228 ), ExtResource( 229 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 232 ) ],
 "loop": true,
 "name": "Slide",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 228 ), ExtResource( 229 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 232 ), ExtResource( 233 ), ExtResource( 234 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 237 ) ],
+"frames": [ ExtResource( 233 ), ExtResource( 234 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 237 ) ],
 "loop": true,
-"name": "Dead",
-"speed": 5.0
+"name": "Melee",
+"speed": 15.0
 } ]
 
 [sub_resource type="SpriteFrames" id=8]
@@ -786,12 +786,12 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 365 ), ExtResource( 366 ), ExtResource( 367 ), ExtResource( 368 ), ExtResource( 369 ), ExtResource( 370 ), ExtResource( 371 ), ExtResource( 372 ), ExtResource( 373 ), ExtResource( 374 ) ],
 "loop": true,
-"name": "Shoot",
+"name": "Jump",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 375 ), ExtResource( 376 ), ExtResource( 377 ), ExtResource( 378 ), ExtResource( 379 ), ExtResource( 380 ), ExtResource( 381 ), ExtResource( 382 ), ExtResource( 383 ), ExtResource( 384 ) ],
 "loop": true,
-"name": "Jump",
+"name": "Shoot",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 385 ), ExtResource( 386 ), ExtResource( 387 ), ExtResource( 388 ), ExtResource( 389 ), ExtResource( 390 ), ExtResource( 391 ), ExtResource( 392 ), ExtResource( 393 ), ExtResource( 394 ) ],
@@ -814,12 +814,12 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 416 ), ExtResource( 417 ), ExtResource( 418 ), ExtResource( 419 ), ExtResource( 420 ), ExtResource( 421 ), ExtResource( 422 ), ExtResource( 423 ), ExtResource( 424 ), ExtResource( 425 ) ],
 "loop": true,
-"name": "Shoot",
+"name": "Jump",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 426 ), ExtResource( 427 ), ExtResource( 428 ), ExtResource( 429 ), ExtResource( 430 ), ExtResource( 431 ), ExtResource( 432 ), ExtResource( 433 ), ExtResource( 434 ), ExtResource( 435 ) ],
 "loop": true,
-"name": "Jump",
+"name": "Shoot",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 436 ), ExtResource( 437 ), ExtResource( 438 ), ExtResource( 439 ), ExtResource( 440 ), ExtResource( 441 ), ExtResource( 442 ), ExtResource( 443 ), ExtResource( 444 ), ExtResource( 445 ) ],
@@ -845,19 +845,19 @@ animations = [ {
 "name": "Jump",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 487 ), ExtResource( 488 ), ExtResource( 489 ), ExtResource( 490 ), ExtResource( 491 ), ExtResource( 492 ), ExtResource( 493 ), ExtResource( 494 ), ExtResource( 495 ), ExtResource( 496 ), ExtResource( 497 ) ],
-"loop": true,
-"name": "Slide",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 498 ), ExtResource( 499 ), ExtResource( 500 ), ExtResource( 501 ), ExtResource( 502 ), ExtResource( 503 ), ExtResource( 504 ), ExtResource( 505 ), ExtResource( 506 ), ExtResource( 507 ), ExtResource( 508 ), ExtResource( 509 ), ExtResource( 510 ) ],
+"frames": [ ExtResource( 487 ), ExtResource( 488 ), ExtResource( 489 ), ExtResource( 490 ), ExtResource( 491 ), ExtResource( 492 ), ExtResource( 493 ), ExtResource( 494 ), ExtResource( 495 ), ExtResource( 496 ), ExtResource( 497 ), ExtResource( 498 ), ExtResource( 499 ) ],
 "loop": true,
 "name": "Walk",
 "speed": 12.0
 }, {
-"frames": [ ExtResource( 511 ), ExtResource( 512 ), ExtResource( 513 ), ExtResource( 514 ), ExtResource( 515 ), ExtResource( 516 ), ExtResource( 517 ), ExtResource( 518 ), ExtResource( 519 ), ExtResource( 520 ), ExtResource( 521 ), ExtResource( 522 ), ExtResource( 523 ), ExtResource( 524 ), ExtResource( 525 ), ExtResource( 526 ), ExtResource( 527 ) ],
+"frames": [ ExtResource( 500 ), ExtResource( 501 ), ExtResource( 502 ), ExtResource( 503 ), ExtResource( 504 ), ExtResource( 505 ), ExtResource( 506 ), ExtResource( 507 ), ExtResource( 508 ), ExtResource( 509 ), ExtResource( 510 ), ExtResource( 511 ), ExtResource( 512 ), ExtResource( 513 ), ExtResource( 514 ), ExtResource( 515 ), ExtResource( 516 ) ],
 "loop": true,
 "name": "Dead",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 517 ), ExtResource( 518 ), ExtResource( 519 ), ExtResource( 520 ), ExtResource( 521 ), ExtResource( 522 ), ExtResource( 523 ), ExtResource( 524 ), ExtResource( 525 ), ExtResource( 526 ), ExtResource( 527 ) ],
+"loop": true,
+"name": "Slide",
 "speed": 10.0
 } ]
 
@@ -1356,7 +1356,7 @@ tracks/5/keys = {
 "values": [ 60.0 ]
 }
 
-[sub_resource type="Animation" id=26]
+[sub_resource type="Animation" id=20]
 resource_name = "Idle_Left"
 length = 0.5
 tracks/0/type = "value"
@@ -1510,7 +1510,7 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=27]
+[sub_resource type="Animation" id=23]
 resource_name = "Shoot_Left"
 length = 0.6
 tracks/0/type = "value"
@@ -1596,7 +1596,7 @@ position = Vector2( 40, 0 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 13
+frame = 4
 playing = true
 
 [node name="Girl" type="AnimatedSprite" parent="Sprite"]
@@ -1605,7 +1605,6 @@ position = Vector2( -15, 0 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 3 )
 animation = "Idle"
-frame = 4
 playing = true
 
 [node name="Robot" type="AnimatedSprite" parent="Sprite"]
@@ -1615,7 +1614,7 @@ position = Vector2( 7.39707, -3.11456 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 4 )
 animation = "Idle"
-frame = 7
+frame = 1
 playing = true
 
 [node name="Shoot" type="AnimatedSprite" parent="Sprite/Robot"]
@@ -1633,7 +1632,7 @@ position = Vector2( 0, -4.28251 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 6 )
 animation = "Idle"
-frame = 4
+frame = 7
 playing = true
 
 [node name="Templerun_girl" type="AnimatedSprite" parent="Sprite"]
@@ -1643,7 +1642,7 @@ position = Vector2( 10, -4.283 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 7 )
 animation = "Idle"
-frame = 3
+frame = 6
 playing = true
 
 [node name="Shoot" type="Sprite" parent="Sprite/Templerun_girl"]
@@ -1658,7 +1657,7 @@ position = Vector2( 40, 0 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 8 )
 animation = "Idle"
-frame = 6
+frame = 9
 playing = true
 
 [node name="Knight" type="AnimatedSprite" parent="Sprite"]
@@ -1667,7 +1666,7 @@ position = Vector2( 15, -5 )
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 9 )
 animation = "Idle"
-frame = 2
+frame = 5
 playing = true
 
 [node name="Jack" type="AnimatedSprite" parent="Sprite"]
@@ -1676,7 +1675,7 @@ position = Vector2( 15, -4 )
 scale = Vector2( 0.17, 0.17 )
 frames = SubResource( 10 )
 animation = "Idle"
-frame = 5
+frame = 8
 playing = true
 
 [node name="Ninja_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1686,7 +1685,7 @@ position = Vector2( -5, -4.344 )
 scale = Vector2( 0.27, 0.27 )
 frames = SubResource( 11 )
 animation = "Idle"
-frame = 6
+frame = 9
 playing = true
 
 [node name="Shoot" type="Sprite" parent="Sprite/Ninja_boy"]
@@ -1702,7 +1701,7 @@ position = Vector2( 1.94659, -6.22912 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 12 )
 animation = "Idle"
-frame = 4
+frame = 7
 playing = true
 
 [node name="Shoot" type="Sprite" parent="Sprite/Ninja_girl"]
@@ -1717,7 +1716,7 @@ position = Vector2( 20, -8.279 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 13 )
 animation = "Idle"
-frame = 4
+frame = 1
 playing = true
 
 [node name="Zombie_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1726,7 +1725,7 @@ position = Vector2( 10, -6.168 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 14 )
 animation = "Idle"
-frame = 3
+frame = 4
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -1751,10 +1750,10 @@ script = ExtResource( 574 )
 
 [node name="bow_animation" type="AnimationPlayer" parent="bow"]
 anims/Idle = SubResource( 19 )
-anims/Idle_Left = SubResource( 26 )
+anims/Idle_Left = SubResource( 20 )
 anims/None = SubResource( 21 )
 anims/Shoot = SubResource( 22 )
-anims/Shoot_Left = SubResource( 27 )
+anims/Shoot_Left = SubResource( 23 )
 
 [node name="arrow" type="Sprite" parent="bow"]
 editor/display_folded = true

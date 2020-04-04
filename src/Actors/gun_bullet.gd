@@ -13,7 +13,7 @@ func _ready() -> void:
 #	pass
 func _process(delta: float) -> void:
 	if PlayerData.bow == false:
-		if Input.is_action_pressed("mouse_left"):
+		if Input.is_action_pressed("Space"):
 			if PlayerData.get_character_flip() == true:
 				get_parent().get_node("AnimationPlayer").play("Shoot_left")
 				

@@ -13,6 +13,7 @@ func _ready() -> void:
 	get_node(\"ColorRect\").visible = false
 
 func _on_Portal2D_body_entered(body):
+	print(PlayerData.task_completed)
 	if PlayerData.task_completed == true:
 		teleport()
 	else:
@@ -123,6 +124,7 @@ anims/fade_in = SubResource( 4 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 editor/display_folded = true
+visible = false
 margin_left = -92.0
 margin_top = -291.0
 margin_right = 93.0

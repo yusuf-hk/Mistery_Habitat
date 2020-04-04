@@ -9,6 +9,7 @@ func _ready() -> void:
 
 
 func _on_Welcome_body_entered(body: KinematicBody2D) -> void:
+	PlayerData.set_task_state(false)
 	if body.name == "Player":
 		PlayerData.tutorial = true
 		get_node("InterfaceLayer/UserInterface/Tutuorial_point/ColorRect").visible = true
@@ -28,7 +29,8 @@ func _on_Coin_tutorial_body_entered(body: KinematicBody2D) -> void:
 		get_node("InterfaceLayer/UserInterface/Tutuorial_point/ColorRect/Hidden_rooms").visible = false
 		get_node("InterfaceLayer/UserInterface/Tutuorial_point/ColorRect/Portal").visible = false
 		get_node("InterfaceLayer/UserInterface/Tutuorial_point/ColorRect/Catched_animal").visible = false
-		remove_area2ds("Coin")
+		var delete_area = "Coin_collection"
+		get_node(delete_area).queue_free()
 
 func _on_Water_body_entered(body: KinematicBody2D) -> void:
 	if body.name == "Player":
@@ -67,6 +69,7 @@ func caught_first_animal()->void:
 		
 func remove_area2ds(node: String)->void:
 	var delete_area = "Tutorial_areas/" + node
+	print(delete_area)
 	get_node(delete_area).queue_free()
 
 func is_task_completed()->void:
