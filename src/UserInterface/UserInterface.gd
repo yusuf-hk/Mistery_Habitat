@@ -6,8 +6,7 @@ onready var score_label: Label = $ItemList/Coins
 onready var diamond_label: Label =$ItemList/Diamonds
 onready var animal_label: Label = $ItemList/Animals
 onready var pause_overlay: ColorRect = $PauseOverlay
-onready var title_label: Label = $PauseOverlay/Title
-onready var main_screen_button: Button = $PauseOverlay/PauseMenu/MainScreenButton
+onready var title_label: Label = $PauseOverlay/PauseMenu/Title
 onready var animplayer = get_node("animplayer")
 
 
@@ -252,8 +251,3 @@ func _on_Dessert_button_up() -> void:
 		answer = false
 		animplayer.play("dessert_false")
 	check_button()
-
-
-func _on_Button_button_up() -> void:
-	$Shop.visible = true
-	$PauseOverlay.visible = false

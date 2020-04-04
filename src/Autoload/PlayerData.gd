@@ -12,8 +12,24 @@ signal animal
 signal character_updated
 signal bow
 signal task_completed
+signal character_bought
 
-var coin: = 0 setget set_coin
+var boughtCharacters = {
+	"Boy": false,
+	"Girl": false,
+	"Robot": false,
+	"Templerun_boy": false,
+	"Templerun_girl": false,
+	"Dino": false,
+	"Knight": false,
+	"Jack": false,
+	"Ninja_boy": false,
+	"Ninja_girl": false,
+	"Santa": false,
+	"Zombie_boy": false
+	}
+
+var coin: = 10000 setget set_coin
 var diamonds: = 0 setget set_diamonds
 var deaths: = false setget set_deaths
 var position setget set_position
@@ -61,8 +77,6 @@ func set_animal_list(new_animal:String)->void:
 	print(last_animal + " in playerdata")
 	catched_animals.append(new_animal)
 	set_animals(int(catched_animals.size()))
-
-	
 	
 func set_character(player: String) ->void:
 	character = player
@@ -72,16 +86,27 @@ func set_character(player: String) ->void:
 func get_character()->String:
 	return character
 
-
+func setBoughtCharacter(c: String, bought: bool) -> void:
+	boughtCharacters[c] = bought
+	emit_signal("character_bought")
+	print(boughtCharacters)
+	
+func getBoughtCharacter(c: String) -> bool:
+	print("This is a test" + str(boughtCharacters[c]))
+	return boughtCharacters[c]
+	
+func getBoughtCharacterSize() -> int:
+	return boughtCharacters.size()
+	
+func getBoughtCharactersList():
+	return boughtCharacters
 
 func set_bow(value:bool)->void:
 	bow = value
 	emit_signal("bow")
 
-
 func set_character_flip(flip:bool)->void:
 	character_flip = flip
-	
 	
 func get_character_flip()->bool:
 	return character_flip
