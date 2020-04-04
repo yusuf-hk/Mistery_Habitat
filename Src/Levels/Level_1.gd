@@ -5,7 +5,6 @@ func _ready() -> void:
 	PlayerData.connect("animal", self, "is_task_completed")
 	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch_level_1)
 func is_task_completed()->void:
-	print(PlayerData.task_completed)
 	animals_to_catch_level_1 = animals_to_catch_level_1 - 1
 	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch_level_1)
 	if animals_to_catch_level_1 == 0:

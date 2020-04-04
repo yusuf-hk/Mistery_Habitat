@@ -69,7 +69,6 @@ func caught_first_animal()->void:
 		
 func remove_area2ds(node: String)->void:
 	var delete_area = "Tutorial_areas/" + node
-	print(delete_area)
 	get_node(delete_area).queue_free()
 
 func is_task_completed()->void:

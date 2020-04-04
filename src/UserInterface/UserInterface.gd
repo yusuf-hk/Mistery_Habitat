@@ -125,7 +125,7 @@ func animal_task()->void:
 func check_button()->void:
 	if answer == false:			
 		lifes = lifes - 1
-		get_node("Animal_tasks/Label2").text = "Life: "+ String(lifes)
+		get_node("Animal_tasks/Label2").text = "Your lives left: "+ String(lifes)
 		if lifes == 0:
 			die()
 	elif answer == true:

@@ -29,6 +29,18 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 13.4543, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "Forest_True"
@@ -58,6 +70,18 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 8.28212, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
 }
 
 [sub_resource type="Animation" id=4]
@@ -104,6 +128,18 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 8.57418, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
+}
 
 [sub_resource type="Animation" id=7]
 resource_name = "Savanna_True"
@@ -133,6 +169,18 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 8.28211, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
 }
 
 [sub_resource type="Animation" id=9]
@@ -176,6 +224,18 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 8, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
+}
 
 [sub_resource type="Animation" id=11]
 resource_name = "Water_True"
@@ -204,6 +264,18 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 8, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
 }
 
 [sub_resource type="Animation" id=13]
@@ -240,6 +312,7 @@ margin_right = 72.0
 margin_bottom = 61.0
 
 [node name="PauseOverlay" type="ColorRect" parent="."]
+editor/display_folded = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -297,52 +370,52 @@ margin_right = 1198.02
 margin_bottom = 572.357
 
 [node name="Savanna" type="Button" parent="Animal_tasks/task"]
-margin_left = 12.9473
-margin_top = 358.748
-margin_right = 153.947
-margin_bottom = 404.748
+margin_left = 17.2702
+margin_top = 275.148
+margin_right = 158.27
+margin_bottom = 321.148
 text = "Savanna"
 
 [node name="Grassland" type="Button" parent="Animal_tasks/task"]
-margin_left = 356.532
-margin_top = 358.748
-margin_right = 497.532
-margin_bottom = 404.748
+margin_left = 360.332
+margin_top = 273.248
+margin_right = 501.332
+margin_bottom = 319.248
 text = "Grassland"
 
 [node name="Polar" type="Button" parent="Animal_tasks/task"]
-margin_left = 186.601
-margin_top = 357.24
-margin_right = 327.601
-margin_bottom = 403.24
+margin_left = 187.498
+margin_top = 273.64
+margin_right = 328.498
+margin_bottom = 319.64
 text = "Polar"
 
 [node name="Forest" type="Button" parent="Animal_tasks/task"]
-margin_left = 526.063
-margin_top = 357.24
-margin_right = 667.063
-margin_bottom = 403.24
+margin_left = 528.606
+margin_top = 272.69
+margin_right = 669.606
+margin_bottom = 318.69
 text = "Forest"
 
 [node name="Water" type="Button" parent="Animal_tasks/task"]
-margin_left = 699.648
-margin_top = 357.989
-margin_right = 841.648
-margin_bottom = 403.989
+margin_left = 700.315
+margin_top = 271.976
+margin_right = 842.315
+margin_bottom = 317.976
 text = "Water"
 
 [node name="Dessert" type="Button" parent="Animal_tasks/task"]
-margin_left = 875.825
-margin_top = 357.989
-margin_right = 1017.83
-margin_bottom = 403.989
+margin_left = 874.979
+margin_top = 271.875
+margin_right = 1016.98
+margin_bottom = 317.875
 text = "Dessert"
 
 [node name="Label" type="Label" parent="Animal_tasks/task"]
-margin_left = 198.969
-margin_top = 3.01468
-margin_right = 651.969
-margin_bottom = 76.0147
+margin_left = 288.969
+margin_top = 23.8146
+margin_right = 741.969
+margin_bottom = 96.8147
 text = "Where does the animal belong ???"
 
 [node name="Savanna_rect" type="ColorRect" parent="Animal_tasks/task"]
@@ -413,11 +486,11 @@ texture = ExtResource( 14 )
 
 [node name="Label2" type="Label" parent="Animal_tasks"]
 modulate = Color( 0, 1, 0, 1 )
-margin_left = 213.911
-margin_top = 179.832
-margin_right = 340.911
-margin_bottom = 234.832
-text = "Life: 10"
+margin_left = 567.217
+margin_top = 234.649
+margin_right = 785.217
+margin_bottom = 289.649
+text = "Your lives left: 10"
 
 [node name="animplayer" type="AnimationPlayer" parent="."]
 anims/Forest_False = SubResource( 1 )
@@ -435,19 +508,17 @@ anims/dessert_false = SubResource( 12 )
 anims/dessert_true = SubResource( 13 )
 
 [node name="ItemList2" type="ItemList" parent="."]
-self_modulate = Color( 1, 1, 1, 0.301961 )
-margin_left = 999.0
-margin_top = -81.0
-margin_right = 1661.0
-margin_bottom = 95.0
+margin_left = 1023.07
+margin_top = -57.4662
+margin_right = 1685.07
+margin_bottom = 118.533
 
 [node name="ItemList" type="ItemList" parent="."]
-editor/display_folded = true
 self_modulate = Color( 0, 0, 0, 0 )
-margin_left = 1004.0
-margin_top = -4.0
-margin_right = 1399.0
-margin_bottom = 340.0
+margin_left = 1022.93
+margin_top = 20.3514
+margin_right = 1417.93
+margin_bottom = 364.352
 
 [node name="Coins" type="Label" parent="ItemList"]
 anchor_left = 1.0
@@ -460,9 +531,9 @@ text = "Coins: "
 
 [node name="Diamonds" type="Label" parent="ItemList"]
 margin_left = 8.08606
-margin_top = 24.9932
+margin_top = 28.3173
 margin_right = 146.086
-margin_bottom = 55.9932
+margin_bottom = 59.3173
 text = "Diamonds:"
 
 [node name="Animals" type="Label" parent="ItemList"]
@@ -480,10 +551,10 @@ margin_bottom = 38.5298
 
 [node name="Animal_List" type="ItemList" parent="ItemList/Animals"]
 visible = false
-margin_left = 136.205
-margin_top = 1.11926
-margin_right = 268.205
-margin_bottom = 283.119
+margin_left = -10.7537
+margin_top = 42.2578
+margin_right = 130.247
+margin_bottom = 324.258
 max_columns = 16
 [connection signal="button_up" from="PauseOverlay/PauseMenu/ShopButton" to="." method="_on_Button_button_up"]
 [connection signal="button_up" from="Animal_tasks/task/Savanna" to="." method="_on_Savanna_button_up"]
