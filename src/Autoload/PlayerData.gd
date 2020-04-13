@@ -1,6 +1,6 @@
 extends Node
 
-onready var character = "Boy"
+onready var character = "Girl"
 onready var character_flip = false
 onready var shoot = false
 onready var retry = false
@@ -15,8 +15,23 @@ signal bow
 signal task_completed
 signal tutorial
 
-var coin: = 0 setget set_coin
-var diamonds: = 0 setget set_diamonds
+var boughtCharacters = {
+	"Boy": false,
+	"Girl": false,
+	"Robot": false,
+	"Templerun_boy": false,
+	"Templerun_girl": false,
+	"Dino": false,
+	"Knight": false,
+	"Jack": false,
+	"Ninja_boy": false,
+	"Ninja_girl": false,
+	"Santa": false,
+	"Zombie_boy": false
+	}
+
+var coin: = 999999999999 setget set_coin
+var diamonds: = 10 setget set_diamonds
 var deaths: = false setget set_deaths
 var position setget set_position
 var animals: = 0 setget set_animals
@@ -75,8 +90,6 @@ func set_animal_list(new_animal:String)->void:
 	last_animal = new_animal
 	catched_animals.append(new_animal)
 	set_animals(int(catched_animals.size()))
-
-	
 	
 func set_character(player: String) ->void:
 	character = player
@@ -85,16 +98,25 @@ func set_character(player: String) ->void:
 func get_character()->String:
 	return character
 
-
+func setBoughtCharacter(c: String, bought: bool) -> void:
+	boughtCharacters[c] = bought
+	set_character(c)
+	
+func getBoughtCharacter(c: String) -> bool:
+	return boughtCharacters[c]
+	
+func getBoughtCharacterSize() -> int:
+	return boughtCharacters.size()
+	
+func getBoughtCharactersList():
+	return boughtCharacters
 
 func set_bow(value:bool)->void:
 	bow = value
 	emit_signal("bow")
 
-
 func set_character_flip(flip:bool)->void:
 	character_flip = flip
-	
 	
 func get_character_flip()->bool:
 	return character_flip

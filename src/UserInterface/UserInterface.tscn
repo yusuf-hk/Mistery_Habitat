@@ -1,12 +1,12 @@
 [gd_scene load_steps=28 format=2]
 
+[ext_resource path="res://src/UserInterface/buttons/BackToMainMenuButton.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/UserInterface/ui_theme.tres" type="Theme" id=1]
 [ext_resource path="res://src/UserInterface/UserInterface.gd" type="Script" id=2]
 [ext_resource path="res://src/Tutorial/Tutuorial_point.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/UserInterface/Shop/Shop.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/UserInterface/Title.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/UserInterface/RetryButton.tscn" type="PackedScene" id=6]
-[ext_resource path="res://src/UserInterface/SceneChangeButton.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/UserInterface/QuitButton.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/Habitats/savanna.jpg" type="Texture" id=9]
 [ext_resource path="res://assets/Habitats/polar.jpg" type="Texture" id=10]
@@ -300,61 +300,63 @@ margin_left = -2.20532
 margin_top = 2.94037
 margin_right = -2.20532
 margin_bottom = 2.94037
-theme = ExtResource( 1 )
-script = ExtResource( 2 )
+script = ExtResource( 1 )
 
 [node name="Tutuorial_point" parent="." instance=ExtResource( 3 )]
+[node name="Shop" parent="." instance=ExtResource( 2 )]
 visible = false
-
-[node name="Shop" parent="." instance=ExtResource( 4 )]
-visible = false
-margin_right = 72.0
-margin_bottom = 61.0
 
 [node name="PauseOverlay" type="ColorRect" parent="."]
 editor/display_folded = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = 67.0
-margin_bottom = 50.0
 mouse_filter = 2
 color = Color( 0, 0, 0, 0.321569 )
 
-[node name="Title" parent="PauseOverlay" instance=ExtResource( 5 )]
-margin_top = 150.0
-margin_bottom = 320.0
+[node name="PauseMenu" type="VBoxContainer" parent="PauseOverlay"]
+editor/display_folded = true
+margin_left = 384.0
+margin_top = 171.0
+margin_right = 896.0
+margin_bottom = 548.0
+
+[node name="Title" parent="PauseOverlay/PauseMenu" instance=ExtResource( 3 )]
+anchor_right = 0.0
+margin_right = 512.0
+margin_bottom = 57.0
+custom_colors/font_color_shadow = Color( 0.905882, 0.658824, 0.184314, 1 )
+custom_constants/shadow_offset_y = 5
 text = "Paused"
 
-[node name="PauseMenu" type="VBoxContainer" parent="PauseOverlay"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -135.0
-margin_top = -30.0
-margin_right = 139.0
-margin_bottom = 135.0
+[node name="RetryButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 61.0
+margin_right = 512.0
+margin_bottom = 140.0
 
-[node name="RetryButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 6 )]
-margin_bottom = 43.0
+[node name="ShopButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 144.0
+margin_right = 512.0
+margin_bottom = 210.0
+script = ExtResource( 6 )
 
-[node name="ShopButton" type="Button" parent="PauseOverlay/PauseMenu"]
-margin_top = 51.0
-margin_right = 274.0
-margin_bottom = 94.0
-text = "Shop"
-
-[node name="MainScreenButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 7 )]
-margin_top = 102.0
-margin_right = 274.0
-margin_bottom = 145.0
-text = "Back to Main Screen"
+[node name="BackToMainMenuButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 7 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 214.0
+margin_right = 512.0
+margin_bottom = 293.0
 
 [node name="QuitButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 8 )]
-margin_top = 153.0
-margin_right = 274.0
-margin_bottom = 196.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 297.0
+margin_right = 512.0
+margin_bottom = 377.0
 
 [node name="Animal_tasks" type="ColorRect" parent="."]
 editor/display_folded = true
@@ -364,10 +366,11 @@ margin_bottom = 803.0
 color = Color( 0.341176, 0.329412, 0.329412, 0.552941 )
 
 [node name="task" type="ItemList" parent="Animal_tasks"]
-margin_left = 160.013
-margin_top = 161.357
-margin_right = 1198.02
-margin_bottom = 572.357
+editor/display_folded = true
+margin_left = 139.656
+margin_top = 152.104
+margin_right = 1177.66
+margin_bottom = 563.104
 
 [node name="Savanna" type="Button" parent="Animal_tasks/task"]
 margin_left = 17.2702
@@ -527,13 +530,15 @@ margin_left = -383.514
 margin_top = -1.27771
 margin_right = -234.514
 margin_bottom = 29.7223
+custom_fonts/font = ExtResource( 15 )
 text = "Coins: "
 
 [node name="Diamonds" type="Label" parent="ItemList"]
 margin_left = 8.08606
 margin_top = 28.3173
 margin_right = 146.086
-margin_bottom = 59.3173
+margin_bottom = 55.9932
+custom_fonts/font = ExtResource( 15 )
 text = "Diamonds:"
 
 [node name="Animals" type="Label" parent="ItemList"]
@@ -541,6 +546,7 @@ margin_left = 11.0241
 margin_top = 55.1319
 margin_right = 123.024
 margin_bottom = 86.1322
+custom_fonts/font = ExtResource( 15 )
 text = "Animals:"
 
 [node name="TextureButton" type="TextureButton" parent="ItemList/Animals"]
@@ -556,7 +562,10 @@ margin_top = 42.2578
 margin_right = 130.247
 margin_bottom = 324.258
 max_columns = 16
-[connection signal="button_up" from="PauseOverlay/PauseMenu/ShopButton" to="." method="_on_Button_button_up"]
+[connection signal="pressed" from="PauseOverlay/PauseMenu/RetryButton" to="PauseOverlay/PauseMenu/RetryButton" method="_on_RetryButton_pressed"]
+[connection signal="pressed" from="PauseOverlay/PauseMenu/ShopButton" to="PauseOverlay/PauseMenu/ShopButton" method="_on_ShopButton_pressed"]
+[connection signal="pressed" from="PauseOverlay/PauseMenu/BackToMainMenuButton" to="PauseOverlay/PauseMenu/BackToMainMenuButton" method="_on_BackToMainMenuButton_pressed"]
+[connection signal="pressed" from="PauseOverlay/PauseMenu/QuitButton" to="PauseOverlay/PauseMenu/QuitButton" method="_on_QuitButton_pressed"]
 [connection signal="button_up" from="Animal_tasks/task/Savanna" to="." method="_on_Savanna_button_up"]
 [connection signal="button_up" from="Animal_tasks/task/Grassland" to="." method="_on_Grassland_button_up"]
 [connection signal="button_up" from="Animal_tasks/task/Polar" to="." method="_on_Polar_button_up"]
