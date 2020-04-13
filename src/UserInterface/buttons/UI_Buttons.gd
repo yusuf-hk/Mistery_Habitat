@@ -1,8 +1,8 @@
 extends Node
-var paused = load("res://src/UserInterface/UserInterface.gd")
 
 func _on_RetryButton_pressed() -> void:
-	pass
+	get_tree().paused = false
+	get_tree().reload_current_scene()
 
 func _on_ShopButton_pressed() -> void:
 	get_parent().get_parent().get_parent().get_node("PauseOverlay").visible = false

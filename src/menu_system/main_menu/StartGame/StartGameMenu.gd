@@ -1,7 +1,6 @@
 extends Control
 
 var array = ["Boy","Girl","Robot","Templerun_boy", "Templerun_girl", "Dino", "Knight", "Jack", "Ninja_boy", "Ninja_girl", "Santa", "Zombie_boy"]
-
 onready var what_character = PlayerData.get_character()
 
 func _ready() -> void:

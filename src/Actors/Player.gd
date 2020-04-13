@@ -10,6 +10,7 @@ onready var character_animation = get_node("AnimationPlayer")
 
 func _ready() -> void:
 	PlayerData.connect("died", self, "die")
+	PlayerData.connect("character_updated", self, "updateSkin")
 
 
 func _physics_process(delta: float) -> void:
@@ -21,6 +22,7 @@ func _physics_process(delta: float) -> void:
 	character.visible = true
 	move_sprite()
 	turn_of_sprite()
+	updateSkin()
 	set_weapon()
 	
 
@@ -34,7 +36,18 @@ func set_weapon()->void:
 func choosen_weapon()->bool:
 	return PlayerData.bow
 
-	
+func updateSkin():
+	what_character = get_node("/root/PlayerData").get_character()
+	character = get_node("Sprite/"+what_character)
+	turn_on_sprite()
+	turn_of_sprite()
+
+func turn_on_sprite():
+	for i in int(array.size()):
+		var some_character = array[i]
+		if what_character == some_character:
+			some_character = "Sprite/"+ some_character
+			get_node(some_character).visible = true
 	
 func turn_of_sprite()->void:
 	for i in int(array.size()):
