@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://src/Levels/DesertMap.gd" type="Script" id=1]
 [ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=2]
@@ -42,7 +42,8 @@
 [ext_resource path="res://src/Objects/Common objects/inPortal2D.tscn" type="PackedScene" id=40]
 [ext_resource path="res://src/Objects/Common objects/outPortal2D.tscn" type="PackedScene" id=41]
 [ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=42]
-[ext_resource path="res://src/Objects/Common objects/die_shape.tscn" type="PackedScene" id=43]
+[ext_resource path="res://src/Levels/Rainforest.tscn" type="PackedScene" id=43]
+[ext_resource path="res://src/Objects/Common objects/die_shape.tscn" type="PackedScene" id=44]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -1163,17 +1164,18 @@ z_index = -1
 position = Vector2( 8879.12, -1078.82 )
 scale = Vector2( 0.437844, 0.431726 )
 z_index = -1
+next_scene = ExtResource( 43 )
 
 [node name="die_shapes" type="Node2D" parent="."]
 editor/display_folded = true
 
-[node name="die_shape" parent="die_shapes" instance=ExtResource( 43 )]
+[node name="die_shape" parent="die_shapes" instance=ExtResource( 44 )]
 position = Vector2( 1503.11, 989.605 )
 
-[node name="die_shape2" parent="die_shapes" instance=ExtResource( 43 )]
+[node name="die_shape2" parent="die_shapes" instance=ExtResource( 44 )]
 position = Vector2( 2258.27, 989.605 )
 
-[node name="die_shape3" parent="die_shapes" instance=ExtResource( 43 )]
+[node name="die_shape3" parent="die_shapes" instance=ExtResource( 44 )]
 position = Vector2( 5614.77, 817.003 )
 
 [node name="Area2D" type="Area2D" parent="."]

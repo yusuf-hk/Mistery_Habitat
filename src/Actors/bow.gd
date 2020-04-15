@@ -1,4 +1,4 @@
-extends AnimatedSprite
+extends Sprite
 
 onready var what_character = get_node("/root/PlayerData").get_character()
 onready var bow = self
