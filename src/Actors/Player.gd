@@ -11,9 +11,13 @@ onready var character_animation = get_node("AnimationPlayer")
 func _ready() -> void:
 	PlayerData.connect("died", self, "die")
 	PlayerData.connect("character_updated", self, "set_weapon")
+	PlayerData.connect("character_updated", self, "updateSkin")
 
 
 func _physics_process(delta: float) -> void:
+	what_character = get_node("/root/PlayerData").get_character()
+	character = get_node("Sprite/"+what_character)
+	
 	var is_jump_interrupted: = Input.is_action_just_released("jump") and _velocity.y < 0.0
 	var direction: = get_direction()
 	_velocity = calculate_move_velocity(_velocity, direction, speed, is_jump_interrupted)
@@ -22,9 +26,19 @@ func _physics_process(delta: float) -> void:
 	character.visible = true
 	move_sprite()
 	turn_of_sprite()
-	set_weapon()
 	
-
+func updateSkin():
+	what_character = get_node("/root/PlayerData").get_character()
+	character = get_node("Sprite/"+what_character)
+	turn_on_sprite()
+	turn_of_sprite()
+	
+func turn_on_sprite():
+	for i in int(array.size()):
+		var some_character = array[i]
+		if what_character == some_character:
+			some_character = "Sprite/"+ some_character
+			get_node(some_character).visible = true
 	
 func set_weapon()->void:
 	if choosen_weapon() == false:
