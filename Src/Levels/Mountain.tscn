@@ -398,6 +398,7 @@ position = Vector2( 5042.4, -383.428 )
 position = Vector2( 5621.28, -3112.29 )
 
 [node name="Coins&diamonds" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Coins" parent="Coins&diamonds" instance=ExtResource( 23 )]
 position = Vector2( -244.85, -297.8 )
@@ -614,4 +615,7 @@ position = Vector2( -4738.89, -812.385 )
 
 [node name="Coins64" parent="Coins&diamonds" instance=ExtResource( 23 )]
 position = Vector2( -4696.05, -812.385 )
+
+[node name="Coins65" parent="Coins&diamonds" instance=ExtResource( 23 )]
+position = Vector2( -1607.96, -937.472 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
