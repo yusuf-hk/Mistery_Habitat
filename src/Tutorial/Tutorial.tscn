@@ -24,9 +24,10 @@
 [ext_resource path="res://src/Objects/Forrest Objects/Tree_3.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/Objects/Forrest Objects/Crate.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=24]
-[ext_resource path="res://src/Levels/Level_1.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/Levels/Forest.tscn" type="PackedScene" id=25]
 [ext_resource path="res://src/Actors/Brown bear.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/Actors/Animal.tscn" type="PackedScene" id=27]
+
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 15.0537

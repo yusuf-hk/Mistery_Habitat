@@ -431,7 +431,6 @@ position = Vector2( -100, 0 )
 [node name="skeleton" parent="Desert-collision" instance=ExtResource( 20 )]
 position = Vector2( 28, 33 )
 scale = Vector2( 2, 2 )
-format = 1
 tile_data = PoolIntArray( -393140, 536870912, 0 )
 
 [node name="StoneBlock" parent="Desert-collision" instance=ExtResource( 19 )]
