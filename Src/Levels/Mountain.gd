@@ -1,13 +1,13 @@
 extends Node2D
 
-var animals_to_catch_rainforest = 2
+var animals_to_catch_mountain = 2
 func _ready() -> void:
 	PlayerData.connect("animal", self, "is_task_completed")
-	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch_rainforest)
+	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch_mountain)
 func is_task_completed()->void:
-	animals_to_catch_rainforest = animals_to_catch_rainforest - 1
-	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch_rainforest)
-	if animals_to_catch_rainforest == 0:
+	animals_to_catch_mountain = animals_to_catch_mountain - 1
+	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch_mountain)
+	if animals_to_catch_mountain == 0:
 		PlayerData.set_task_state(true)
 
 
