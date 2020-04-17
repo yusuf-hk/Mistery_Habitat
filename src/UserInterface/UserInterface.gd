@@ -36,6 +36,8 @@ func tutorial_state():
 	$Tutuorial_point.visible = PlayerData.tutorial
 	scene_tree.paused = PlayerData.tutorial
 func _on_Player_died() -> void:
+	print("Player died")
+	animal_list.clear()
 	self.paused = true
 	title_label.text = MESSAGE_DIED
 
@@ -98,6 +100,7 @@ func number_generator(name:String)->int:
 	return 0
 	
 func remove_all_animals_with_this_name(name:String)->void:
+	print("remove animal")
 	animal_list.remove(name)
 	for i in range(0,10):
 		if name + " " + String(i) in animal_list:
@@ -133,6 +136,8 @@ func check_button()->void:
 		update_animals()
 		scene_tree.paused = false
 		animplayer.play("Task_fade")
+		print(animal_list)
+		print(PlayerData.catched_animals)
 
 			
 

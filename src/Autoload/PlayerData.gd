@@ -1,6 +1,6 @@
 extends Node
 
-onready var character = "Girl"
+onready var character = "Boy"
 onready var character_flip = false
 onready var shoot = false
 onready var retry = false
