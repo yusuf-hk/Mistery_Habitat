@@ -1,6 +1,6 @@
 extends Node2D
 
-var animals_to_catch_level_1 = 2
+var animals_to_catch_level_1 = 0
 func _ready() -> void:
 	PlayerData.connect("animal", self, "is_task_completed")
 	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch_level_1)

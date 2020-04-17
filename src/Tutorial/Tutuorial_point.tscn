@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/Tutorial/Tutuorial_point.gd" type="Script" id=1]
 [ext_resource path="res://assets/UserInterface/keys.jpeg" type="Texture" id=2]
+[ext_resource path="res://assets/font_default.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/UserInterface/spacekey.png" type="Texture" id=4]
 
 [node name="Tutuorial_point" type="ColorRect"]
 anchor_right = 1.0
@@ -44,8 +46,32 @@ margin_left = 121.336
 margin_top = -32.6783
 margin_right = 531.336
 margin_bottom = 54.3217
-text = "Welcome to Mistery habitat, this are the main keys for moving
-around in the game and press space to shoot"
+custom_fonts/font = ExtResource( 3 )
+text = "Welcome to Mistery habitat. This is the Tutorial level where you
+will learn the basics of the game. Underneath are the main keys 
+for moving around in the game"
+
+[node name="Shoot" type="TextureRect" parent="ColorRect"]
+editor/display_folded = true
+visible = false
+margin_left = 153.135
+margin_top = 221.517
+margin_right = 563.136
+margin_bottom = 472.517
+
+[node name="spacekey" type="Sprite" parent="ColorRect/Shoot"]
+position = Vector2( 531.578, 171.54 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="ColorRect/Shoot"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 140.98
+margin_top = -15.49
+margin_right = 917.98
+margin_bottom = 71.51
+custom_fonts/font = ExtResource( 3 )
+text = "To catch the animals in the game, you need to shoot them 
+using the space key"
 
 [node name="Coins and diamonds" type="TextureRect" parent="ColorRect"]
 editor/display_folded = true
@@ -60,6 +86,7 @@ margin_left = 271.759
 margin_top = 192.253
 margin_right = 953.759
 margin_bottom = 556.253
+custom_fonts/font = ExtResource( 3 )
 text = "You caught a coin! These you can use to buy different
 characters and arrows in the shop menu. 
 
@@ -81,10 +108,31 @@ margin_left = 273.708
 margin_top = 196.354
 margin_right = 968.708
 margin_bottom = 515.354
+custom_fonts/font = ExtResource( 3 )
 text = "Notice that you cant go to the next level before
 you have caught all the animals. the portal will
 tell you how many animals you need to catch
 before you can go to the next level"
+
+[node name="Meny" type="TextureRect" parent="ColorRect"]
+visible = false
+margin_left = 1.53668
+margin_top = 3.04794
+margin_right = 410.537
+margin_bottom = 252.048
+
+[node name="Label" type="Label" parent="ColorRect/Meny"]
+margin_left = 273.708
+margin_top = 196.354
+margin_right = 968.708
+margin_bottom = 515.354
+custom_fonts/font = ExtResource( 3 )
+text = "If you look in the right corner you will find a overview of coins,
+diamonds and number of animals. Press animals to se what 
+animals you have caught.
+
+Also there is a meny. Press the key P and you can retry, go to 
+shop or quit the game."
 
 [node name="Hidden_rooms" type="TextureRect" parent="ColorRect"]
 editor/display_folded = true
@@ -99,6 +147,7 @@ margin_left = 274.809
 margin_top = 202.505
 margin_right = 971.809
 margin_bottom = 564.505
+custom_fonts/font = ExtResource( 3 )
 text = "Notice that sometimes the water takes you to hidden rooms in
 the game. "
 
@@ -115,6 +164,7 @@ margin_left = 52.8593
 margin_top = 67.4549
 margin_right = 748.859
 margin_bottom = 357.455
+custom_fonts/font = ExtResource( 3 )
 text = "Congratz! You caught your first animal, you need to catch 
 all the animals before yo can leave this habitat"
 

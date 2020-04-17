@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://src/Tutorial/Tutorial.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Forest/png/BG/BG.png" type="Texture" id=2]
@@ -23,11 +23,11 @@
 [ext_resource path="res://src/Objects/Forrest Objects/Tree_1.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/Objects/Forrest Objects/Tree_3.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/Objects/Forrest Objects/Crate.tscn" type="PackedScene" id=23]
-[ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=24]
-[ext_resource path="res://src/Levels/Forest.tscn" type="PackedScene" id=25]
-[ext_resource path="res://src/Actors/Brown bear.tscn" type="PackedScene" id=26]
-[ext_resource path="res://src/Actors/Animal.tscn" type="PackedScene" id=27]
-
+[ext_resource path="res://assets/font_default.tres" type="DynamicFont" id=24]
+[ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/Levels/Forest.tscn" type="PackedScene" id=26]
+[ext_resource path="res://src/Actors/Brown bear.tscn" type="PackedScene" id=27]
+[ext_resource path="res://src/Actors/Animal.tscn" type="PackedScene" id=28]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 15.0537
@@ -196,11 +196,17 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 [sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 91.857, 10 )
 
-[sub_resource type="RectangleShape2D" id=13]
+[sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 33.438, 90.1332 )
 
-[sub_resource type="RectangleShape2D" id=14]
+[sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 225.645, 143.539 )
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 41.9268, 346.816 )
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 23.8071, 142.473 )
 
 [node name="Tutorial level" type="Node2D"]
 script = ExtResource( 1 )
@@ -215,6 +221,7 @@ scale = Vector2( 1.42685, 1.04765 )
 texture = ExtResource( 2 )
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]
+editor/display_folded = true
 
 [node name="UserInterface" parent="InterfaceLayer" instance=ExtResource( 3 )]
 margin_left = -1.04309
@@ -223,6 +230,7 @@ margin_right = -1.04309
 margin_bottom = -0.559265
 
 [node name="Coin_collection" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( 1507.13, 487.559 )
 
 [node name="Coin_tutorial" type="Area2D" parent="Coin_collection"]
@@ -263,6 +271,7 @@ position = Vector2( 197.986, -215.558 )
 z_index = 3
 
 [node name="Coins and diamonds" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Coins" parent="Coins and diamonds" instance=ExtResource( 14 )]
 position = Vector2( 2248.2, 714.191 )
@@ -447,38 +456,41 @@ position = Vector2( 4597.46, 242.206 )
 
 [node name="Label" type="Label" parent="."]
 modulate = Color( 0.0745098, 0.180392, 0.756863, 1 )
-margin_left = 152.598
-margin_top = 179.957
-margin_right = 256.598
-margin_bottom = 221.957
+self_modulate = Color( 0.615686, 0.592157, 0.592157, 1 )
+margin_left = 13.8014
+margin_top = 178.106
+margin_right = 229.801
+margin_bottom = 220.106
 rect_scale = Vector2( 3, 2 )
 size_flags_horizontal = 7
 size_flags_vertical = 7
 size_flags_stretch_ratio = 0.0
 custom_styles/normal = SubResource( 10 )
+custom_fonts/font = ExtResource( 24 )
 custom_constants/shadow_offset_x = 12
 custom_constants/shadow_offset_y = 7
 text = "TUTORIAL LEVEL"
 align = 1
 valign = 1
 
-[node name="Portal2D" parent="." instance=ExtResource( 24 )]
+[node name="Portal2D" parent="." instance=ExtResource( 25 )]
 position = Vector2( 6891.72, 902.669 )
-next_scene = ExtResource( 25 )
+next_scene = ExtResource( 26 )
 
 [node name="Animals" type="Node2D" parent="."]
 editor/display_folded = true
 
-[node name="Brown bear4" parent="Animals" instance=ExtResource( 26 )]
+[node name="Brown bear4" parent="Animals" instance=ExtResource( 27 )]
 position = Vector2( 5855.74, 1837.82 )
 
-[node name="Brown bear3" parent="Animals" instance=ExtResource( 26 )]
+[node name="Brown bear3" parent="Animals" instance=ExtResource( 27 )]
 position = Vector2( 165.142, 1406.8 )
 
-[node name="Animal" parent="Animals" instance=ExtResource( 27 )]
+[node name="Animal" parent="Animals" instance=ExtResource( 28 )]
 position = Vector2( 4334.48, 199.35 )
 
 [node name="Tutorial_areas" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( 4.08112, 1.36035 )
 
 [node name="Welcome" type="Area2D" parent="Tutorial_areas"]
@@ -489,10 +501,11 @@ position = Vector2( 221.579, 501.945 )
 shape = SubResource( 11 )
 
 [node name="Water" type="Area2D" parent="Tutorial_areas"]
+editor/display_folded = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial_areas/Water"]
 position = Vector2( 5694.55, 803.941 )
-shape = SubResource( 13 )
+shape = SubResource( 12 )
 
 [node name="Portal" type="Area2D" parent="Tutorial_areas"]
 editor/display_folded = true
@@ -500,8 +513,26 @@ position = Vector2( 7000, 800 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial_areas/Portal"]
 position = Vector2( -254.511, -48.0921 )
+shape = SubResource( 13 )
+
+[node name="Shoot" type="Area2D" parent="Tutorial_areas"]
+editor/display_folded = true
+position = Vector2( 1062.24, 487.694 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial_areas/Shoot"]
+position = Vector2( 1433.67, -69.4871 )
 shape = SubResource( 14 )
+
+[node name="Meny" type="Area2D" parent="Tutorial_areas"]
+editor/display_folded = true
+position = Vector2( 5323.9, 1741.28 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial_areas/Meny"]
+position = Vector2( -3.51611, -24.6133 )
+shape = SubResource( 15 )
 [connection signal="body_entered" from="Coin_collection/Coin_tutorial" to="." method="_on_Coin_tutorial_body_entered"]
 [connection signal="body_entered" from="Tutorial_areas/Welcome" to="." method="_on_Welcome_body_entered"]
 [connection signal="body_entered" from="Tutorial_areas/Water" to="." method="_on_Water_body_entered"]
 [connection signal="body_entered" from="Tutorial_areas/Portal" to="." method="_on_Portal_body_entered"]
+[connection signal="body_entered" from="Tutorial_areas/Shoot" to="." method="_on_Shoot_body_entered"]
+[connection signal="body_entered" from="Tutorial_areas/Meny" to="." method="_on_Meny_body_entered"]

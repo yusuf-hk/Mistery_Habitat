@@ -7,8 +7,9 @@ func _on_RetryButton_pressed() -> void:
 	get_tree().paused = false
 
 func _on_ShopButton_pressed() -> void:
-	get_parent().get_parent().get_parent().get_node("PauseOverlay").visible = false
-	get_parent().get_parent().get_parent().get_node("Shop").visible = true
+	get_parent().get_parent().get_node("PauseOverlay").visible = false
+	get_parent().get_parent().get_node("Shop").visible = true
+	
 
 func _on_BackToMainMenuButton_pressed() -> void:
 	get_owner().set_paused(false)
