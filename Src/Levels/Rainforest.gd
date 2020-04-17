@@ -15,3 +15,4 @@ func _on_Area2D_body_entered(body: PhysicsBody2D) -> void:
 	if body.name == "Player":
 		PlayerData.set_task_state(false)
 		get_node("Area2D").queue_free()
+		PlayerData.emit_signal("new_scene")

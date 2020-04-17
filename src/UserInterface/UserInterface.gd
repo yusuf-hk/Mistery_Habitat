@@ -14,7 +14,7 @@ onready var animplayer = get_node("animplayer")
 const MESSAGE_DIED: = "You died"
 
 var paused: = false setget set_paused
-var animal_list = []
+var animal_list = PlayerData.animal_lists
 var state = -1
 var lifes = 10
 var animal
@@ -26,11 +26,18 @@ func _ready() -> void:
 	PlayerData.connect("died", self, "_on_Player_died")
 	PlayerData.connect("animal", self, "animal_task")
 	PlayerData.connect("tutorial", self, "tutorial_state")
+	PlayerData.connect("new_scene", self, "update_list")
 	update_coins()
 	update_animals()
 	update_diamonds()
 	restart_animal_task()
 
+func update_list():
+	print("signal emitted")
+	print(animal_list)
+	animal_list = PlayerData.animal_lists
+	update_animals()
+	print(animal_list)
 	
 func tutorial_state():
 	$Tutuorial_point.visible = PlayerData.tutorial
@@ -61,49 +68,73 @@ func set_paused(value: bool) -> void:
 
 
 func update_animals()->void:
+	animal_list = PlayerData.animal_lists
+	print("after updated animal list" + String(animal_list))
 	animal_label.text = "Animals: " + String(PlayerData.animals)
+	print("in update animals")
+	print(" ")
 	if (orgranize()):
+		print("organize true")
 		adding_animal_to_list()
 	
 
 func adding_animal_to_list()->void:
+	PlayerData.animal_lists = animal_list
 	get_node("ItemList/Animals/Animal_List").clear()
+	print(animal_list.size())
 	for i in animal_list.size():
+		print("adding animal to list")
+		print(String(animal_list[i]))
 		get_node("ItemList/Animals/Animal_List").add_item(animal_list[i])
 
 
 func orgranize()->bool:
+	print("in organize")
 	for i in PlayerData.catched_animals.size():
+		print("  in for loop " + String(i) + " of " + String(PlayerData.catched_animals.size()))
+		print("  Animal_list: "+ String(animal_list))
+		print("  Playerdata_list: "+ String(PlayerData.catched_animals))
 		var name = PlayerData.catched_animals[i]
 		var animal_number = number_generator(name)
-		if animal_number != 0:
+		print("    name, animal number: "+ name +", " + String(animal_number))
+		var element = name + " "+ String(animal_number)
+		if animal_number != 0 && animal_number >=2:
+			print("      animal !=0 && animal_number >=2")
 			var text = name + " " + String(animal_number)
 			if  text != name + " "+ String(PlayerData.catched_animals.count(name)):
 				remove_all_animals_with_this_name(name)
 				var new_animal = name + " " + String(animal_number+1)
 				animal_list.append(new_animal)
 				return true
-		if number_generator(name) == 0:
+		if animal_number == 0:
+			print("      animal == 0")
 			if(name in animal_list) == false:
+				print("        name: "+ name + " not animal_list")
 				animal_list.append(name+ " "+ String(1))
 				return true
-			if name in animal_list && number_generator(name) == 1:
-				remove_all_animals_with_this_name(name)
-				animal_list.append(name + " " + String(2))
-				return true
+		if element in animal_list && animal_number == 1:
+			print("      animal in list and animal_number == 1")
+			remove_all_animals_with_this_name(name)
+			animal_list.append(name + " " + String(2))
+			return true
+	print("finished organize")
 	return false
 	
 func number_generator(name:String)->int:
-	for i in range(1,10):
-		if name + " " + String(i) in animal_list:
+	print("in number generator")
+	for i in PlayerData.catched_animals.size():
+		if name + " " + String(i) in PlayerData.animal_lists:
 			return i
 	return 0
 	
 func remove_all_animals_with_this_name(name:String)->void:
 	print("remove animal")
 	animal_list.remove(name)
-	for i in range(0,10):
+	for i in PlayerData.catched_animals.size():
+		print("  in for loop("+ String(i)+ ")")
 		if name + " " + String(i) in animal_list:
+			var test = name + " " + String(i) 
+			print("    "+ test + "in animal list. now remove")
 			animal_list.remove(i)
 	
 
