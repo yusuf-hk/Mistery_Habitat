@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://src/Levels/Arctic_level.gd" type="Script" id=1]
 [ext_resource path="res://assets/Level/Background/ice bakground.jpg" type="Texture" id=2]
@@ -21,9 +21,10 @@
 [ext_resource path="res://src/Objects/Common objects/Coin_normal.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/Objects/Common objects/Diamonds.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/Actors/Camel.tscn" type="PackedScene" id=21]
-[ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=22]
-[ext_resource path="res://src/Levels/DesertMap.tscn" type="PackedScene" id=23]
-[ext_resource path="res://src/Objects/Forrest Objects/Tree_1.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/Actors/Penguin.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/Levels/DesertMap.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/Objects/Forrest Objects/Tree_1.tscn" type="PackedScene" id=25]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -495,12 +496,15 @@ position = Vector2( -138.183, 2582.25 )
 [node name="Camel" parent="." instance=ExtResource( 21 )]
 position = Vector2( 1631.86, 1151.41 )
 
-[node name="Portal2D" parent="." instance=ExtResource( 22 )]
+[node name="Penguin" parent="." instance=ExtResource( 22 )]
+position = Vector2( 310, 610 )
+
+[node name="Portal2D" parent="." instance=ExtResource( 23 )]
 position = Vector2( 5123.39, 516.601 )
 priority = 1.0
-next_scene = ExtResource( 23 )
+next_scene = ExtResource( 24 )
 
-[node name="Tree_1" parent="." instance=ExtResource( 24 )]
+[node name="Tree_1" parent="." instance=ExtResource( 25 )]
 position = Vector2( 2872.05, 692.184 )
 
 [node name="Area2D" type="Area2D" parent="."]
