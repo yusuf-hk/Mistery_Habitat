@@ -1,9 +1,10 @@
 extends Node
 
-onready var character = "Girl"
+onready var character = "Boy"
 onready var character_flip = false
 onready var shoot = false
 onready var retry = false
+onready var animal_lists = []
 
 signal coin
 signal diamonds
@@ -14,6 +15,7 @@ signal character_updated
 signal bow
 signal task_completed
 signal tutorial
+signal new_scene
 
 var boughtCharacters = {
 	"Boy": false,
@@ -126,3 +128,9 @@ func set_arrow_state(arrow_state:bool)->void:
 	
 func get_arrow_state()->bool:
 	return shoot
+
+func set_animal_lists(list:Array)->void:
+	animal_lists = list
+
+func set_new_scene()->void:
+	emit_signal("new_scene")

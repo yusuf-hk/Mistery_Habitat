@@ -115,6 +115,7 @@ tell you how many animals you need to catch
 before you can go to the next level"
 
 [node name="Meny" type="TextureRect" parent="ColorRect"]
+editor/display_folded = true
 visible = false
 margin_left = 1.53668
 margin_top = 3.04794
@@ -127,12 +128,11 @@ margin_top = 196.354
 margin_right = 968.708
 margin_bottom = 515.354
 custom_fonts/font = ExtResource( 3 )
-text = "If you look in the right corner you will find a overview of coins,
-diamonds and number of animals. Press animals to se what 
-animals you have caught.
+text = "In the overview of coins, diamonds and animals in the right 
+corner. Press animals to se what animals you have caught.
 
-Also there is a meny. Press the key P and you can retry, go to 
-shop or quit the game."
+Also there is a menu. Press the key P and you can retry, go to 
+shop, go back to main menu and quit the game."
 
 [node name="Hidden_rooms" type="TextureRect" parent="ColorRect"]
 editor/display_folded = true

@@ -8,8 +8,8 @@ var velocity = Vector2()
 
 var direction = 1
 export var coin: = 200
-var lives = 3
-var animal = "Polar bear"
+var lives = 2
+var animal = "Polar Bear"
 
 func _ready():
 	pass
@@ -34,7 +34,7 @@ func _physics_process(delta: float) -> void:
 	
 	if is_on_wall():
 		direction = direction * -1
-		$RayCast2D.position.x *= -1
+		#$RayCast2D.position.x *= -1
 		
 	#if $RayCast2D.is_colliding() == false:
 	#	direction = direction * -1

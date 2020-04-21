@@ -19,8 +19,9 @@ func picked() -> void:
 	
 
 
-func _on_Diamond_body_entered(KinematicBody2D) -> void:
-	picked()
+func _on_Diamond_body_entered(body:KinematicBody2D) -> void:
+	if body.name == \"Player\":
+		picked()
 "
 
 [sub_resource type="OccluderPolygon2D" id=2]
