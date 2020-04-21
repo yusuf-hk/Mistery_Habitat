@@ -55,9 +55,8 @@ func retry():
 	retry = true
 	self.coin = 0
 	self.diamonds = 0
-	self.animals = 0
 	self.bow = false
-	self.catched_animals.clear()
+
 	
 
 func set_tutorial(val:bool)->void:
