@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://src/Levels/Rainforest.gd" type="Script" id=1]
 [ext_resource path="res://assets/Level/Background/rainforest.png" type="Texture" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://src/Objects/Common objects/Coin_normal.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/Objects/Common objects/Diamonds.tscn" type="PackedScene" id=21]
 [ext_resource path="res://src/Actors/Polar bear.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/Actors/Monkey.tscn" type="PackedScene" id=23]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -179,6 +180,7 @@ position = Vector2( -212.85, -178.622 )
 position = Vector2( 6175.3, 1661.33 )
 
 [node name="Objects" type="Node2D" parent="."]
+editor/display_folded = true
 scale = Vector2( 2, 2 )
 
 [node name="Tree_3" parent="Objects" instance=ExtResource( 14 )]
@@ -427,4 +429,7 @@ position = Vector2( 7173.93, 1641.22 )
 
 [node name="Polar bear" parent="." instance=ExtResource( 22 )]
 position = Vector2( 2625.27, 704.427 )
+
+[node name="Monkey" parent="." instance=ExtResource( 23 )]
+position = Vector2( 1156.77, 667.115 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
