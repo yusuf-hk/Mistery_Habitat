@@ -8,7 +8,7 @@
 [ext_resource path="res://src/Actors/move_left.tres" type="Animation" id=6]
 [ext_resource path="res://src/Actors/move_right.tres" type="Animation" id=7]
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 47.2797, 58.5173 )
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -56,7 +56,7 @@ anims/move_right = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 180.214, 231.523 )
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 24.6902, 29.2384 )
