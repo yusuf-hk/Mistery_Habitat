@@ -1183,4 +1183,7 @@ position = Vector2( 326.041, 343.201 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 1.71478, 84.0227 )
 shape = SubResource( 20 )
+
+[node name="die_shape" parent="." instance=ExtResource( 44 )]
+position = Vector2( 9640.17, 54.1975 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

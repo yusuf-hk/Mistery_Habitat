@@ -149,7 +149,8 @@ margin_right = 971.809
 margin_bottom = 564.505
 custom_fonts/font = ExtResource( 3 )
 text = "Notice that sometimes the water takes you to hidden rooms in
-the game. "
+the game. Other times you will die and lose all your coins and 
+diamonds"
 
 [node name="Catched_animal" type="TextureRect" parent="ColorRect"]
 editor/display_folded = true
