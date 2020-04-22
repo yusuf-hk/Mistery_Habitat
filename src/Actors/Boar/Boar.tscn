@@ -1,0 +1,48 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://src/Actors/Boar/Boar.gd" type="Script" id=1]
+[ext_resource path="res://assets/Animals/Boar/boar_walk (1).png" type="Texture" id=2]
+[ext_resource path="res://assets/Animals/Boar/boar_walk (2).png" type="Texture" id=3]
+[ext_resource path="res://assets/Animals/Boar/boar_walk (3).png" type="Texture" id=4]
+[ext_resource path="res://assets/Animals/Boar/boar_walk (4).png" type="Texture" id=5]
+[ext_resource path="res://assets/Animals/Boar/boar_walk (5).png" type="Texture" id=6]
+[ext_resource path="res://assets/Animals/Boar/boar_walk (6).png" type="Texture" id=7]
+[ext_resource path="res://assets/Animals/Boar/boar_walk (7).png" type="Texture" id=8]
+[ext_resource path="res://assets/Animals/Boar/boar_walk (8).png" type="Texture" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 15.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 65.3194, 48.9507 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 65.319, 48.951 )
+
+[node name="Boar" type="KinematicBody2D"]
+collision_layer = 3
+collision_mask = 5
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Walk"
+frame = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -18.9268, 15.8832 )
+shape = SubResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -18.927, 15.883 )
+shape = SubResource( 3 )
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
