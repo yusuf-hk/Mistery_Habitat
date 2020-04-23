@@ -1,7 +1,8 @@
 extends Node2D
 
 #onready var anim_player = get_node("inPortal2D/AnimationPlayer")
-var animals_to_catch_desert = 2
+onready var animals_to_catch_desert = get_node("Animals").get_child_count()
+
 func _ready() -> void:
 	PlayerData.set_task_state(false)
 	PlayerData.connect("animal", self, "is_task_completed")

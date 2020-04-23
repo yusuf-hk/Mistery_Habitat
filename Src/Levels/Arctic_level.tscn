@@ -20,11 +20,11 @@
 [ext_resource path="res://assets/Level/tileset/arctic/Object/IceBox.png" type="Texture" id=18]
 [ext_resource path="res://src/Objects/Common objects/Coin_normal.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/Objects/Common objects/Diamonds.tscn" type="PackedScene" id=20]
-[ext_resource path="res://src/Actors/Camel.tscn" type="PackedScene" id=21]
-[ext_resource path="res://src/Actors/Penguin.tscn" type="PackedScene" id=22]
-[ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=23]
-[ext_resource path="res://src/Levels/DesertMap.tscn" type="PackedScene" id=24]
-[ext_resource path="res://src/Objects/Forrest Objects/Tree_1.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/Levels/DesertMap.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/Objects/Forrest Objects/Tree_1.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/Actors/Penguin.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/Actors/Camel.tscn" type="PackedScene" id=25]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -124,6 +124,7 @@ extents = Vector2( 389.441, 58.5675 )
 script = ExtResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+editor/display_folded = true
 layer = -2
 
 [node name="ice bakground" type="Sprite" parent="CanvasLayer"]
@@ -132,6 +133,7 @@ scale = Vector2( 1.58359, 1.18083 )
 texture = ExtResource( 2 )
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
+editor/display_folded = true
 
 [node name="UserInterface" parent="UserInterface" instance=ExtResource( 3 )]
 margin_left = 0.0
@@ -493,18 +495,12 @@ position = Vector2( -206.364, 2578.35 )
 [node name="Diamonds14" parent="Coins and diamonds" instance=ExtResource( 20 )]
 position = Vector2( -138.183, 2582.25 )
 
-[node name="Camel" parent="." instance=ExtResource( 21 )]
-position = Vector2( 1631.86, 1151.41 )
-
-[node name="Penguin" parent="." instance=ExtResource( 22 )]
-position = Vector2( 310, 610 )
-
-[node name="Portal2D" parent="." instance=ExtResource( 23 )]
+[node name="Portal2D" parent="." instance=ExtResource( 21 )]
 position = Vector2( 5123.39, 516.601 )
 priority = 1.0
-next_scene = ExtResource( 24 )
+next_scene = ExtResource( 22 )
 
-[node name="Tree_1" parent="." instance=ExtResource( 25 )]
+[node name="Tree_1" parent="." instance=ExtResource( 23 )]
 position = Vector2( 2872.05, 692.184 )
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -512,4 +508,12 @@ position = Vector2( 2872.05, 692.184 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 215.76, 637.006 )
 shape = SubResource( 6 )
+
+[node name="Animals" type="Node2D" parent="."]
+
+[node name="Penguin" parent="Animals" instance=ExtResource( 24 )]
+position = Vector2( 310, 610 )
+
+[node name="Camel" parent="Animals" instance=ExtResource( 25 )]
+position = Vector2( 1631.86, 1151.41 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

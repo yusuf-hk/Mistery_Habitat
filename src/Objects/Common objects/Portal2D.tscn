@@ -9,6 +9,7 @@ extends Area2D
 onready var anim_player: AnimationPlayer = $AnimationPlayer
 
 export var next_scene: PackedScene
+
 func _ready() -> void:
 	get_node(\"ColorRect\").visible = false
 
@@ -19,19 +20,13 @@ func _on_Portal2D_body_entered(body):
 	else:
 		get_node(\"ColorRect\").visible = true
 
-
-
 func teleport() -> void:
 	anim_player.play(\"fade_in\")
 	yield(anim_player, \"animation_finished\")
 	get_tree().change_scene_to(next_scene)
 
-
-
-
 func _on_Portal2D_body_exited(body) -> void:
-	get_node(\"ColorRect\").visible = false
-"
+	get_node(\"ColorRect\").visible = false"
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 70.7859
