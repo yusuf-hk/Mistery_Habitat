@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://src/Levels/Mountain.gd" type="Script" id=1]
 [ext_resource path="res://assets/Habitats/mountain.png" type="Texture" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://src/Objects/Common objects/Coin_normal.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/Objects/Common objects/Diamonds.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/Actors/Monkey.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/Actors/Vulture/Vulture.tscn" type="PackedScene" id=25]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -620,4 +621,7 @@ position = Vector2( -4696.05, -812.385 )
 position = Vector2( -1607.96, -937.472 )
 
 [node name="Monkey" parent="." instance=ExtResource( 24 )]
+
+[node name="Vulture" parent="." instance=ExtResource( 25 )]
+position = Vector2( 546.421, -1614.64 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
