@@ -21,9 +21,9 @@
 [ext_resource path="res://src/Objects/Forrest Objects/Crate.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/Objects/Common objects/Coin_normal.tscn" type="PackedScene" id=20]
 [ext_resource path="res://src/Objects/Common objects/Diamonds.tscn" type="PackedScene" id=21]
-[ext_resource path="res://src/Actors/Polar bear.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/Actors/Boar/Boar.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/Actors/Monkey.tscn" type="PackedScene" id=23]
-[ext_resource path="res://src/Actors/Boar/Boar.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/Actors/Polar bear.tscn" type="PackedScene" id=24]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -169,7 +169,6 @@ position = Vector2( 11894.9, 1508.77 )
 position = Vector2( 14773.9, 4878.94 )
 
 [node name="Portals_in_game" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="inPortal2D" parent="Portals_in_game" instance=ExtResource( 12 )]
 position = Vector2( 15508.8, 4047.53 )
@@ -428,18 +427,20 @@ position = Vector2( 7198.83, 1640.57 )
 [node name="Diamonds17" parent="Coins and diamonds" instance=ExtResource( 21 )]
 position = Vector2( 7173.93, 1641.22 )
 
-[node name="Polar bear" parent="." instance=ExtResource( 22 )]
-position = Vector2( 2625.27, 704.427 )
+[node name="Animals" type="Node2D" parent="."]
 
-[node name="Monkey" parent="." instance=ExtResource( 23 )]
-position = Vector2( 1156.77, 667.115 )
+[node name="Boar" parent="Animals" instance=ExtResource( 22 )]
+position = Vector2( 720.809, 678.408 )
 
-[node name="Boar2" parent="." instance=ExtResource( 24 )]
-position = Vector2( 4519.66, 452.462 )
-
-[node name="Boar3" parent="." instance=ExtResource( 24 )]
+[node name="Boar3" parent="Animals" instance=ExtResource( 22 )]
 position = Vector2( 4448.11, 852.617 )
 
-[node name="Boar" parent="." instance=ExtResource( 24 )]
-position = Vector2( 720.809, 678.408 )
+[node name="Boar2" parent="Animals" instance=ExtResource( 22 )]
+position = Vector2( 4519.66, 452.462 )
+
+[node name="Monkey" parent="Animals" instance=ExtResource( 23 )]
+position = Vector2( 1156.77, 667.115 )
+
+[node name="Polar bear" parent="Animals" instance=ExtResource( 24 )]
+position = Vector2( 2625.27, 704.427 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
