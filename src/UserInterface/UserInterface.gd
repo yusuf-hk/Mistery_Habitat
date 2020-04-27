@@ -272,7 +272,7 @@ func _on_Forest_button_up() -> void:
 		answer = true
 	elif animal == "Cat":
 		animplayer.play("Forest_True")
-		answer = true
+		answer = false
 	elif animal == "Camel":
 		answer = false
 		animplayer.play("Forest_False")
@@ -281,7 +281,7 @@ func _on_Forest_button_up() -> void:
 		animplayer.play("Forest_False")
 	elif animal == "Penguin":
 		answer = false
-		animplayer.play("Polar_False")
+		animplayer.play("Forest_False")
 	elif animal == "Polar Bear":
 		answer = false
 		animplayer.play("Forest_False")
@@ -336,7 +336,7 @@ func _on_Dessert_button_up() -> void:
 		answer =  false
 		animplayer.play("dessert_false")
 	elif animal == "Cat":
-		answer = false
+		answer = true
 		animplayer.play("dessert_false")
 	elif animal == "Camel":
 		answer = true
@@ -356,4 +356,68 @@ func _on_Dessert_button_up() -> void:
 	elif animal == "Boar":
 		answer = false
 		animplayer.play("dessert_false")
+	check_button()
+
+
+
+
+func _on_Mountain_button_up() -> void:
+	if animal == "Fish":
+		answer =  false
+		animplayer.play("Mountain_False")
+	elif animal == "Bear":
+		answer =  false
+		animplayer.play("Mountain_False")
+	elif animal == "Cat":
+		answer = false
+		animplayer.play("Mountain_False")
+	elif animal == "Camel":
+		answer = false
+		animplayer.play("Mountain_False")
+	elif animal == "Elephant":
+		answer = false
+		animplayer.play("Mountain_False")
+	elif animal == "Polar Bear":
+		answer = false
+		animplayer.play("Mountain_False")
+	elif animal == "Penguin":
+		answer = false
+		animplayer.play("Mountain_False")
+	elif animal == "Monkey":
+		answer = false
+		animplayer.play("Mountain_False")
+	elif animal == "Boar":
+		answer = false
+		animplayer.play("Mountain_False")
+	check_button()
+
+
+func _on_Jungle_button_up() -> void:
+	if animal == "Fish":
+		answer =  false
+		animplayer.play("Jungle_False")
+	elif animal == "Bear":
+		answer =  false
+		animplayer.play("Jungle_False")
+	elif animal == "Cat":
+		answer = false
+		animplayer.play("Jungle_False")
+	elif animal == "Camel":
+		answer = false
+		animplayer.play("Jungle_False")
+	elif animal == "Elephant":
+		answer = false
+		animplayer.play("dessert_false")
+	elif animal == "Polar Bear":
+		answer = false
+		animplayer.play("Jungle_False")
+	elif animal == "Penguin":
+		answer = false
+		animplayer.play("Jungle_False")
+	elif animal == "Monkey":
+		answer = true
+		animplayer.play("Jungle_True")
+	elif animal == "Boar":
+		answer = false
+		animplayer.play("Jungle_False")
 	check_button()
