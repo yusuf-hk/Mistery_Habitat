@@ -1,0 +1,65 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://src/Actors/Panda.gd" type="Script" id=1]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_000.png" type="Texture" id=2]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_001.png" type="Texture" id=3]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_002.png" type="Texture" id=4]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_003.png" type="Texture" id=5]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_004.png" type="Texture" id=6]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_005.png" type="Texture" id=7]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_006.png" type="Texture" id=8]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_007.png" type="Texture" id=9]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_008.png" type="Texture" id=10]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_009.png" type="Texture" id=11]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_010.png" type="Texture" id=12]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_011.png" type="Texture" id=13]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_012.png" type="Texture" id=14]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_013.png" type="Texture" id=15]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_014.png" type="Texture" id=16]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_015.png" type="Texture" id=17]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_016.png" type="Texture" id=18]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_017.png" type="Texture" id=19]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_018.png" type="Texture" id=20]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_019.png" type="Texture" id=21]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_020.png" type="Texture" id=22]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_021.png" type="Texture" id=23]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_022.png" type="Texture" id=24]
+[ext_resource path="res://assets/Animals/Panda/Walk on 4 paws/0_023.png" type="Texture" id=25]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 15.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 342.765, 230.506 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 346.362, 229.607 )
+
+[node name="Panda" type="KinematicBody2D"]
+scale = Vector2( 0.25, 0.25 )
+collision_layer = 3
+collision_mask = 5
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 14.3856, 5.39459 )
+z_index = -4
+shape = SubResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 3
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 14.3856, 5.39459 )
+shape = SubResource( 3 )
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
