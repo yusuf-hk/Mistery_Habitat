@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/Level/PNG/Let/Stone_2.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 65.0627, 83.9912 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 75.9455, 263.559 )
+
+[node name="Stone_2" type="Sprite"]
+texture = ExtResource( 1 )
+flip_h = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -95.2253, -92.5045 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 32.6487, 5.44151 )
+shape = SubResource( 2 )
