@@ -5,10 +5,8 @@ var button_state
 
 onready var scene_tree: SceneTree = get_tree()
 
-
 func _ready() -> void:
 	button_state = false
-
 
 
 func _on_Button_pressed() -> void:
@@ -21,9 +19,7 @@ func _on_Button_pressed() -> void:
 	get_node("ColorRect/Portal").visible = value
 	button_state = true
 	PlayerData.tutorial = false
-	
 
-	
-	
+
 func get_button_state()->bool:
 	return button_state

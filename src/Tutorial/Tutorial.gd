@@ -1,11 +1,14 @@
 extends Node2D
 
 onready var scene_tree: SceneTree = get_tree()
-var animals_to_catch = 3
+onready var animals_to_catch = get_node("Animals").get_child_count()
+onready var habitat_name = get_node("/root/Tutorial level").get_name()
 
 func _ready() -> void:
 	PlayerData.connect("animal", self, "caught_first_animal")
 	PlayerData.connect("animal", self, "is_task_completed")
+	PlayerData.set_current_habitat(habitat_name)
+	SaveSystem.save()
 
 
 func _on_Welcome_body_entered(body: KinematicBody2D) -> void:

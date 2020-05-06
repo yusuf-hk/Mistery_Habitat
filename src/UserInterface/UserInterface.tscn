@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=71 format=2]
 
 [ext_resource path="res://src/UserInterface/UserInterface.gd" type="Script" id=1]
 [ext_resource path="res://src/Tutorial/Tutuorial_point.tscn" type="PackedScene" id=2]
@@ -9,16 +9,57 @@
 [ext_resource path="res://src/UserInterface/buttons/ShopButton.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/UserInterface/buttons/BackToMainMenuButton.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/UserInterface/buttons/QuitButton.tscn" type="PackedScene" id=9]
-[ext_resource path="res://assets/font_default.tres" type="DynamicFont" id=10]
-[ext_resource path="res://assets/Habitats/savanna.jpg" type="Texture" id=11]
-[ext_resource path="res://assets/Habitats/polar.jpg" type="Texture" id=12]
-[ext_resource path="res://assets/Habitats/last ned.jpg" type="Texture" id=13]
-[ext_resource path="res://assets/Habitats/water.jpg" type="Texture" id=14]
-[ext_resource path="res://assets/Habitats/forest.jpg" type="Texture" id=15]
-[ext_resource path="res://assets/Habitats/dessert1.jpg" type="Texture" id=16]
-[ext_resource path="res://assets/UserInterface/jungle.jpg" type="Texture" id=17]
-[ext_resource path="res://assets/UserInterface/mountain.jpg" type="Texture" id=18]
-[ext_resource path="res://assets/fonts/Montserratt_24.tres" type="DynamicFont" id=19]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-0.png" type="Texture" id=10]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-1.png" type="Texture" id=11]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-2.png" type="Texture" id=12]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-3.png" type="Texture" id=13]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-4.png" type="Texture" id=14]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-5.png" type="Texture" id=15]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-6.png" type="Texture" id=16]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-7.png" type="Texture" id=17]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-8.png" type="Texture" id=18]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-9.png" type="Texture" id=19]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-10.png" type="Texture" id=20]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-11.png" type="Texture" id=21]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-12.png" type="Texture" id=22]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-13.png" type="Texture" id=23]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-14.png" type="Texture" id=24]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-15.png" type="Texture" id=25]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-16.png" type="Texture" id=26]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-17.png" type="Texture" id=27]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-18.png" type="Texture" id=28]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-19.png" type="Texture" id=29]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-20.png" type="Texture" id=30]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-21.png" type="Texture" id=31]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-22.png" type="Texture" id=32]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-23.png" type="Texture" id=33]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-24.png" type="Texture" id=34]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-25.png" type="Texture" id=35]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-26.png" type="Texture" id=36]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-27.png" type="Texture" id=37]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-28.png" type="Texture" id=38]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-29.png" type="Texture" id=39]
+[ext_resource path="res://assets/UserInterface/saved assets/frame-30.png" type="Texture" id=40]
+[ext_resource path="res://assets/UserInterface/saved assets/SaveIcon.png" type="Texture" id=41]
+[ext_resource path="res://assets/UserInterface/saved assets/SaveIcon_pressed.png" type="Texture" id=42]
+[ext_resource path="res://assets/font_default.tres" type="DynamicFont" id=43]
+[ext_resource path="res://assets/Habitats/savanna.jpg" type="Texture" id=44]
+[ext_resource path="res://assets/Habitats/polar.jpg" type="Texture" id=45]
+[ext_resource path="res://assets/Habitats/last ned.jpg" type="Texture" id=46]
+[ext_resource path="res://assets/Habitats/water.jpg" type="Texture" id=47]
+[ext_resource path="res://assets/Habitats/forest.jpg" type="Texture" id=48]
+[ext_resource path="res://assets/Habitats/dessert1.jpg" type="Texture" id=49]
+[ext_resource path="res://assets/UserInterface/jungle.jpg" type="Texture" id=50]
+[ext_resource path="res://assets/UserInterface/mountain.jpg" type="Texture" id=51]
+[ext_resource path="res://assets/fonts/Montserratt_24.tres" type="DynamicFont" id=52]
+
+[sub_resource type="SpriteFrames" id=18]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ) ],
+"loop": true,
+"name": "Saved",
+"speed": 15.0
+} ]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Forest_False"
@@ -378,10 +419,6 @@ tracks/0/keys = {
 pause_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -2.20532
-margin_top = 2.94037
-margin_right = -2.20532
-margin_bottom = 2.94037
 script = ExtResource( 1 )
 
 [node name="Tutuorial_point" parent="." instance=ExtResource( 2 )]
@@ -391,7 +428,6 @@ visible = false
 visible = false
 
 [node name="PauseOverlay" type="ColorRect" parent="."]
-editor/display_folded = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -399,6 +435,7 @@ mouse_filter = 2
 color = Color( 0, 0, 0, 0.321569 )
 
 [node name="PauseMenu" type="VBoxContainer" parent="PauseOverlay"]
+editor/display_folded = true
 margin_left = 384.0
 margin_top = 171.0
 margin_right = 896.0
@@ -441,7 +478,26 @@ margin_top = 297.0
 margin_right = 512.0
 margin_bottom = 377.0
 
+[node name="SaveText" type="AnimatedSprite" parent="PauseOverlay"]
+visible = false
+position = Vector2( 1204.17, 585.805 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 18 )
+animation = "Saved"
+frame = 2
+playing = true
+
+[node name="SaveButton" type="TextureButton" parent="PauseOverlay"]
+margin_left = 1156.32
+margin_top = 604.006
+margin_right = 1668.32
+margin_bottom = 1116.01
+rect_scale = Vector2( 0.2, 0.2 )
+texture_normal = ExtResource( 41 )
+texture_pressed = ExtResource( 42 )
+
 [node name="Animal_tasks" type="ColorRect" parent="."]
+editor/display_folded = true
 visible = false
 margin_right = 1417.0
 margin_bottom = 803.0
@@ -515,7 +571,7 @@ margin_left = 385.232
 margin_top = 86.9212
 margin_right = 838.232
 margin_bottom = 137.921
-custom_fonts/font = ExtResource( 10 )
+custom_fonts/font = ExtResource( 43 )
 text = "Where does the animal belong ???"
 
 [node name="Savanna_rect" type="ColorRect" parent="Animal_tasks/task"]
@@ -569,42 +625,42 @@ margin_bottom = 336.0
 [node name="savanna" type="Sprite" parent="Animal_tasks/task"]
 position = Vector2( 78.9846, 281.509 )
 scale = Vector2( 0.0543749, 0.085073 )
-texture = ExtResource( 11 )
+texture = ExtResource( 44 )
 
 [node name="polar" type="Sprite" parent="Animal_tasks/task"]
 position = Vector2( 230.033, 281.665 )
 scale = Vector2( 0.549805, 0.55946 )
-texture = ExtResource( 12 )
+texture = ExtResource( 45 )
 
 [node name="grassland" type="Sprite" parent="Animal_tasks/task"]
 position = Vector2( 384.368, 281.144 )
 scale = Vector2( 0.572178, 0.531302 )
-texture = ExtResource( 13 )
+texture = ExtResource( 46 )
 
 [node name="water" type="Sprite" parent="Animal_tasks/task"]
 position = Vector2( 694.143, 281.412 )
 scale = Vector2( 0.493526, 0.612221 )
-texture = ExtResource( 14 )
+texture = ExtResource( 47 )
 
 [node name="forest" type="Sprite" parent="Animal_tasks/task"]
 position = Vector2( 539.729, 281.144 )
 scale = Vector2( 0.537112, 0.578869 )
-texture = ExtResource( 15 )
+texture = ExtResource( 48 )
 
 [node name="dessert" type="Sprite" parent="Animal_tasks/task"]
 position = Vector2( 851.824, 281.092 )
 scale = Vector2( 0.584031, 0.524656 )
-texture = ExtResource( 16 )
+texture = ExtResource( 49 )
 
 [node name="jungle" type="Sprite" parent="Animal_tasks/task"]
 position = Vector2( 1011.38, 282.064 )
 scale = Vector2( 0.555723, 0.551175 )
-texture = ExtResource( 17 )
+texture = ExtResource( 50 )
 
 [node name="mountain" type="Sprite" parent="Animal_tasks/task"]
 position = Vector2( 1173.04, 281.459 )
 scale = Vector2( 0.553857, 0.559591 )
-texture = ExtResource( 18 )
+texture = ExtResource( 51 )
 
 [node name="Label2" type="Label" parent="Animal_tasks"]
 modulate = Color( 0, 1, 0, 1 )
@@ -612,7 +668,7 @@ margin_left = 523.949
 margin_top = 251.81
 margin_right = 741.949
 margin_bottom = 306.81
-custom_fonts/font = ExtResource( 10 )
+custom_fonts/font = ExtResource( 43 )
 text = "Your lives left: 10"
 
 [node name="animplayer" type="AnimationPlayer" parent="."]
@@ -655,7 +711,7 @@ margin_left = -383.514
 margin_top = -1.27771
 margin_right = -234.514
 margin_bottom = 29.7223
-custom_fonts/font = ExtResource( 19 )
+custom_fonts/font = ExtResource( 52 )
 text = "Coins: "
 
 [node name="Diamonds" type="Label" parent="ItemList"]
@@ -663,7 +719,7 @@ margin_left = 8.08606
 margin_top = 28.3173
 margin_right = 146.086
 margin_bottom = 55.9932
-custom_fonts/font = ExtResource( 19 )
+custom_fonts/font = ExtResource( 52 )
 text = "Diamonds:"
 
 [node name="Animals" type="Label" parent="ItemList"]
@@ -672,7 +728,7 @@ margin_left = 11.0241
 margin_top = 55.1319
 margin_right = 123.024
 margin_bottom = 86.1322
-custom_fonts/font = ExtResource( 19 )
+custom_fonts/font = ExtResource( 52 )
 text = "Animals:"
 
 [node name="TextureButton" type="TextureButton" parent="ItemList/Animals"]
@@ -687,12 +743,13 @@ margin_left = -10.7537
 margin_top = 42.2578
 margin_right = 130.247
 margin_bottom = 324.258
-custom_fonts/font = ExtResource( 10 )
+custom_fonts/font = ExtResource( 43 )
 max_columns = 16
 [connection signal="pressed" from="PauseOverlay/PauseMenu/RetryButton" to="PauseOverlay/PauseMenu" method="_on_RetryButton_pressed"]
 [connection signal="pressed" from="PauseOverlay/PauseMenu/ShopButton" to="PauseOverlay/PauseMenu" method="_on_ShopButton_pressed"]
 [connection signal="pressed" from="PauseOverlay/PauseMenu/BackToMainMenuButton" to="PauseOverlay/PauseMenu" method="_on_BackToMainMenuButton_pressed"]
 [connection signal="pressed" from="PauseOverlay/PauseMenu/QuitButton" to="PauseOverlay/PauseMenu" method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="PauseOverlay/SaveButton" to="." method="_on_SaveButton_pressed"]
 [connection signal="button_up" from="Animal_tasks/task/Savanna" to="." method="_on_Savanna_button_up"]
 [connection signal="button_up" from="Animal_tasks/task/Grassland" to="." method="_on_Grassland_button_up"]
 [connection signal="button_up" from="Animal_tasks/task/Polar" to="." method="_on_Polar_button_up"]

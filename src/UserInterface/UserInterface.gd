@@ -10,6 +10,7 @@ onready var title_label: Label = $PauseOverlay/PauseMenu/Title
 onready var main_screen_button: Button = $PauseOverlay/PauseMenu/MainScreenButton
 onready var animplayer = get_node("animplayer")
 
+onready var habitat_name = get_owner().get_name()
 
 const MESSAGE_DIED: = "You died"
 
@@ -31,7 +32,8 @@ func _ready() -> void:
 	update_animals()
 	update_diamonds()
 	restart_animal_task()
-
+	PlayerData.set_current_habitat(habitat_name)
+	
 func update_list():
 	animal_list = PlayerData.animal_lists
 	update_animals()
@@ -61,6 +63,8 @@ func set_paused(value: bool) -> void:
 	paused = value
 	scene_tree.paused = value
 	pause_overlay.visible = value
+	if value == false:
+		get_node("PauseOverlay/SaveText").hide()
 
 
 func update_animals()->void:
@@ -445,3 +449,8 @@ func _on_Jungle_button_up() -> void:
 		answer = false
 		animplayer.play("Jungle_False")
 	check_button()
+
+
+func _on_SaveButton_pressed() -> void:
+	get_node("PauseOverlay/SaveText").show()
+	SaveSystem.save()

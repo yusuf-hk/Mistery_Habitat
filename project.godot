@@ -38,6 +38,7 @@ config/icon="res://icon.png"
 [autoload]
 
 PlayerData="*res://src/Autoload/PlayerData.gd"
+SaveSystem="*res://src/Autoload/SaveSystem.gd"
 Global="*res://src/Autoload/Global.tscn"
 
 [display]
