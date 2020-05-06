@@ -1,10 +1,11 @@
 extends Node
 
-onready var character = "Boy"
-onready var character_flip = false
-onready var shoot = false
-onready var retry = false
-onready var animal_lists = []
+var character = "Girl"
+var current_habitat = "" setget set_current_habitat, get_current_habitat
+var character_flip = false 
+var shoot = false
+var retry = false
+var animal_lists = []
 
 signal coin
 signal diamonds
@@ -59,6 +60,12 @@ func retry():
 
 	
 
+func set_current_habitat(habitat: String):
+	current_habitat = habitat
+
+func get_current_habitat():
+	return current_habitat
+
 func set_tutorial(val:bool)->void:
 	tutorial = val
 	emit_signal("tutorial")
@@ -96,7 +103,7 @@ func set_character(player: String) ->void:
 	character = player
 	emit_signal("character_updated")
 	
-func get_character()->String:
+func get_character() -> String:
 	return character
 
 func setBoughtCharacter(c: String, bought: bool) -> void:

@@ -1,17 +1,18 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/menu_system/title_screen/TitleScreen.gd" type="Script" id=1]
 [ext_resource path="res://assets/main menu/Logo.png" type="Texture" id=2]
 [ext_resource path="res://src/menu_system/buttons/NewGameButton.tscn" type="PackedScene" id=3]
-[ext_resource path="res://src/menu_system/buttons/ContinueButton.tscn" type="PackedScene" id=4]
-[ext_resource path="res://src/menu_system/buttons/OptionsButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/menu_system/buttons/LoadGameButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/menu_system/buttons/QuitButton.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/main menu/Globe.png" type="Texture" id=6]
-[ext_resource path="res://assets/fonts/Montserrat_24.tres" type="DynamicFontData" id=7]
-[ext_resource path="res://src/menu_system/fade_in/FadeIn.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/fonts/Montserratt_24.tres" type="DynamicFont" id=7]
+[ext_resource path="res://assets/fonts/Montserrat_24.tres" type="DynamicFontData" id=8]
+[ext_resource path="res://src/menu_system/fade_in/FadeIn.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
-font_data = ExtResource( 7 )
+font_data = ExtResource( 8 )
 
 [node name="TitleScreen" type="Control"]
 anchor_right = 1.0
@@ -33,6 +34,7 @@ texture = ExtResource( 2 )
 stretch_mode = 4
 
 [node name="CenterRow" type="HBoxContainer" parent="Menu"]
+editor/display_folded = true
 margin_top = 101.0
 margin_right = 1240.0
 margin_bottom = 421.0
@@ -78,6 +80,15 @@ margin_right = 489.0
 margin_bottom = 320.0
 texture = ExtResource( 6 )
 
+[node name="LoadGameWarning" type="Label" parent="Menu"]
+visible = false
+margin_top = 425.0
+margin_right = 1240.0
+margin_bottom = 446.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "There is no saved game"
+
 [node name="VersionLabel" type="Label" parent="Menu"]
 margin_top = 425.0
 margin_right = 1240.0
@@ -88,6 +99,6 @@ text = "Version 1.0.0
 Sysdev Group 9"
 valign = 1
 
-[node name="FadeIn" parent="." instance=ExtResource( 8 )]
+[node name="FadeIn" parent="." instance=ExtResource( 9 )]
 visible = false
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
