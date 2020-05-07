@@ -404,6 +404,7 @@ position = Vector2( 323.578, 66.4973 )
 [node name="Desert-collision" type="TileMap" parent="."]
 editor/display_folded = true
 scale = Vector2( 0.5, 0.5 )
+z_index = -4
 tile_set = SubResource( 17 )
 cell_size = Vector2( 128, 128 )
 format = 1
@@ -532,7 +533,6 @@ position = Vector2( 17769.2, -1057.38 )
 z_index = -1
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-editor/display_folded = true
 layer = -1
 
 [node name="Desert background" type="Sprite" parent="CanvasLayer"]
@@ -544,6 +544,7 @@ texture = ExtResource( 24 )
 [node name="noncoll" type="TileMap" parent="."]
 editor/display_folded = true
 scale = Vector2( 0.5, 0.5 )
+z_index = -4
 tile_set = SubResource( 19 )
 cell_size = Vector2( 128, 128 )
 format = 1
