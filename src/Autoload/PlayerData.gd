@@ -1,6 +1,6 @@
 extends Node
 
-var character = "Girl"
+var character = "Boy"
 var current_habitat = "" setget set_current_habitat, get_current_habitat
 var character_flip = false 
 var shoot = false

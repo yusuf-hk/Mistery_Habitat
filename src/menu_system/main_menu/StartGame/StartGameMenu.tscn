@@ -110,14 +110,14 @@
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (8).png" type="Texture" id=108]
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (9).png" type="Texture" id=109]
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/dead/Dead (10).png" type="Texture" id=110]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/run/Run (1).png" type="Texture" id=111]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/run/Run (2).png" type="Texture" id=112]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/run/Run (3).png" type="Texture" id=113]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/run/Run (4).png" type="Texture" id=114]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/run/Run (5).png" type="Texture" id=115]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/run/Run (6).png" type="Texture" id=116]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/run/Run (7).png" type="Texture" id=117]
-[ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/run/Run (8).png" type="Texture" id=118]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/run/Run (1).png" type="Texture" id=111]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/run/Run (2).png" type="Texture" id=112]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/run/Run (3).png" type="Texture" id=113]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/run/Run (4).png" type="Texture" id=114]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/run/Run (5).png" type="Texture" id=115]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/run/Run (6).png" type="Texture" id=116]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/run/Run (7).png" type="Texture" id=117]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/run/Run (8).png" type="Texture" id=118]
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (1).png" type="Texture" id=119]
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (2).png" type="Texture" id=120]
 [ext_resource path="res://assets/Player/Character/TempleRunb_girl/melee/Melee (3).png" type="Texture" id=121]
@@ -714,6 +714,9 @@
 [ext_resource path="res://assets/Player/Character/zombie/male/idle/Idle (15).png" type="Texture" id=712]
 [ext_resource path="res://src/menu_system/main_menu/StartGame/buttons/BackButton.tscn" type="PackedScene" id=713]
 [ext_resource path="res://src/menu_system/main_menu/StartGame/buttons/StartButton.tscn" type="PackedScene" id=714]
+
+
+
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {

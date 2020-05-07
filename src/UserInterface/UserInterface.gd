@@ -284,8 +284,8 @@ func _on_Forest_button_up() -> void:
 		answer = true
 		animplayer.play("Forest_True")
 	elif animal == "Cat":
-		answer = true
-		animplayer.play("Forest_True")
+		answer = false
+		animplayer.play("Forest_False")
 	elif animal == "Camel":
 		answer = false
 		animplayer.play("Forest_False")
@@ -356,7 +356,7 @@ func _on_Dessert_button_up() -> void:
 		animplayer.play("dessert_false")
 	elif animal == "Cat":
 		answer = true
-		animplayer.play("dessert_false")
+		animplayer.play("dessert_true")
 	elif animal == "Camel":
 		answer = true
 		animplayer.play("dessert_true")
