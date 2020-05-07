@@ -1,6 +1,6 @@
 extends Node2D
 
-onready var animals_to_catch_level_1 = get_node("Animals").get_child_count()
+onready var animals_to_catch_level_1 = get_node("Animals").get_child_count()-1
 
 func _ready() -> void:
 	PlayerData.connect("animal", self, "is_task_completed")
