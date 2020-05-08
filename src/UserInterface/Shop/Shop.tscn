@@ -83,7 +83,6 @@ custom_fonts/font = ExtResource( 4 )
 text = "Buy"
 
 [node name="PriceInformation" type="ItemList" parent="ShopMenu/SkinsSelection/VBoxContainer/Boy"]
-editor/display_folded = true
 self_modulate = Color( 0.501961, 0.129412, 0.129412, 0 )
 margin_left = 230.0
 margin_top = 15.0
@@ -104,7 +103,7 @@ margin_top = -0.449997
 margin_right = 62.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "10000"
+text = "1000"
 
 [node name="DiamondIcon" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Boy/PriceInformation"]
 margin_left = 80.0
@@ -121,7 +120,7 @@ margin_top = -0.449997
 margin_right = 143.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "0"
+text = "2"
 
 [node name="Girl" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
 margin_top = 64.0
@@ -154,7 +153,6 @@ custom_fonts/font = ExtResource( 4 )
 text = "Buy"
 
 [node name="PriceInformation" type="ItemList" parent="ShopMenu/SkinsSelection/VBoxContainer/Girl"]
-editor/display_folded = true
 self_modulate = Color( 0.501961, 0.129412, 0.129412, 0 )
 margin_left = 230.0
 margin_top = 14.55
@@ -175,7 +173,7 @@ margin_top = -0.449997
 margin_right = 62.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "10000"
+text = "1000"
 
 [node name="DiamondIcon" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Girl/PriceInformation"]
 margin_left = 80.0
@@ -192,7 +190,7 @@ margin_top = -0.449997
 margin_right = 143.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "0"
+text = "2"
 
 [node name="Robot" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
 editor/display_folded = true
@@ -226,7 +224,6 @@ custom_fonts/font = ExtResource( 4 )
 text = "Buy"
 
 [node name="PriceInformation" type="ItemList" parent="ShopMenu/SkinsSelection/VBoxContainer/Robot"]
-editor/display_folded = true
 self_modulate = Color( 0.501961, 0.129412, 0.129412, 0 )
 margin_left = 230.0
 margin_top = 14.55
@@ -247,7 +244,7 @@ margin_top = -0.449997
 margin_right = 62.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "10000"
+text = "1500"
 
 [node name="DiamondIcon" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Robot/PriceInformation"]
 margin_left = 80.0
@@ -264,7 +261,7 @@ margin_top = -0.449997
 margin_right = 143.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "0"
+text = "3"
 
 [node name="Templerun_boy" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
 margin_top = 192.0
@@ -297,7 +294,6 @@ custom_fonts/font = ExtResource( 4 )
 text = "Buy"
 
 [node name="PriceInformation" type="ItemList" parent="ShopMenu/SkinsSelection/VBoxContainer/Templerun_boy"]
-editor/display_folded = true
 self_modulate = Color( 0.501961, 0.129412, 0.129412, 0 )
 margin_left = 230.0
 margin_top = 15.0
@@ -318,7 +314,7 @@ margin_top = -0.449997
 margin_right = 62.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "10000"
+text = "1750"
 
 [node name="DiamondIcon" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Templerun_boy/PriceInformation"]
 margin_left = 80.0
@@ -335,7 +331,7 @@ margin_top = -0.449997
 margin_right = 143.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "0"
+text = "4"
 
 [node name="Templerun_girl" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
 margin_top = 256.0
@@ -368,7 +364,6 @@ custom_fonts/font = ExtResource( 4 )
 text = "Buy"
 
 [node name="PriceInformation" type="ItemList" parent="ShopMenu/SkinsSelection/VBoxContainer/Templerun_girl"]
-editor/display_folded = true
 self_modulate = Color( 0.501961, 0.129412, 0.129412, 0 )
 margin_left = 230.0
 margin_top = 14.55
@@ -389,7 +384,7 @@ margin_top = -0.449997
 margin_right = 62.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "10000"
+text = "1750"
 
 [node name="DiamondIcon" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Templerun_girl/PriceInformation"]
 margin_left = 80.0
@@ -406,7 +401,7 @@ margin_top = -0.449997
 margin_right = 143.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "0"
+text = "3"
 
 [node name="Dino" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
 margin_top = 320.0
@@ -439,7 +434,6 @@ custom_fonts/font = ExtResource( 4 )
 text = "Buy"
 
 [node name="PriceInformation" type="ItemList" parent="ShopMenu/SkinsSelection/VBoxContainer/Dino"]
-editor/display_folded = true
 self_modulate = Color( 0.501961, 0.129412, 0.129412, 0 )
 margin_left = 230.0
 margin_top = 14.55
@@ -460,7 +454,7 @@ margin_top = -0.449997
 margin_right = 62.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "10000"
+text = "5000"
 
 [node name="DiamondIcon" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Dino/PriceInformation"]
 margin_left = 80.0
@@ -477,7 +471,7 @@ margin_top = -0.449997
 margin_right = 143.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "0"
+text = "20"
 
 [node name="Knight" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
 margin_top = 384.0
@@ -510,7 +504,6 @@ custom_fonts/font = ExtResource( 4 )
 text = "Buy"
 
 [node name="PriceInformation" type="ItemList" parent="ShopMenu/SkinsSelection/VBoxContainer/Knight"]
-editor/display_folded = true
 self_modulate = Color( 0.501961, 0.129412, 0.129412, 0 )
 margin_left = 230.0
 margin_top = 14.55
@@ -531,7 +524,7 @@ margin_top = -0.449997
 margin_right = 62.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "10000"
+text = "1000"
 
 [node name="DiamondIcon" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Knight/PriceInformation"]
 margin_left = 80.0
@@ -548,7 +541,7 @@ margin_top = -0.449997
 margin_right = 143.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "0"
+text = "1"
 
 [node name="Jack" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
 margin_top = 448.0
@@ -581,7 +574,6 @@ custom_fonts/font = ExtResource( 4 )
 text = "Buy"
 
 [node name="PriceInformation" type="ItemList" parent="ShopMenu/SkinsSelection/VBoxContainer/Jack"]
-editor/display_folded = true
 self_modulate = Color( 0.501961, 0.129412, 0.129412, 0 )
 margin_left = 230.0
 margin_top = 14.55
@@ -602,7 +594,7 @@ margin_top = -0.449997
 margin_right = 62.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "10000"
+text = "1250"
 
 [node name="DiamondIcon" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Jack/PriceInformation"]
 margin_left = 80.0
@@ -619,7 +611,7 @@ margin_top = -0.449997
 margin_right = 143.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "0"
+text = "3"
 
 [node name="Ninja_boy" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
 margin_top = 512.0
@@ -652,7 +644,6 @@ custom_fonts/font = ExtResource( 4 )
 text = "Buy"
 
 [node name="PriceInformation" type="ItemList" parent="ShopMenu/SkinsSelection/VBoxContainer/Ninja_boy"]
-editor/display_folded = true
 self_modulate = Color( 0.501961, 0.129412, 0.129412, 0 )
 margin_left = 230.0
 margin_top = 14.55
@@ -673,7 +664,7 @@ margin_top = -0.449997
 margin_right = 62.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "10000"
+text = "3500"
 
 [node name="DiamondIcon" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Ninja_boy/PriceInformation"]
 margin_left = 80.0
@@ -690,7 +681,7 @@ margin_top = -0.449997
 margin_right = 143.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "0"
+text = "10"
 
 [node name="Ninja_girl" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
 margin_top = 576.0
@@ -723,7 +714,6 @@ custom_fonts/font = ExtResource( 4 )
 text = "Buy"
 
 [node name="PriceInformation" type="ItemList" parent="ShopMenu/SkinsSelection/VBoxContainer/Ninja_girl"]
-editor/display_folded = true
 self_modulate = Color( 0.501961, 0.129412, 0.129412, 0 )
 margin_left = 230.0
 margin_top = 14.55
@@ -744,7 +734,7 @@ margin_top = -0.449997
 margin_right = 62.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "10000"
+text = "3500"
 
 [node name="DiamondIcon" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Ninja_girl/PriceInformation"]
 margin_left = 80.0
@@ -761,7 +751,7 @@ margin_top = -0.449997
 margin_right = 143.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "0"
+text = "10"
 
 [node name="Santa" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
 margin_top = 640.0
@@ -794,7 +784,6 @@ custom_fonts/font = ExtResource( 4 )
 text = "Buy"
 
 [node name="PriceInformation" type="ItemList" parent="ShopMenu/SkinsSelection/VBoxContainer/Santa"]
-editor/display_folded = true
 self_modulate = Color( 0.501961, 0.129412, 0.129412, 0 )
 margin_left = 230.0
 margin_top = 14.55
@@ -815,7 +804,7 @@ margin_top = -0.449997
 margin_right = 62.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "10000"
+text = "2100"
 
 [node name="DiamondIcon" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Santa/PriceInformation"]
 margin_left = 80.0
@@ -832,7 +821,7 @@ margin_top = -0.449997
 margin_right = 143.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "0"
+text = "10"
 
 [node name="Zombie_boy" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
 margin_top = 704.0
@@ -865,7 +854,6 @@ custom_fonts/font = ExtResource( 4 )
 text = "Buy"
 
 [node name="PriceInformation" type="ItemList" parent="ShopMenu/SkinsSelection/VBoxContainer/Zombie_boy"]
-editor/display_folded = true
 self_modulate = Color( 0.501961, 0.129412, 0.129412, 0 )
 margin_left = 230.0
 margin_top = 14.55
@@ -886,7 +874,7 @@ margin_top = -0.449997
 margin_right = 62.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "10000"
+text = "1500"
 
 [node name="DiamondIcon" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Zombie_boy/PriceInformation"]
 margin_left = 80.0
@@ -903,7 +891,7 @@ margin_top = -0.449997
 margin_right = 143.0
 margin_bottom = 15.55
 custom_fonts/font = SubResource( 1 )
-text = "0"
+text = "2"
 
 [node name="ButtonRow" type="HBoxContainer" parent="ShopMenu"]
 editor/display_folded = true
