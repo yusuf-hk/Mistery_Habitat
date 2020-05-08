@@ -75,9 +75,9 @@ text = "Boy"
 valign = 1
 
 [node name="BoyButton" type="Button" parent="ShopMenu/SkinsSelection/VBoxContainer/Boy"]
-margin_left = 491.5
+margin_left = 492.0
 margin_top = 15.0
-margin_right = 561.5
+margin_right = 562.0
 margin_bottom = 45.0
 custom_fonts/font = ExtResource( 4 )
 text = "Buy"
@@ -195,6 +195,7 @@ custom_fonts/font = SubResource( 1 )
 text = "0"
 
 [node name="Robot" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
+editor/display_folded = true
 margin_top = 128.0
 margin_right = 588.0
 margin_bottom = 188.45

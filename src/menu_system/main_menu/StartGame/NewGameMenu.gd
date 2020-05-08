@@ -15,3 +15,4 @@ func _on_BackToMainMenuButton_pressed() -> void:
 
 func _on_StartGameButton_pressed() -> void:
 	Global.load_scene("res://src/Tutorial/Tutorial.tscn")
+	PlayerData.setBoughtCharacter(PlayerData.character, true)

@@ -5,6 +5,7 @@ onready var current_character = PlayerData.get_character()
 onready var boughtCharacters = PlayerData.boughtCharacters
 
 func _ready() -> void:
+	current_character = PlayerData.get_character()
 	PlayerData.connect("character_updated", self, "updateCharacters")
 	updateCharacters()
 
@@ -172,8 +173,8 @@ func _on_Zombie_boyButton_pressed() -> void:
 func updateCharacters():
 	current_character = PlayerData.get_character()
 	boughtCharacters = PlayerData.boughtCharacters
-	
 	characterArray = ["Boy","Girl","Robot","Templerun_boy", "Templerun_girl", "Dino", "Knight", "Jack", "Ninja_boy", "Ninja_girl", "Santa", "Zombie_boy"]
+	
 	for i in characterArray.size():
 		var boughtcharacter = boughtCharacters[characterArray[i]]
 		var character = characterArray[i]
@@ -184,20 +185,18 @@ func updateCharacters():
 			get_node(characterButton).disabled = false
 			get_node(characterButton).set_text("Buy")
 			get_node(characterPriceInformation).show()
-		
-	characterArray.remove(current_character)
+	
 	for i in characterArray.size():
 		var boughtcharacter = boughtCharacters[characterArray[i]]
 		var character = characterArray[i]
 		var characterButton = "ShopMenu/SkinsSelection/VBoxContainer/" + character + "/" + character + "Button"
 		var characterPriceInformation = "ShopMenu/SkinsSelection/VBoxContainer/" + character + "/PriceInformation"
-		
+
 		if  boughtcharacter == true:
 			get_node(characterButton).disabled = false
 			get_node(characterButton).set_text("USE")
 			get_node(characterPriceInformation).hide()
 
-	characterArray = ["Boy","Girl","Robot","Templerun_boy", "Templerun_girl", "Dino", "Knight", "Jack", "Ninja_boy", "Ninja_girl", "Santa", "Zombie_boy"]
 	for i in characterArray.size():
 		var boughtcharacter = boughtCharacters[characterArray[i]]
 		var character = characterArray[i]
