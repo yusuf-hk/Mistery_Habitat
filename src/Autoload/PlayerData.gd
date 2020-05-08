@@ -33,7 +33,7 @@ var boughtCharacters = {
 	"Zombie_boy": false
 	}
 
-var coin: = 1000000000 setget set_coin
+var coin: = 0 setget set_coin
 var diamonds: = 0 setget set_diamonds
 var deaths: = false setget set_deaths
 var position setget set_position
