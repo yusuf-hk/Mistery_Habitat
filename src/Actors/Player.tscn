@@ -134,24 +134,24 @@
 [ext_resource path="res://assets/Player/Character/Robot/shoot/Shoot (2).png" type="Texture" id=132]
 [ext_resource path="res://assets/Player/Character/Robot/shoot/Shoot (3).png" type="Texture" id=133]
 [ext_resource path="res://assets/Player/Character/Robot/shoot/Shoot (4).png" type="Texture" id=134]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (1).png" type="Texture" id=135]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (2).png" type="Texture" id=136]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (3).png" type="Texture" id=137]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (4).png" type="Texture" id=138]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (5).png" type="Texture" id=139]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (6).png" type="Texture" id=140]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (7).png" type="Texture" id=141]
-[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (8).png" type="Texture" id=142]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (1).png" type="Texture" id=143]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (2).png" type="Texture" id=144]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (3).png" type="Texture" id=145]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (4).png" type="Texture" id=146]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (5).png" type="Texture" id=147]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (6).png" type="Texture" id=148]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (7).png" type="Texture" id=149]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (8).png" type="Texture" id=150]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (9).png" type="Texture" id=151]
-[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (10).png" type="Texture" id=152]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (1).png" type="Texture" id=135]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (2).png" type="Texture" id=136]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (3).png" type="Texture" id=137]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (4).png" type="Texture" id=138]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (5).png" type="Texture" id=139]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (6).png" type="Texture" id=140]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (7).png" type="Texture" id=141]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (8).png" type="Texture" id=142]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (9).png" type="Texture" id=143]
+[ext_resource path="res://assets/Player/Character/Robot/jump/Jump (10).png" type="Texture" id=144]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (1).png" type="Texture" id=145]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (2).png" type="Texture" id=146]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (3).png" type="Texture" id=147]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (4).png" type="Texture" id=148]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (5).png" type="Texture" id=149]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (6).png" type="Texture" id=150]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (7).png" type="Texture" id=151]
+[ext_resource path="res://assets/Player/Character/Robot/melee/Melee (8).png" type="Texture" id=152]
 [ext_resource path="res://assets/Player/Character/Robot/Objects/Bullet_000.png" type="Texture" id=153]
 [ext_resource path="res://assets/Player/Character/Robot/Objects/Bullet_001.png" type="Texture" id=154]
 [ext_resource path="res://assets/Player/Character/Robot/Objects/Bullet_002.png" type="Texture" id=155]
@@ -236,26 +236,26 @@
 [ext_resource path="res://assets/Player/Character/dino/run/Run (6).png" type="Texture" id=234]
 [ext_resource path="res://assets/Player/Character/dino/run/Run (7).png" type="Texture" id=235]
 [ext_resource path="res://assets/Player/Character/dino/run/Run (8).png" type="Texture" id=236]
-[ext_resource path="res://assets/Player/Character/dino/jump/Jump (1).png" type="Texture" id=237]
-[ext_resource path="res://assets/Player/Character/dino/jump/Jump (2).png" type="Texture" id=238]
-[ext_resource path="res://assets/Player/Character/dino/jump/Jump (3).png" type="Texture" id=239]
-[ext_resource path="res://assets/Player/Character/dino/jump/Jump (4).png" type="Texture" id=240]
-[ext_resource path="res://assets/Player/Character/dino/jump/Jump (5).png" type="Texture" id=241]
-[ext_resource path="res://assets/Player/Character/dino/jump/Jump (6).png" type="Texture" id=242]
-[ext_resource path="res://assets/Player/Character/dino/jump/Jump (7).png" type="Texture" id=243]
-[ext_resource path="res://assets/Player/Character/dino/jump/Jump (8).png" type="Texture" id=244]
-[ext_resource path="res://assets/Player/Character/dino/jump/Jump (9).png" type="Texture" id=245]
-[ext_resource path="res://assets/Player/Character/dino/jump/Jump (10).png" type="Texture" id=246]
-[ext_resource path="res://assets/Player/Character/dino/jump/Jump (11).png" type="Texture" id=247]
-[ext_resource path="res://assets/Player/Character/dino/jump/Jump (12).png" type="Texture" id=248]
-[ext_resource path="res://assets/Player/Character/dino/dead/Dead (1).png" type="Texture" id=249]
-[ext_resource path="res://assets/Player/Character/dino/dead/Dead (2).png" type="Texture" id=250]
-[ext_resource path="res://assets/Player/Character/dino/dead/Dead (3).png" type="Texture" id=251]
-[ext_resource path="res://assets/Player/Character/dino/dead/Dead (4).png" type="Texture" id=252]
-[ext_resource path="res://assets/Player/Character/dino/dead/Dead (5).png" type="Texture" id=253]
-[ext_resource path="res://assets/Player/Character/dino/dead/Dead (6).png" type="Texture" id=254]
-[ext_resource path="res://assets/Player/Character/dino/dead/Dead (7).png" type="Texture" id=255]
-[ext_resource path="res://assets/Player/Character/dino/dead/Dead (8).png" type="Texture" id=256]
+[ext_resource path="res://assets/Player/Character/dino/dead/Dead (1).png" type="Texture" id=237]
+[ext_resource path="res://assets/Player/Character/dino/dead/Dead (2).png" type="Texture" id=238]
+[ext_resource path="res://assets/Player/Character/dino/dead/Dead (3).png" type="Texture" id=239]
+[ext_resource path="res://assets/Player/Character/dino/dead/Dead (4).png" type="Texture" id=240]
+[ext_resource path="res://assets/Player/Character/dino/dead/Dead (5).png" type="Texture" id=241]
+[ext_resource path="res://assets/Player/Character/dino/dead/Dead (6).png" type="Texture" id=242]
+[ext_resource path="res://assets/Player/Character/dino/dead/Dead (7).png" type="Texture" id=243]
+[ext_resource path="res://assets/Player/Character/dino/dead/Dead (8).png" type="Texture" id=244]
+[ext_resource path="res://assets/Player/Character/dino/jump/Jump (1).png" type="Texture" id=245]
+[ext_resource path="res://assets/Player/Character/dino/jump/Jump (2).png" type="Texture" id=246]
+[ext_resource path="res://assets/Player/Character/dino/jump/Jump (3).png" type="Texture" id=247]
+[ext_resource path="res://assets/Player/Character/dino/jump/Jump (4).png" type="Texture" id=248]
+[ext_resource path="res://assets/Player/Character/dino/jump/Jump (5).png" type="Texture" id=249]
+[ext_resource path="res://assets/Player/Character/dino/jump/Jump (6).png" type="Texture" id=250]
+[ext_resource path="res://assets/Player/Character/dino/jump/Jump (7).png" type="Texture" id=251]
+[ext_resource path="res://assets/Player/Character/dino/jump/Jump (8).png" type="Texture" id=252]
+[ext_resource path="res://assets/Player/Character/dino/jump/Jump (9).png" type="Texture" id=253]
+[ext_resource path="res://assets/Player/Character/dino/jump/Jump (10).png" type="Texture" id=254]
+[ext_resource path="res://assets/Player/Character/dino/jump/Jump (11).png" type="Texture" id=255]
+[ext_resource path="res://assets/Player/Character/dino/jump/Jump (12).png" type="Texture" id=256]
 [ext_resource path="res://assets/Player/Character/free knight/idle/Idle (1).png" type="Texture" id=257]
 [ext_resource path="res://assets/Player/Character/free knight/idle/Idle (2).png" type="Texture" id=258]
 [ext_resource path="res://assets/Player/Character/free knight/idle/Idle (3).png" type="Texture" id=259]
@@ -540,15 +540,15 @@ animations = [ {
 "name": "Shoot",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 135 ), ExtResource( 136 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 139 ), ExtResource( 140 ), ExtResource( 141 ), ExtResource( 142 ) ],
-"loop": true,
-"name": "Melee",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 143 ), ExtResource( 144 ), ExtResource( 145 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 148 ), ExtResource( 149 ), ExtResource( 150 ), ExtResource( 151 ), ExtResource( 152 ) ],
+"frames": [ ExtResource( 135 ), ExtResource( 136 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 139 ), ExtResource( 140 ), ExtResource( 141 ), ExtResource( 142 ), ExtResource( 143 ), ExtResource( 144 ) ],
 "loop": true,
 "name": "Jump",
 "speed": 15.0
+}, {
+"frames": [ ExtResource( 145 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 148 ), ExtResource( 149 ), ExtResource( 150 ), ExtResource( 151 ), ExtResource( 152 ) ],
+"loop": true,
+"name": "Melee",
+"speed": 10.0
 } ]
 
 [sub_resource type="SpriteFrames" id=5]
@@ -612,15 +612,15 @@ animations = [ {
 "name": "Run",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 237 ), ExtResource( 238 ), ExtResource( 239 ), ExtResource( 240 ), ExtResource( 241 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 244 ), ExtResource( 245 ), ExtResource( 246 ), ExtResource( 247 ), ExtResource( 248 ) ],
-"loop": true,
-"name": "Jump",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 249 ), ExtResource( 250 ), ExtResource( 251 ), ExtResource( 252 ), ExtResource( 253 ), ExtResource( 254 ), ExtResource( 255 ), ExtResource( 256 ) ],
+"frames": [ ExtResource( 237 ), ExtResource( 238 ), ExtResource( 239 ), ExtResource( 240 ), ExtResource( 241 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 244 ) ],
 "loop": true,
 "name": "Dead",
 "speed": 15.0
+}, {
+"frames": [ ExtResource( 245 ), ExtResource( 246 ), ExtResource( 247 ), ExtResource( 248 ), ExtResource( 249 ), ExtResource( 250 ), ExtResource( 251 ), ExtResource( 252 ), ExtResource( 253 ), ExtResource( 254 ), ExtResource( 255 ), ExtResource( 256 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 10.0
 } ]
 
 [sub_resource type="SpriteFrames" id=9]
@@ -1441,12 +1441,11 @@ shape = SubResource( 1 )
 scale = Vector2( 0.75, 0.75 )
 
 [node name="Boy" type="AnimatedSprite" parent="Sprite"]
-visible = false
 position = Vector2( 40, 0 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 10
+frame = 5
 playing = true
 
 [node name="Girl" type="AnimatedSprite" parent="Sprite"]
@@ -1455,7 +1454,7 @@ position = Vector2( -15, 0 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 3 )
 animation = "Idle"
-frame = 6
+frame = 11
 playing = true
 
 [node name="Robot" type="AnimatedSprite" parent="Sprite"]
@@ -1484,6 +1483,7 @@ position = Vector2( 0, -4.28251 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 6 )
 animation = "Idle"
+frame = 5
 playing = true
 
 [node name="Templerun_girl" type="AnimatedSprite" parent="Sprite"]
@@ -1508,7 +1508,7 @@ position = Vector2( 40, 0 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 8 )
 animation = "Idle"
-frame = 2
+frame = 7
 playing = true
 
 [node name="Knight" type="AnimatedSprite" parent="Sprite"]
@@ -1517,7 +1517,7 @@ position = Vector2( 15, -5 )
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 9 )
 animation = "Idle"
-frame = 8
+frame = 3
 playing = true
 
 [node name="Jack" type="AnimatedSprite" parent="Sprite"]
@@ -1526,7 +1526,7 @@ position = Vector2( 15, -4 )
 scale = Vector2( 0.17, 0.17 )
 frames = SubResource( 10 )
 animation = "Idle"
-frame = 1
+frame = 6
 playing = true
 
 [node name="Ninja_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1536,7 +1536,7 @@ position = Vector2( -5, -4.344 )
 scale = Vector2( 0.27, 0.27 )
 frames = SubResource( 11 )
 animation = "Idle"
-frame = 2
+frame = 7
 playing = true
 
 [node name="Shoot" type="Sprite" parent="Sprite/Ninja_boy"]
@@ -1552,7 +1552,7 @@ position = Vector2( 1.94659, -6.22912 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 12 )
 animation = "Idle"
-frame = 9
+frame = 4
 playing = true
 
 [node name="Shoot" type="Sprite" parent="Sprite/Ninja_girl"]
@@ -1567,7 +1567,7 @@ position = Vector2( 20, -8.279 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 13 )
 animation = "Idle"
-frame = 3
+frame = 12
 playing = true
 
 [node name="Zombie_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1576,7 +1576,7 @@ position = Vector2( 10, -6.168 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 14 )
 animation = "Idle"
-frame = 10
+frame = 5
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]

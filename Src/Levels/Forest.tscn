@@ -24,7 +24,7 @@
 [ext_resource path="res://src/Actors/Brown bear.tscn" type="PackedScene" id=22]
 [ext_resource path="res://src/Actors/Animal.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=24]
-[ext_resource path="res://src/Levels/Arctic_level.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/Levels/DesertMap.tscn" type="PackedScene" id=25]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
