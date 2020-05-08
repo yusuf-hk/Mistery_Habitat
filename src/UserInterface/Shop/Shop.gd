@@ -186,24 +186,12 @@ func updateCharacters():
 			get_node(characterButton).set_text("Buy")
 			get_node(characterPriceInformation).show()
 	
-	for i in characterArray.size():
-		var boughtcharacter = boughtCharacters[characterArray[i]]
-		var character = characterArray[i]
-		var characterButton = "ShopMenu/SkinsSelection/VBoxContainer/" + character + "/" + character + "Button"
-		var characterPriceInformation = "ShopMenu/SkinsSelection/VBoxContainer/" + character + "/PriceInformation"
 
-		if  boughtcharacter == true:
+		elif boughtcharacter == true:
 			get_node(characterButton).disabled = false
 			get_node(characterButton).set_text("USE")
 			get_node(characterPriceInformation).hide()
-
-	for i in characterArray.size():
-		var boughtcharacter = boughtCharacters[characterArray[i]]
-		var character = characterArray[i]
-		var characterButton = "ShopMenu/SkinsSelection/VBoxContainer/" + character + "/" + character + "Button"
-		var characterPriceInformation = "ShopMenu/SkinsSelection/VBoxContainer/" + character + "/PriceInformation"
-		
-		if character == current_character:
-			get_node(characterButton).disabled = true
-			get_node(characterButton).set_text("USING")
-			get_node(characterPriceInformation).hide()
+			if character == current_character:
+				get_node(characterButton).disabled = true
+				get_node(characterButton).set_text("USING")
+				get_node(characterPriceInformation).hide()
