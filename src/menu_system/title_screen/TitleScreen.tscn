@@ -58,22 +58,17 @@ alignment = 1
 margin_top = 41.0
 margin_right = 618.0
 margin_bottom = 107.0
-rect_min_size = Vector2( 360, 60 )
 scene_to_load = "res://src/menu_system/main_menu/StartGame/NewGameMenu.tscn"
 
-[node name="LoadGameButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
+[node name="LoadGameButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 5 )]
 margin_top = 127.0
 margin_right = 618.0
 margin_bottom = 193.0
-rect_min_size = Vector2( 360, 60 )
-scene_to_load = ""
 
-[node name="QuitButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 5 )]
+[node name="QuitButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 6 )]
 margin_top = 213.0
 margin_right = 618.0
 margin_bottom = 279.0
-rect_min_size = Vector2( 360, 60 )
-scene_to_load = ""
 
 [node name="CenterContainer" type="CenterContainer" parent="Menu/CenterRow"]
 margin_left = 622.0

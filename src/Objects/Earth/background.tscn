@@ -101,8 +101,8 @@ margin_bottom = 757.0
 color = Color( 0.219608, 0.219608, 0.219608, 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 703.337, 366.101 )
+position = Vector2( 641.82, 366.101 )
 scale = Vector2( 2.19088, 1.9346 )
 frames = SubResource( 1 )
-frame = 71
+frame = 46
 playing = true

@@ -43,14 +43,14 @@ scene_to_load = ""
 layer = -1
 
 [node name="background" parent="CanvasLayer" instance=ExtResource( 5 )]
+position = Vector2( -1.50726, 3.01469 )
 
 [node name="Logo" type="Sprite" parent="."]
-position = Vector2( 696.17, 53.8034 )
+position = Vector2( 638.891, 53.8034 )
 texture = ExtResource( 6 )
 
 [node name="Node2D" type="Node2D" parent="."]
-editor/display_folded = true
-position = Vector2( 32.649, 1.36038 )
+position = Vector2( -17.0933, 1.36038 )
 
 [node name="ColorRect" type="ColorRect" parent="Node2D"]
 self_modulate = Color( 1, 1, 1, 0.772549 )
