@@ -387,7 +387,17 @@ position = Vector2( 3807.64, -14.9261 )
 [node name="Crate6" parent="Objects" instance=ExtResource( 20 )]
 position = Vector2( 3531.62, 61.4185 )
 
+[node name="Sign2" parent="Objects" instance=ExtResource( 14 )]
+position = Vector2( 99.9611, -294.729 )
+scale = Vector2( 1.13387, 1.14667 )
+flip_h = true
+
+[node name="Sign3" parent="Objects" instance=ExtResource( 14 )]
+position = Vector2( -213.497, -1759 )
+scale = Vector2( 1.02419, 0.999999 )
+
 [node name="Portals" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="inPortal2D" parent="Portals" instance=ExtResource( 21 )]
 position = Vector2( -2102.29, -2039.14 )
@@ -621,18 +631,10 @@ position = Vector2( -4696.05, -812.385 )
 position = Vector2( -1607.96, -937.472 )
 
 [node name="Animals" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Vulture" parent="Animals" instance=ExtResource( 25 )]
 position = Vector2( 546.421, -1614.64 )
 
 [node name="Monkey" parent="Animals" instance=ExtResource( 26 )]
-
-[node name="Sign" parent="." instance=ExtResource( 14 )]
-position = Vector2( 99.9611, -294.729 )
-scale = Vector2( 1.13387, 1.14667 )
-flip_h = true
-
-[node name="Sign2" parent="." instance=ExtResource( 14 )]
-position = Vector2( -213.497, -1759 )
-scale = Vector2( 1.02419, 0.999999 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
