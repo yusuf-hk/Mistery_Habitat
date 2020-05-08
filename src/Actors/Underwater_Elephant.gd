@@ -21,10 +21,12 @@ func _physics_process(delta: float) -> void:
 	
 	if direction == 1:
 		$AnimatedSprite.flip_h = true
-		
+		get_node("Sprite/Skjermbilde").flip_h = true
+		get_node("Sprite/Skjermbilde").position.x = 35
 	else:
 		$AnimatedSprite.flip_h = false
-		
+		get_node("Sprite/Skjermbilde").flip_h = false
+		get_node("Sprite/Skjermbilde").position.x = -35
 		
 	$AnimatedSprite.play("Walk")
 	

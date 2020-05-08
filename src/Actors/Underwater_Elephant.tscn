@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=2]
 
-[ext_resource path="res://src/Actors/Elephant.gd" type="Script" id=1]
+[ext_resource path="res://src/Actors/Underwater_Elephant.gd" type="Script" id=1]
 [ext_resource path="res://assets/Animals/Elephant/__grey_elephant_walk_000.png" type="Texture" id=2]
 [ext_resource path="res://assets/Animals/Elephant/__grey_elephant_walk_001.png" type="Texture" id=3]
 [ext_resource path="res://assets/Animals/Elephant/__grey_elephant_walk_002.png" type="Texture" id=4]
