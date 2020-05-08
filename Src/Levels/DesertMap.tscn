@@ -40,7 +40,7 @@
 [ext_resource path="res://src/Objects/Common objects/inPortal2D.tscn" type="PackedScene" id=38]
 [ext_resource path="res://src/Objects/Common objects/outPortal2D.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=40]
-[ext_resource path="res://src/Levels/Rainforest.tscn" type="PackedScene" id=41]
+[ext_resource path="res://src/Levels/SigurdLevel.tscn" type="PackedScene" id=41]
 [ext_resource path="res://src/Objects/Common objects/die_shape.tscn" type="PackedScene" id=42]
 [ext_resource path="res://src/Actors/Elephant.tscn" type="PackedScene" id=43]
 [ext_resource path="res://src/Actors/Animal.tscn" type="PackedScene" id=44]
