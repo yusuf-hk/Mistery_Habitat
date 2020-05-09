@@ -11,6 +11,8 @@ export var coin: = 700
 var lives = 3
 var animal = "Fish"
 
+var fish_state = true
+
 func _ready():
 	pass
 	
@@ -21,8 +23,10 @@ func _physics_process(delta: float) -> void:
 		$AnimatedSprite.flip_h = false
 	else:
 		$AnimatedSprite.flip_h = true
-		
-	$AnimatedSprite.play("Walk")
+	
+	if fish_state:
+		update_fish_skin()
+		fish_state = false
 	
 	velocity.y += GRAVITY
 	
@@ -30,6 +34,21 @@ func _physics_process(delta: float) -> void:
 	
 	if is_on_wall():
 		direction = direction * -1
+
+func update_fish_skin():
+	var fisharray =  ["Blue Fish", "Green Fish", "Orange Fish", "Purple Fish", "Red Fish"]
+	var fish = fisharray[randi() % fisharray.size()]
+	
+	if fish == "Blue Fish":
+		$AnimatedSprite.play(fish)
+	elif fish == "Green Fish":
+		$AnimatedSprite.play(fish)
+	elif fish == "Orange Fish":
+		$AnimatedSprite.play(fish)
+	elif fish == "Purple Fish":
+		$AnimatedSprite.play(fish)
+	elif fish == "Red Fish":
+		$AnimatedSprite.play(fish)
 
 func _on_Area2D_area_entered(area: Area2D) -> void:
 	if PlayerData.get_arrow_state() == true:
