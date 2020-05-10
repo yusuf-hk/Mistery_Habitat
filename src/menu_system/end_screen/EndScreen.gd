@@ -9,5 +9,11 @@ func _ready() -> void:
 
 func _on_QuitButton2_button_up() -> void:
 	get_tree().quit()
+	get_node("SaveText").hide()
 
 
+
+
+func _on_SaveButton_pressed() -> void:
+	get_node("SaveText").show()
+	SaveSystem.save()

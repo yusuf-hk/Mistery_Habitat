@@ -3,7 +3,7 @@
 [ext_resource path="res://src/menu_system/buttons/MenuButton.tscn" type="PackedScene" id=1]
 
 [node name="QuitButton" instance=ExtResource( 1 )]
-scene_to_load = "res://src/menu_system/main_menu/StartGame/NewGameMenu.tscn"
+scene_to_load = "res://src/menu_system/main_menu/QuitGame/QuitGame.tscn"
 
 [node name="Label" parent="." index="0"]
 text = "QUIT"
