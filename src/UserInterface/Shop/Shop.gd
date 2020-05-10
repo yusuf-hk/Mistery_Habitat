@@ -23,8 +23,7 @@ func _on_BoyButton_pressed() -> void:
 		PlayerData.set_diamonds(PlayerData.diamonds - boyDiamond)
 	elif PlayerData.getBoughtCharacter("Boy") == true:
 		PlayerData.set_character("Boy")
-	else:
-		print("You don't have enough money")
+
 		
 func _on_GirlButton_pressed() -> void:
 	var girlPrice = int($ShopMenu/SkinsSelection/VBoxContainer/Girl/PriceInformation/CoinPrice.get_text())
@@ -36,8 +35,7 @@ func _on_GirlButton_pressed() -> void:
 		PlayerData.set_diamonds(PlayerData.diamonds - girlDiamond)
 	elif PlayerData.getBoughtCharacter("Girl") == true:
 		PlayerData.set_character("Girl")
-	else:
-		print("You don't have enough money")
+
 		
 func _on_RobotButton_pressed() -> void:
 	var robotPrice = int($ShopMenu/SkinsSelection/VBoxContainer/Robot/PriceInformation/CoinPrice.get_text())
@@ -49,8 +47,7 @@ func _on_RobotButton_pressed() -> void:
 		PlayerData.set_diamonds(PlayerData.diamonds - robotDiamond)
 	elif PlayerData.getBoughtCharacter("Robot") == true:
 		PlayerData.set_character("Robot")
-	else:
-		print("You don't have enough money")
+	
 
 func _on_Templerun_boyButton_pressed() -> void:
 	var templeBoyPrice = int($ShopMenu/SkinsSelection/VBoxContainer/Templerun_boy/PriceInformation/CoinPrice.get_text())
@@ -62,8 +59,7 @@ func _on_Templerun_boyButton_pressed() -> void:
 		PlayerData.set_diamonds(PlayerData.diamonds - templeBoyDiamond)
 	elif PlayerData.getBoughtCharacter("Templerun_boy") == true:
 		PlayerData.set_character("Templerun_boy")
-	else:
-		print("You don't have enough money")
+	
 
 func _on_Templerun_girlButton_pressed() -> void:
 	var templeGirlPrice = int($ShopMenu/SkinsSelection/VBoxContainer/Templerun_girl/PriceInformation/CoinPrice.get_text())
@@ -75,8 +71,7 @@ func _on_Templerun_girlButton_pressed() -> void:
 		PlayerData.set_diamonds(PlayerData.diamonds - templeGirlDiamond)
 	elif PlayerData.getBoughtCharacter("Templerun_girl") == true:
 		PlayerData.set_character("Templerun_girl")
-	else:
-		print("You don't have enough money")
+	
 
 func _on_DinoButton_pressed() -> void:
 	var dinoPrice = int($ShopMenu/SkinsSelection/VBoxContainer/Dino/PriceInformation/CoinPrice.get_text())
@@ -88,8 +83,7 @@ func _on_DinoButton_pressed() -> void:
 		PlayerData.set_diamonds(PlayerData.diamonds - dinoDiamond)
 	elif PlayerData.getBoughtCharacter("Dino") == true:
 		PlayerData.set_character("Dino")
-	else:
-		print("You don't have enough money")
+	
 
 func _on_KnightButton_pressed() -> void:
 	var knightPrice = int($ShopMenu/SkinsSelection/VBoxContainer/Knight/PriceInformation/CoinPrice.get_text())
@@ -101,8 +95,7 @@ func _on_KnightButton_pressed() -> void:
 		PlayerData.set_diamonds(PlayerData.diamonds - knightDiamond)
 	elif PlayerData.getBoughtCharacter("Knight") == true:
 		PlayerData.set_character("Knight")
-	else:
-		print("You don't have enough money")
+	
 
 func _on_JackButton_pressed() -> void:
 	var jackPrice = int($ShopMenu/SkinsSelection/VBoxContainer/Jack/PriceInformation/CoinPrice.get_text())
@@ -114,8 +107,7 @@ func _on_JackButton_pressed() -> void:
 		PlayerData.set_diamonds(PlayerData.diamonds - jackDiamond)
 	elif PlayerData.getBoughtCharacter("Jack") == true:
 		PlayerData.set_character("Jack")
-	else:
-		print("You don't have enough money")
+
 
 func _on_Ninja_boyButton_pressed() -> void:
 	var ninjaBoyPrice = int($ShopMenu/SkinsSelection/VBoxContainer/Ninja_boy/PriceInformation/CoinPrice.get_text())
@@ -127,8 +119,7 @@ func _on_Ninja_boyButton_pressed() -> void:
 		PlayerData.set_diamonds(PlayerData.diamonds - ninjaBoyDiamond)
 	elif PlayerData.getBoughtCharacter("Ninja_boy") == true:
 		PlayerData.set_character("Ninja_boy")
-	else:
-		print("You don't have enough money")
+
 
 func _on_Ninja_girlButton_pressed() -> void:
 	var ninjaGirlPrice = int($ShopMenu/SkinsSelection/VBoxContainer/Ninja_girl/PriceInformation/CoinPrice.get_text())
@@ -140,8 +131,7 @@ func _on_Ninja_girlButton_pressed() -> void:
 		PlayerData.set_diamonds(PlayerData.diamonds - ninjaGirlDiamond)
 	elif PlayerData.getBoughtCharacter("Ninja_girl") == true:
 		PlayerData.set_character("Ninja_girl")
-	else:
-		print("You don't have enough money")
+
 
 func _on_SantaButton_pressed() -> void:
 	var santaPrice = int($ShopMenu/SkinsSelection/VBoxContainer/Santa/PriceInformation/CoinPrice.get_text())
@@ -153,8 +143,7 @@ func _on_SantaButton_pressed() -> void:
 		PlayerData.set_diamonds(PlayerData.diamonds - santaDiamond)
 	elif PlayerData.getBoughtCharacter("Santa") == true:
 		PlayerData.set_character("Santa")
-	else:
-		print("You don't have enough money")
+
 
 func _on_Zombie_boyButton_pressed() -> void:
 	var zombieBoyPrice = int($ShopMenu/SkinsSelection/VBoxContainer/Zombie_boy/PriceInformation/CoinPrice.get_text())
@@ -166,8 +155,7 @@ func _on_Zombie_boyButton_pressed() -> void:
 		PlayerData.set_diamonds(PlayerData.diamonds - zombieBoyDiamond)
 	elif PlayerData.getBoughtCharacter("Zombie_boy") == true:
 		PlayerData.set_character("Zombie_boy")
-	else:
-		print("You don't have enough money")
+
 
 
 func updateCharacters():

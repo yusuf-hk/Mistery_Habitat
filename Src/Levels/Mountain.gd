@@ -5,6 +5,7 @@ onready var animals_to_catch_mountain = get_node("Animals").get_child_count()
 func _ready() -> void:
 	PlayerData.connect("animal", self, "is_task_completed")
 	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch_mountain)
+	SaveSystem.save()
 func is_task_completed()->void:
 	animals_to_catch_mountain = animals_to_catch_mountain - 1
 	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch_mountain)

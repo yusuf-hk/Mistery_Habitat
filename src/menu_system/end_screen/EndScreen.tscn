@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/ui_theme.tres" type="Theme" id=1]
 [ext_resource path="res://src/menu_system/end_screen/EndScreen.gd" type="Script" id=2]
@@ -7,8 +7,6 @@
 [ext_resource path="res://src/Objects/Earth/background.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/main menu/Logo.png" type="Texture" id=6]
 [ext_resource path="res://src/UserInterface/Title.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/UserInterface/SaveButton.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/UserInterface/SaveText.tscn" type="PackedScene" id=9]
 
 [node name="EndScreen" type="Control"]
 anchor_right = 1.0
@@ -78,10 +76,4 @@ margin_bottom = 551.443
 text = "Your final score is: %s coins , %s diamonds and you caught %s animals!"
 align = 1
 valign = 1
-
-[node name="SaveButton" parent="." instance=ExtResource( 8 )]
-
-[node name="SaveText" parent="." instance=ExtResource( 9 )]
-frame = 8
 [connection signal="button_up" from="Menu/QuitButton2" to="." method="_on_QuitButton2_button_up"]
-[connection signal="pressed" from="SaveButton" to="." method="_on_SaveButton_pressed"]

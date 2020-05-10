@@ -33,10 +33,10 @@
 [ext_resource path="res://src/Objects/Desertobj/grassgreen.tscn" type="PackedScene" id=31]
 [ext_resource path="res://src/Objects/Forrest Objects/Tree_1.tscn" type="PackedScene" id=32]
 [ext_resource path="res://src/Objects/Desertobj/OneWayCol.tscn" type="PackedScene" id=33]
-[ext_resource path="res://src/Objects/Desertobj/Oriblock.tscn" type="PackedScene" id=34]
-[ext_resource path="res://src/Objects/Desertobj/OriEdge.tscn" type="PackedScene" id=35]
-[ext_resource path="res://src/Objects/Common objects/Coin_normal.tscn" type="PackedScene" id=36]
-[ext_resource path="res://src/Objects/Common objects/Diamonds.tscn" type="PackedScene" id=37]
+[ext_resource path="res://src/Objects/Desertobj/OriEdge.tscn" type="PackedScene" id=34]
+[ext_resource path="res://src/Objects/Desertobj/Oriblock.tscn" type="PackedScene" id=35]
+[ext_resource path="res://src/Objects/Common objects/Diamonds.tscn" type="PackedScene" id=36]
+[ext_resource path="res://src/Objects/Common objects/Coin_normal.tscn" type="PackedScene" id=37]
 [ext_resource path="res://src/Objects/Common objects/inPortal2D.tscn" type="PackedScene" id=38]
 [ext_resource path="res://src/Objects/Common objects/outPortal2D.tscn" type="PackedScene" id=39]
 [ext_resource path="res://src/Objects/Common objects/Portal2D.tscn" type="PackedScene" id=40]
@@ -1019,7 +1019,6 @@ position = Vector2( 15807.8, -1046 )
 scale = Vector2( 1.09872, 0.962657 )
 
 [node name="Collides and hides" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="OneWayCol" parent="Collides and hides" instance=ExtResource( 33 )]
 position = Vector2( 9159.11, 1129.91 )
@@ -1029,120 +1028,136 @@ scale = Vector2( 0.505, 0.505 )
 position = Vector2( 9223.11, 1129.91 )
 scale = Vector2( 0.505, 0.505 )
 
-[node name="Oriblock" parent="Collides and hides" instance=ExtResource( 34 )]
-editor/display_folded = true
+[node name="OriBlock" parent="Collides and hides" instance=ExtResource( 34 )]
+position = Vector2( 4359.24, 1833.62 )
+scale = Vector2( 0.505, 0.505 )
+
+[node name="OriBlock3" parent="Collides and hides" instance=ExtResource( 34 )]
+position = Vector2( 4359.02, 1898.01 )
+scale = Vector2( 0.505, 0.505 )
+
+[node name="Oriblock6" parent="Collides and hides" instance=ExtResource( 35 )]
+position = Vector2( 4422.99, 1898.36 )
+scale = Vector2( 0.505, 0.505 )
+
+[node name="Oriblock7" parent="Collides and hides" instance=ExtResource( 35 )]
+position = Vector2( 4422.13, 1833.73 )
+scale = Vector2( 0.505, 0.505 )
+
+[node name="Oriblock2" parent="Collides and hides" instance=ExtResource( 35 )]
+position = Vector2( 4487.12, 1898.35 )
+scale = Vector2( 0.505, 0.505 )
+
+[node name="Oriblock" parent="Collides and hides" instance=ExtResource( 35 )]
 position = Vector2( 4486.87, 1833.74 )
 scale = Vector2( 0.505, 0.505 )
 
-[node name="OriBlock" parent="Collides and hides/Oriblock" instance=ExtResource( 35 )]
-position = Vector2( -252.74, -0.235596 )
+[node name="OriBlock4" parent="Collides and hides" instance=ExtResource( 34 )]
+position = Vector2( 8839.51, 1193.46 )
+scale = Vector2( 0.505, 0.505 )
 
-[node name="OriBlock2" parent="Collides and hides/Oriblock" instance=ExtResource( 35 )]
-position = Vector2( -253.167, 127.264 )
-
-[node name="Oriblock3" parent="Collides and hides/Oriblock" instance=ExtResource( 34 )]
-position = Vector2( -126.499, 127.961 )
-
-[node name="Oriblock4" parent="Collides and hides/Oriblock" instance=ExtResource( 34 )]
-position = Vector2( -128.19, -0.0288086 )
-
-[node name="Oriblock2" parent="Collides and hides/Oriblock" instance=ExtResource( 34 )]
-position = Vector2( 0.492188, 127.938 )
-
-[node name="OriBlock2" parent="Collides and hides" instance=ExtResource( 35 )]
-editor/display_folded = true
+[node name="OriBlock2" parent="Collides and hides" instance=ExtResource( 34 )]
 position = Vector2( 8839.55, 1257.68 )
 scale = Vector2( 0.505, 0.505 )
 
-[node name="OriBlock" parent="Collides and hides/OriBlock2" instance=ExtResource( 35 )]
-position = Vector2( -0.0878906, -127.159 )
+[node name="Oriblock8" parent="Collides and hides" instance=ExtResource( 35 )]
+position = Vector2( 8902.7, 1193.48 )
+scale = Vector2( 0.505, 0.505 )
 
-[node name="Oriblock3" parent="Collides and hides" instance=ExtResource( 34 )]
-editor/display_folded = true
+[node name="Oriblock9" parent="Collides and hides" instance=ExtResource( 35 )]
+position = Vector2( 8966.44, 1257.65 )
+scale = Vector2( 0.505, 0.505 )
+
+[node name="Oriblock10" parent="Collides and hides" instance=ExtResource( 35 )]
+position = Vector2( 8967.22, 1193.04 )
+scale = Vector2( 0.505, 0.505 )
+
+[node name="Oriblock3" parent="Collides and hides" instance=ExtResource( 35 )]
 position = Vector2( 8902.46, 1257.66 )
 scale = Vector2( 0.505, 0.505 )
 
-[node name="Oriblock4" parent="Collides and hides/Oriblock3" instance=ExtResource( 34 )]
-position = Vector2( 0.484375, -127.095 )
+[node name="Oriblock11" parent="Collides and hides" instance=ExtResource( 35 )]
+position = Vector2( 9030.45, 1193.09 )
+scale = Vector2( 0.505, 0.505 )
 
-[node name="Oriblock5" parent="Collides and hides/Oriblock3" instance=ExtResource( 34 )]
-position = Vector2( 126.699, -0.0229492 )
+[node name="Oriblock12" parent="Collides and hides" instance=ExtResource( 35 )]
+position = Vector2( 9094.81, 1257.72 )
+scale = Vector2( 0.505, 0.505 )
 
-[node name="Oriblock2" parent="Collides and hides/Oriblock3" instance=ExtResource( 34 )]
-position = Vector2( 128.229, -127.961 )
+[node name="Oriblock13" parent="Collides and hides" instance=ExtResource( 35 )]
+position = Vector2( 9094.79, 1193.11 )
+scale = Vector2( 0.505, 0.505 )
 
-[node name="Oriblock4" parent="Collides and hides" instance=ExtResource( 34 )]
-editor/display_folded = true
+[node name="Oriblock4" parent="Collides and hides" instance=ExtResource( 35 )]
 position = Vector2( 9030.43, 1257.73 )
 scale = Vector2( 0.505, 0.505 )
 
-[node name="Oriblock4" parent="Collides and hides/Oriblock4" instance=ExtResource( 34 )]
-position = Vector2( 0.0390625, -127.99 )
-
-[node name="Oriblock5" parent="Collides and hides/Oriblock4" instance=ExtResource( 34 )]
-position = Vector2( 127.486, -0.0229492 )
-
-[node name="Oriblock2" parent="Collides and hides/Oriblock4" instance=ExtResource( 34 )]
-position = Vector2( 127.442, -127.961 )
-
-[node name="Oriblock5" parent="Collides and hides" instance=ExtResource( 34 )]
-editor/display_folded = true
-position = Vector2( 9158.76, 1257.95 )
+[node name="Oriblock14" parent="Collides and hides" instance=ExtResource( 35 )]
+position = Vector2( 9159.17, 1193.51 )
 scale = Vector2( 0.505, 0.505 )
 
-[node name="Oriblock4" parent="Collides and hides/Oriblock5" instance=ExtResource( 34 )]
-position = Vector2( 0.806641, -127.606 )
+[node name="Oriblock15" parent="Collides and hides" instance=ExtResource( 35 )]
+position = Vector2( 9222.74, 1257.94 )
+scale = Vector2( 0.505, 0.505 )
 
-[node name="Oriblock5" parent="Collides and hides/Oriblock5" instance=ExtResource( 34 )]
-position = Vector2( 126.699, -0.0229492 )
+[node name="Oriblock16" parent="Collides and hides" instance=ExtResource( 35 )]
+position = Vector2( 9222.32, 1193.33 )
+scale = Vector2( 0.505, 0.505 )
 
-[node name="Oriblock2" parent="Collides and hides/Oriblock5" instance=ExtResource( 34 )]
-position = Vector2( 125.87, -127.961 )
+[node name="Oriblock5" parent="Collides and hides" instance=ExtResource( 35 )]
+position = Vector2( 9158.76, 1257.95 )
+scale = Vector2( 0.505, 0.505 )
 
 [node name="Valuta" type="Node" parent="."]
 editor/display_folded = true
 
-[node name="Coins2" parent="Valuta" instance=ExtResource( 36 )]
-editor/display_folded = true
+[node name="Diamonds" parent="Valuta" instance=ExtResource( 36 )]
+position = Vector2( 4127.42, 1257.9 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Diamonds2" parent="Valuta" instance=ExtResource( 36 )]
+position = Vector2( 4229.42, 1257.9 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Coins7" parent="Valuta" instance=ExtResource( 37 )]
+position = Vector2( 7668.13, 869.246 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Coins8" parent="Valuta" instance=ExtResource( 37 )]
+position = Vector2( 7693.13, 869.246 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Coins2" parent="Valuta" instance=ExtResource( 37 )]
 position = Vector2( 7644.13, 869.246 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Coins3" parent="Valuta/Coins2" instance=ExtResource( 36 )]
-position = Vector2( 48, 0 )
+[node name="Coins9" parent="Valuta" instance=ExtResource( 37 )]
+position = Vector2( 9040.91, 1234.03 )
+scale = Vector2( 0.5, 0.5 )
 
-[node name="Coins4" parent="Valuta/Coins2" instance=ExtResource( 36 )]
-position = Vector2( 98, 0 )
+[node name="Coins10" parent="Valuta" instance=ExtResource( 37 )]
+position = Vector2( 9065.91, 1234.03 )
+scale = Vector2( 0.5, 0.5 )
 
-[node name="Coins3" parent="Valuta" instance=ExtResource( 36 )]
-editor/display_folded = true
+[node name="Coins3" parent="Valuta" instance=ExtResource( 37 )]
 position = Vector2( 9016.91, 1234.03 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Coins3" parent="Valuta/Coins3" instance=ExtResource( 36 )]
-position = Vector2( 48, 0 )
-
-[node name="Coins4" parent="Valuta/Coins3" instance=ExtResource( 36 )]
-position = Vector2( 98, 0 )
-
-[node name="Coins" parent="Valuta" instance=ExtResource( 36 )]
-editor/display_folded = true
-position = Vector2( 4193.75, 1243.64 )
+[node name="Coins4" parent="Valuta" instance=ExtResource( 37 )]
+position = Vector2( 4173.46, 1243.6 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Diamonds" parent="Valuta/Coins" instance=ExtResource( 37 )]
-position = Vector2( -132.67, 28.5222 )
+[node name="Coins5" parent="Valuta" instance=ExtResource( 37 )]
+position = Vector2( 4152.46, 1243.6 )
+scale = Vector2( 0.5, 0.5 )
 
-[node name="Diamonds2" parent="Valuta/Coins" instance=ExtResource( 37 )]
-position = Vector2( 71.3301, 28.5222 )
+[node name="Coins6" parent="Valuta" instance=ExtResource( 37 )]
+position = Vector2( 4131.46, 1243.6 )
+scale = Vector2( 0.5, 0.5 )
 
-[node name="Coins" parent="Valuta/Coins" instance=ExtResource( 36 )]
-position = Vector2( -40.5723, -0.0876465 )
-
-[node name="Coins2" parent="Valuta/Coins" instance=ExtResource( 36 )]
-position = Vector2( -82.5723, -0.0876465 )
-
-[node name="Coins3" parent="Valuta/Coins" instance=ExtResource( 36 )]
-position = Vector2( -124.572, -0.0876465 )
+[node name="Coins" parent="Valuta" instance=ExtResource( 37 )]
+position = Vector2( 4193.75, 1243.64 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="inPortal2D" parent="." instance=ExtResource( 38 )]
 position = Vector2( 4120.58, 118.19 )
@@ -1172,6 +1187,9 @@ position = Vector2( 2258.27, 989.605 )
 [node name="die_shape3" parent="die_shapes" instance=ExtResource( 42 )]
 position = Vector2( 5614.77, 817.003 )
 
+[node name="die_shape4" parent="die_shapes" instance=ExtResource( 42 )]
+position = Vector2( 9640.17, 54.1975 )
+
 [node name="Area2D" type="Area2D" parent="."]
 editor/display_folded = true
 position = Vector2( 326.041, 343.201 )
@@ -1180,10 +1198,8 @@ position = Vector2( 326.041, 343.201 )
 position = Vector2( 1.71478, 84.0227 )
 shape = SubResource( 20 )
 
-[node name="die_shape" parent="." instance=ExtResource( 42 )]
-position = Vector2( 9640.17, 54.1975 )
-
 [node name="Animals" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Elephant" parent="Animals" instance=ExtResource( 43 )]
 position = Vector2( 3495.8, 399.713 )
