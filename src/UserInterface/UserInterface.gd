@@ -218,7 +218,7 @@ func _on_Savanna_button_up() -> void:
 		animplayer.play("Savanna_false")
 	elif animal == "Vulture":
 		answer = true
-		animplayer.play("Savanna_true")
+		animplayer.play("Savanna_True")
 	elif animal == "Fish":
 		answer = false
 		animplayer.play("Savanna_false")
@@ -469,7 +469,7 @@ func _on_Jungle_button_up() -> void:
 		animplayer.play("Jungle_False")
 	elif animal == "Elephant":
 		answer = false
-		animplayer.play("dessert_false")
+		animplayer.play("Jungle_False")
 	elif animal == "Polar Bear":
 		answer = false
 		animplayer.play("Jungle_False")
