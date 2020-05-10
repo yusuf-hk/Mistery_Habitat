@@ -168,6 +168,14 @@ func check_button()->void:
 		update_animals()
 		scene_tree.paused = false
 		animplayer.play("Task_fade")
+#		animplayer.play("Forest_False")
+#		animplayer.play("Grassland_False")
+#		animplayer.play("Jungle_False")
+#		animplayer.play("Mountain_False")
+#		animplayer.play("Polar_false")
+#		animplayer.play("Savanna_false")
+#		animplayer.play("Water_False")
+#		animplayer.play("dessert_false")
 	
 
 			

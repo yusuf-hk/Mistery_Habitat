@@ -3,6 +3,7 @@ extends Node
 var _json_result
 var do_file_exist = true
 
+
 func get_savedata():
 	var savedata = {
 	"character": PlayerData.character,
@@ -29,7 +30,7 @@ func save():
 	var data_string = JSON.print(get_savedata())
 	var file = File.new()
 	
-	var PATH = "res://src/menu_system/main_menu/LoadGame/json.json"
+	var PATH = "user://json.json"
 	
 	file.open(PATH, file.WRITE)
 	file.store_string(data_string)
@@ -37,16 +38,16 @@ func save():
 	
 	var packed_scene = PackedScene.new()
 	packed_scene.pack(get_tree().get_current_scene())
-	ResourceSaver.save("res://src/menu_system/main_menu/LoadGame/loadscene.tscn", packed_scene)
+	ResourceSaver.save("user://loadscene.tscn", packed_scene)
 
 func loadgame():
 	var file = File.new()
-	file.open("res://src/menu_system/main_menu/LoadGame/json.json", file.READ)
+	file.open("user://json.json", file.READ)
 	var json = file.get_as_text()
 	_json_result = JSON.parse(json).result
 	file.close()
 	_load_playerdata()
-	Global.load_scene("res://src/menu_system/main_menu/LoadGame/loadscene.tscn")
+	Global.load_scene("user://loadscene.tscn")
 
 func _load_playerdata():
 	PlayerData.character = _json_result["character"]

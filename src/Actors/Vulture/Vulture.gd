@@ -9,7 +9,7 @@ var velocity = Vector2()
 var direction = 1
 export var coin: = 700
 var lives = 3
-var animal = "Fish"
+var animal = "Vulture"
 
 func _ready():
 	pass
