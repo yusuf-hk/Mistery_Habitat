@@ -1,12 +1,23 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://src/UserInterface/Shop/Shop.gd" type="Script" id=1]
 [ext_resource path="res://src/UserInterface/Shop/SkinsText.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/Shop/Example/pngguru.com.png" type="Texture" id=3]
+[ext_resource path="res://assets/Player/Character/Boy/Idle (1).png" type="Texture" id=3]
 [ext_resource path="res://assets/fonts/Montserratt_24.tres" type="DynamicFont" id=4]
 [ext_resource path="res://assets/Coins/MonedaD.png" type="Texture" id=5]
 [ext_resource path="res://assets/fonts/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://assets/Coins/spr_coin_azu.png" type="Texture" id=7]
+[ext_resource path="res://assets/Player/Character/Girl/Idle (1).png" type="Texture" id=8]
+[ext_resource path="res://assets/Player/Character/Robot/idle/Idle (1).png" type="Texture" id=9]
+[ext_resource path="res://assets/Player/Character/TempleRun/idle/Idle__000.png" type="Texture" id=10]
+[ext_resource path="res://assets/Player/Character/TempleRunb_girl/idle/Idle (1).png" type="Texture" id=11]
+[ext_resource path="res://assets/Player/Character/dino/idle/Idle (1).png" type="Texture" id=12]
+[ext_resource path="res://assets/Player/Character/free knight/idle/Idle (1).png" type="Texture" id=13]
+[ext_resource path="res://assets/Player/Character/jack/idle/Idle (1).png" type="Texture" id=14]
+[ext_resource path="res://assets/Player/Character/ninja_boy/idle/Idle__000.png" type="Texture" id=15]
+[ext_resource path="res://assets/Player/Character/ninja_girl/idle/Idle__000.png" type="Texture" id=16]
+[ext_resource path="res://assets/Player/Character/santa/idle/Idle (1).png" type="Texture" id=17]
+[ext_resource path="res://assets/Player/Character/zombie/male/idle/Idle (1).png" type="Texture" id=18]
 
 [sub_resource type="DynamicFont" id=1]
 size = 12
@@ -41,6 +52,7 @@ margin_bottom = 21.0
 size_flags_vertical = 1
 
 [node name="SkinsSelection" type="ScrollContainer" parent="ShopMenu"]
+editor/display_folded = true
 margin_top = 25.0
 margin_right = 600.0
 margin_bottom = 469.0
@@ -54,17 +66,19 @@ margin_bottom = 764.0
 size_flags_horizontal = 3
 
 [node name="Boy" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
+editor/display_folded = true
 margin_right = 588.0
 margin_bottom = 60.45
 rect_min_size = Vector2( 0, 60.45 )
 size_flags_horizontal = 3
 
 [node name="BoyTexture" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Boy"]
-margin_top = 5.0
-margin_right = 890.0
-margin_bottom = 894.0
+margin_left = 13.6445
+margin_right = 903.645
+margin_bottom = 889.0
 rect_scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 3 )
+stretch_mode = 1
 
 [node name="BoyLabel" type="Label" parent="ShopMenu/SkinsSelection/VBoxContainer/Boy"]
 margin_left = 44.5
@@ -123,6 +137,7 @@ custom_fonts/font = SubResource( 1 )
 text = "2"
 
 [node name="Girl" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
+editor/display_folded = true
 margin_top = 64.0
 margin_right = 588.0
 margin_bottom = 124.45
@@ -130,11 +145,13 @@ rect_min_size = Vector2( 0, 60.45 )
 size_flags_horizontal = 3
 
 [node name="GirlTexture" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Girl"]
-margin_top = 5.0
-margin_right = 890.0
-margin_bottom = 894.0
+margin_left = 3.97217
+margin_top = -3.55005
+margin_right = 893.972
+margin_bottom = 885.45
 rect_scale = Vector2( 0.05, 0.05 )
-texture = ExtResource( 3 )
+texture = ExtResource( 8 )
+stretch_mode = 5
 
 [node name="GirlLabel" type="Label" parent="ShopMenu/SkinsSelection/VBoxContainer/Girl"]
 margin_left = 44.5
@@ -201,11 +218,12 @@ rect_min_size = Vector2( 0, 60.45 )
 size_flags_horizontal = 3
 
 [node name="RobotTexture" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Robot"]
-margin_top = 5.0
-margin_right = 890.0
-margin_bottom = 894.0
+margin_left = 3.97217
+margin_right = 893.972
+margin_bottom = 889.0
 rect_scale = Vector2( 0.05, 0.05 )
-texture = ExtResource( 3 )
+texture = ExtResource( 9 )
+stretch_mode = 5
 
 [node name="RobotLabel" type="Label" parent="ShopMenu/SkinsSelection/VBoxContainer/Robot"]
 margin_left = 44.5
@@ -264,6 +282,7 @@ custom_fonts/font = SubResource( 1 )
 text = "3"
 
 [node name="Templerun_boy" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
+editor/display_folded = true
 margin_top = 192.0
 margin_right = 588.0
 margin_bottom = 252.45
@@ -271,11 +290,12 @@ rect_min_size = Vector2( 0, 60.45 )
 size_flags_horizontal = 3
 
 [node name="TemplerunBoyTexture" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Templerun_boy"]
-margin_top = 5.0
-margin_right = 890.0
-margin_bottom = 894.0
+margin_left = 8.73877
+margin_right = 898.739
+margin_bottom = 889.0
 rect_scale = Vector2( 0.05, 0.05 )
-texture = ExtResource( 3 )
+texture = ExtResource( 10 )
+stretch_mode = 5
 
 [node name="TemplerunBoyLabel" type="Label" parent="ShopMenu/SkinsSelection/VBoxContainer/Templerun_boy"]
 margin_left = 44.5
@@ -334,6 +354,7 @@ custom_fonts/font = SubResource( 1 )
 text = "4"
 
 [node name="Templerun_girl" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
+editor/display_folded = true
 margin_top = 256.0
 margin_right = 588.0
 margin_bottom = 316.45
@@ -341,11 +362,13 @@ rect_min_size = Vector2( 0, 60.45 )
 size_flags_horizontal = 3
 
 [node name="TemplerunGirl" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Templerun_girl"]
-margin_top = 5.0
-margin_right = 890.0
-margin_bottom = 894.0
+margin_left = 3.97217
+margin_top = -3.5498
+margin_right = 893.972
+margin_bottom = 885.45
 rect_scale = Vector2( 0.05, 0.05 )
-texture = ExtResource( 3 )
+texture = ExtResource( 11 )
+stretch_mode = 1
 
 [node name="TemplerunGirlLabel" type="Label" parent="ShopMenu/SkinsSelection/VBoxContainer/Templerun_girl"]
 margin_left = 44.5
@@ -404,6 +427,7 @@ custom_fonts/font = SubResource( 1 )
 text = "3"
 
 [node name="Dino" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
+editor/display_folded = true
 margin_top = 320.0
 margin_right = 588.0
 margin_bottom = 380.45
@@ -411,11 +435,13 @@ rect_min_size = Vector2( 0, 60.45 )
 size_flags_horizontal = 3
 
 [node name="DinoTexture" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Dino"]
-margin_top = 5.0
-margin_right = 890.0
-margin_bottom = 894.0
+margin_left = 8.73877
+margin_top = -3.5498
+margin_right = 898.739
+margin_bottom = 885.45
 rect_scale = Vector2( 0.05, 0.05 )
-texture = ExtResource( 3 )
+texture = ExtResource( 12 )
+stretch_mode = 1
 
 [node name="DinoLabel" type="Label" parent="ShopMenu/SkinsSelection/VBoxContainer/Dino"]
 margin_left = 44.5
@@ -474,6 +500,7 @@ custom_fonts/font = SubResource( 1 )
 text = "20"
 
 [node name="Knight" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
+editor/display_folded = true
 margin_top = 384.0
 margin_right = 588.0
 margin_bottom = 444.45
@@ -481,11 +508,13 @@ rect_min_size = Vector2( 0, 60.45 )
 size_flags_horizontal = 3
 
 [node name="KnightTextrure" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Knight"]
-margin_top = 5.0
-margin_right = 890.0
-margin_bottom = 894.0
+margin_left = 3.97217
+margin_top = -3.5498
+margin_right = 893.972
+margin_bottom = 885.45
 rect_scale = Vector2( 0.05, 0.05 )
-texture = ExtResource( 3 )
+texture = ExtResource( 13 )
+stretch_mode = 1
 
 [node name="KnightLabel" type="Label" parent="ShopMenu/SkinsSelection/VBoxContainer/Knight"]
 margin_left = 44.5
@@ -544,6 +573,7 @@ custom_fonts/font = SubResource( 1 )
 text = "1"
 
 [node name="Jack" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
+editor/display_folded = true
 margin_top = 448.0
 margin_right = 588.0
 margin_bottom = 508.45
@@ -551,11 +581,13 @@ rect_min_size = Vector2( 0, 60.45 )
 size_flags_horizontal = 3
 
 [node name="JackIcon" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Jack"]
-margin_top = 5.0
-margin_right = 890.0
-margin_bottom = 894.0
+margin_left = 3.97217
+margin_top = -3.5498
+margin_right = 893.972
+margin_bottom = 885.45
 rect_scale = Vector2( 0.05, 0.05 )
-texture = ExtResource( 3 )
+texture = ExtResource( 14 )
+stretch_mode = 6
 
 [node name="JackLabel" type="Label" parent="ShopMenu/SkinsSelection/VBoxContainer/Jack"]
 margin_left = 44.5
@@ -614,6 +646,7 @@ custom_fonts/font = SubResource( 1 )
 text = "3"
 
 [node name="Ninja_boy" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
+editor/display_folded = true
 margin_top = 512.0
 margin_right = 588.0
 margin_bottom = 572.45
@@ -621,11 +654,12 @@ rect_min_size = Vector2( 0, 60.45 )
 size_flags_horizontal = 3
 
 [node name="NinjaBoyTexture" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Ninja_boy"]
-margin_top = 5.0
+margin_top = -3.5498
 margin_right = 890.0
-margin_bottom = 894.0
+margin_bottom = 885.45
 rect_scale = Vector2( 0.05, 0.05 )
-texture = ExtResource( 3 )
+texture = ExtResource( 15 )
+stretch_mode = 6
 
 [node name="NinjaBoyLabel" type="Label" parent="ShopMenu/SkinsSelection/VBoxContainer/Ninja_boy"]
 margin_left = 44.5
@@ -684,6 +718,7 @@ custom_fonts/font = SubResource( 1 )
 text = "10"
 
 [node name="Ninja_girl" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
+editor/display_folded = true
 margin_top = 576.0
 margin_right = 588.0
 margin_bottom = 636.45
@@ -691,11 +726,11 @@ rect_min_size = Vector2( 0, 60.45 )
 size_flags_horizontal = 3
 
 [node name="NinjaGirlTexture" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Ninja_girl"]
-margin_top = 5.0
 margin_right = 890.0
-margin_bottom = 894.0
+margin_bottom = 889.0
 rect_scale = Vector2( 0.05, 0.05 )
-texture = ExtResource( 3 )
+texture = ExtResource( 16 )
+stretch_mode = 6
 
 [node name="NinjaGirlLabel" type="Label" parent="ShopMenu/SkinsSelection/VBoxContainer/Ninja_girl"]
 margin_left = 44.5
@@ -754,6 +789,7 @@ custom_fonts/font = SubResource( 1 )
 text = "10"
 
 [node name="Santa" type="Control" parent="ShopMenu/SkinsSelection/VBoxContainer"]
+editor/display_folded = true
 margin_top = 640.0
 margin_right = 588.0
 margin_bottom = 700.45
@@ -761,11 +797,12 @@ rect_min_size = Vector2( 0, 60.45 )
 size_flags_horizontal = 3
 
 [node name="SantaTexture" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Santa"]
-margin_top = 5.0
-margin_right = 890.0
-margin_bottom = 894.0
+margin_left = 5.81689
+margin_right = 939.817
+margin_bottom = 889.0
 rect_scale = Vector2( 0.05, 0.05 )
-texture = ExtResource( 3 )
+texture = ExtResource( 17 )
+stretch_mode = 1
 
 [node name="SantaLabel" type="Label" parent="ShopMenu/SkinsSelection/VBoxContainer/Santa"]
 margin_left = 44.5
@@ -831,11 +868,13 @@ rect_min_size = Vector2( 0, 60.45 )
 size_flags_horizontal = 3
 
 [node name="ZombieBoyTexture" type="TextureRect" parent="ShopMenu/SkinsSelection/VBoxContainer/Zombie_boy"]
-margin_top = 5.0
-margin_right = 890.0
-margin_bottom = 894.0
+margin_left = 8.73877
+margin_top = -3.5498
+margin_right = 898.739
+margin_bottom = 885.45
 rect_scale = Vector2( 0.05, 0.05 )
-texture = ExtResource( 3 )
+texture = ExtResource( 18 )
+stretch_mode = 5
 
 [node name="ZombieBoyLabel" type="Label" parent="ShopMenu/SkinsSelection/VBoxContainer/Zombie_boy"]
 margin_left = 44.5
