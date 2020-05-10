@@ -183,11 +183,11 @@ texture = ExtResource( 2 )
 position = Vector2( 916.551, 292.275 )
 
 [node name="Objects" type="Node2D" parent="."]
-editor/display_folded = true
 position = Vector2( 2150.74, -842.537 )
 scale = Vector2( 1.59082, 1.59282 )
 
 [node name="Sign2" parent="Objects" instance=ExtResource( 5 )]
+position = Vector2( -0.994751, 12.9498 )
 scale = Vector2( 1, 1 )
 
 [node name="Sign3" parent="Objects" instance=ExtResource( 5 )]
@@ -434,7 +434,6 @@ position = Vector2( -2.07764, -76.4771 )
 z_index = -1
 
 [node name="Skeleton" parent="Objects" instance=ExtResource( 12 )]
-editor/display_folded = true
 position = Vector2( 131.847, 32.8605 )
 scale = Vector2( 0.628607, 0.627816 )
 flip_h = true

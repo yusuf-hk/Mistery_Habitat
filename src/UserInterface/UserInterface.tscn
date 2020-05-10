@@ -431,7 +431,7 @@ margin_right = 512.0
 margin_bottom = 377.0
 
 [node name="SaveText" parent="PauseOverlay" instance=ExtResource( 10 )]
-frame = 11
+frame = 27
 
 [node name="SaveButton" parent="PauseOverlay" instance=ExtResource( 11 )]
 
