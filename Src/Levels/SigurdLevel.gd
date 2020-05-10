@@ -6,6 +6,7 @@ func _ready() -> void:
 	PlayerData.set_task_state(false)
 	PlayerData.connect("animal", self, "is_task_completed")
 	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch_desert)
+	SaveSystem.save()
 func is_task_completed()->void:
 	animals_to_catch_desert = animals_to_catch_desert - 1
 	get_node("Portal2D/ColorRect/ItemList/Label2").text = String(animals_to_catch_desert)

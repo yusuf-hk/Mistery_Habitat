@@ -7,7 +7,6 @@ onready var diamond_label: Label =$ItemList/Diamonds
 onready var animal_label: Label = $ItemList/Animals
 onready var pause_overlay: ColorRect = $PauseOverlay
 onready var title_label: Label = $PauseOverlay/PauseMenu/Title
-onready var main_screen_button: Button = $PauseOverlay/PauseMenu/MainScreenButton
 onready var animplayer = get_node("animplayer")
 
 onready var habitat_name = get_owner().get_name()

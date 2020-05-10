@@ -75,8 +75,9 @@ func move_sprite()-> void:
 		shoot_visibility(false)
 		if Input.is_action_pressed("Space"):
 			PlayerData.set_arrow_state(true)
-			character.play("Shoot")
-			shoot_visibility(true)
+			if choosen_weapon() == false:
+				character.play("Shoot")
+				shoot_visibility(true)
 
 	elif Input.is_action_pressed("move_left"):
 		flip_character(true)
@@ -85,8 +86,9 @@ func move_sprite()-> void:
 		shoot_visibility(false)
 		if Input.is_action_pressed("Space"):
 			PlayerData.set_arrow_state(true)
-			character.play("Shoot")
-			shoot_visibility(true)
+			if choosen_weapon() == false:
+				character.play("Shoot")
+				shoot_visibility(true)
 
 	elif Input.is_action_pressed("move_right"):
 		flip_character(false)
@@ -95,13 +97,15 @@ func move_sprite()-> void:
 		shoot_visibility(false)
 		if Input.is_action_pressed("Space"):
 			PlayerData.set_arrow_state(true)
-			character.play("Shoot")
-			shoot_visibility(true)
+			if choosen_weapon() == false:
+				character.play("Shoot")
+				shoot_visibility(true)
 
 	elif Input.is_action_pressed("Space"):
 		PlayerData.set_arrow_state(true)
-		character.play("Shoot")
-		shoot_visibility(true)
+		if choosen_weapon() == false:
+			character.play("Shoot")
+			shoot_visibility(true)
 		
 	else:
 		shoot_visibility(false)
@@ -109,8 +113,9 @@ func move_sprite()-> void:
 		PlayerData.set_arrow_state(false)
 		if Input.is_action_pressed("Space"):
 			PlayerData.set_arrow_state(true)
-			character.play("Shoot")
-			shoot_visibility(true)
+			if choosen_weapon() == false:
+				character.play("Shoot")
+				shoot_visibility(true)
 		
 		
 func shoot_visibility(val:bool)->void:

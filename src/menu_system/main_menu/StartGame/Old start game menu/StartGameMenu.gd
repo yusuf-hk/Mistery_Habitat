@@ -9,7 +9,6 @@ func _ready() -> void:
 	
 func update()->void:
 	what_character = PlayerData.character
-	print(what_character)
 	turn_on_sprite()
 	turn_off_sprite()
 

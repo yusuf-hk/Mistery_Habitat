@@ -140,7 +140,7 @@ margin_top = 9.0
 margin_right = 44.0
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 102.944, 528.693 )
+position = Vector2( 562.263, 491.783 )
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2( 0.5, 0.5 )
@@ -504,7 +504,7 @@ position = Vector2( 2872.05, 692.184 )
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 215.76, 637.006 )
+position = Vector2( 394.156, 645.208 )
 shape = SubResource( 6 )
 
 [node name="Animals" type="Node2D" parent="."]
@@ -513,5 +513,5 @@ shape = SubResource( 6 )
 position = Vector2( 423.57, -1454.91 )
 
 [node name="Camel" parent="Animals" instance=ExtResource( 25 )]
-position = Vector2( 1631.86, 1151.41 )
+position = Vector2( 1528.51, 388.206 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
