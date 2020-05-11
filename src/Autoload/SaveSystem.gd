@@ -1,9 +1,12 @@
 extends Node
 
+#json result from save file
 var _json_result
+
+#Checks if the save files exist
 var do_file_exist = true
 
-
+#All data needed for saving the game. Taken from PlayerData.gd
 func get_savedata():
 	var savedata = {
 	"character": PlayerData.character,
@@ -26,6 +29,9 @@ func get_savedata():
 	}
 	return savedata
 
+#Creates a json file which is containing all player data
+#Also saving the current scene the player is in and saving it
+#as a tscn file
 func save():
 	var data_string = JSON.print(get_savedata())
 	var file = File.new()
@@ -40,6 +46,7 @@ func save():
 	packed_scene.pack(get_tree().get_current_scene())
 	ResourceSaver.save("user://loadscene.tscn", packed_scene)
 
+#Load the data from the json file and scene file (tscn)
 func loadgame():
 	var file = File.new()
 	file.open("user://json.json", file.READ)
@@ -49,6 +56,7 @@ func loadgame():
 	_load_playerdata()
 	Global.load_scene("user://loadscene.tscn")
 
+#Sets the data to player data
 func _load_playerdata():
 	PlayerData.character = _json_result["character"]
 	PlayerData.character_flip = _json_result["character flip"]
