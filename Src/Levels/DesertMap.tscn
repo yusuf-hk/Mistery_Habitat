@@ -1019,6 +1019,7 @@ position = Vector2( 15807.8, -1046 )
 scale = Vector2( 1.09872, 0.962657 )
 
 [node name="Collides and hides" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="OneWayCol" parent="Collides and hides" instance=ExtResource( 33 )]
 position = Vector2( 9159.11, 1129.91 )

@@ -1,12 +1,27 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/Actors/Animal.gd" type="Script" id=1]
-[ext_resource path="res://assets/cat/Idle (1).png" type="Texture" id=2]
+[ext_resource path="res://assets/cat/Run (1).png" type="Texture" id=2]
+[ext_resource path="res://assets/cat/Run (2).png" type="Texture" id=3]
+[ext_resource path="res://assets/cat/Run (3).png" type="Texture" id=4]
+[ext_resource path="res://assets/cat/Run (4).png" type="Texture" id=5]
+[ext_resource path="res://assets/cat/Run (5).png" type="Texture" id=6]
+[ext_resource path="res://assets/cat/Run (6).png" type="Texture" id=7]
+[ext_resource path="res://assets/cat/Run (7).png" type="Texture" id=8]
+[ext_resource path="res://assets/cat/Run (8).png" type="Texture" id=9]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 72.5999, 108.8 )
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "Run",
+"speed": 16.0
+} ]
 
 [sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 72.5999, 108.8 )
+
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 78.5927, 115.468 )
 
 [node name="Animal" type="KinematicBody2D"]
@@ -17,15 +32,18 @@ script = ExtResource( 1 )
 speed = Vector2( 300, 1000 )
 gravity = 4000.0
 
-[node name="Cat" type="Sprite" parent="."]
+[node name="Cat" type="AnimatedSprite" parent="."]
 position = Vector2( 8.59985, -76.8 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
+frames = SubResource( 1 )
+animation = "Run"
+frame = 2
+playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -2, -69 )
 z_index = -3
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -42,5 +60,5 @@ collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( -0.681137, -72.8803 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]

@@ -1,19 +1,35 @@
 extends Actor
-export var coin: = 100
+
+const GRAVITY = 10
+const SPEED = -200
+const FLOOR = Vector2(0, -1)
+
+var velocity = Vector2()
+
+var direction = 1
+export var coin: = 700
 var lives = 3
 var animal = "Cat"
 
-func _ready() -> void: 
-	set_physics_process(false)
-	_velocity.x = -speed.x
-
-func _physics_process(delta: float) -> void:
-	_velocity.y += gravity * delta
-	if is_on_wall():
-		_velocity.x *= -1.0
-	_velocity.y = move_and_slide(_velocity, FLOOR_NORMAL).y
+func _ready():
+	pass
 	
-
+func _physics_process(delta: float) -> void:
+	velocity.x = SPEED * direction
+	
+	if direction == 1:
+		$Cat.flip_h = true
+	else:
+		$Cat.flip_h = false
+		
+	$Cat.play("Run")
+	
+	velocity.y += GRAVITY
+	
+	velocity = move_and_slide(velocity, FLOOR)
+	
+	if is_on_wall():
+		direction = direction * -1
 
 func _on_Area2D_area_entered(area: Area2D) -> void:
 	if PlayerData.get_arrow_state() == true:

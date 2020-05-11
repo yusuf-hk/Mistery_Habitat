@@ -476,6 +476,7 @@ position = Vector2( 6891.72, 902.669 )
 next_scene = ExtResource( 26 )
 
 [node name="Animals" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Brown bear4" parent="Animals" instance=ExtResource( 27 )]
 position = Vector2( 5855.74, 1837.82 )
@@ -487,7 +488,6 @@ position = Vector2( 165.142, 1406.8 )
 position = Vector2( 4334.48, 199.35 )
 
 [node name="Tutorial_areas" type="Node2D" parent="."]
-editor/display_folded = true
 position = Vector2( 4.08112, 1.36035 )
 
 [node name="Welcome" type="Area2D" parent="Tutorial_areas"]

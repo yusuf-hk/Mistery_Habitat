@@ -34,7 +34,7 @@ _global_script_class_icons={
 
 config/name="Mistery Habitat"
 run/main_scene="res://src/menu_system/title_screen/TitleScreen.tscn"
-config/icon="res://icon.png"
+config/icon="res://assets/main menu/Globe.png"
 
 [autoload]
 
