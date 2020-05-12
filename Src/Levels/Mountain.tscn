@@ -103,11 +103,11 @@ z_index = 3
 position = Vector2( 5227.21, -2619.82 )
 next_scene = ExtResource( 8 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Reset_portal_state" type="Area2D" parent="."]
 editor/display_folded = true
 position = Vector2( 125.083, 695.135 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Reset_portal_state"]
 position = Vector2( 65.55, 62.7001 )
 shape = SubResource( 4 )
 
@@ -637,4 +637,4 @@ editor/display_folded = true
 position = Vector2( 546.421, -1614.64 )
 
 [node name="Monkey" parent="Animals" instance=ExtResource( 26 )]
-[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Reset_portal_state" to="." method="_on_Reset_portal_state_body_entered"]

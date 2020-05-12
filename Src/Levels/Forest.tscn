@@ -134,6 +134,7 @@ extents = Vector2( 210.017, 10 )
 script = ExtResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+editor/display_folded = true
 layer = -1
 
 [node name="BG" type="Sprite" parent="CanvasLayer"]
@@ -142,6 +143,7 @@ scale = Vector2( 1.42666, 1.01055 )
 texture = ExtResource( 2 )
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]
+editor/display_folded = true
 
 [node name="UserInterface" parent="InterfaceLayer" instance=ExtResource( 3 )]
 
@@ -418,10 +420,11 @@ position = Vector2( 6018.73, 3008.95 )
 position = Vector2( 6564.99, 1282.67 )
 next_scene = ExtResource( 25 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Reset_portal_state" type="Area2D" parent="."]
+editor/display_folded = true
 position = Vector2( 125.083, 695.135 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Reset_portal_state"]
 position = Vector2( 65.55, 62.7001 )
 shape = SubResource( 6 )
-[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Reset_portal_state" to="." method="_on_Reset_portal_state_body_exited"]

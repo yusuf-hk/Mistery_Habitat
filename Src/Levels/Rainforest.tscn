@@ -104,6 +104,7 @@ extents = Vector2( 210.017, 10 )
 script = ExtResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+editor/display_folded = true
 layer = -1
 
 [node name="rainforest" type="Sprite" parent="CanvasLayer"]
@@ -112,6 +113,7 @@ scale = Vector2( 1.13512, 1.18349 )
 texture = ExtResource( 2 )
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]
+editor/display_folded = true
 
 [node name="UserInterface" parent="InterfaceLayer" instance=ExtResource( 3 )]
 
@@ -139,36 +141,37 @@ z_index = 3
 position = Vector2( 15507.1, 3768.98 )
 next_scene = ExtResource( 10 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Reset_portal_state" type="Area2D" parent="."]
 editor/display_folded = true
 position = Vector2( 125.083, 695.135 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Reset_portal_state"]
 position = Vector2( 65.55, 62.7001 )
 shape = SubResource( 5 )
 
-[node name="die" type="Node2D" parent="."]
+[node name="die_shapes" type="Node2D" parent="."]
 editor/display_folded = true
 
-[node name="die_shape" parent="die" instance=ExtResource( 11 )]
+[node name="die_shape" parent="die_shapes" instance=ExtResource( 11 )]
 position = Vector2( 7979.29, 1741.34 )
 
-[node name="die_shape2" parent="die" instance=ExtResource( 11 )]
+[node name="die_shape2" parent="die_shapes" instance=ExtResource( 11 )]
 position = Vector2( 8870.07, 1733.35 )
 
-[node name="die_shape3" parent="die" instance=ExtResource( 11 )]
+[node name="die_shape3" parent="die_shapes" instance=ExtResource( 11 )]
 position = Vector2( 9760.84, 1733.35 )
 
-[node name="die_shape4" parent="die" instance=ExtResource( 11 )]
+[node name="die_shape4" parent="die_shapes" instance=ExtResource( 11 )]
 position = Vector2( 10655.6, 1733.35 )
 
-[node name="die_shape5" parent="die" instance=ExtResource( 11 )]
+[node name="die_shape5" parent="die_shapes" instance=ExtResource( 11 )]
 position = Vector2( 11894.9, 1508.77 )
 
-[node name="die_shape6" parent="die" instance=ExtResource( 11 )]
+[node name="die_shape6" parent="die_shapes" instance=ExtResource( 11 )]
 position = Vector2( 14773.9, 4878.94 )
 
 [node name="Portals_in_game" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="inPortal2D" parent="Portals_in_game" instance=ExtResource( 12 )]
 position = Vector2( 15508.8, 4047.53 )
@@ -428,6 +431,7 @@ position = Vector2( 7198.83, 1640.57 )
 position = Vector2( 7173.93, 1641.22 )
 
 [node name="Animals" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Boar3" parent="Animals" instance=ExtResource( 22 )]
 position = Vector2( 4448.11, 852.617 )
@@ -440,4 +444,4 @@ position = Vector2( 1156.77, 667.115 )
 
 [node name="Polar bear" parent="Animals" instance=ExtResource( 24 )]
 position = Vector2( 2625.27, 704.427 )
-[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Reset_portal_state" to="." method="_on_Reset_portal_state_body_entered"]
