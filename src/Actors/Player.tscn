@@ -1432,7 +1432,7 @@ position = Vector2( 40, 0 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 14
+frame = 11
 playing = true
 
 [node name="Girl" type="AnimatedSprite" parent="Sprite"]
@@ -1441,7 +1441,7 @@ position = Vector2( -15, 0 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 3 )
 animation = "Idle"
-frame = 3
+frame = 5
 playing = true
 
 [node name="Robot" type="AnimatedSprite" parent="Sprite"]
@@ -1451,7 +1451,7 @@ position = Vector2( 7.39707, -3.11456 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 4 )
 animation = "Idle"
-frame = 6
+frame = 8
 playing = true
 
 [node name="Shoot" type="AnimatedSprite" parent="Sprite/Robot"]
@@ -1470,7 +1470,7 @@ position = Vector2( 0, -4.28251 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 6 )
 animation = "Idle"
-frame = 7
+frame = 3
 playing = true
 
 [node name="Templerun_girl" type="AnimatedSprite" parent="Sprite"]
@@ -1480,7 +1480,7 @@ position = Vector2( 10, -4.283 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 7 )
 animation = "Idle"
-frame = 2
+frame = 3
 playing = true
 
 [node name="Shoot" type="Sprite" parent="Sprite/Templerun_girl"]
@@ -1495,7 +1495,7 @@ position = Vector2( 40, 0 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 8 )
 animation = "Idle"
-frame = 8
+frame = 4
 playing = true
 
 [node name="Knight" type="AnimatedSprite" parent="Sprite"]
@@ -1504,7 +1504,7 @@ position = Vector2( 15, -5 )
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 9 )
 animation = "Idle"
-frame = 5
+frame = 1
 playing = true
 
 [node name="Jack" type="AnimatedSprite" parent="Sprite"]
@@ -1513,7 +1513,7 @@ position = Vector2( 15, -4 )
 scale = Vector2( 0.17, 0.17 )
 frames = SubResource( 10 )
 animation = "Idle"
-frame = 8
+frame = 4
 playing = true
 
 [node name="Ninja_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1523,7 +1523,7 @@ position = Vector2( -5, -4.344 )
 scale = Vector2( 0.27, 0.27 )
 frames = SubResource( 11 )
 animation = "Idle"
-frame = 9
+frame = 5
 playing = true
 
 [node name="Shoot" type="Sprite" parent="Sprite/Ninja_boy"]
@@ -1539,7 +1539,7 @@ position = Vector2( 1.94659, -6.22912 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 12 )
 animation = "Idle"
-frame = 6
+frame = 2
 playing = true
 
 [node name="Shoot" type="Sprite" parent="Sprite/Ninja_girl"]
@@ -1554,7 +1554,7 @@ position = Vector2( 20, -8.279 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 13 )
 animation = "Idle"
-frame = 8
+frame = 4
 playing = true
 
 [node name="Zombie_boy" type="AnimatedSprite" parent="Sprite"]
@@ -1563,7 +1563,7 @@ position = Vector2( 10, -6.168 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 14 )
 animation = "Idle"
-frame = 11
+frame = 7
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -1593,7 +1593,6 @@ anims/Shoot = SubResource( 21 )
 anims/Shoot_Left = SubResource( 22 )
 
 [node name="arrow" type="Sprite" parent="bow"]
-editor/display_folded = true
 position = Vector2( 1.7, 0.668 )
 scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 474 )
@@ -1601,6 +1600,7 @@ vframes = 10
 hframes = 4
 
 [node name="Area2D" type="Area2D" parent="bow/arrow"]
+editor/display_folded = true
 collision_layer = 16
 collision_mask = 2
 
@@ -1617,3 +1617,4 @@ script = ExtResource( 475 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gun_bullet"]
 position = Vector2( -2, -2 )
 shape = SubResource( 24 )
+[connection signal="body_entered" from="bow/arrow/Area2D" to="bow" method="_on_Area2D_body_entered"]

@@ -49,3 +49,15 @@ func get_weapon()->bool:
 		PlayerData.set_bow(true)
 		state = true
 	return state
+
+
+
+func _on_Area2D_body_entered(body) -> void:
+	if Input.is_action_pressed("Space"):
+		if body.name != "Panda!"|| body.name != "Polar bear" ||body.name != "Penguin"||body.name != "Monkey" ||body.name != "Brown bear"||body.name != "Camel"||body.name != "Cat"||body.name != "Boar"||body.name != "Fish"||body.name != "Vulture"||body.name != "Elephant":
+			if get_flip() == true:
+				bow_animation.play("Idle_Left")
+				bow.position.x = -10
+			elif get_flip() == false:
+				bow_animation.play("Idle")	
+				bow.position.x = 10

@@ -27,6 +27,7 @@ func teleport() -> void:
 
 
 func _on_Reset_portal_state_body_entered(body: PhysicsBody2D) -> void:
+	if body.name == "Player":
 		PlayerData.set_task_state(false)
 		get_node("Reset_portal_state").queue_free()
 		PlayerData.emit_signal("new_scene")
