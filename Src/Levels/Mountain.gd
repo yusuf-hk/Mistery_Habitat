@@ -13,9 +13,6 @@ func is_task_completed()->void:
 		PlayerData.set_task_state(true)
 
 
-
-
-
 func _on_Reset_portal_state_body_entered(body: PhysicsBody2D) -> void:
 	if body.name == "Player":
 		PlayerData.set_task_state(false)

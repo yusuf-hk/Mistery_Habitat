@@ -1,6 +1,10 @@
 extends Node
 
-
+"""
+this is the user interface script. it controlls everything 
+that has to do with userinterface, f.eks. stats, pause menu, 
+place animal in habitat task and other things. 
+"""
 onready var scene_tree: SceneTree = get_tree()
 onready var score_label: Label = $ItemList/Coins
 onready var diamond_label: Label =$ItemList/Diamonds
@@ -87,7 +91,7 @@ func adding_animal_to_list()->void:
 	for i in animal_list.size():
 		get_node("ItemList/Animals/Animal_List").add_item(animal_list[i])
 
-
+"""this is the main function for sorting the animals in the animal list"""
 func orgranize()->bool:
 	var value = false
 	for i in PlayerData.catched_animals.size():
@@ -177,7 +181,11 @@ func check_button()->void:
 #		animplayer.play("dessert_false")
 	
 
-			
+
+"""
+upcoming functions are the functions for 
+the place the animal in right habitat task
+"""
 
 func die() -> void:
 	PlayerData.animals = PlayerData.animals - 1

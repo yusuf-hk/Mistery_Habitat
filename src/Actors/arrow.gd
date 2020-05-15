@@ -1,13 +1,19 @@
 extends Sprite
 
-# Declare member variables here. Examples:
-# var a: int = 2
-# var b: String = "text"
+#list of all character
+var arraylist = ["Boy","Girl","Robot","Templerun_boy", "Templerun_girl", "Dino", "Knight", "Jack", "Ninja_boy", "Ninja_girl", "Santa", "Zombie_boy"]
+#state variable for if the arrow has entered something else than animal
+onready var state
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+#function for returns a value depending on 
+#if the arrow has entered something else than animals
+func _on_Arrow_body_entered(body) -> void:
+	if arraylist.has(body.name) == false:
+		state = true
+	else:
+		state = false
+func get_arrow_state()->bool:
+	return state
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-#	pass
+func _on_Arrow_body_exited(body) -> void:
+	state = false

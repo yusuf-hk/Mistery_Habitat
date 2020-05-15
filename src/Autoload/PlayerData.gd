@@ -1,5 +1,11 @@
 extends Node
-
+"""
+this is the playerdata script. this is a script used for 
+all variables that are to be transported between scenes.
+in this script you will fin everything from game values 
+like coins and diamonds to different states that are to
+ be changed in the game. 
+"""
 var character = "Boy"
 var current_habitat = "" setget set_current_habitat, get_current_habitat
 var character_flip = false 
