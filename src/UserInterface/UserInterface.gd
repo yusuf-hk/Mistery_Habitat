@@ -2,7 +2,7 @@ extends Node
 
 """
 this is the user interface script. it controlls everything 
-that has to do with userinterface, f.eks. stats, pause menu, 
+that has to do with userinterface, for example stats, pause menu, 
 place animal in habitat task and other things. 
 """
 onready var scene_tree: SceneTree = get_tree()
@@ -501,7 +501,9 @@ func _on_Jungle_button_up() -> void:
 		animplayer.play("Jungle_False")
 	check_button()
 
-
+"""
+This is the save button used for storing data using SaveSystem autoload 
+"""
 func _on_SaveButton_pressed() -> void:
 	get_node("PauseOverlay/SaveText").show()
 	SaveSystem.save()
