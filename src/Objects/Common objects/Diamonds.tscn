@@ -1,0 +1,110 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/Coins/spr_coin_gri.png" type="Texture" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Area2D
+
+onready var anim_player: AnimationPlayer = $AnimationPlayer
+
+export var diamonds: = 1
+
+
+
+
+func picked() -> void:
+	PlayerData.diamonds += diamonds
+	anim_player.play(\"Picked\")
+	self.queue_free()
+	
+
+
+func _on_Diamond_body_entered(body:KinematicBody2D) -> void:
+	if body.name == \"Player\":
+		picked()
+"
+
+[sub_resource type="OccluderPolygon2D" id=2]
+polygon = PoolVector2Array( -5.19414, 0.790907, -5.28155, -1.48181, -4.32001, -4.01678, -2.74659, -5.76502, -1.08576, -6.81397, -0.473869, -6.90138, 0.662491, -5.85243, 2.93521, -4.10419, 3.98416, -2.0937, 3.80934, 0.528669, 3.45969, 3.23845, 1.97368, 4.9867, -0.736107, 7.25942, -2.1347, 6.12306, -3.00883, 5.42376, -4.75708, 3.06363 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "Picked"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Normal_coin:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 0.277392 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Normal_coin:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Normal_coin:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Normal_coin:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 3.86375, 0.164938, 1 ),
+"update": 0,
+"values": [ Vector2( -1.127, -9.973 ), Vector2( -1.127, 10 ), Vector2( -1.127, -9.973 ) ]
+}
+
+[sub_resource type="CapsuleShape2D" id=5]
+height = 10.016
+
+[node name="Diamonds" type="Area2D"]
+collision_layer = 8
+script = SubResource( 1 )
+
+[node name="Normal_coin" type="Sprite" parent="."]
+position = Vector2( -1.127, -9.18391 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+hframes = 4
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Normal_coin"]
+position = Vector2( 0.58633, 0.367323 )
+occluder = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Play_coin"
+anims/Picked = SubResource( 3 )
+anims/Play_coin = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.50208, -8.83129 )
+shape = SubResource( 5 )
+[connection signal="body_entered" from="." to="." method="_on_Diamond_body_entered"]

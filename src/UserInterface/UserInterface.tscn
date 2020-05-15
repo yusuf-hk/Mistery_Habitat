@@ -1,0 +1,698 @@
+[gd_scene load_steps=39 format=2]
+
+[ext_resource path="res://src/UserInterface/UserInterface.gd" type="Script" id=1]
+[ext_resource path="res://src/Tutorial/Tutuorial_point.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/UserInterface/Shop/Shop.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/UserInterface/PauseMenu.gd" type="Script" id=4]
+[ext_resource path="res://src/UserInterface/Title.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/UserInterface/buttons/RetryButton.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/UserInterface/buttons/ShopButton.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/UserInterface/buttons/BackToMainMenuButton.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/UserInterface/buttons/QuitButton.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/UserInterface/SaveText.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/UserInterface/SaveButton.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/font_default.tres" type="DynamicFont" id=12]
+[ext_resource path="res://assets/Habitats/savanna.jpg" type="Texture" id=13]
+[ext_resource path="res://assets/Habitats/polar.jpg" type="Texture" id=14]
+[ext_resource path="res://assets/Habitats/last ned.jpg" type="Texture" id=15]
+[ext_resource path="res://assets/Habitats/water.jpg" type="Texture" id=16]
+[ext_resource path="res://assets/Habitats/forest.jpg" type="Texture" id=17]
+[ext_resource path="res://assets/Habitats/dessert1.jpg" type="Texture" id=18]
+[ext_resource path="res://assets/UserInterface/jungle.jpg" type="Texture" id=19]
+[ext_resource path="res://assets/UserInterface/mountain.jpg" type="Texture" id=20]
+[ext_resource path="res://assets/fonts/Montserratt_24.tres" type="DynamicFont" id=21]
+
+[sub_resource type="Animation" id=1]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Forest_rect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 13.4543, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Forest_rect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 5.65685, 1 ),
+"update": 0,
+"values": [ Color( 0, 1, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Grassland_rect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 8.28212, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Grassland_rect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 4.28709, 1 ),
+"update": 0,
+"values": [ Color( 0, 1, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Jungle_rect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Jungle_rect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 1, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Mountain_rect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Mountain_rect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 1, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Polar_rect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 4.14106, 1 ),
+"update": 0,
+"values": [ Color( 0, 1, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Polar_rect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 8.57418, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Savanna_rect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 3.605, 1 ),
+"update": 0,
+"values": [ Color( 0, 1, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Savanna_rect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 8.28211, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 1, 0, 0.552941 ), Color( 0.341176, 0.329412, 0.329412, 0.552941 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=14]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Water_rect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 8, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Water_rect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 4.92458, 1 ),
+"update": 0,
+"values": [ Color( 0, 1, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Dessert_rect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Animal_tasks/Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 8, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=17]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Animal_tasks/task/Dessert_rect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 7.21, 1 ),
+"update": 0,
+"values": [ Color( 0, 1, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="UserInterface" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Tutuorial_point" parent="." instance=ExtResource( 2 )]
+visible = false
+
+[node name="Shop" parent="." instance=ExtResource( 3 )]
+visible = false
+
+[node name="PauseOverlay" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 0.321569 )
+
+[node name="PauseMenu" type="VBoxContainer" parent="PauseOverlay"]
+margin_left = 384.0
+margin_top = 171.0
+margin_right = 896.0
+margin_bottom = 548.0
+script = ExtResource( 4 )
+
+[node name="Title" parent="PauseOverlay/PauseMenu" instance=ExtResource( 5 )]
+anchor_right = 0.0
+margin_right = 512.0
+margin_bottom = 57.0
+custom_colors/font_color_shadow = Color( 0.905882, 0.658824, 0.184314, 1 )
+custom_constants/shadow_offset_y = 5
+text = "Paused"
+
+[node name="RetryButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 61.0
+margin_right = 512.0
+margin_bottom = 140.0
+
+[node name="ShopButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 7 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 144.0
+margin_right = 512.0
+margin_bottom = 210.0
+
+[node name="BackToMainMenuButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 8 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 214.0
+margin_right = 512.0
+margin_bottom = 293.0
+
+[node name="QuitButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 9 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 297.0
+margin_right = 512.0
+margin_bottom = 377.0
+
+[node name="SaveText" parent="PauseOverlay" instance=ExtResource( 10 )]
+frame = 27
+
+[node name="SaveButton" parent="PauseOverlay" instance=ExtResource( 11 )]
+
+[node name="Animal_tasks" type="ColorRect" parent="."]
+editor/display_folded = true
+visible = false
+margin_right = 1417.0
+margin_bottom = 803.0
+color = Color( 0.341176, 0.329412, 0.329412, 0.552941 )
+
+[node name="task" type="ItemList" parent="Animal_tasks"]
+margin_left = 22.0
+margin_top = 120.0
+margin_right = 1281.0
+margin_bottom = 670.0
+
+[node name="Savanna" type="Button" parent="Animal_tasks/task"]
+margin_left = 8.08685
+margin_top = 366.835
+margin_right = 149.087
+margin_bottom = 412.835
+text = "Savanna"
+
+[node name="Grassland" type="Button" parent="Animal_tasks/task"]
+margin_left = 313.387
+margin_top = 366.82
+margin_right = 454.387
+margin_bottom = 412.82
+text = "Grassland"
+
+[node name="Polar" type="Button" parent="Animal_tasks/task"]
+margin_left = 159.235
+margin_top = 366.799
+margin_right = 300.235
+margin_bottom = 412.799
+text = "Polar"
+
+[node name="Forest" type="Button" parent="Animal_tasks/task"]
+margin_left = 466.457
+margin_top = 367.31
+margin_right = 607.457
+margin_bottom = 413.31
+text = "Forest"
+
+[node name="Water" type="Button" parent="Animal_tasks/task"]
+margin_left = 622.135
+margin_top = 367.424
+margin_right = 764.135
+margin_bottom = 413.424
+text = "Water"
+
+[node name="Dessert" type="Button" parent="Animal_tasks/task"]
+margin_left = 782.186
+margin_top = 367.243
+margin_right = 924.187
+margin_bottom = 413.243
+text = "Dessert"
+
+[node name="Mountain" type="Button" parent="Animal_tasks/task"]
+margin_left = 1105.0
+margin_top = 367.0
+margin_right = 1247.0
+margin_bottom = 413.0
+text = "Mountain"
+
+[node name="Jungle" type="Button" parent="Animal_tasks/task"]
+margin_left = 944.0
+margin_top = 367.0
+margin_right = 1086.0
+margin_bottom = 413.0
+text = "Jungle"
+
+[node name="Label" type="Label" parent="Animal_tasks/task"]
+margin_left = 385.232
+margin_top = 86.9212
+margin_right = 838.232
+margin_bottom = 137.921
+custom_fonts/font = ExtResource( 12 )
+text = "Where does the animal belong ???"
+
+[node name="Savanna_rect" type="ColorRect" parent="Animal_tasks/task"]
+margin_left = 7.58472
+margin_top = 227.465
+margin_right = 151.585
+margin_bottom = 336.465
+
+[node name="Water_rect" type="ColorRect" parent="Animal_tasks/task"]
+margin_left = 618.0
+margin_top = 227.0
+margin_right = 772.0
+margin_bottom = 336.0
+
+[node name="Forest_rect" type="ColorRect" parent="Animal_tasks/task"]
+margin_left = 461.585
+margin_top = 227.465
+margin_right = 617.585
+margin_bottom = 336.465
+
+[node name="Grassland_rect" type="ColorRect" parent="Animal_tasks/task"]
+margin_left = 308.585
+margin_top = 227.465
+margin_right = 461.585
+margin_bottom = 336.465
+
+[node name="Polar_rect" type="ColorRect" parent="Animal_tasks/task"]
+margin_left = 151.585
+margin_top = 227.465
+margin_right = 308.585
+margin_bottom = 336.465
+
+[node name="Dessert_rect" type="ColorRect" parent="Animal_tasks/task"]
+margin_left = 769.585
+margin_top = 227.465
+margin_right = 930.585
+margin_bottom = 336.465
+
+[node name="Jungle_rect" type="ColorRect" parent="Animal_tasks/task"]
+margin_left = 930.672
+margin_top = 227.258
+margin_right = 1091.67
+margin_bottom = 336.258
+
+[node name="Mountain_rect" type="ColorRect" parent="Animal_tasks/task"]
+margin_left = 1091.0
+margin_top = 227.0
+margin_right = 1252.0
+margin_bottom = 336.0
+
+[node name="savanna" type="Sprite" parent="Animal_tasks/task"]
+position = Vector2( 78.9846, 281.509 )
+scale = Vector2( 0.0543749, 0.085073 )
+texture = ExtResource( 13 )
+
+[node name="polar" type="Sprite" parent="Animal_tasks/task"]
+position = Vector2( 230.033, 281.665 )
+scale = Vector2( 0.549805, 0.55946 )
+texture = ExtResource( 14 )
+
+[node name="grassland" type="Sprite" parent="Animal_tasks/task"]
+position = Vector2( 384.368, 281.144 )
+scale = Vector2( 0.572178, 0.531302 )
+texture = ExtResource( 15 )
+
+[node name="water" type="Sprite" parent="Animal_tasks/task"]
+position = Vector2( 694.143, 281.412 )
+scale = Vector2( 0.493526, 0.612221 )
+texture = ExtResource( 16 )
+
+[node name="forest" type="Sprite" parent="Animal_tasks/task"]
+position = Vector2( 539.729, 281.144 )
+scale = Vector2( 0.537112, 0.578869 )
+texture = ExtResource( 17 )
+
+[node name="dessert" type="Sprite" parent="Animal_tasks/task"]
+position = Vector2( 851.824, 281.092 )
+scale = Vector2( 0.584031, 0.524656 )
+texture = ExtResource( 18 )
+
+[node name="jungle" type="Sprite" parent="Animal_tasks/task"]
+position = Vector2( 1011.38, 282.064 )
+scale = Vector2( 0.555723, 0.551175 )
+texture = ExtResource( 19 )
+
+[node name="mountain" type="Sprite" parent="Animal_tasks/task"]
+position = Vector2( 1173.04, 281.459 )
+scale = Vector2( 0.553857, 0.559591 )
+texture = ExtResource( 20 )
+
+[node name="Label2" type="Label" parent="Animal_tasks"]
+modulate = Color( 0, 1, 0, 1 )
+margin_left = 523.949
+margin_top = 251.81
+margin_right = 741.949
+margin_bottom = 306.81
+custom_fonts/font = ExtResource( 12 )
+text = "Your lives left: 10"
+
+[node name="animplayer" type="AnimationPlayer" parent="."]
+anims/Forest_False = SubResource( 1 )
+anims/Forest_True = SubResource( 2 )
+anims/Grassland_False = SubResource( 3 )
+anims/Grassland_True = SubResource( 4 )
+anims/Jungle_False = SubResource( 5 )
+anims/Jungle_True = SubResource( 6 )
+anims/Mountain_False = SubResource( 7 )
+anims/Mountain_True = SubResource( 8 )
+anims/Polar_True = SubResource( 9 )
+anims/Polar_false = SubResource( 10 )
+anims/Savanna_True = SubResource( 11 )
+anims/Savanna_false = SubResource( 12 )
+anims/Task_fade = SubResource( 13 )
+anims/Water_False = SubResource( 14 )
+anims/Water_True = SubResource( 15 )
+anims/dessert_false = SubResource( 16 )
+anims/dessert_true = SubResource( 17 )
+
+[node name="ItemList2" type="ItemList" parent="."]
+margin_left = 1023.07
+margin_top = -57.4662
+margin_right = 1685.07
+margin_bottom = 118.533
+
+[node name="ItemList" type="ItemList" parent="."]
+self_modulate = Color( 0, 0, 0, 0 )
+margin_left = 1022.93
+margin_top = 20.3514
+margin_right = 1417.93
+margin_bottom = 364.352
+
+[node name="Coins" type="Label" parent="ItemList"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -387.458
+margin_top = -0.488808
+margin_right = -238.458
+margin_bottom = 30.5112
+custom_fonts/font = ExtResource( 21 )
+text = "Coins: "
+
+[node name="Diamonds" type="Label" parent="ItemList"]
+margin_left = 8.08606
+margin_top = 28.3173
+margin_right = 146.086
+margin_bottom = 55.9932
+custom_fonts/font = ExtResource( 21 )
+text = "Diamonds:"
+
+[node name="Animals" type="Label" parent="ItemList"]
+editor/display_folded = true
+margin_left = 8.81512
+margin_top = 55.6052
+margin_right = 120.815
+margin_bottom = 86.6055
+custom_fonts/font = ExtResource( 21 )
+text = "Animals:"
+
+[node name="TextureButton" type="TextureButton" parent="ItemList/Animals"]
+margin_left = 1.47015
+margin_top = -1.47021
+margin_right = 120.47
+margin_bottom = 38.5298
+
+[node name="Animal_List" type="ItemList" parent="ItemList/Animals"]
+visible = false
+margin_left = -10.7537
+margin_top = 42.2578
+margin_right = 130.247
+margin_bottom = 324.258
+custom_fonts/font = ExtResource( 12 )
+max_columns = 16
+[connection signal="pressed" from="PauseOverlay/PauseMenu/RetryButton" to="PauseOverlay/PauseMenu" method="_on_RetryButton_pressed"]
+[connection signal="pressed" from="PauseOverlay/PauseMenu/ShopButton" to="PauseOverlay/PauseMenu" method="_on_ShopButton_pressed"]
+[connection signal="pressed" from="PauseOverlay/PauseMenu/BackToMainMenuButton" to="PauseOverlay/PauseMenu" method="_on_BackToMainMenuButton_pressed"]
+[connection signal="pressed" from="PauseOverlay/PauseMenu/QuitButton" to="PauseOverlay/PauseMenu" method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="PauseOverlay/SaveButton" to="." method="_on_SaveButton_pressed"]
+[connection signal="button_up" from="Animal_tasks/task/Savanna" to="." method="_on_Savanna_button_up"]
+[connection signal="button_up" from="Animal_tasks/task/Grassland" to="." method="_on_Grassland_button_up"]
+[connection signal="button_up" from="Animal_tasks/task/Polar" to="." method="_on_Polar_button_up"]
+[connection signal="button_up" from="Animal_tasks/task/Forest" to="." method="_on_Forest_button_up"]
+[connection signal="button_up" from="Animal_tasks/task/Water" to="." method="_on_Water_button_up"]
+[connection signal="button_up" from="Animal_tasks/task/Dessert" to="." method="_on_Dessert_button_up"]
+[connection signal="button_up" from="Animal_tasks/task/Mountain" to="." method="_on_Mountain_button_up"]
+[connection signal="button_up" from="Animal_tasks/task/Jungle" to="." method="_on_Jungle_button_up"]
+[connection signal="button_up" from="ItemList/Animals/TextureButton" to="." method="_on_TextureButton_button_up"]

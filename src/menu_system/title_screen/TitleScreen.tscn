@@ -1,0 +1,100 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://src/menu_system/title_screen/TitleScreen.gd" type="Script" id=1]
+[ext_resource path="res://assets/main menu/Logo.png" type="Texture" id=2]
+[ext_resource path="res://src/menu_system/buttons/NewGameButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/menu_system/buttons/LoadGameButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/menu_system/buttons/QuitButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/main menu/Globe.png" type="Texture" id=6]
+[ext_resource path="res://assets/fonts/Montserratt_24.tres" type="DynamicFont" id=7]
+[ext_resource path="res://assets/fonts/Montserrat_24.tres" type="DynamicFontData" id=8]
+[ext_resource path="res://src/menu_system/fade_in/FadeIn.tscn" type="PackedScene" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 8 )
+
+[node name="TitleScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = -20.0
+margin_bottom = -20.0
+
+[node name="Logo" type="TextureRect" parent="Menu"]
+margin_right = 1240.0
+margin_bottom = 97.0
+texture = ExtResource( 2 )
+stretch_mode = 4
+
+[node name="CenterRow" type="HBoxContainer" parent="Menu"]
+margin_top = 101.0
+margin_right = 1240.0
+margin_bottom = 421.0
+size_flags_vertical = 3
+
+[node name="Buttons" type="VBoxContainer" parent="Menu/CenterRow"]
+margin_right = 618.0
+margin_bottom = 320.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 20
+alignment = 1
+
+[node name="NewGameButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
+margin_top = 41.0
+margin_right = 618.0
+margin_bottom = 107.0
+scene_to_load = "res://src/menu_system/main_menu/StartGame/NewGameMenu.tscn"
+
+[node name="LoadGameButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
+margin_top = 127.0
+margin_right = 618.0
+margin_bottom = 193.0
+
+[node name="QuitButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 5 )]
+margin_top = 213.0
+margin_right = 618.0
+margin_bottom = 279.0
+
+[node name="CenterContainer" type="CenterContainer" parent="Menu/CenterRow"]
+margin_left = 622.0
+margin_right = 1240.0
+margin_bottom = 320.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Characters" type="TextureRect" parent="Menu/CenterRow/CenterContainer"]
+margin_left = 129.0
+margin_right = 489.0
+margin_bottom = 320.0
+texture = ExtResource( 6 )
+
+[node name="LoadGameWarning" type="Label" parent="Menu"]
+visible = false
+margin_top = 425.0
+margin_right = 1240.0
+margin_bottom = 446.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "There is no saved game"
+
+[node name="VersionLabel" type="Label" parent="Menu"]
+margin_top = 425.0
+margin_right = 1240.0
+margin_bottom = 680.0
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 1 )
+text = "Version 1.0.0
+Sysdev Group 9"
+valign = 1
+
+[node name="FadeIn" parent="." instance=ExtResource( 9 )]
+visible = false
+[connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
