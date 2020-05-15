@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/1_023.png-a075e38fe95626224ca8a28de3748387.stex"
+path="res://.import/1_016.png-887e95e8f0be9bff3747d69380784485.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animals/Isbjørn/Walk on 4 paws/1_023.png"
-dest_files=[ "res://.import/1_023.png-a075e38fe95626224ca8a28de3748387.stex" ]
+source_file="res://assets/Animals/Polarbear/Walk on 4 paws/1_016.png"
+dest_files=[ "res://.import/1_016.png-887e95e8f0be9bff3747d69380784485.stex" ]
 
 [params]
 
