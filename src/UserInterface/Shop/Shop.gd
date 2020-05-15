@@ -3,7 +3,14 @@ extends Node
 var characterArray = ["Boy","Girl","Robot","Templerun_boy", "Templerun_girl", "Dino", "Knight", "Jack", "Ninja_boy", "Ninja_girl", "Santa", "Zombie_boy"]
 onready var current_character = PlayerData.get_character()
 onready var boughtCharacters = PlayerData.boughtCharacters
-
+"""
+This the shop funnction, there are three states in shop and that is:
+	- Buy		(If characters is not bought)
+	- Use		(Characters is bought, but not currently used)
+	- Using		(Character is bought and currently using)
+Checks coins and diamonds price from the text in label node
+and checks from the playerdata that the player can afford buying
+"""
 func _ready() -> void:
 	current_character = PlayerData.get_character()
 	PlayerData.connect("character_updated", self, "updateCharacters")
@@ -24,7 +31,6 @@ func _on_BoyButton_pressed() -> void:
 	elif PlayerData.getBoughtCharacter("Boy") == true:
 		PlayerData.set_character("Boy")
 
-		
 func _on_GirlButton_pressed() -> void:
 	var girlPrice = int($ShopMenu/SkinsSelection/VBoxContainer/Girl/PriceInformation/CoinPrice.get_text())
 	var girlDiamond = int($ShopMenu/SkinsSelection/VBoxContainer/Girl/PriceInformation/DiamondPrice.get_text())
@@ -157,7 +163,9 @@ func _on_Zombie_boyButton_pressed() -> void:
 		PlayerData.set_character("Zombie_boy")
 
 
-
+"""
+Goes through every buttons and priceinformations, and updating them.
+"""
 func updateCharacters():
 	current_character = PlayerData.get_character()
 	boughtCharacters = PlayerData.boughtCharacters
